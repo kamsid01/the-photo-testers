@@ -21,12 +21,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Article pages
   const posts = getAllPosts();
-  const articlePages = posts.map((post) => ({
-    url: `${baseUrl}/${post.meta.slug}`,
-    lastModified: new Date(post.meta.updated || post.meta.date),
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }));
+  const articlePages = posts.map((post) => {
+    const rawDate = post.meta.updated || post.meta.date;
+    const parsedDate = rawDate ? new Date(rawDate) : new Date();
+    const lastModified = isNaN(parsedDate.getTime()) ? new Date() : parsedDate;
+
+    return {
+      url: `${baseUrl}/${post.meta.slug}`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    };
+  });
 
   return [...staticPages, ...articlePages];
 }
