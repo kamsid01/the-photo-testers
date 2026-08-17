@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Camera } from 'lucide-react';
 import { getAllPosts } from '@/lib/posts';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 
 const CATEGORIES = [
   "Client CRMs", "Gallery delivery", "AI culling and editing",
@@ -11,17 +13,7 @@ export default function Home() {
   const featuredPosts = getAllPosts().slice(0, 3);
   return (
     <>
-      <header className="border-b border-border py-4 bg-bg">
-        <div className="container mx-auto px-6 flex justify-between items-center max-w-5xl">
-          <Link href="/">
-            <img src="/logo.svg" alt="The Photo Testers" className="h-8 w-auto" />
-          </Link>
-          <nav className="hidden md:flex gap-6 text-sm font-medium text-ink">
-            <Link href="/about" className="hover:text-accent transition-colors">About</Link>
-            <Link href="/how-we-review" className="hover:text-accent transition-colors">How we review</Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main className="flex-1">
         {/* Hero */}
@@ -111,21 +103,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t border-border bg-bg">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2 font-bold text-ink">
-            <img src="/logo.svg" alt="The Photo Testers" className="h-6 w-auto grayscale opacity-80" />
-          </div>
-          <nav className="flex flex-wrap justify-center gap-6 text-sm text-muted">
-            <Link href="/about" className="hover:text-accent transition-colors">About</Link>
-            <Link href="/how-we-review" className="hover:text-accent transition-colors">How we review</Link>
-            <Link href="/affiliate-disclosure" className="hover:text-accent transition-colors">Affiliate disclosure</Link>
-            <Link href="/privacy" className="hover:text-accent transition-colors">Privacy</Link>
-            <Link href="/contact" className="hover:text-accent transition-colors">Contact</Link>
-          </nav>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
