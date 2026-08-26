@@ -78,5 +78,6 @@ export function MDXComponents() {
         {children}
       </div>
     ),
+    ComparisonTable: ({ children }: any) => <>{children}</>,
   };
 }
