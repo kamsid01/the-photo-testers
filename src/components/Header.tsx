@@ -9,7 +9,7 @@ export function Header() {
         </Link>
         <nav className="hidden md:flex gap-6 text-sm font-medium text-ink">
           <Link href="/blog" className="hover:text-accent transition-colors">All Articles</Link>
-          <Link href="/tools/pricing-calculator" className="hover:text-accent transition-colors">Tools</Link>
+          <Link href="/tools" className="hover:text-accent transition-colors">Tools</Link>
           <Link href="/about" className="hover:text-accent transition-colors">About</Link>
           <Link href="/how-we-review" className="hover:text-accent transition-colors">How we review</Link>
         </nav>
