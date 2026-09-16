@@ -46,12 +46,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
+  let customTitle = `${category.name} Software Reviews | The Photo Testers`;
+  if (slug === 'client-crms') customTitle = 'Photography CRM Software Reviews | The Photo Testers';
+  if (slug === 'portfolio-websites') customTitle = 'Photography Portfolio Website Reviews | The Photo Testers';
+
   return {
-    title: `${category.name} Software Reviews | The Photo Testers`,
+    title: customTitle,
     description: category.description,
     alternates: {
       canonical: `/category/${slug}`,
-    }
+    },
+    openGraph: {
+      title: customTitle,
+      description: category.description,
+      url: `/category/${slug}`,
+      images: [
+        {
+          url: `/og/category-${slug}.jpg`,
+          width: 1200,
+          height: 630,
+          alt: customTitle
+        }
+      ],
+    },
+    twitter: {
+      title: customTitle,
+      description: category.description,
+      images: [`/og/category-${slug}.jpg`],
+    },
   };
 }
 

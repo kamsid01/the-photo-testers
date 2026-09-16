@@ -2,10 +2,19 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Photography Business Tools',
+  title: 'Free Photography Business Tools | The Photo Testers',
   description: 'Free interactive tools for photographers to calculate pricing, choose software, and run a more profitable business.',
   alternates: {
     canonical: '/tools',
+  },
+  openGraph: {
+    title: 'Free Photography Business Tools | The Photo Testers',
+    description: 'Free interactive tools for photographers to calculate pricing, choose software, and run a more profitable business.',
+    url: '/tools',
+  },
+  twitter: {
+    title: 'Free Photography Business Tools | The Photo Testers',
+    description: 'Free interactive tools for photographers to calculate pricing, choose software, and run a more profitable business.',
   },
 };
 

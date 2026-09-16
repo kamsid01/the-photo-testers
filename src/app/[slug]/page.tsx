@@ -35,6 +35,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.meta.og_description || post.meta.meta_description,
       type: (post.meta.og_type as any) || 'article',
       url: post.meta.canonical,
+      images: [
+        {
+          url: `/og/${post.meta.slug}.jpg`,
+          width: 1200,
+          height: 630,
+          alt: post.meta.title
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.meta.og_title || post.meta.title,
+      description: post.meta.og_description || post.meta.meta_description,
+      images: [`/og/${post.meta.slug}.jpg`],
     },
   };
 }
@@ -59,9 +73,15 @@ export default async function PostPage({ params }: Props) {
     '@type': 'Article',
     headline: post.meta.title,
     description: post.meta.meta_description,
+    image: `https://www.thephototesters.com/og/${post.meta.slug}.jpg`,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': post.meta.canonical || `https://www.thephototesters.com/${post.meta.slug}`,
+    },
     author: {
-      '@type': 'Person',
-      name: post.meta.author || 'Alex Morgan',
+      '@type': 'Organization',
+      name: 'The Photo Testers',
+      url: 'https://www.thephototesters.com/',
     },
     publisher: {
       '@type': 'Organization',
@@ -111,7 +131,7 @@ export default async function PostPage({ params }: Props) {
           <MDXRemote source={post.content} components={MDXComponents()} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
         </article>
         <div className="max-w-[700px] mx-auto">
-          <AuthorBox authorName={post.meta.author || 'Alex Morgan'} />
+          <AuthorBox />
         </div>
       </main>
 

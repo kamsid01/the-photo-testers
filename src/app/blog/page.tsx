@@ -5,10 +5,19 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'All Articles | The Photo Testers',
+  title: 'Photography Software Reviews & Guides | The Photo Testers',
   description: 'Explore our complete library of hands-on tested photography software reviews, AI culling & editing guides, and client CRM comparisons.',
   alternates: {
     canonical: '/blog',
+  },
+  openGraph: {
+    title: 'Photography Software Reviews & Guides | The Photo Testers',
+    description: 'Explore our complete library of hands-on tested photography software reviews, AI culling & editing guides, and client CRM comparisons.',
+    url: '/blog',
+  },
+  twitter: {
+    title: 'Photography Software Reviews & Guides | The Photo Testers',
+    description: 'Explore our complete library of hands-on tested photography software reviews, AI culling & editing guides, and client CRM comparisons.',
   },
 };
 

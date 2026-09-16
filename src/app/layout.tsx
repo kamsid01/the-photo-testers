@@ -17,11 +17,20 @@ export const metadata: Metadata = {
     url: '/',
     siteName: 'The Photo Testers',
     type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Photo Testers'
+      }
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Photography Software Reviews & Comparisons | The Photo Testers",
     description: "Independent, hands-on reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
+    images: ['/og/default.jpg'],
   }
 };
 
