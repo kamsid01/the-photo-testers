@@ -4,6 +4,9 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Photography Business Tools',
   description: 'Free interactive tools for photographers to calculate pricing, choose software, and run a more profitable business.',
+  alternates: {
+    canonical: '/tools',
+  },
 };
 
 export default function ToolsIndexPage() {

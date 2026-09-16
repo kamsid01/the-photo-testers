@@ -5,6 +5,9 @@ import { CullingToolFinder } from '../../../components/CullingToolFinder';
 export const metadata: Metadata = {
   title: 'Which AI Culling Tool Is Right For You?',
   description: 'Take our free quiz to find the perfect AI photo culling software for your workflow, whether you need maximum speed, creative control, or offline access.',
+  alternates: {
+    canonical: '/tools/culling-tool-finder',
+  },
 };
 
 export default function CullingToolFinderPage() {

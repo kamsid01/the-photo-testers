@@ -7,6 +7,9 @@ import { Footer } from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'All Articles | The Photo Testers',
   description: 'Explore our complete library of hands-on tested photography software reviews, AI culling & editing guides, and client CRM comparisons.',
+  alternates: {
+    canonical: '/blog',
+  },
 };
 
 const EXCLUDED_SLUGS = new Set([

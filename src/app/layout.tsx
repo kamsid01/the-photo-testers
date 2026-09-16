@@ -8,8 +8,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "The Photo Testers",
-  description: "Photography software, actually tested.",
+  metadataBase: new URL('https://www.thephototesters.com'),
+  title: "Photography Software Reviews & Comparisons | The Photo Testers",
+  description: "Independent, hands-on reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
+  openGraph: {
+    title: "Photography Software Reviews & Comparisons | The Photo Testers",
+    description: "Independent, hands-on reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
+    url: '/',
+    siteName: 'The Photo Testers',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Photography Software Reviews & Comparisons | The Photo Testers",
+    description: "Independent, hands-on reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
+  }
 };
 
 export default function RootLayout({

@@ -48,7 +48,7 @@ export function MDXComponents() {
     Screenshot: ({ src, caption }: any) => (
       <figure className="my-12">
         <div className="border border-border rounded-lg overflow-hidden shadow-sm bg-surface">
-          <img src={src} alt="Software screenshot" className="w-full h-auto m-0" />
+          <img src={src} alt={caption || "Software screenshot"} width={1200} height={800} className="w-full h-auto m-0" />
         </div>
         {caption && (
           <figcaption className="text-center text-sm text-muted mt-3 font-medium">

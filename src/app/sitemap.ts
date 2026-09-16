@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/posts';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://thephototesters.com';
+  const baseUrl = 'https://www.thephototesters.com';
 
   // Static pages
   const staticPages = [
@@ -12,6 +12,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/affiliate-disclosure',
     '/privacy',
     '/contact',
+    '/blog',
+    '/tools',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

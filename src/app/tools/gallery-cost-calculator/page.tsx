@@ -5,6 +5,9 @@ import { GalleryCostCalculator } from '../../../components/GalleryCostCalculator
 export const metadata: Metadata = {
   title: 'Photography Gallery Cost Calculator',
   description: 'Compare the real annual cost of Pixieset, ShootProof, Pic-Time, and more based on your actual shoot volume and storage needs.',
+  alternates: {
+    canonical: '/tools/gallery-cost-calculator',
+  },
 };
 
 export default function GalleryCostCalculatorPage() {

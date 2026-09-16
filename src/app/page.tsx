@@ -1,18 +1,50 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { Camera } from 'lucide-react';
 import { getAllPosts } from '@/lib/posts';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
+
 const CATEGORIES = [
-  "Client CRMs", "Gallery delivery", "AI culling and editing",
-  "Booking and scheduling", "Portfolio websites", "Print and album sales"
+  { name: "Client CRMs", slug: "client-crms" },
+  { name: "Gallery Delivery", slug: "gallery-delivery" },
+  { name: "AI Culling & Editing", slug: "ai-culling-editing" },
+  { name: "Booking & Scheduling", slug: "booking-scheduling" },
+  { name: "Portfolio Websites", slug: "portfolio-websites" },
+  { name: "Print & Album Sales", slug: "print-album-sales" },
 ];
 
 export default function Home() {
   const featuredPosts = getAllPosts().slice(0, 3);
+  
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'The Photo Testers',
+    url: 'https://www.thephototesters.com/',
+    description: 'Independent, hands-on reviews of photography software.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'The Photo Testers',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.thephototesters.com/logo.svg'
+      }
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
 
       <main className="flex-1">
@@ -50,8 +82,8 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-ink mb-8 text-center">Browse by category</h2>
             <div className="flex flex-wrap justify-center gap-4">
               {CATEGORIES.map((cat, i) => (
-                <Link href="#" key={i} className="px-6 py-3 rounded-full border border-border bg-bg text-ink hover:border-accent hover:text-accent transition-colors font-medium shadow-sm">
-                  {cat}
+                <Link href={`/category/${cat.slug}`} key={i} className="px-6 py-3 rounded-full border border-border bg-bg text-ink hover:border-accent hover:text-accent transition-colors font-medium shadow-sm">
+                  {cat.name}
                 </Link>
               ))}
             </div>
@@ -85,16 +117,23 @@ export default function Home() {
             <p className="text-muted mb-8 text-lg">
               When we publish a new review or a tool changes its pricing, you hear about it. Nothing else.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="flex-1 px-4 py-3 rounded-md border border-border focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent bg-bg text-ink shadow-sm"
-                required
-              />
+            <form action="/api/subscribe" method="POST" className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto items-end">
+              <div className="flex-1 text-left w-full">
+                <label htmlFor="newsletter-email" className="block text-sm font-semibold text-ink mb-1.5 ml-1">
+                  Email address
+                </label>
+                <input 
+                  type="email" 
+                  id="newsletter-email"
+                  name="email"
+                  placeholder="name@example.com" 
+                  className="w-full px-4 py-3 rounded-md border border-border focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent bg-bg text-ink shadow-sm"
+                  required
+                />
+              </div>
               <button 
                 type="submit"
-                className="px-6 py-3 bg-accent text-bg font-medium rounded-md hover:bg-accent-dark transition-colors shadow-sm"
+                className="px-6 py-3 bg-accent text-bg font-medium rounded-md hover:bg-accent-dark transition-colors shadow-sm w-full sm:w-auto mt-2 sm:mt-0"
               >
                 Subscribe
               </button>

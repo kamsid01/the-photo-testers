@@ -5,6 +5,9 @@ import { PricingCalculator } from '../../../components/PricingCalculator';
 export const metadata: Metadata = {
   title: 'Photography Pricing Calculator: What Should You Charge?',
   description: 'Use our free interactive calculator to find out exactly how much you need to charge per shoot to hit your desired salary, factoring in hidden hours, costs, and taxes.',
+  alternates: {
+    canonical: '/tools/pricing-calculator',
+  },
 };
 
 export default function PricingCalculatorPage() {
