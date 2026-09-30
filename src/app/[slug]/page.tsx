@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: post.meta.canonical,
       images: [
         {
-          url: `/og/${post.meta.slug}.jpg`,
+          url: `/og/default.jpg`,
           width: 1200,
           height: 630,
           alt: post.meta.title
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: post.meta.og_title || post.meta.title,
       description: post.meta.og_description || post.meta.meta_description,
-      images: [`/og/${post.meta.slug}.jpg`],
+      images: [`/og/default.jpg`],
     },
   };
 }
@@ -73,7 +73,7 @@ export default async function PostPage({ params }: Props) {
     '@type': 'Article',
     headline: post.meta.title,
     description: post.meta.meta_description,
-    image: `https://www.thephototesters.com/og/${post.meta.slug}.jpg`,
+    image: `https://www.thephototesters.com/og/default.jpg`,
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': post.meta.canonical || `https://www.thephototesters.com/${post.meta.slug}`,

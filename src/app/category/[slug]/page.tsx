@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: customTitle,
     description: category.description,
-    robots: shouldIndex ? { index: true, follow: true } : { index: false, follow: false },
+    robots: shouldIndex ? { index: true, follow: true } : { index: false, follow: true },
     alternates: {
       canonical: `/category/${slug}`,
     },
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `/category/${slug}`,
       images: [
         {
-          url: `/og/category-${slug}.jpg`,
+          url: `/og/default.jpg`,
           width: 1200,
           height: 630,
           alt: customTitle
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       title: customTitle,
       description: category.description,
-      images: [`/og/category-${slug}.jpg`],
+      images: [`/og/default.jpg`],
     },
   };
 }
