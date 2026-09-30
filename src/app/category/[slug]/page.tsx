@@ -50,9 +50,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (slug === 'client-crms') customTitle = 'Photography CRM Software Reviews | The Photo Testers';
   if (slug === 'portfolio-websites') customTitle = 'Photography Portfolio Website Reviews | The Photo Testers';
 
+  const noindexSlugs = ['booking-scheduling', 'portfolio-websites', 'print-album-sales'];
+  const shouldIndex = !noindexSlugs.includes(slug);
+
   return {
     title: customTitle,
     description: category.description,
+    robots: shouldIndex ? { index: true, follow: true } : { index: false, follow: false },
     alternates: {
       canonical: `/category/${slug}`,
     },
