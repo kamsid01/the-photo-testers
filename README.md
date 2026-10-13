@@ -34,3 +34,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## IndexNow (Search Engine Indexing)
+
+This project is configured with [IndexNow](https://www.indexnow.org/) to instantly notify search engines (Bing, Yandex, Naver, Seznam, etc.) when pages are published or updated.
+
+- **API Key**: `91de477695d340d9a5507098928c96ab`
+- **Verification File**: `public/91de477695d340d9a5507098928c96ab.txt` (reachable at `https://www.thephototesters.com/91de477695d340d9a5507098928c96ab.txt`)
+- **Script**: `scripts/indexnow.mjs`
+
+### Re-running after future pushes
+
+Whenever you push new posts or page updates:
+
+1. Wait for Vercel deployment to finish (so `sitemap.xml` is updated).
+2. Run the submission script:
+   ```bash
+   npm run indexnow
+   ```
+   Or directly:
+   ```bash
+   node scripts/indexnow.mjs
+   ```
+
+The script will fetch the latest sitemap URLs and submit them to `https://api.indexnow.org/indexnow`.
+
