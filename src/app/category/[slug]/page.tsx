@@ -1,3 +1,4 @@
+import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -5,30 +6,93 @@ import { getAllPosts } from '@/lib/posts';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
-const CATEGORY_MAP: Record<string, { name: string, description: string }> = {
+interface CategoryConfig {
+  name: string;
+  h1: string;
+  metaTitle: string;
+  metaDescription: string;
+  intro?: React.ReactNode;
+  fallbackDescription?: string;
+}
+
+const CATEGORY_MAP: Record<string, CategoryConfig> = {
   'client-crms': {
     name: 'Client CRMs',
-    description: 'Compare the best client relationship management software for photographers to streamline booking, invoicing, and client communication.'
+    h1: 'Photography CRM & Client Management Software',
+    metaTitle: 'Photography CRM Software: Reviews & Comparisons (2026)',
+    metaDescription: 'Independent reviews of photography CRM software, HoneyBook, Dubsado, Studio Ninja and more, compared on pricing, automation, scheduling, and UK/EU VAT and GDPR.',
+    intro: (
+      <>
+        <p>
+          A photography CRM handles the business side of your studio: inquiries, bookings, contracts, invoices, questionnaires, and client communication, so you spend less time on admin and more behind the camera. The best one for you depends on what you need most. Some are built for deep automation, some for simple booking, some specifically for European VAT and GDPR compliance.
+        </p>
+        <p>
+          When choosing, look at: automated workflows (emails, contracts, payment reminders), a branded client portal, contracts with e-signatures, invoicing and online payments, scheduling, and, if you shoot in the UK or EU, correct VAT handling and a signable data-processing agreement. Pricing matters too, some tools charge a flat monthly fee while others scale with use.
+        </p>
+        <p>
+          Start with our guide to the <Link href="/best-crm-wedding-photographers">best CRM for wedding photographers</Link>. For the two biggest names head to head, read <Link href="/dubsado-vs-honeybook">Dubsado vs HoneyBook</Link>. If HoneyBook is not the right fit, see <Link href="/honeybook-alternatives-photographers">HoneyBook alternatives for photographers</Link>. For specific needs, we cover <Link href="/photography-crm-built-in-scheduler">photography CRMs with a built-in scheduler</Link> and <Link href="/photography-crm-pic-time-integration">CRMs that integrate with Pic-Time</Link>. And if you are in Europe, <Link href="/photography-crm-vat-gdpr-europe">the best CRM for VAT and GDPR compliance</Link> is essential reading.
+        </p>
+      </>
+    )
   },
   'gallery-delivery': {
     name: 'Gallery Delivery',
-    description: 'Find the right platform to deliver stunning online photo galleries to your clients, complete with print stores and digital downloads.'
+    h1: 'Client Gallery Software for Photographers',
+    metaTitle: 'Best Client Gallery Software for Photographers (2026)',
+    metaDescription: 'Independent reviews of client gallery platforms, Pixieset, ShootProof, Pic-Time, SmugMug and more, compared on pricing, print sales, storage, and client experience.',
+    intro: (
+      <>
+        <p>
+          Client gallery software is where your finished photos go to be delivered, viewed, downloaded, and often bought. A good platform makes your galleries feel like an extension of your brand: it loads fast, downloads cleanly, and sells prints without you chasing anyone.
+        </p>
+        <p>
+          When choosing, look at: a branded, password-protected gallery, favouriting and proofing tools, full-resolution and watermarked download options, a built-in print store (and whether it takes a commission on sales), storage that fits your shooting volume, and a clean mobile experience, since most clients open their gallery on a phone. Pricing almost always scales with storage, so compare platforms at your real volume, not the headline entry price.
+        </p>
+        <p>
+          Start with our guide to the <Link href="/best-client-gallery-software">best client gallery software</Link>, which compares the whole field including Pixieset, ShootProof, Pic-Time, SmugMug, Zenfolio and CloudSpot. For a focused look at the three most popular platforms, read <Link href="/pic-time-vs-pixieset-vs-shootproof">Pic-Time vs Pixieset vs ShootProof</Link>.
+        </p>
+      </>
+    )
   },
   'ai-culling-editing': {
     name: 'AI Culling & Editing',
-    description: 'Speed up your post-production workflow with the latest AI-powered photo culling and editing software.'
+    h1: 'AI Culling & Editing Software for Photographers',
+    metaTitle: 'Best AI Culling & Editing Software for Photographers (2026)',
+    metaDescription: 'Independent reviews of AI culling and editing tools, Aftershoot, Imagen, Narrative, FilterPixel and more, compared on accuracy, editing quality, offline vs cloud, and pricing.',
+    intro: (
+      <>
+        <p>
+          AI culling and editing software automates the slowest parts of post-production: selecting the keepers from thousands of shots, applying your editing style across a whole gallery, and retouching portraits. Used well, these tools cut hours off every wedding or portrait session.
+        </p>
+        <p>
+          It helps to be clear about three different jobs. Culling is picking the best frames and removing blinks, blurs and duplicates. Editing is applying your colour and tone across the set. Retouching is the close-up work on skin, glare and backgrounds. Some tools are excellent at one of these; some do all three. When comparing, weigh culling accuracy, editing quality (skin tones especially), whether the tool runs offline or in the cloud, and the pricing model, a flat monthly fee versus per-photo pricing changes the cost a lot depending on your volume.
+        </p>
+        <p>
+          Start with our overview of the <Link href="/best-ai-culling-editing-software">best AI culling and editing software</Link>. The key head to head is <Link href="/aftershoot-vs-imagen">Aftershoot vs Imagen</Link>, and we go deep on each in our <Link href="/aftershoot-review">Aftershoot review</Link> and <Link href="/imagen-ai-review">Imagen AI review</Link>. For culling specifically, see the <Link href="/best-photo-culling-software">best photo culling software</Link>, and if you are weighing options, <Link href="/aftershoot-alternatives">Aftershoot alternatives</Link> and <Link href="/filterpixel-alternatives">FilterPixel alternatives</Link> cover the rest of the field.
+        </p>
+      </>
+    )
   },
   'booking-scheduling': {
     name: 'Booking & Scheduling',
-    description: 'Automate your calendar and let clients book mini-sessions and shoots online.'
+    h1: 'Booking & Scheduling Software',
+    metaTitle: 'Booking & Scheduling Software Reviews | The Photo Testers',
+    metaDescription: 'Automate your calendar and let clients book mini-sessions and shoots online.',
+    fallbackDescription: 'Automate your calendar and let clients book mini-sessions and shoots online.'
   },
   'portfolio-websites': {
     name: 'Portfolio Websites',
-    description: 'Build a beautiful, fast portfolio website to showcase your best photography work.'
+    h1: 'Portfolio Website Builders',
+    metaTitle: 'Photography Portfolio Website Reviews | The Photo Testers',
+    metaDescription: 'Build a beautiful, fast portfolio website to showcase your best photography work.',
+    fallbackDescription: 'Build a beautiful, fast portfolio website to showcase your best photography work.'
   },
   'print-album-sales': {
     name: 'Print & Album Sales',
-    description: 'Maximize your revenue by selling professional prints, albums, and wall art directly to clients.'
+    h1: 'Print & Album Sales Platforms',
+    metaTitle: 'Print & Album Sales Software Reviews | The Photo Testers',
+    metaDescription: 'Maximize your revenue by selling professional prints, albums, and wall art directly to clients.',
+    fallbackDescription: 'Maximize your revenue by selling professional prints, albums, and wall art directly to clients.'
   }
 };
 
@@ -46,36 +110,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {};
   }
 
-  let customTitle = `${category.name} Software Reviews | The Photo Testers`;
-  if (slug === 'client-crms') customTitle = 'Photography CRM Software Reviews | The Photo Testers';
-  if (slug === 'portfolio-websites') customTitle = 'Photography Portfolio Website Reviews | The Photo Testers';
-
   const noindexSlugs = ['booking-scheduling', 'portfolio-websites', 'print-album-sales'];
   const shouldIndex = !noindexSlugs.includes(slug);
 
   return {
-    title: customTitle,
-    description: category.description,
+    title: category.metaTitle,
+    description: category.metaDescription,
     robots: shouldIndex ? { index: true, follow: true } : { index: false, follow: true },
     alternates: {
       canonical: `/category/${slug}`,
     },
     openGraph: {
-      title: customTitle,
-      description: category.description,
+      title: category.metaTitle,
+      description: category.metaDescription,
       url: `/category/${slug}`,
       images: [
         {
           url: `/og/default.jpg`,
           width: 1200,
           height: 630,
-          alt: customTitle
+          alt: category.metaTitle
         }
       ],
     },
     twitter: {
-      title: customTitle,
-      description: category.description,
+      title: category.metaTitle,
+      description: category.metaDescription,
       images: [`/og/default.jpg`],
     },
   };
@@ -117,17 +177,29 @@ export default async function CategoryPage({ params }: Props) {
             <div className="text-xs font-semibold tracking-wider text-muted uppercase mb-3">
               Category Hub
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-ink mb-4">
-              {category.name}
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-ink mb-6">
+              {category.h1}
             </h1>
-            <p className="text-lg md:text-xl text-muted max-w-3xl leading-relaxed">
-              {category.description}
-            </p>
+            {category.intro ? (
+              <div className="prose prose-lg text-ink font-sans leading-relaxed space-y-4 max-w-4xl prose-p:text-ink prose-p:leading-[1.7] prose-a:text-accent hover:prose-a:text-accent-dark prose-a:font-medium prose-a:underline prose-strong:text-ink">
+                {category.intro}
+              </div>
+            ) : (
+              <p className="text-lg md:text-xl text-muted max-w-3xl leading-relaxed">
+                {category.fallbackDescription}
+              </p>
+            )}
           </div>
         </section>
 
         <section className="py-16 px-6">
           <div className="max-w-5xl mx-auto">
+            <div className="flex justify-between items-center mb-8 border-b border-border pb-4">
+              <h2 className="text-sm font-semibold text-muted uppercase tracking-wider">
+                {articles.length} Published Articles
+              </h2>
+            </div>
+
             {articles.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-muted text-lg">We are currently testing software for this category. Check back soon for our hands-on reviews!</p>
