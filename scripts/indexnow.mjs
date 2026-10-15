@@ -11,7 +11,11 @@ const HOST = 'www.thephototesters.com';
 const KEY = '91de477695d340d9a5507098928c96ab';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const SITEMAP_URL = process.env.SITEMAP_URL || `https://${HOST}/sitemap.xml`;
-const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
+
+const ENDPOINTS = [
+  'https://api.indexnow.org/indexnow',
+  'https://yandex.com/indexnow',
+];
 
 function decodeXmlEntities(str) {
   return str
@@ -62,7 +66,7 @@ async function verifyKeyFile() {
   }
 }
 
-async function submitToIndexNow(urls) {
+async function submitToEndpoints(urls) {
   const payload = {
     host: HOST,
     key: KEY,
@@ -70,28 +74,41 @@ async function submitToIndexNow(urls) {
     urlList: urls,
   };
 
-  console.log(`Submitting ${urls.length} URLs to IndexNow (${INDEXNOW_ENDPOINT})...`);
+  let successCount = 0;
 
-  const response = await fetch(INDEXNOW_ENDPOINT, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json; charset=utf-8',
-    },
-    body: JSON.stringify(payload),
-  });
+  for (const endpoint of ENDPOINTS) {
+    console.log(`Submitting ${urls.length} URLs to IndexNow endpoint: ${endpoint}...`);
 
-  const bodyText = await response.text();
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8',
+        },
+        body: JSON.stringify(payload),
+      });
 
-  if (response.status === 200) {
-    console.log(`✓ Submission successful: HTTP 200 OK (URLs queued for indexing)`);
-  } else if (response.status === 202) {
-    console.log(`✓ Submission accepted: HTTP 202 Accepted (Key validation pending)`);
-  } else {
-    console.error(`✗ Submission failed: HTTP ${response.status} ${response.statusText}`);
-    if (bodyText) {
-      console.error(`Response details: ${bodyText}`);
+      const bodyText = await response.text();
+
+      if (response.status === 200) {
+        console.log(`✓ Submission to ${endpoint} successful: HTTP 200 OK`);
+        successCount++;
+      } else if (response.status === 202) {
+        console.log(`✓ Submission to ${endpoint} accepted: HTTP 202 Accepted`);
+        successCount++;
+      } else {
+        console.warn(`⚠ Endpoint ${endpoint} returned HTTP ${response.status}: ${bodyText || response.statusText}`);
+      }
+    } catch (err) {
+      console.warn(`⚠ Error submitting to ${endpoint}: ${err.message}`);
     }
+  }
+
+  if (successCount === 0) {
+    console.error(`✗ All IndexNow endpoint submissions failed.`);
     process.exit(1);
+  } else {
+    console.log(`✓ Successfully submitted to ${successCount} IndexNow endpoint(s). URLs are synced across search engines.`);
   }
 }
 
@@ -103,7 +120,7 @@ async function main() {
   console.log(`Extracted ${urls.length} URLs from sitemap:`);
   urls.forEach((u, i) => console.log(`  [${i + 1}] ${u}`));
 
-  await submitToIndexNow(urls);
+  await submitToEndpoints(urls);
   console.log('--- Done ---');
 }
 
