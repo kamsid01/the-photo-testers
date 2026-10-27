@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.thephototesters.com'),
   title: "Photography Software Reviews & Comparisons | The Photo Testers",
-  description: "Independent, hands-on reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
+  description: "Independent reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
   openGraph: {
     title: "Photography Software Reviews & Comparisons | The Photo Testers",
-    description: "Independent, hands-on reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
+    description: "Independent reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
     url: '/',
     siteName: 'The Photo Testers',
     type: 'website',
@@ -29,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Photography Software Reviews & Comparisons | The Photo Testers",
-    description: "Independent, hands-on reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
+    description: "Independent reviews of photography CRMs, client galleries, AI culling tools, schedulers, portfolio platforms and more.",
     images: ['/og/default.jpg'],
   }
 };
@@ -40,12 +36,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} antialiased`}
-    >
-      <body className="min-h-screen flex flex-col font-sans bg-bg text-ink text-[18px] leading-[1.7]">
-        {children}
+    <html lang="en">
+      <body
+        style={{
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          background: '#FAF9F6',
+          color: '#20221F',
+          fontFamily: "'Instrument Sans', system-ui, sans-serif",
+          fontSize: '17px',
+          lineHeight: 1.6,
+          margin: 0,
+        }}
+      >
+        <Header />
+        <main id="main-content" tabIndex={-1} style={{ flex: 1, outline: 'none' }}>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

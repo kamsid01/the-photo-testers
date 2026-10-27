@@ -1,51 +1,96 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { GalleryCostCalculator } from '../../../components/GalleryCostCalculator';
+import { GalleryCostCalculator } from '@/components/GalleryCostCalculator';
+import { Breadcrumb } from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Photography Gallery Cost Calculator',
-  description: 'Compare the real annual cost of Pixieset, ShootProof, Pic-Time, and more based on your actual shoot volume and storage needs.',
+  title: 'Gallery Cost Calculator: Compare Pixieset, ShootProof & More',
+  description:
+    'Enter your annual shoot volume to see the plan you need across six client gallery platforms, and what it costs at published prices.',
   alternates: {
-    canonical: '/tools/gallery-cost-calculator',
+    canonical: 'https://www.thephototesters.com/tools/gallery-cost-calculator',
   },
 };
 
 export default function GalleryCostCalculatorPage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12 md:py-16">
-      <header className="mb-8 max-w-3xl">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-ink mb-4">
-          Photography Gallery Cost Calculator
-        </h1>
-        <p className="text-lg text-muted">
-          Don't overpay for storage you don't need, or get hit by surprise upgrade fees. Enter your annual shoot volume below to see the exact plan and estimated cost you would need across the major client gallery platforms.
-        </p>
-      </header>
+    <div className="bg-[#FAF9F6] min-h-[calc(100vh-200px)]">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-6 md:py-10 pb-16 md:pb-24">
+        {/* Breadcrumb */}
+        <Breadcrumb
+          items={[
+            { label: 'Home', href: '/' },
+            { label: 'Free Tools', href: '/tools' },
+            { label: 'Gallery Cost Calculator' },
+          ]}
+        />
 
-      <GalleryCostCalculator />
+        {/* Header */}
+        <header className="max-w-[760px] mb-8">
+          <h1 className="m-0 mb-3 font-serif font-medium text-[clamp(34px,4.2vw,50px)] leading-[1.06] tracking-[-0.015em] text-[#20221F]">
+            Gallery Cost Calculator
+          </h1>
+          <p className="m-0 text-[18px] leading-[1.55] text-[#4A4E49]">
+            Enter your annual shoot volume to see the plan you would likely need on six client gallery platforms, and what it would cost at published prices.
+          </p>
+        </header>
 
-      <article className="prose prose-lg prose-headings:text-ink prose-a:text-accent hover:prose-a:text-accent-dark max-w-3xl mx-auto mt-20 pt-12 border-t border-border">
-        <h2>How gallery pricing actually works</h2>
-        <p>
-          Client gallery platforms typically use one of two pricing models to charge photographers: storage based limits or photo count limits. Understanding the difference is crucial for choosing the most cost effective option for your specific photography niche.
-        </p>
-        <p>
-          Storage based pricing, used by platforms like Pixieset and CloudSpot, limits the total gigabytes of data you can upload. High resolution JPEGs usually average around 5MB each. If you shoot high volume weddings and deliver thousands of images per month, you will chew through storage limits incredibly fast and quickly find yourself needing an unlimited plan. Conversely, ShootProof charges by the total number of photos hosted regardless of file size, which can be advantageous if you deliver very large files.
-        </p>
-        <p>
-          Another major factor is store commission. Free or cheap entry level plans often take a 15% cut of any print sales you make through the gallery store. If you sell a lot of prints, that 15% commission will easily eclipse the monthly cost of upgrading to a premium, zero commission plan. Always run the numbers on your expected print sales before settling for a free tier.
-        </p>
-        
-        <h3 className="mt-12">Related Guides:</h3>
-        <ul>
-          <li>
-            <Link href="/best-client-gallery-software">Best Client Gallery Software</Link> - Read our deep dive into the top platforms and see how their features compare beyond just price.
-          </li>
-          <li>
-            <Link href="/pic-time-vs-pixieset-vs-shootproof">Pic-Time vs Pixieset vs ShootProof</Link> - A detailed comparison of the big three gallery platforms.
-          </li>
-        </ul>
-      </article>
+        {/* Interactive Calculator */}
+        <GalleryCostCalculator />
+
+        {/* Editorial Context & Related Guides */}
+        <section
+          aria-labelledby="works-h"
+          className="mt-14 pt-8 border-t border-[#20221F] flex flex-col lg:flex-row gap-8 lg:gap-16"
+        >
+          <div className="flex-1 min-w-0 max-w-[700px]">
+            <h2
+              id="works-h"
+              className="m-0 mb-3.5 font-serif font-medium text-[clamp(24px,2.3vw,30px)] text-[#20221F]"
+            >
+              How gallery pricing works
+            </h2>
+            <div className="text-[16px] leading-[1.65] text-[#20221F] space-y-4">
+              <p className="m-0">
+                Client gallery platforms usually charge in one of two ways: by storage volume, or by the number of individual photos you host. Storage-based plans, used by platforms like Pixieset, Pic-Time, and CloudSpot, limit the total gigabytes you can upload. High-resolution JPEGs average around 5MB each, so high-volume wedding photographers reach storage limits quickly. ShootProof charges strictly by photo count regardless of file size, which can be advantageous if you deliver very large files.
+              </p>
+              <p className="m-0">
+                Store commission is another critical cost lever. Free or entry-level plans often take 15% of print sales made through the gallery store. If you sell a significant volume of albums and prints, that commission percentage can rapidly outstrip the cost of upgrading to a higher-tier, zero-commission plan.
+              </p>
+            </div>
+          </div>
+
+          <div className="w-full lg:w-[360px] shrink-0">
+            <p className="m-0 mb-1.5 text-[14px] font-semibold text-[#20221F]">
+              Related guides
+            </p>
+            <ul className="list-none m-0 p-0 border-t border-[#DFE2DB]">
+              <li className="border-b border-[#DFE2DB]">
+                <Link
+                  href="/best-client-gallery-software"
+                  className="block py-3 no-underline text-[#20221F] font-medium hover:text-[#3159D7]"
+                >
+                  Best client gallery software
+                  <span className="block text-[14px] font-normal text-[#60645F] mt-0.5">
+                    How the platforms compare beyond price
+                  </span>
+                </Link>
+              </li>
+              <li className="border-b border-[#DFE2DB]">
+                <Link
+                  href="/pic-time-vs-pixieset-vs-shootproof"
+                  className="block py-3 no-underline text-[#20221F] font-medium hover:text-[#3159D7]"
+                >
+                  Pic-Time vs Pixieset vs ShootProof
+                  <span className="block text-[14px] font-normal text-[#60645F] mt-0.5">
+                    The three most popular platforms, side by side
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

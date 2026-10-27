@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
-import { getAllPosts } from '@/lib/posts';
+import { getSiteData } from '@/lib/site-data';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.thephototesters.com';
+  const site = getSiteData();
 
   // Static pages
   const staticPages = [
@@ -27,15 +28,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: route === '' ? 1.0 : 0.8,
   }));
 
-  // Article pages
-  const posts = getAllPosts();
-  const articlePages = posts.map((post) => {
-    const rawDate = post.meta.updated || post.meta.date;
+  // Article pages from unified site-data
+  const articlePages = site.articles.map((a) => {
+    const rawDate = a.date;
     const parsedDate = rawDate ? new Date(rawDate) : new Date();
     const lastModified = isNaN(parsedDate.getTime()) ? new Date() : parsedDate;
 
     return {
-      url: `${baseUrl}/${post.meta.slug}`,
+      url: `${baseUrl}/${a.slug}`,
       lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
