@@ -43,6 +43,8 @@ export function GalleryCostCalculator() {
   const photosErr =
     isNaN(nPhotos) || nPhotos < 10
       ? 'Enter at least 10 photos.'
+      : !Number.isInteger(nPhotos)
+      ? 'Use a whole number of photos.'
       : nPhotos > 10000
       ? 'Enter 10,000 or fewer.'
       : '';
@@ -72,16 +74,17 @@ export function GalleryCostCalculator() {
     }
 
     // ShootProof (Annual billing, 0% store commission on paid tiers, verified current vendor docs)
+    // Note: ShootProof tiers reflect active online photos/storage maintained across concurrent galleries.
     if (total <= 100) {
-      list.push({ platform: 'ShootProof', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '100 photos maximum', commission: '0% on direct orders', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '100 photos / 3GB active online cap', commission: '0% on direct orders', slug: 'shootproof' });
     } else if (total <= 1500) {
-      list.push({ platform: 'ShootProof', planName: '1,500 Photos', monthlyCost: 8.33, annualCost: 100, limit: 'Up to 1,500 photos, priced by count not storage', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: '1,500 Photos', monthlyCost: 8.33, annualCost: 100, limit: 'Up to 1,500 photos / 20GB active online cap', commission: '0%', slug: 'shootproof' });
     } else if (total <= 5000) {
-      list.push({ platform: 'ShootProof', planName: '5,000 Photos', monthlyCost: 16.67, annualCost: 200, limit: 'Up to 5,000 photos, priced by count not storage', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: '5,000 Photos', monthlyCost: 16.67, annualCost: 200, limit: 'Up to 5,000 photos / 100GB active online cap', commission: '0%', slug: 'shootproof' });
     } else if (total <= 25000) {
-      list.push({ platform: 'ShootProof', planName: '25,000 Photos', monthlyCost: 26.67, annualCost: 320, limit: 'Up to 25,000 photos, priced by count not storage', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: '25,000 Photos', monthlyCost: 26.67, annualCost: 320, limit: 'Up to 25,000 photos / 1,000GB active online cap', commission: '0%', slug: 'shootproof' });
     } else {
-      list.push({ platform: 'ShootProof', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited photos', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited active online photos', commission: '0%', slug: 'shootproof' });
     }
 
     // Pic-Time (Annual billing, 0% commission with own payment processor, verified current vendor docs)
@@ -95,33 +98,37 @@ export function GalleryCostCalculator() {
       list.push({ platform: 'Pic-Time', planName: 'Advanced', monthlyCost: 42, annualCost: 504, limit: 'Unlimited storage, premium marketing apps', commission: '0% with own processor', slug: 'pic-time' });
     }
 
-    // SmugMug: Default to Power ($15/mo, $180/yr) since storage is unlimited across all photo volumes
+    // SmugMug: Current Portfolio tier ($23.50/mo, $282/yr) for client selling with unlimited JPEG storage
     list.push({
       platform: 'SmugMug',
-      planName: 'Power',
-      monthlyCost: 15,
-      annualCost: 180,
-      limit: 'Unlimited storage',
-      commission: 'Store features included',
+      planName: 'Portfolio',
+      monthlyCost: 23.50,
+      annualCost: 282,
+      limit: 'Unlimited JPEG storage',
+      commission: '15% on print markup',
       slug: 'smugmug',
     });
 
-    // Zenfolio
+    // Zenfolio (Basic $7/mo 15GB, Professional $11.50/mo 150GB with 7% fee, Advanced $20/mo Unlimited with 7% fee)
     if (gb <= 15) {
-      list.push({ platform: 'Zenfolio', planName: 'Portfolio', monthlyCost: 9, annualCost: 108, limit: '15GB storage limit; limited direct selling', commission: 'Limited', slug: 'zenfolio' });
-    } else if (gb <= 100) {
-      list.push({ platform: 'Zenfolio', planName: 'PortfolioPlus', monthlyCost: 19, annualCost: 228, limit: '100GB storage limit', commission: 'Store included', slug: 'zenfolio' });
+      list.push({ platform: 'Zenfolio', planName: 'Basic', monthlyCost: 7, annualCost: 84, limit: '15GB storage limit; no client selling', commission: 'No e-commerce', slug: 'zenfolio' });
+    } else if (gb <= 150) {
+      list.push({ platform: 'Zenfolio', planName: 'Professional', monthlyCost: 11.50, annualCost: 138, limit: '150GB storage limit, client selling included', commission: '7% commerce fee', slug: 'zenfolio' });
     } else {
-      list.push({ platform: 'Zenfolio', planName: 'ProSuite', monthlyCost: 40, annualCost: 480, limit: 'Unlimited storage, advanced selling', commission: '0%', slug: 'zenfolio' });
+      list.push({ platform: 'Zenfolio', planName: 'Advanced', monthlyCost: 20, annualCost: 240, limit: 'Unlimited JPEG storage, advanced selling', commission: '7% commerce fee', slug: 'zenfolio' });
     }
 
-    // CloudSpot
-    if (gb <= 10) {
-      list.push({ platform: 'CloudSpot', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '10GB storage limit', commission: '15%', slug: 'cloudspot' });
-    } else if (gb <= 50) {
-      list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 15, annualCost: 180, limit: '50GB storage limit', commission: '15%', slug: 'cloudspot' });
+    // CloudSpot (Five tiers: Free 5GB, Entry 15GB, Lite 100GB, Pro 500GB, Unlimited)
+    if (gb <= 5) {
+      list.push({ platform: 'CloudSpot', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '5GB storage limit (3 galleries)', commission: '15%', slug: 'cloudspot' });
+    } else if (gb <= 15) {
+      list.push({ platform: 'CloudSpot', planName: 'Entry', monthlyCost: 5, annualCost: 60, limit: '15GB storage limit (15 galleries)', commission: '15%', slug: 'cloudspot' });
+    } else if (gb <= 100) {
+      list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 14, annualCost: 168, limit: '100GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
+    } else if (gb <= 500) {
+      list.push({ platform: 'CloudSpot', planName: 'Pro', monthlyCost: 28, annualCost: 336, limit: '500GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
     } else {
-      list.push({ platform: 'CloudSpot', planName: 'Pro', monthlyCost: 45, annualCost: 540, limit: 'Unlimited storage', commission: '0%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Unlimited', monthlyCost: 42, annualCost: 504, limit: 'Unlimited storage, all file types, Studio Manager', commission: '0%', slug: 'cloudspot' });
     }
 
     return list.sort((a, b) => a.annualCost - b.annualCost);
@@ -266,13 +273,18 @@ export function GalleryCostCalculator() {
             <dt className="text-[#4A4E49]">Estimated storage</dt>
             <dd className="m-0 font-semibold text-right text-[#20221F]">{gbLabel}</dd>
           </dl>
-          <p className="m-0 mt-2 text-[13px] text-[#60645F]">
-            Assumes about 5MB per delivered JPEG.
-          </p>
+          <div className="mt-2.5 space-y-1.5 text-[13px] text-[#60645F] leading-[1.45]">
+            <p className="m-0">
+              Assumes about 5MB per delivered JPEG.
+            </p>
+            <p className="m-0">
+              Retention assumption: calculated on keeping a 12-month delivery archive active online. Deleting or archiving older client galleries frees up concurrent capacity on photo-count (ShootProof) and storage-capped plans.
+            </p>
+          </div>
         </form>
 
         <div className="p-3.5 px-4 bg-[#FBF7EF] border border-[#E7D9BC] rounded text-[14px] leading-[1.5] text-[#4F3A12]">
-          <strong>Pricing basis:</strong> published pricing as of August 2026. Confirm current rates, commissions, and storage limits with each provider before subscribing.
+          <strong>Pricing basis:</strong> published pricing as of October 2026. Confirm current rates, commissions, and storage limits with each provider before subscribing.
         </div>
       </div>
 

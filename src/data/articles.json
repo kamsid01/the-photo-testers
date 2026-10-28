@@ -1691,7 +1691,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Paid plans start around $18/month, with a limited free tier (3GB, but note it takes a 15% commission on sales at the free level). Costs rise with storage, and RAW support only arrives on its higher Pro plan."
+            "t": "Paid plans start from $8/month (billed annually) or $10/month monthly for 10GB storage, with a limited free tier (3GB, with 15% commission on sales at the free level). Costs rise with storage, and RAW support arrives on its Pro plan ($24/mo annual / $30/mo monthly)."
           }
         ],
         "cls": ""
@@ -1708,8 +1708,8 @@
       {
         "type": "img",
         "src": "/assets/pixieset-v3.jpg",
-        "alt": "Pixieset",
-        "cap": "Pixieset"
+        "alt": "Pixieset client gallery layout interface",
+        "cap": "Pixieset client gallery layout and typography customization (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -1751,7 +1751,7 @@
             "b": 1
           },
           {
-            "t": " From /mo (billed annually) or /mo monthly; free tier (3GB) (Checked October 2026)."
+            "t": " From $8/mo (billed annually) or $10/mo monthly; free tier (3GB) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -1780,7 +1780,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Used by a huge base of photographers, it offers unlimited galleries, a commission-free store, contracts, invoicing, booking, email marketing, and a website builder. Plans are priced by how many photos you store, from a free tier (100 photos) up to around $50/month for unlimited, and mid-tier plans start around $10/month."
+            "t": "ShootProof is the value pick, and the one to choose if running your business matters as much as delivering pretty galleries. It bundles contracts, invoicing, and proofing at every tier, and its store is commission-free on direct orders, so you keep your print profits."
           }
         ],
         "cls": ""
@@ -1789,7 +1789,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "The trade-off is design polish: its galleries are perfectly good but not as striking as Pic-Time's. If contracts and invoicing matter more than a jaw-dropping gallery, ShootProof is the most economical serious choice."
+            "t": "Used by a large community of working photographers, it offers unlimited galleries, a commission-free store on direct orders, contracts, invoicing, booking, email marketing, and a website builder. Plans are priced by active photos maintained online, from a free tier (100 photos / 3GB) up to $50/month ($600/yr annual) for unlimited, with paid tiers starting at $8.33/month ($99.99/yr annual) or $10/month for 1,500 photos (20GB)."
           }
         ],
         "cls": ""
@@ -1797,8 +1797,8 @@
       {
         "type": "img",
         "src": "/assets/shootproof.png",
-        "alt": "ShootProof",
-        "cap": "ShootProof"
+        "alt": "ShootProof client proofing and order fulfillment interface",
+        "cap": "ShootProof gallery proofing dashboard and package setup (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -1840,7 +1840,7 @@
             "b": 1
           },
           {
-            "t": " From .33/mo (billed annually, 1,500 photos) or /mo monthly; free tier (100 photos) (Checked October 2026)."
+            "t": " From $8.33/mo (billed annually, 1,500 photos) or $10/mo monthly; free tier (100 photos) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -1869,7 +1869,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its plans run from a free tier up through Lite, Pro, and Unlimited (roughly $15 to $45/month at regular pricing, often discounted for the first few months). The honest catch, as with most free gallery tiers: the free and lower tiers can carry a sales commission, so read the fine print if selling matters."
+            "t": "Its five plans run from Free (5GB, 15% commission) and Entry ($5/mo annual, 15GB, 15% commission) up through Full Suite tiers: Lite ($14/mo annual, 100GB), Pro ($28/mo annual, 500GB), and Unlimited ($42/mo annual, unlimited storage). The Full Suite tiers eliminate commissions entirely (0%) and include Studio Manager contracts and invoicing."
           }
         ],
         "cls": ""
@@ -1877,8 +1877,8 @@
       {
         "type": "img",
         "src": "/assets/cloudspot.png",
-        "alt": "CloudSpot",
-        "cap": "CloudSpot"
+        "alt": "CloudSpot client gallery view",
+        "cap": "CloudSpot mobile-optimized client gallery view (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -1920,7 +1920,7 @@
             "b": 1
           },
           {
-            "t": " Free tier; paid from ~$15/mo (August 2026)."
+            "t": " Free tier (5GB); paid from $14/mo (Lite, billed annually) up to $42/mo (Unlimited) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -1949,7 +1949,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "That power costs more (around /month billed annually at the working-photographer Professional tier) and there's no built-in website builder, so your portfolio site lives elsewhere. It also has a steeper learning curve. Worth testing the client-side download experience yourself, since that's its most common complaint."
+            "t": "That power costs more (around $21/month billed annually at the working-photographer Professional tier) and there is no built-in website builder, so your portfolio site lives elsewhere. It also has a steeper learning curve. Worth testing the client-side download experience yourself, since that is its most common complaint."
           }
         ],
         "cls": ""
@@ -1957,8 +1957,8 @@
       {
         "type": "img",
         "src": "/assets/pic-time.png",
-        "alt": "Pic-Time",
-        "cap": "Pic-Time"
+        "alt": "Pic-Time editorial client gallery interface with integrated store",
+        "cap": "Pic-Time editorial client gallery interface with dynamic store mockups (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -2000,7 +2000,7 @@
             "b": 1
           },
           {
-            "t": " From /mo (Beginner) or /mo (Professional, billed annually); free tier (10GB) (Checked October 2026)."
+            "t": " From $7/mo (Beginner) or $21/mo (Professional, billed annually); free tier (10GB) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2029,7 +2029,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing runs roughly $15/month (Power) to $45/month (Pro), and it's the most expensive option here by a meaningful margin. It also has no free plan, so there's no way to test it without paying (there's a trial and money-back guarantee instead)."
+            "t": "Its current plans range from Direct ($20/mo annual) for backup and sharing without selling markup, to Portfolio ($23.50/mo annual) and Pro ($37/mo annual) for print and digital commerce (with 15% commission on print markup). It has no permanent free plan, though a 14-day trial is available."
           }
         ],
         "cls": ""
@@ -2037,8 +2037,8 @@
       {
         "type": "img",
         "src": "/assets/smugmug.jpg",
-        "alt": "SmugMug",
-        "cap": "SmugMug"
+        "alt": "SmugMug portfolio and gallery delivery interface",
+        "cap": "SmugMug portfolio showcase and client photo gallery view (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -2080,7 +2080,7 @@
             "b": 1
           },
           {
-            "t": " From ~$15/mo (Power) to ~$45/mo (Pro) (August 2026)."
+            "t": " From $20/mo (Direct) to $37/mo (Pro, billed annually) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2109,7 +2109,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing starts low at around $9/month (Portfolio, 15GB) and climbs to $40/month (ProSuite), though the entry tier limits direct selling and excludes email marketing. If you want your portfolio site and client delivery genuinely unified, Zenfolio is one of the more affordable ways to get both."
+            "t": "Current plans include Basic ($7/mo annual, 15GB, no e-commerce), Professional ($11.50/mo annual, 150GB, full selling with 7% commerce fee), and Advanced ($20/mo annual, unlimited JPEG storage with 7% commerce fee). It is an affordable way to keep portfolio websites and client delivery unified."
           }
         ],
         "cls": ""
@@ -2117,8 +2117,8 @@
       {
         "type": "img",
         "src": "/assets/zenfolio.png",
-        "alt": "Zenfolio",
-        "cap": "Zenfolio"
+        "alt": "Zenfolio client gallery management interface",
+        "cap": "Zenfolio client gallery management and digital fulfillment interface (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -2160,7 +2160,7 @@
             "b": 1
           },
           {
-            "t": " From ~$9/mo (Portfolio) to ~$40/mo (ProSuite) (August 2026)."
+            "t": " From $7/mo (Basic) to $20/mo (Advanced, billed annually) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2517,7 +2517,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "If you hate reading and just want the answer:"
+            "t": "Choose Pic-Time if:",
+            "b": 1
+          },
+          {
+            "t": " You want automated, campaign-driven print sales. Its built-in marketing sequences and gallery banner automations give it an edge for passive store revenue."
           }
         ],
         "cls": ""
@@ -2555,7 +2559,16 @@
         ]
       },
       {
-        "type": "hr"
+        "type": "hr",
+        "runs": [
+          {
+            "t": "Choose ShootProof if:",
+            "b": 1
+          },
+          {
+            "t": " You do high-volume shoots (like schools, dance studios, or sports), need robust client invoicing and contracts, or want zero commission on direct orders."
+          }
+        ]
       },
       {
         "type": "h2",
@@ -2641,7 +2654,12 @@
         "cls": ""
       },
       {
-        "type": "hr"
+        "type": "hr",
+        "runs": [
+          {
+            "t": "Pic-Time focuses heavily on sales automation. You can set up scheduled email sequences and discount campaigns (e.g., \"Abandoned Cart,\" \"Anniversary Sale,\" \"Holiday Early Bird\") that trigger dynamic gallery banners and countdown timers for clients. In community feedback and user case studies, photographers frequently report noticeable bumps in passive print and download orders after activating these automated workflows."
+          }
+        ]
       },
       {
         "type": "h2",
@@ -2721,7 +2739,7 @@
             "b": 1
           },
           {
-            "t": ", by a landslide."
+            "t": ", for automated marketing depth."
           }
         ],
         "cls": ""
@@ -2778,7 +2796,7 @@
           ],
           [
             {
-              "t": "Basic (/mo annual / /mo monthly):",
+              "t": "Basic ($8/mo annual / $10/mo monthly):",
               "b": 1
             },
             {
@@ -2787,7 +2805,7 @@
           ],
           [
             {
-              "t": "Plus (/mo annual / /mo monthly):",
+              "t": "Plus ($16/mo annual / $20/mo monthly):",
               "b": 1
             },
             {
@@ -2796,7 +2814,7 @@
           ],
           [
             {
-              "t": "Pro (/mo annual / /mo monthly):",
+              "t": "Pro ($24/mo annual / $30/mo monthly):",
               "b": 1
             },
             {
@@ -2805,7 +2823,7 @@
           ],
           [
             {
-              "t": "Ultimate (/mo annual / /mo monthly):",
+              "t": "Ultimate ($40/mo annual / $50/mo monthly):",
               "b": 1
             },
             {
@@ -2847,7 +2865,7 @@
           ],
           [
             {
-              "t": "Beginner (/mo annual / /mo monthly):",
+              "t": "Beginner ($7/mo annual / $8/mo monthly):",
               "b": 1
             },
             {
@@ -2856,7 +2874,7 @@
           ],
           [
             {
-              "t": "Professional (/mo annual / /mo monthly):",
+              "t": "Professional ($21/mo annual / $25/mo monthly):",
               "b": 1
             },
             {
@@ -2865,7 +2883,7 @@
           ],
           [
             {
-              "t": "Advanced (/mo annual / /mo monthly):",
+              "t": "Advanced ($42/mo annual / $50/mo monthly):",
               "b": 1
             },
             {
@@ -2909,43 +2927,43 @@
               "b": 1
             },
             {
-              "t": " 100 Photos (0% commission on direct orders)"
+              "t": " 100 Photos / 3GB active online cap (0% commission on direct orders)"
             }
           ],
           [
             {
-              "t": "1,500 Photos (.33/mo annual / /mo monthly):",
+              "t": "1,500 Photos ($8.33/mo annual / $10/mo monthly):",
               "b": 1
             },
             {
-              "t": " (0% commission)"
+              "t": " 20GB active online cap (0% commission)"
             }
           ],
           [
             {
-              "t": "5,000 Photos (.67/mo annual / /mo monthly):",
+              "t": "5,000 Photos ($16.67/mo annual / $20/mo monthly):",
               "b": 1
             },
             {
-              "t": " (0% commission)"
+              "t": " 100GB active online cap (0% commission)"
             }
           ],
           [
             {
-              "t": "25,000 Photos (.67/mo annual / /mo monthly):",
+              "t": "25,000 Photos ($26.67/mo annual / $32/mo monthly):",
               "b": 1
             },
             {
-              "t": " (0% commission)"
+              "t": " 1,000GB active online cap (0% commission)"
             }
           ],
           [
             {
-              "t": "Unlimited (/mo annual / /mo monthly):",
+              "t": "Unlimited ($50/mo annual / $60/mo monthly):",
               "b": 1
             },
             {
-              "t": " (0% commission)"
+              "t": " Unlimited active online photos (0% commission)"
             }
           ]
         ]
@@ -3192,7 +3210,7 @@
       {
         "type": "h2",
         "text": "Competitor-published speed benchmarks",
-        "id": "independent-speed-benchmarks"
+        "id": "competitor-published-speed-benchmarks"
       },
       {
         "type": "p",
@@ -3270,10 +3288,7 @@
                 "b": 1
               },
               {
-                "t": " "
-              },
-              {
-                "t": "(fastest)",
+                "t": " (fastest cloud processing)",
                 "i": 1
               }
             ],
@@ -3295,8 +3310,7 @@
             [
               {
                 "t": "View",
-                "href": "https://filterpixel.com",
-                "ext": 1
+                "href": "https://filterpixel.com"
               }
             ]
           ],
@@ -3324,8 +3338,7 @@
             [
               {
                 "t": "View",
-                "href": "https://aftershoot.com",
-                "ext": 1
+                "href": "https://aftershoot.com"
               }
             ]
           ],
@@ -3353,8 +3366,7 @@
             [
               {
                 "t": "View",
-                "href": "https://narrative.so",
-                "ext": 1
+                "href": "https://narrative.so"
               }
             ]
           ],
@@ -3382,8 +3394,7 @@
             [
               {
                 "t": "View",
-                "href": "https://home.camerabits.com",
-                "ext": 1
+                "href": "https://home.camerabits.com"
               }
             ]
           ],
@@ -3411,8 +3422,7 @@
             [
               {
                 "t": "View",
-                "href": "https://excire.com",
-                "ext": 1
+                "href": "https://excire.com"
               }
             ]
           ]
@@ -3463,8 +3473,8 @@
       {
         "type": "img",
         "src": "/assets/filterpixel.png",
-        "alt": "FilterPixel DeepCull",
-        "cap": "FilterPixel DeepCull"
+        "alt": "FilterPixel AI culling review interface",
+        "cap": "FilterPixel interface grouping duplicate shots and assessing focus (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -3543,8 +3553,8 @@
       {
         "type": "img",
         "src": "/assets/aftershoot-homepage.webp",
-        "alt": "Aftershoot culling",
-        "cap": "Aftershoot culling"
+        "alt": "Aftershoot automated culling dashboard",
+        "cap": "Aftershoot culling workspace showing keeper scores and duplicate clusters (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -3632,8 +3642,8 @@
       {
         "type": "img",
         "src": "/assets/narrative-select.png",
-        "alt": "Narrative Select",
-        "cap": "Narrative Select"
+        "alt": "Narrative Select face close-up assessment panel",
+        "cap": "Narrative Select close-up panel comparing eye sharpness and expressions (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -3712,8 +3722,8 @@
       {
         "type": "img",
         "src": "/assets/photo-mechanic.png",
-        "alt": "Photo Mechanic",
-        "cap": "Photo Mechanic"
+        "alt": "Photo Mechanic contact sheet browser",
+        "cap": "Photo Mechanic high-speed contact sheet browsing and metadata tagging (vendor screenshot)."
       },
       {
         "type": "proscons",
@@ -3792,8 +3802,8 @@
       {
         "type": "img",
         "src": "/assets/excire-foto.png",
-        "alt": "Excire Foto",
-        "cap": "Excire Foto"
+        "alt": "Excire Foto AI search workspace",
+        "cap": "Excire Foto photo organization and AI keyword search workspace (vendor screenshot)."
       },
       {
         "type": "proscons",

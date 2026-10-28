@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme {
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-sans: 'Instrument Sans', system-ui, -apple-system, sans-serif;
+}
+
 /* Instrument Sans (400, 500, 600, 700) */
 @font-face {
   font-family: 'Instrument Sans';

@@ -158,8 +158,8 @@ export function HomeTools() {
               <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #E4E5DF' }}><span style={{ color: '#60645F' }}>30 shoots × 500 photos</span><span>15,000 photos</span></div>
               <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #E4E5DF' }}><span style={{ color: '#60645F' }}>Storage at ~5MB each</span><span>73.2 GB</span></div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '10px 0 0' }}>
-                <span><span style={{ display: 'block', fontWeight: 600 }}>Lowest estimate</span><span style={{ color: '#60645F' }}>SmugMug Power</span></span>
-                <span style={{ fontFamily: SERIF, fontSize: '28px', color: '#20221F' }}>$180<span style={{ fontFamily: "'Instrument Sans',sans-serif", fontSize: '14px', color: '#60645F' }}>/yr</span></span>
+                <span><span style={{ display: 'block', fontWeight: 600 }}>Lowest estimate</span><span style={{ color: '#60645F' }}>Zenfolio Professional</span></span>
+                <span style={{ fontFamily: SERIF, fontSize: '28px', color: '#20221F' }}>$138<span style={{ fontFamily: "'Instrument Sans',sans-serif", fontSize: '14px', color: '#60645F' }}>/yr</span></span>
               </div>
             </div>
             <div style={{ padding: '20px 22px 22px', display: 'flex', flexDirection: 'column', flex: 1 }}>
