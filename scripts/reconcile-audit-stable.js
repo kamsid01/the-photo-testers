@@ -104,16 +104,16 @@ spPriceP.runs = [
   { t: ' Free tier (3 GB); paid from $8.33/mo (Starter 20 GB, $99.99 billed annually), $16.67/mo (Standard 100 GB, $199.99/yr), $26.67/mo (Professional 1,000 GB), up to $43.33/mo (Advanced 2 TB, $519.99/yr) and $50/mo (Unlimited) (Checked October 2026).' }
 ];
 
-// 3. CloudSpot description & pricing block
+// 3. CloudSpot description & pricing block (verified monthly vs annual rates)
 const csDescP = findBlock(bg.blocks, b => b.type === 'p' && b.runs && /run from Free/i.test(b.runs.map(r => r.t).join('')), 'CloudSpot description paragraph');
 csDescP.runs = [
-  { t: 'Its five plans run from Free (5 GB, 15% commission, no Studio Manager) and Entry ($6/mo annual [$72/yr], 15 GB, 15% commission) up through Full Suite tiers: Lite ($12/mo annual [$144/yr], 100 GB), Pro ($34/mo standard monthly, 500 GB), and Unlimited ($50/mo standard monthly, unlimited storage). The Full Suite tiers eliminate print commissions entirely (0%) and include Studio Manager contracts and invoicing.' }
+  { t: 'Its five plans run from Free (5 GB, 15% commission, no Studio Manager) and Entry ($6/mo annual [$72/yr] or $7/mo monthly, 15 GB, 15% commission) up through Full Suite tiers: Lite ($12/mo annual [$144/yr] or $17/mo monthly, 100 GB), Pro ($28/mo annual [$336/yr] or $34/mo monthly, 500 GB), and Unlimited ($42/mo annual [$504/yr] or $50/mo monthly, unlimited storage). The Full Suite tiers eliminate print commissions entirely (0%) and include Studio Manager contracts and invoicing.' }
 ];
 
-const csPriceP = findBlock(bg.blocks, b => b.type === 'p' && b.runs && /Free tier \(5GB\); paid from/i.test(b.runs.map(r => r.t).join('')), 'CloudSpot pricing block');
+const csPriceP = findBlock(bg.blocks, b => b.type === 'p' && b.runs && /Free tier \(5\s?GB\); paid from/i.test(b.runs.map(r => r.t).join('')), 'CloudSpot pricing block');
 csPriceP.runs = [
   { t: 'Pricing:', b: 1 },
-  { t: ' Free tier (5 GB); paid from $12/mo (Lite, $144 billed annually) up to $50/mo (Unlimited) (Checked October 2026).' }
+  { t: ' Free tier (5 GB); paid from $12/mo (Lite, $144 billed annually / $17/mo monthly) up to $42/mo (Unlimited, $504 billed annually / $50/mo monthly) (Checked October 2026).' }
 ];
 
 // 4. Cheapest FAQ block
@@ -129,7 +129,21 @@ console.log('\n=== Step 4: Updating best-photo-culling-software in articles.json
 const bc = articles['best-photo-culling-software'];
 if (!bc) throw new Error('Missing best-photo-culling-software in articles.json');
 
-// FilterPixel pros
+// 1. Box / Shortlist qualification
+const qBox = findBlock(bc.blocks, b => b.type === 'box', 'QuickAnswer box');
+qBox.blocks[0].runs = [
+  { t: 'Fastest cloud throughput in competitor benchmarks: FilterPixel.', b: 1 },
+  { t: ' In competitor-published tests, cloud processing offloaded compute from local laptop hardware.' }
+];
+
+// 2. Table qualification
+const cullingTable = findBlock(bc.blocks, b => b.type === 'table', 'Culling comparison table');
+const fpRow = cullingTable.rows.find(r => r[0].some(cell => /FilterPixel/i.test(cell.t)));
+if (fpRow) {
+  fpRow[0] = [{ t: 'FilterPixel', b: 1 }, { t: ' (cloud speed in competitor tests)', i: 1 }];
+}
+
+// 3. FilterPixel pros
 const fpProsCons = findBlock(bc.blocks, b => b.type === 'proscons' && b.pros && b.pros.some(p => p.some(r => /Fastest culling here|Fastest cloud throughput/i.test(r.t))), 'FilterPixel proscons');
 const fpFastPro = fpProsCons.pros.find(p => p.some(r => /Fastest culling here|Fastest cloud throughput/i.test(r.t)));
 if (fpFastPro) {
