@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { getSiteData, ArticleSummary } from '@/lib/site-data';
@@ -16,27 +16,38 @@ const TYPE_ORDER: [string, string][] = [
   ['editorial', 'Editorial'],
 ];
 
-export function LibraryView() {
+function SearchParamsHandler({
+  onParams,
+}: {
+  onParams: (params: { q: string | null; cat: string | null; type: string | null }) => void;
+}) {
   const searchParams = useSearchParams();
-  const initialQ = searchParams?.get('q') || '';
-  const initialCat = searchParams?.get('category') || 'all';
-  const initialType = searchParams?.get('type') || 'all';
-
-  const [q, setQ] = useState(initialQ);
-  const [cat, setCat] = useState(initialCat);
-  const [type, setType] = useState(initialType);
-  const [sort, setSort] = useState<'newest' | 'title'>('newest');
-
   useEffect(() => {
     if (searchParams) {
-      const paramQ = searchParams.get('q');
-      const paramCat = searchParams.get('category');
-      const paramType = searchParams.get('type');
-      if (paramQ !== null) setQ(paramQ);
-      if (paramCat !== null) setCat(paramCat);
-      if (paramType !== null) setType(paramType);
+      onParams({
+        q: searchParams.get('q'),
+        cat: searchParams.get('category'),
+        type: searchParams.get('type'),
+      });
     }
-  }, [searchParams]);
+  }, [searchParams, onParams]);
+  return null;
+}
+
+export function LibraryView() {
+  const [q, setQ] = useState('');
+  const [cat, setCat] = useState('all');
+  const [type, setType] = useState('all');
+  const [sort, setSort] = useState<'newest' | 'title'>('newest');
+
+  const handleParams = useCallback(
+    (params: { q: string | null; cat: string | null; type: string | null }) => {
+      if (params.q !== null) setQ(params.q);
+      if (params.cat !== null) setCat(params.cat);
+      if (params.type !== null) setType(params.type);
+    },
+    []
+  );
 
   const qq = q.trim().toLowerCase();
   const matchQ = (a: ArticleSummary) =>
@@ -96,6 +107,9 @@ export function LibraryView() {
         padding: 'clamp(32px,5vw,56px) clamp(16px,4vw,40px) clamp(56px,7vw,96px)',
       }}
     >
+      <Suspense fallback={null}>
+        <SearchParamsHandler onParams={handleParams} />
+      </Suspense>
       <header
         style={{
           display: 'flex',

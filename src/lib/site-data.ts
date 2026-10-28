@@ -48,6 +48,8 @@ export interface ArticleSummary {
   catHref: string;
   date: string;
   dateLabel: string;
+  updated?: string;
+  updatedDateLabel?: string;
   checked?: string;
   evidence: string;
   evidenceLabel: string;
@@ -219,7 +221,10 @@ export function getSiteData(): SiteData {
         typeLabel: typesMap[a.type],
         catName: catBy[a.cat].name,
         catHref: catBy[a.cat].href,
+        date: a.date,
         dateLabel: formatDateLabel(a.date),
+        updated: a.updated,
+        updatedDateLabel: a.updated ? formatDateLabel(a.updated) : undefined,
         readMins,
         words: wc,
         readLabel: `${readMins} min read`,

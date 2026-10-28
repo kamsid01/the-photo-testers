@@ -73,18 +73,18 @@ export function GalleryCostCalculator() {
       list.push({ platform: 'Pixieset', planName: 'Ultimate', monthlyCost: 40, annualCost: 480, limit: 'Unlimited storage, RAW support', commission: '0%', slug: 'pixieset' });
     }
 
-    // ShootProof (Annual billing, 0% store commission on paid tiers, verified current vendor docs)
-    // Note: ShootProof tiers reflect active online photos/storage maintained across concurrent galleries.
-    if (total <= 100) {
+    // ShootProof (Annual billing, 0% store commission, current storage plans)
+    // Evaluated against active online storage capacity (73.2 GB fits in 100 GB Standard at $199.99/yr)
+    if (gb <= 3) {
       list.push({ platform: 'ShootProof', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '100 photos / 3GB active online cap', commission: '0% on direct orders', slug: 'shootproof' });
-    } else if (total <= 1500) {
-      list.push({ platform: 'ShootProof', planName: '1,500 Photos', monthlyCost: 8.33, annualCost: 100, limit: 'Up to 1,500 photos / 20GB active online cap', commission: '0%', slug: 'shootproof' });
-    } else if (total <= 5000) {
-      list.push({ platform: 'ShootProof', planName: '5,000 Photos', monthlyCost: 16.67, annualCost: 200, limit: 'Up to 5,000 photos / 100GB active online cap', commission: '0%', slug: 'shootproof' });
-    } else if (total <= 25000) {
-      list.push({ platform: 'ShootProof', planName: '25,000 Photos', monthlyCost: 26.67, annualCost: 320, limit: 'Up to 25,000 photos / 1,000GB active online cap', commission: '0%', slug: 'shootproof' });
+    } else if (gb <= 20) {
+      list.push({ platform: 'ShootProof', planName: 'Starter (20 GB)', monthlyCost: 8.33, annualCost: 99.99, limit: 'Up to 20GB storage (~1,500 photos)', commission: '0%', slug: 'shootproof' });
+    } else if (gb <= 100) {
+      list.push({ platform: 'ShootProof', planName: 'Standard (100 GB)', monthlyCost: 16.67, annualCost: 199.99, limit: 'Up to 100GB storage (~5,000 photos)', commission: '0%', slug: 'shootproof' });
+    } else if (gb <= 1000) {
+      list.push({ platform: 'ShootProof', planName: 'Pro (1,000 GB)', monthlyCost: 26.67, annualCost: 320, limit: 'Up to 1,000GB storage (~25,000 photos)', commission: '0%', slug: 'shootproof' });
     } else {
-      list.push({ platform: 'ShootProof', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited active online photos', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited active online storage', commission: '0%', slug: 'shootproof' });
     }
 
     // Pic-Time (Annual billing, 0% commission with own payment processor, verified current vendor docs)
@@ -118,13 +118,13 @@ export function GalleryCostCalculator() {
       list.push({ platform: 'Zenfolio', planName: 'Advanced', monthlyCost: 20, annualCost: 240, limit: 'Unlimited JPEG storage, advanced selling', commission: '7% commerce fee', slug: 'zenfolio' });
     }
 
-    // CloudSpot (Five tiers: Free 5GB, Entry 15GB, Lite 100GB, Pro 500GB, Unlimited)
+    // CloudSpot (Five tiers: Free 5GB, Entry 15GB [$72/yr], Lite 100GB [$144/yr], Pro 500GB [$336/yr], Unlimited [$504/yr])
     if (gb <= 5) {
       list.push({ platform: 'CloudSpot', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '5GB storage limit (3 galleries)', commission: '15%', slug: 'cloudspot' });
     } else if (gb <= 15) {
-      list.push({ platform: 'CloudSpot', planName: 'Entry', monthlyCost: 5, annualCost: 60, limit: '15GB storage limit (15 galleries)', commission: '15%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Entry', monthlyCost: 6, annualCost: 72, limit: '15GB storage limit (15 galleries)', commission: '15%', slug: 'cloudspot' });
     } else if (gb <= 100) {
-      list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 14, annualCost: 168, limit: '100GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 12, annualCost: 144, limit: '100GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
     } else if (gb <= 500) {
       list.push({ platform: 'CloudSpot', planName: 'Pro', monthlyCost: 28, annualCost: 336, limit: '500GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
     } else {
@@ -284,7 +284,7 @@ export function GalleryCostCalculator() {
         </form>
 
         <div className="p-3.5 px-4 bg-[#FBF7EF] border border-[#E7D9BC] rounded text-[14px] leading-[1.5] text-[#4F3A12]">
-          <strong>Pricing basis:</strong> published pricing as of October 2026. Confirm current rates, commissions, and storage limits with each provider before subscribing.
+          <strong>Pricing basis:</strong> published pricing as of October 2026. Annual rates reflect upfront 12-month commitments; verify standard renewal terms and promotional expirations with providers (e.g. Zenfolio Professional renews at standard annual rates). Confirm current rates, commissions, and storage limits with each provider before subscribing.
         </div>
       </div>
 

@@ -142,7 +142,7 @@ export default async function PostPage({ params }: Props) {
       },
     },
     datePublished: a.date,
-    dateModified: a.date,
+    dateModified: a.updated || a.date,
   };
 
   const breadcrumbJsonLd = {
@@ -259,9 +259,20 @@ export default async function PostPage({ params }: Props) {
                       {byline}
                     </Link>
                   </span>
-                  <span>
-                    Updated <time dateTime={a.date}>{a.dateLabel}</time>
-                  </span>
+                  {a.updated ? (
+                    <>
+                      <span>
+                        Published <time dateTime={a.date}>{a.dateLabel}</time>
+                      </span>
+                      <span>
+                        Updated <time dateTime={a.updated}>{a.updatedDateLabel}</time>
+                      </span>
+                    </>
+                  ) : (
+                    <span>
+                      Published <time dateTime={a.date}>{a.dateLabel}</time>
+                    </span>
+                  )}
                   <span>{a.readLabel}</span>
                   <span className="text-[#20221F] font-medium">{evidenceLabel}</span>
                 </div>

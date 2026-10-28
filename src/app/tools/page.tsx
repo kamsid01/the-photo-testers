@@ -159,7 +159,7 @@ export default function ToolsIndexPage() {
                 Gallery Cost Calculator
               </h2>
               <p className="m-0 mb-4 text-[17px] leading-[1.55] text-[#4A4E49] max-w-[34em]">
-                Enter your annual shoot volume to see the plan you would need on Pixieset, ShootProof, Pic-Time, SmugMug, Zenfolio, and CloudSpot, at published August 2026 prices.
+                Enter your annual shoot volume to see the plan you would need on Pixieset, ShootProof, Pic-Time, SmugMug, Zenfolio, and CloudSpot, at published October 2026 prices.
               </p>
               <dl className="m-0 mb-5 grid grid-cols-1 sm:grid-cols-[minmax(0,110px)_minmax(0,1fr)] gap-2 sm:gap-4 text-[15px] leading-[1.5]">
                 <dt className="font-semibold text-[#20221F]">You enter</dt>

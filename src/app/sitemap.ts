@@ -30,7 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Article pages from unified site-data
   const articlePages = site.articles.map((a) => {
-    const rawDate = a.date;
+    const rawDate = a.updated || a.date;
     const parsedDate = rawDate ? new Date(rawDate) : new Date();
     const lastModified = isNaN(parsedDate.getTime()) ? new Date() : parsedDate;
 

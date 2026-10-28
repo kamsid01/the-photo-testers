@@ -228,19 +228,20 @@
    "short": "Best client gallery software",
    "cat": "gallery-delivery",
    "type": "guide",
-   "date": "2026-10-24",
+   "date": "2026-08-15",
    "summary": "Pixieset, ShootProof, Pic-Time, SmugMug, Zenfolio, and CloudSpot compared on real 2026 pricing and features.",
    "img": "/assets/pixieset-v3.jpg",
    "imgPos": "80% 50%",
    "evidence": "research",
-   "checked": "October 2026"
+   "checked": "October 2026",
+   "updated": "2026-10-24"
   },
   {
    "slug": "pic-time-vs-pixieset-vs-shootproof",
    "short": "Pic-Time vs Pixieset vs ShootProof",
    "cat": "gallery-delivery",
    "type": "comparison",
-   "date": "2026-10-24",
+   "date": "2026-08-14",
    "summary": "Three gallery platforms compared on pricing, print sales, and client experience.",
    "imgs": [
     "/assets/pic-time.png",
@@ -269,7 +270,8 @@
      "text": "you do high-volume shoots (like schools, dance studios, or sports), need robust client invoicing and contracts, or want zero commission on direct orders."
     }
    ],
-   "pricingAssumption": "Storage tiers differ by platform, and ShootProof prices by photo count rather than storage. Compare at your own volume with the Gallery Cost Calculator."
+   "pricingAssumption": "Storage tiers differ by platform, and ShootProof prices by photo count rather than storage. Compare at your own volume with the Gallery Cost Calculator.",
+   "updated": "2026-10-24"
   },
   {
    "slug": "best-photo-culling-software",
