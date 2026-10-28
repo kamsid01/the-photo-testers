@@ -267,10 +267,10 @@
     },
     {
      "name": "ShootProof",
-     "text": "you do high-volume shoots (like schools, dance studios, or sports), need robust client invoicing and contracts, or want zero commission on direct orders."
+     "text": "you do high-volume shoots (like schools, dance studios, or sports), need robust client invoicing and contracts on paid plans, or want zero commission on direct orders."
     }
    ],
-   "pricingAssumption": "Storage tiers differ by platform, and ShootProof prices by photo count rather than storage. Compare at your own volume with the Gallery Cost Calculator.",
+   "pricingAssumption": "Storage tiers differ by platform; compare at your own volume with the Gallery Cost Calculator.",
    "updated": "2026-10-24"
   },
   {

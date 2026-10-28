@@ -76,15 +76,17 @@ export function GalleryCostCalculator() {
     // ShootProof (Annual billing, 0% store commission, current storage plans)
     // Evaluated against active online storage capacity (73.2 GB fits in 100 GB Standard at $199.99/yr)
     if (gb <= 3) {
-      list.push({ platform: 'ShootProof', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '100 photos / 3GB active online cap', commission: '0% on direct orders', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '3GB photo storage cap (contracts/invoices excluded)', commission: '0% on direct orders', slug: 'shootproof' });
     } else if (gb <= 20) {
-      list.push({ platform: 'ShootProof', planName: 'Starter (20 GB)', monthlyCost: 8.33, annualCost: 99.99, limit: 'Up to 20GB storage (~1,500 photos)', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Starter (20 GB)', monthlyCost: 8.33, annualCost: 99.99, limit: '20GB photo & video storage', commission: '0%', slug: 'shootproof' });
     } else if (gb <= 100) {
-      list.push({ platform: 'ShootProof', planName: 'Standard (100 GB)', monthlyCost: 16.67, annualCost: 199.99, limit: 'Up to 100GB storage (~5,000 photos)', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Standard (100 GB)', monthlyCost: 16.67, annualCost: 199.99, limit: '100GB photo & video storage', commission: '0%', slug: 'shootproof' });
     } else if (gb <= 1000) {
-      list.push({ platform: 'ShootProof', planName: 'Pro (1,000 GB)', monthlyCost: 26.67, annualCost: 320, limit: 'Up to 1,000GB storage (~25,000 photos)', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Professional (1,000 GB)', monthlyCost: 26.67, annualCost: 319.99, limit: '1,000GB photo storage + 50GB video', commission: '0%', slug: 'shootproof' });
+    } else if (gb <= 2000) {
+      list.push({ platform: 'ShootProof', planName: 'Advanced (2,000 GB)', monthlyCost: 43.33, annualCost: 519.99, limit: '2,000GB (2 TB) photo storage + 100GB video', commission: '0%', slug: 'shootproof' });
     } else {
-      list.push({ platform: 'ShootProof', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited active online storage', commission: '0%', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited photo storage + 150GB video', commission: '0%', slug: 'shootproof' });
     }
 
     // Pic-Time (Annual billing, 0% commission with own payment processor, verified current vendor docs)
@@ -278,7 +280,7 @@ export function GalleryCostCalculator() {
               Assumes about 5MB per delivered JPEG.
             </p>
             <p className="m-0">
-              Retention assumption: calculated on keeping a 12-month delivery archive active online. Deleting or archiving older client galleries frees up concurrent capacity on photo-count (ShootProof) and storage-capped plans.
+              Retention assumption: calculated on keeping a 12-month delivery archive active online. Deleting or archiving older client galleries frees up concurrent storage capacity.
             </p>
           </div>
         </form>

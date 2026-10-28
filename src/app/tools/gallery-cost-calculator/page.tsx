@@ -52,7 +52,7 @@ export default function GalleryCostCalculatorPage() {
             </h2>
             <div className="text-[16px] leading-[1.65] text-[#20221F] space-y-4">
               <p className="m-0">
-                Client gallery platforms usually charge in one of two ways: by storage volume, or by the number of individual photos you host. Storage-based plans, used by platforms like Pixieset, Pic-Time, and CloudSpot, limit the total gigabytes you can upload. High-resolution JPEGs average around 5MB each, so high-volume wedding photographers reach storage limits quickly. ShootProof charges strictly by photo count regardless of file size, which can be advantageous if you deliver very large files.
+                Client gallery platforms structure their pricing around storage volume (gigabytes or terabytes) and feature tiers. Storage-based plans limit the total capacity you can host across active galleries. High-resolution JPEGs average around 5MB each, so high-volume wedding and portrait photographers reach entry limits quickly. All major platforms—including ShootProof, Pixieset, Pic-Time, and CloudSpot—scale primarily by storage capacity, with higher tiers unlocking additional video storage, client management tools, or zero store commissions.
               </p>
               <p className="m-0">
                 Store commission is another critical cost lever. Free or entry-level plans often take 15% of print sales made through the gallery store. If you sell a significant volume of albums and prints, that commission percentage can rapidly outstrip the cost of upgrading to a higher-tier, zero-commission plan.

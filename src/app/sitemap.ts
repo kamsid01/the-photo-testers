@@ -5,25 +5,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://www.thephototesters.com';
   const site = getSiteData();
 
-  // Static pages
-  const staticPages = [
-    '',
-    '/about',
-    '/how-we-review',
-    '/affiliate-disclosure',
-    '/privacy',
-    '/contact',
-    '/blog',
-    '/tools',
-    '/tools/pricing-calculator',
-    '/tools/culling-tool-finder',
-    '/tools/gallery-cost-calculator',
-    '/category/client-crms',
-    '/category/gallery-delivery',
-    '/category/ai-culling-editing',
-  ].map((route) => ({
+  // Real modification dates for static pages and category hubs
+  const staticPageDates: Record<string, string> = {
+    '': '2026-10-24',
+    '/about': '2026-10-24',
+    '/how-we-review': '2026-10-24',
+    '/affiliate-disclosure': '2026-10-24',
+    '/privacy': '2026-10-24',
+    '/contact': '2026-10-24',
+    '/blog': '2026-10-24',
+    '/tools': '2026-10-24',
+    '/tools/pricing-calculator': '2026-10-24',
+    '/tools/culling-tool-finder': '2026-10-24',
+    '/tools/gallery-cost-calculator': '2026-10-24',
+    '/category/client-crms': '2026-10-21',
+    '/category/gallery-delivery': '2026-10-24',
+    '/category/ai-culling-editing': '2026-10-15',
+  };
+
+  const staticPages = Object.entries(staticPageDates).map(([route, dateStr]) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date(`${dateStr}T00:00:00.000Z`),
     changeFrequency: 'monthly' as const,
     priority: route === '' ? 1.0 : 0.8,
   }));

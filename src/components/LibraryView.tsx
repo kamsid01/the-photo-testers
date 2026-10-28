@@ -135,7 +135,7 @@ export function LibraryView() {
             Reviews &amp; Guides
           </h1>
           <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.55, color: '#4A4E49' }}>
-            Every review, comparison, and buying guide we have published, with the date it was last updated and what its findings are based on.
+            Every review, comparison, and buying guide we have published, with the date it was published and what its findings are based on.
           </p>
         </div>
         <form role="search" onSubmit={(e) => e.preventDefault()} style={{ flex: '1 1 320px', maxWidth: '440px' }}>
