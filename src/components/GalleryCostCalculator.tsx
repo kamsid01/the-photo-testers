@@ -58,42 +58,44 @@ export function GalleryCostCalculator() {
   const getPlans = (total: number, gb: number): PlatformPlan[] => {
     const list: PlatformPlan[] = [];
 
-    // Pixieset
+    // Pixieset (Client Gallery plans, annual billing, verified current vendor docs)
     if (gb <= 3) {
       list.push({ platform: 'Pixieset', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '3GB storage limit', commission: '15%', slug: 'pixieset' });
     } else if (gb <= 10) {
-      list.push({ platform: 'Pixieset', planName: 'Creator', monthlyCost: 18, annualCost: 216, limit: '10GB storage limit', commission: '15%', slug: 'pixieset' });
+      list.push({ platform: 'Pixieset', planName: 'Basic', monthlyCost: 8, annualCost: 96, limit: '10GB storage limit', commission: '0%', slug: 'pixieset' });
     } else if (gb <= 100) {
-      list.push({ platform: 'Pixieset', planName: 'Basic', monthlyCost: 24, annualCost: 288, limit: '100GB storage limit', commission: '0%', slug: 'pixieset' });
+      list.push({ platform: 'Pixieset', planName: 'Plus', monthlyCost: 16, annualCost: 192, limit: '100GB storage limit', commission: '0%', slug: 'pixieset' });
     } else if (gb <= 1000) {
-      list.push({ platform: 'Pixieset', planName: 'Plus', monthlyCost: 34, annualCost: 408, limit: '1,000GB storage limit', commission: '0%', slug: 'pixieset' });
+      list.push({ platform: 'Pixieset', planName: 'Pro', monthlyCost: 24, annualCost: 288, limit: '1,000GB storage limit, RAW support', commission: '0%', slug: 'pixieset' });
     } else {
-      list.push({ platform: 'Pixieset', planName: 'Pro', monthlyCost: 50, annualCost: 600, limit: 'Unlimited storage, RAW support', commission: '0%', slug: 'pixieset' });
+      list.push({ platform: 'Pixieset', planName: 'Ultimate', monthlyCost: 40, annualCost: 480, limit: 'Unlimited storage, RAW support', commission: '0%', slug: 'pixieset' });
     }
 
-    // ShootProof
+    // ShootProof (Annual billing, 0% store commission on paid tiers, verified current vendor docs)
     if (total <= 100) {
-      list.push({ platform: 'ShootProof', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '100 photos maximum', commission: 'Commission-free store (per our guide)', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '100 photos maximum', commission: '0% on direct orders', slug: 'shootproof' });
     } else if (total <= 1500) {
-      list.push({ platform: 'ShootProof', planName: '1,500 Photos', monthlyCost: 10, annualCost: 120, limit: 'Up to 1,500 photos, priced by count not storage', commission: 'Commission-free store (per our guide)', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: '1,500 Photos', monthlyCost: 8.33, annualCost: 100, limit: 'Up to 1,500 photos, priced by count not storage', commission: '0%', slug: 'shootproof' });
     } else if (total <= 5000) {
-      list.push({ platform: 'ShootProof', planName: '5,000 Photos', monthlyCost: 20, annualCost: 240, limit: 'Up to 5,000 photos, priced by count not storage', commission: 'Commission-free store (per our guide)', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: '5,000 Photos', monthlyCost: 16.67, annualCost: 200, limit: 'Up to 5,000 photos, priced by count not storage', commission: '0%', slug: 'shootproof' });
     } else if (total <= 25000) {
-      list.push({ platform: 'ShootProof', planName: '25,000 Photos', monthlyCost: 30, annualCost: 360, limit: 'Up to 25,000 photos, priced by count not storage', commission: 'Commission-free store (per our guide)', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: '25,000 Photos', monthlyCost: 26.67, annualCost: 320, limit: 'Up to 25,000 photos, priced by count not storage', commission: '0%', slug: 'shootproof' });
     } else {
-      list.push({ platform: 'ShootProof', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited photos', commission: 'Commission-free store (per our guide)', slug: 'shootproof' });
+      list.push({ platform: 'ShootProof', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited photos', commission: '0%', slug: 'shootproof' });
     }
 
-    // Pic-Time
+    // Pic-Time (Annual billing, 0% commission with own payment processor, verified current vendor docs)
     if (gb <= 10) {
       list.push({ platform: 'Pic-Time', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '10GB storage limit', commission: '15%', slug: 'pic-time' });
+    } else if (gb <= 20) {
+      list.push({ platform: 'Pic-Time', planName: 'Beginner', monthlyCost: 7, annualCost: 84, limit: '20GB storage limit', commission: '15%', slug: 'pic-time' });
     } else if (gb <= 100) {
-      list.push({ platform: 'Pic-Time', planName: 'Professional', monthlyCost: 26, annualCost: 312, limit: '100GB storage limit, store marketing tools', commission: 'Not specified in our data', slug: 'pic-time' });
+      list.push({ platform: 'Pic-Time', planName: 'Professional', monthlyCost: 21, annualCost: 252, limit: '100GB storage limit, store marketing tools', commission: '0% with own processor', slug: 'pic-time' });
     } else {
-      list.push({ platform: 'Pic-Time', planName: 'Advanced', monthlyCost: 42, annualCost: 504, limit: 'Unlimited storage, premium marketing apps', commission: 'Not specified in our data', slug: 'pic-time' });
+      list.push({ platform: 'Pic-Time', planName: 'Advanced', monthlyCost: 42, annualCost: 504, limit: 'Unlimited storage, premium marketing apps', commission: '0% with own processor', slug: 'pic-time' });
     }
 
-    // SmugMug: Updated per explicit rule — default to Power ($15/mo, $180/yr) since storage is unlimited
+    // SmugMug: Default to Power ($15/mo, $180/yr) since storage is unlimited across all photo volumes
     list.push({
       platform: 'SmugMug',
       planName: 'Power',
@@ -106,18 +108,18 @@ export function GalleryCostCalculator() {
 
     // Zenfolio
     if (gb <= 15) {
-      list.push({ platform: 'Zenfolio', planName: 'Portfolio', monthlyCost: 9, annualCost: 108, limit: '15GB storage limit; limited direct selling', commission: 'Not specified in our data', slug: 'zenfolio' });
+      list.push({ platform: 'Zenfolio', planName: 'Portfolio', monthlyCost: 9, annualCost: 108, limit: '15GB storage limit; limited direct selling', commission: 'Limited', slug: 'zenfolio' });
     } else if (gb <= 100) {
-      list.push({ platform: 'Zenfolio', planName: 'PortfolioPlus', monthlyCost: 19, annualCost: 228, limit: '100GB storage limit', commission: 'Not specified in our data', slug: 'zenfolio' });
+      list.push({ platform: 'Zenfolio', planName: 'PortfolioPlus', monthlyCost: 19, annualCost: 228, limit: '100GB storage limit', commission: 'Store included', slug: 'zenfolio' });
     } else {
-      list.push({ platform: 'Zenfolio', planName: 'ProSuite', monthlyCost: 40, annualCost: 480, limit: 'Unlimited storage, advanced selling', commission: 'Not specified in our data', slug: 'zenfolio' });
+      list.push({ platform: 'Zenfolio', planName: 'ProSuite', monthlyCost: 40, annualCost: 480, limit: 'Unlimited storage, advanced selling', commission: '0%', slug: 'zenfolio' });
     }
 
     // CloudSpot
     if (gb <= 10) {
       list.push({ platform: 'CloudSpot', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '10GB storage limit', commission: '15%', slug: 'cloudspot' });
     } else if (gb <= 50) {
-      list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 15, annualCost: 180, limit: '50GB storage limit', commission: 'Not specified in our data', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 15, annualCost: 180, limit: '50GB storage limit', commission: '15%', slug: 'cloudspot' });
     } else {
       list.push({ platform: 'CloudSpot', planName: 'Pro', monthlyCost: 45, annualCost: 540, limit: 'Unlimited storage', commission: '0%', slug: 'cloudspot' });
     }

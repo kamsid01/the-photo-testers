@@ -272,27 +272,31 @@ export function buildArticlePageData(slug: string) {
   let blocks = c.blocks.slice();
   const relatedSlugsFromBody: string[] = [];
 
-  const hrIdx = blocks.map((b) => b.type).lastIndexOf('hr');
-  if (hrIdx > -1) {
-    blocks.slice(hrIdx + 1).forEach((b) => {
-      const t = runsText(b.runs).trim();
-      if (/^Related:/.test(t) && b.runs) {
-        b.runs
-          .filter((r) => r.href && (r.href.startsWith('/') || r.href.startsWith('#/')))
-          .forEach((r) => {
-            const cleanHref = r.href!.replace(/^#/, '');
-            relatedSlugsFromBody.push(cleanHref.slice(1).split('#')[0]);
-          });
+  // Extract and remove any trailing Related: link blocks from the article
+  const cleanedBlocks: RawBlock[] = [];
+  for (let i = 0; i < blocks.length; i++) {
+    const b = blocks[i];
+    const t = runsText(b.runs).trim();
+    if (b.type === 'p' && /^Related:/i.test(t) && b.runs) {
+      b.runs
+        .filter((r) => r.href && (r.href.startsWith('/') || r.href.startsWith('#/')))
+        .forEach((r) => {
+          const cleanHref = r.href!.replace(/^#/, '');
+          relatedSlugsFromBody.push(cleanHref.slice(1).split('#')[0]);
+        });
+      // Also drop a preceding trailing hr if it was right before Related:
+      if (cleanedBlocks.length > 0 && cleanedBlocks[cleanedBlocks.length - 1].type === 'hr') {
+        cleanedBlocks.pop();
       }
-    });
-    blocks = blocks.slice(0, hrIdx);
+      continue;
+    }
+    // Strip trailing publisher bio (editorial guest post boilerplate)
+    if (b.type === 'p' && /^The Photo Testers is an independent publication/i.test(t)) {
+      continue;
+    }
+    cleanedBlocks.push(b);
   }
-  // Strip any trailing publisher bio (editorial guest post boilerplate)
-  blocks = blocks.filter(
-    (b) =>
-      b.type !== 'hr' &&
-      !(b.type === 'p' && /^The Photo Testers is an independent publication/i.test(runsText(b.runs).trim()))
-  );
+  blocks = cleanedBlocks;
 
   let standfirst = a.summary;
   if (blocks[0] && blocks[0].type === 'p' && /^An editorial perspective/.test(runsText(blocks[0].runs).trim())) {
@@ -308,22 +312,32 @@ export function buildArticlePageData(slug: string) {
   }
 
   const faq: { q: string; runs: RenderedRun[] }[] = [];
+  let disclaimerNote: { runs: RenderedRun[] } | null = null;
   const fi = blocks.findIndex((b) => b.type === 'h2' && /^FAQ/i.test(b.text || ''));
   if (fi > -1) {
-    blocks.slice(fi + 1).forEach((b) => {
-      if (b.type !== 'p' || !b.runs) return;
-      const rs = b.runs;
-      let k = 0;
-      let q = '';
-      while (k < rs.length && (rs[k].b || !rs[k].t.trim())) {
-        q += rs[k].t;
-        k++;
+    const postFaqBlocks: RawBlock[] = [];
+    const faqBlocks = blocks.slice(fi + 1);
+    for (const b of faqBlocks) {
+      const t = runsText(b.runs).trim();
+      // Check if it's an FAQ item: paragraph starting with bold question
+      if (b.type === 'p' && b.runs && b.runs[0] && (b.runs[0].b || !b.runs[0].t.trim()) && /\?/.test(t)) {
+        const rs = b.runs;
+        let k = 0;
+        let q = '';
+        while (k < rs.length && (rs[k].b || !rs[k].t.trim())) {
+          q += rs[k].t;
+          k++;
+        }
+        const rest = rs.slice(k);
+        if (rest[0]) rest[0] = { ...rest[0], t: rest[0].t.replace(/^\s+/, '') };
+        if (q.trim()) faq.push({ q: q.trim(), runs: formatRuns(rest) });
+      } else if (b.type === 'p' && (/^This guide is about software, not tax advice/i.test(t) || /^Note: This article is based on/i.test(t)) && b.runs) {
+        disclaimerNote = { runs: formatRuns(b.runs) };
+      } else if (b.type !== 'hr') {
+        postFaqBlocks.push(b);
       }
-      const rest = rs.slice(k);
-      if (rest[0]) rest[0] = { ...rest[0], t: rest[0].t.replace(/^\s+/, '') };
-      if (q.trim()) faq.push({ q: q.trim(), runs: formatRuns(rest) });
-    });
-    blocks = blocks.slice(0, fi);
+    }
+    blocks = blocks.slice(0, fi).concat(postFaqBlocks);
   }
 
   if (T === 'editorial' && a.pull && blocks.length > 5) {
@@ -436,6 +450,8 @@ export function buildArticlePageData(slug: string) {
       out.push({ isPull: true, text: b.text });
     } else if (b.type === 'quote' && b.runs) {
       out.push({ isQuote: true, runs: formatRuns(b.runs) });
+    } else if (b.type === 'hr') {
+      out.push({ isHr: true });
     }
   });
 
@@ -445,6 +461,7 @@ export function buildArticlePageData(slug: string) {
   let shortlist: { label: string; tool: string; text: string; href: string; noHref: boolean }[] = [];
   let boxParas: { runs: RenderedRun[] }[] = [];
   let decisionLead = '';
+  let decisionParas: { runs: RenderedRun[] }[] = [];
 
   if (box && box.blocks) {
     const ps = box.blocks.filter((x) => x.type === 'p');
@@ -487,6 +504,7 @@ export function buildArticlePageData(slug: string) {
       }
     } else if (T === 'comparison') {
       decisionLead = ps[0] ? runsText(ps[0].runs).trim() : '';
+      decisionParas = ps.slice(1).map((p) => ({ runs: formatRuns(p.runs) }));
     } else {
       boxParas = ps.map((p) => ({ runs: formatRuns(p.runs) }));
     }
@@ -535,6 +553,8 @@ export function buildArticlePageData(slug: string) {
     toc,
     faq,
     hasFaq: faq.length > 0,
+    hasDisclaimerNote: !!disclaimerNote,
+    disclaimerNote: disclaimerNote as { runs: RenderedRun[] } | null,
     standfirst,
     byline: 'The Photo Testers team',
     evidenceLabel: ev.label,
@@ -554,6 +574,7 @@ export function buildArticlePageData(slug: string) {
     hasDecision: T === 'comparison',
     hasDecisionLead: !!decisionLead,
     decisionLead,
+    decisionParas,
     chooseIf: (a.chooseIf || []).map((ci) => ({ ...ci, linkLabel: `Read the ${ci.name} review` })),
     hasAssumption: !!a.pricingAssumption,
     pricingAssumption: a.pricingAssumption,

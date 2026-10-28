@@ -36,7 +36,7 @@ export function HomeWorkflow() {
 const GUIDE_META: Record<string, { blurb: string; covers: string }> = {
   'best-crm-wedding-photographers': { blurb: 'For the inquiry-to-delivery flow of a wedding business: booking, contracts, invoices, and questionnaires.', covers: 'HoneyBook, Studio Ninja, Dubsado, Pixieset Studio, Táve' },
   'best-client-gallery-software': { blurb: 'Delivery, proofing, print stores, and storage, compared at the plan your volume actually needs.', covers: 'Pixieset, ShootProof, CloudSpot, Pic-Time, SmugMug, Zenfolio' },
-  'best-photo-culling-software': { blurb: 'Dedicated culling tools, with independent speed benchmarks labeled by who ran them.', covers: 'FilterPixel, Aftershoot, Narrative Select, Photo Mechanic, Excire Foto' },
+  'best-photo-culling-software': { blurb: 'Dedicated culling tools, with competitor-published speed benchmarks clearly labeled by who ran them.', covers: 'FilterPixel, Aftershoot, Narrative Select, Photo Mechanic, Excire Foto' },
 };
 
 export function HomeGuides() {

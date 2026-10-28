@@ -92,6 +92,7 @@ export default async function PostPage({ params }: Props) {
     hasDecision,
     hasDecisionLead,
     decisionLead,
+    decisionParas,
     chooseIf,
     hasAssumption,
     pricingAssumption,
@@ -109,6 +110,8 @@ export default async function PostPage({ params }: Props) {
     typeLower,
     hasChecked,
     commercialText,
+    hasDisclaimerNote,
+    disclaimerNote,
   } = pageData;
 
   const showSidebar = !editorial && toc.length > 2;
@@ -281,6 +284,7 @@ export default async function PostPage({ params }: Props) {
                     <img
                       src={a.img}
                       alt={heroAlt}
+                      loading="lazy"
                       style={{
                         width: '100%',
                         height: '100%',
@@ -407,6 +411,15 @@ export default async function PostPage({ params }: Props) {
                       {decisionLead}
                     </p>
                   )}
+                  {decisionParas && decisionParas.length > 0 && (
+                    <div className="mb-5 space-y-3">
+                      {decisionParas.map((dp, dpi) => (
+                        <p key={dpi} className="m-0 text-[16px] leading-[1.6] text-[#4A4E49]">
+                          <InlineRuns runs={dp.runs} />
+                        </p>
+                      ))}
+                    </div>
+                  )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-[#DFE2DB] border border-[#DFE2DB]">
                     {chooseIf.map((c, ci) => (
                       <div key={ci} className="bg-white p-4 sm:p-5">
@@ -526,6 +539,15 @@ export default async function PostPage({ params }: Props) {
                     ))}
                   </dl>
                 </section>
+              )}
+
+              {/* Disclaimer Note (Software not tax advice) */}
+              {disclaimerNote && (
+                <aside className="mt-8 p-4 sm:p-5 bg-[#FBF7EF] border border-[#E7D9BC] rounded text-[15px] leading-[1.55] text-[#4F3A12]">
+                  <p className="m-0 font-medium">
+                    <InlineRuns runs={disclaimerNote.runs} />
+                  </p>
+                </aside>
               )}
 
               {/* If [Product] isn't the right fit */}

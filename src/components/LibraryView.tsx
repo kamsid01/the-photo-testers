@@ -72,9 +72,8 @@ export function LibraryView() {
   ];
 
   const filtered = !!qq || cat !== 'all' || type !== 'all';
-  const showFeatured = !filtered && sort === 'newest';
-  const featured = site.bySlug['aftershoot-review'];
-  const list = showFeatured ? res.filter((a) => a.slug !== featured.slug) : res;
+  const showFeatured = false;
+  const list = res;
   const n = res.length;
 
   const countLabel =
@@ -322,75 +321,8 @@ export function LibraryView() {
             </div>
           </div>
 
-          {/* Featured Latest Review Card */}
-          {showFeatured && featured && (
-            <article
-              style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                gap: '20px 32px',
-                padding: '24px 0 28px',
-                borderTop: '1px solid #20221F',
-                borderBottom: '1px solid #DFE2DB',
-              }}
-            >
-              <Link
-                href={featured.href}
-                tabIndex={-1}
-                aria-hidden="true"
-                style={{ flex: '1 1 280px', maxWidth: '460px', display: 'block' }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={featured.img || ''}
-                  alt=""
-                  width={920}
-                  height={575}
-                  style={{
-                    width: '100%',
-                    aspectRatio: '16/10',
-                    objectFit: 'cover',
-                    objectPosition: featured.imgPos || '50% 50%',
-                    borderRadius: '3px',
-                    background: '#1B1C1A',
-                    display: 'block',
-                  }}
-                />
-              </Link>
-              <div style={{ flex: '1 1 280px', minWidth: 0 }}>
-                <p style={{ margin: '0 0 8px', fontSize: '14px', color: '#60645F' }}>
-                  <span style={{ fontWeight: 600, color: '#3159D7' }}>Latest review</span> · {featured.catName} ·{' '}
-                  {featured.dateLabel}
-                </p>
-                <h3
-                  style={{
-                    margin: '0 0 10px',
-                    fontFamily: SERIF,
-                    fontWeight: 500,
-                    fontSize: 'clamp(26px,2.4vw,32px)',
-                    lineHeight: 1.12,
-                  }}
-                >
-                  <Link
-                    href={featured.href}
-                    className="pt-hover-blue"
-                    style={{ color: '#20221F', textDecoration: 'none' }}
-                  >
-                    {featured.title}
-                  </Link>
-                </h3>
-                <p style={{ margin: '0 0 12px', fontSize: '16px', lineHeight: 1.55, color: '#4A4E49' }}>
-                  {featured.summary}
-                </p>
-                <p style={{ margin: 0, fontSize: '14px', color: '#60645F' }}>
-                  {featured.evidenceLabel} · {featured.readLabel}
-                </p>
-              </div>
-            </article>
-          )}
-
           {/* Results List */}
-          <ul style={{ listStyle: 'none', margin: 0, padding: 0, borderTop: showFeatured ? 0 : '1px solid #20221F' }}>
+          <ul style={{ listStyle: 'none', margin: 0, padding: 0, borderTop: '1px solid #20221F' }}>
             {list.map((a) => (
               <li key={a.slug} style={{ borderBottom: '1px solid #DFE2DB' }}>
                 <article

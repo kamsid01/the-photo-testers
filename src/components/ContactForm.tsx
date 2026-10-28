@@ -44,6 +44,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="flex flex-col gap-4 my-8 max-w-lg font-sans">
       <input type="text" name="_honey" style={{ display: "none" }} />
       <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="The Photo Testers: New Contact Message" />
       
       {status === "error" && (
         <div className="p-4 bg-red-50 border border-red-200 rounded-md text-red-800 text-sm">

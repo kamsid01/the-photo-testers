@@ -156,7 +156,7 @@ export function NewsletterForm() {
           color: err ? '#B42318' : '#60645F',
         }}
       >
-        {err || 'Occasional emails. Unsubscribe from any message.'}
+        {err || 'Occasional updates. Request removal at any time by replying or emailing hello@thephototesters.com.'}
       </p>
     </form>
   );

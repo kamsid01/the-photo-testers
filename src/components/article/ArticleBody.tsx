@@ -336,6 +336,23 @@ export function ArticleBlocks({ blocks }: { blocks: any[] }) {
           );
         }
 
+        if (b.isHr) {
+          return <hr key={idx} className="my-8 border-0 border-t border-[#DFE2DB]" />;
+        }
+
+        if (b.isCallout) {
+          return (
+            <aside
+              key={idx}
+              className="my-6 p-4 sm:p-5 bg-[#FBF7EF] border border-[#E7D9BC] rounded text-[15px] leading-[1.55] text-[#4F3A12]"
+            >
+              <p className="m-0 font-medium">
+                <InlineRuns runs={b.runs} />
+              </p>
+            </aside>
+          );
+        }
+
         return null;
       })}
     </div>

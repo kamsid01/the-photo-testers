@@ -30,7 +30,7 @@ export default function PrivacyPage() {
           What we collect
         </h2>
         <p className="m-0 mb-3 text-[#4A4E49]">
-          <strong className="font-semibold text-[#20221F]">Email address:</strong> only if you choose to subscribe to our newsletter or reach out via our contact form. We use it to send you new comparisons, tool updates, and pricing notifications or to reply to your inquiry. Nothing else. You can unsubscribe at any time using the link in any email.
+          <strong className="font-semibold text-[#20221F]">Email address:</strong> only if you choose to subscribe to our newsletter or reach out via our contact form. We use it to send you new comparisons, tool updates, and pricing notifications or to reply to your inquiry. Nothing else. You can request removal from our update list at any time by replying to any message or emailing us at hello@thephototesters.com.
         </p>
         <p className="m-0 mb-3 text-[#4A4E49]">
           <strong className="font-semibold text-[#20221F]">Analytics data:</strong> we collect privacy-conscious analytics to understand how visitors engage with the publication: which guides are read, referring sites, approximate geographic location, and device types. This data is aggregated and never used to track individuals.
@@ -65,7 +65,7 @@ export default function PrivacyPage() {
           Your rights and choices
         </h2>
         <p className="m-0 mb-4 text-[#4A4E49]">
-          You have the right to request access to any personal data we hold about you, request corrections, or ask for complete deletion of your records. You can also opt out of email communications at any time.
+          You have the right to request access to any personal data we hold about you, request corrections, or ask for complete deletion of your records. You can also opt out of email communications at any time by replying to any message or contacting hello@thephototesters.com.
         </p>
 
         <h2 className="mt-[1.6em] mb-[0.5em] font-serif font-medium text-[28px] leading-[1.15] text-[#20221F]">
