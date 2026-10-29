@@ -18,14 +18,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const c = site.catBy[slug];
   if (!c) return {};
 
+  const url = `https://www.thephototesters.com/category/${slug}`;
+  const title = `${c.name} — Reviews, Comparisons & Guides | The Photo Testers`;
+  const description = c.desc || c.liveDesc;
+
   const isDeveloping = !c.published;
 
   return {
-    title: `${c.name} — Reviews, Comparisons & Guides | The Photo Testers`,
-    description: c.desc || c.liveDesc,
+    title,
+    description,
     robots: isDeveloping ? { index: false, follow: true } : { index: true, follow: true },
     alternates: {
-      canonical: `/category/${slug}`,
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: 'website',
+      images: [
+        {
+          url: '/og/default.jpg',
+          width: 1200,
+          height: 630,
+          alt: c.name,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/og/default.jpg'],
     },
   };
 }

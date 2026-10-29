@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thephototesters.com/tools/gallery-cost-calculator',
   },
+  openGraph: {
+    title: 'Gallery Cost Calculator: Compare Pixieset, ShootProof & More',
+    description:
+      'Enter your annual shoot volume to see the plan you need across six client gallery platforms, and what it costs at published prices.',
+    url: 'https://www.thephototesters.com/tools/gallery-cost-calculator',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Client Gallery Cost Calculator',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gallery Cost Calculator: Compare Pixieset, ShootProof & More',
+    description:
+      'Enter your annual shoot volume to see the plan you need across six client gallery platforms, and what it costs at published prices.',
+    images: ['/og/default.jpg'],
+  },
 };
 
 export default function GalleryCostCalculatorPage() {

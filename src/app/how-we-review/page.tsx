@@ -9,13 +9,35 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thephototesters.com/how-we-review',
   },
+  openGraph: {
+    title: 'How We Review Software | The Photo Testers',
+    description:
+      'Every comparison on this site follows the same process. We wrote it down so you know exactly what is behind the recommendations.',
+    url: 'https://www.thephototesters.com/how-we-review',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How We Review Software',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How We Review Software | The Photo Testers',
+    description:
+      'Every comparison on this site follows the same process. We wrote it down so you know exactly what is behind the recommendations.',
+    images: ['/og/default.jpg'],
+  },
 };
 
 const HOW_SECTIONS = [
   {
     n: '01',
-    title: 'We test directly or conduct structured research',
-    text: 'We never review solely from marketing copy. For our in-depth single-tool reviews, we sign up for real accounts (trials or paid subscriptions) and test the interface directly. For multi-product buying guides and comparisons where full hands-on testing across dozens of tools is not feasible, we conduct structured research across technical documentation, community workflows, and verified user feedback. Every article transparently discloses which evidence basis was used.',
+    title: 'We evaluate via structured research and verified testing',
+    text: 'We never review solely from vendor marketing copy. Our assessments draw on structured research across official technical documentation, verified vendor specifications, customer billing terms, and documented real-world workflows from professional photographers. Where an evaluation is research-based, we explicitly badge it as Research-based so readers know exactly what evidence supports our analysis. Every article transparently discloses which evidence basis was used.',
   },
   {
     n: '02',

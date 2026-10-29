@@ -120,6 +120,16 @@ a:hover {
   color: #1B3691;
 }
 
+/* Persistent visual cues for inline text links (Accessibility) */
+p a, li a, dd a, td a, figcaption a {
+  text-decoration: underline;
+  text-decoration-color: rgba(42, 78, 194, 0.45);
+}
+
+p a:hover, li a:hover, dd a:hover, td a:hover, figcaption a:hover {
+  text-decoration-color: currentColor;
+}
+
 button, input, select, textarea {
   font-family: inherit;
   color: inherit;

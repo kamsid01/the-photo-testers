@@ -11,12 +11,14 @@ export function InlineRuns({ runs }: { runs: RenderedRun[] }) {
         if (r.isLink && r.href) {
           const isExternal = r.target === '_blank' || r.href.startsWith('http');
           if (isExternal) {
+            const isAffiliate = r.rel?.includes('sponsored') || (r as any).affiliate;
+            const computedRel = r.rel || (isAffiliate ? 'sponsored nofollow noopener' : 'noopener noreferrer');
             return (
               <a
                 key={i}
                 href={r.href}
                 target="_blank"
-                rel={r.rel || 'sponsored nofollow noopener'}
+                rel={computedRel}
                 className="text-[#3159D7] underline hover:text-[#20221F]"
               >
                 {r.t}
@@ -255,9 +257,9 @@ export function ArticleBlocks({ blocks }: { blocks: any[] }) {
               className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#DFE2DB] border border-[#DFE2DB] my-4 font-sans text-[15px] leading-[1.5]"
             >
               <div className="bg-white p-4 sm:p-5">
-                <h4 className="m-0 mb-2.5 text-[14px] font-semibold text-[#1F6B3A]">
+                <h3 className="m-0 mb-2.5 text-[14px] font-semibold text-[#1F6B3A]">
                   Reasons to choose
-                </h4>
+                </h3>
                 <ul className="list-none m-0 p-0 space-y-2">
                   {b.pros.map((p: { text: string }, pi: number) => (
                     <li key={pi} className="grid grid-cols-[16px_1fr] gap-2">
@@ -270,9 +272,9 @@ export function ArticleBlocks({ blocks }: { blocks: any[] }) {
                 </ul>
               </div>
               <div className="bg-white p-4 sm:p-5">
-                <h4 className="m-0 mb-2.5 text-[14px] font-semibold text-[#9A3412]">
+                <h3 className="m-0 mb-2.5 text-[14px] font-semibold text-[#9A3412]">
                   Limitations
-                </h4>
+                </h3>
                 <ul className="list-none m-0 p-0 space-y-2">
                   {b.cons.map((cn: { text: string }, ci: number) => (
                     <li key={ci} className="grid grid-cols-[16px_1fr] gap-2">

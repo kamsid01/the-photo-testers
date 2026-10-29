@@ -8,6 +8,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thephototesters.com/tools',
   },
+  openGraph: {
+    title: 'Free Tools for Photographers | The Photo Testers',
+    description:
+      'Calculators and a short quiz that work from your own numbers. Everything runs in your browser; nothing you enter is stored or sent.',
+    url: 'https://www.thephototesters.com/tools',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Photo Testers Free Tools',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free Tools for Photographers | The Photo Testers',
+    description:
+      'Calculators and a short quiz that work from your own numbers. Everything runs in your browser; nothing you enter is stored or sent.',
+    images: ['/og/default.jpg'],
+  },
 };
 
 export default function ToolsIndexPage() {

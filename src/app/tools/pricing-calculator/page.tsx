@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thephototesters.com/tools/pricing-calculator',
   },
+  openGraph: {
+    title: 'Photography Pricing Calculator: What Should You Charge?',
+    description:
+      'Most photographers undercharge because they only count camera hours. Work backwards from your desired salary to find what you actually need to charge.',
+    url: 'https://www.thephototesters.com/tools/pricing-calculator',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Photography Pricing Calculator',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Photography Pricing Calculator: What Should You Charge?',
+    description:
+      'Most photographers undercharge because they only count camera hours. Work backwards from your desired salary to find what you actually need to charge.',
+    images: ['/og/default.jpg'],
+  },
 };
 
 export default function PricingCalculatorPage() {

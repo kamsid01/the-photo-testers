@@ -9,6 +9,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thephototesters.com/affiliate-disclosure',
   },
+  openGraph: {
+    title: 'Affiliate Disclosure | The Photo Testers',
+    description:
+      'The Photo Testers is supported by its readers. Here is exactly how affiliate relationships and commissions work on this publication.',
+    url: 'https://www.thephototesters.com/affiliate-disclosure',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Affiliate Disclosure',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Affiliate Disclosure | The Photo Testers',
+    description:
+      'The Photo Testers is supported by its readers. Here is exactly how affiliate relationships and commissions work on this publication.',
+    images: ['/og/default.jpg'],
+  },
 };
 
 export default function AffiliateDisclosurePage() {

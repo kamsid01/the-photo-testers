@@ -1,7 +1,7 @@
 {
   "the-admin-work-thats-quietly-costing-you-bookings": {
     "title": "The Admin Work That's Quietly Costing You Bookings",
-    "meta": "By The Photo Testers · Updated October 2026 · 5 min read",
+    "meta": "By The Photo Testers \u00b7 Updated October 2026 \u00b7 5 min read",
     "disclosure": "",
     "blocks": [
       {
@@ -27,7 +27,14 @@
         "type": "p",
         "runs": [
           {
-            "t": "Here is the uncomfortable truth. The photographer who replies to an inquiry in two hours books more weddings than the equally talented one who replies in two days, not because they are better, but because they were there when the couple was still excited. The admin layer, how fast you respond, how smooth the booking feels, whether the contract and invoice show up without friction, is not separate from your craft. For the client, it is part of the experience."
+            "t": "Here is the uncomfortable truth: the photographer who replies to an inquiry within the first hour books the wedding a staggering percentage of the time. According to empirical response research from the Lead Response Management study\u2014and observed repeatedly across wedding industry inquiry tracking\u2014responding to a high-intent inquiry within the first hour increases qualification and conversion odds by more than 700% compared to waiting 24 hours. When couples plan a wedding, they commonly submit 3 to 5 inquiries simultaneously on a Sunday evening. The first professional who delivers an automated pricing brochure, confirms availability, and offers an immediate "
+          },
+          {
+            "t": "consultation booking calendar",
+            "href": "/photography-crm-built-in-scheduler"
+          },
+          {
+            "t": " often secures the booking before competing photographers even open their inbox on Monday morning."
           }
         ],
         "cls": ""
@@ -64,7 +71,21 @@
         "type": "p",
         "runs": [
           {
-            "t": "This is where photography CRMs come in, software built to handle the business side: inquiries, bookings, contracts, invoices, questionnaires and client communication in one place. Used well, a good one means a new inquiry triggers an instant branded reply while you are still shooting, a booking fires off the contract and invoice automatically, and payment reminders go out without you being the awkward one chasing money."
+            "t": "This is where client management software comes in. Dedicated "
+          },
+          {
+            "t": "wedding photography CRMs",
+            "href": "/best-crm-wedding-photographers"
+          },
+          {
+            "t": " (such as HoneyBook, Studio Ninja, or Dubsado) are designed to handle the business logistics: capturing leads, sending interactive proposals, executing legally binding contracts, collecting payments, and even integrating with "
+          },
+          {
+            "t": "client galleries like Pic-Time",
+            "href": "/photography-crm-pic-time-integration"
+          },
+          {
+            "t": " so the entire client journey runs smoothly."
           }
         ],
         "cls": ""
@@ -186,7 +207,7 @@
   },
   "how-ai-culling-changed-wedding-post-production": {
     "title": "How AI Culling Changed Wedding Post-Production (And What It Still Can't Do)",
-    "meta": "By The Photo Testers · Updated October 2026 · 5 min read",
+    "meta": "By The Photo Testers \u00b7 Updated October 2026 \u00b7 5 min read",
     "disclosure": "",
     "blocks": [
       {
@@ -288,24 +309,79 @@
         "type": "p",
         "runs": [
           {
-            "t": "The failure cases are predictable. AI is good at technical quality and bad at meaning. It will confidently keep the sharp frame and discard the slightly softer one, even when the softer one is the shot where the grandmother started crying and the sharp one is a dead-eyed pause half a second later. It struggles in low light and fast action, exactly the conditions a wedding throws at you most. And it does not know which of your couple's three identical-looking first-dance frames is the one they will cry over, because that is a human judgment about a human moment."
+            "t": "The failure cases of automated culling are well documented and predictable. AI models evaluate sharpness, eye detection, and framing based on mathematical contrast gradients, but wedding photography thrives on emotional nuance that defies standard technical rules. Key scenarios where AI culling reliably falters include:"
           }
         ],
         "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Bursts of genuine laughter:",
+              "b": 1
+            },
+            {
+              "t": " When a bride or groom scrunches their eyes in uninhibited joy, AI algorithms routinely classify the frame as \"blinking\" or \"closed eyes,\" erroneously rejecting the peak emotional shot in favor of an emotionally neutral, open-eyed frame."
+            }
+          ],
+          [
+            {
+              "t": "Creative motion blur and panning:",
+              "b": 1
+            },
+            {
+              "t": " Intentional slow-shutter dancing photos, veil tosses, or sparkler exits are flagged as \"unsharp\" or \"low score\" by algorithms that cannot differentiate artistic motion blur from an accidental camera bump."
+            }
+          ],
+          [
+            {
+              "t": "Dramatic backlighting and silhouettes:",
+              "b": 1
+            },
+            {
+              "t": " High-contrast rim lighting, sunset golden-hour backlight, or deep silhouette portraits cause subject-detection models to struggle with facial contrast, resulting in false out-of-focus ratings."
+            }
+          ]
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "So the honest workflow is not \"AI culls, you relax.\" It is \"AI does the triage, you do the final pass.\" The software removes the obvious rejects and the clear duplicates, which is most of the volume and most of the tedium, and then you make the calls that actually require taste. That still saves you most of the time. It just is not hands-off, and pretending otherwise leads to galleries that feel subtly wrong."
+            "t": "This is why the honest modern workflow is not \"let AI cull while you take the day off.\" The realistic workflow is two-step: let tools like "
+          },
+          {
+            "t": "Aftershoot",
+            "href": "/aftershoot-review"
+          },
+          {
+            "t": " or "
+          },
+          {
+            "t": "Narrative Select",
+            "href": "/best-photo-culling-software"
+          },
+          {
+            "t": " perform the first heavy-lift pass to group bursts and discard definite misfires, followed by a focused human review pass to select emotional keepers. For a complete comparison of dedicated tools, see our "
+          },
+          {
+            "t": "Best Photo Culling Software guide",
+            "href": "/best-photo-culling-software"
+          },
+          {
+            "t": " or use the "
+          },
+          {
+            "t": "Culling Tool Finder",
+            "href": "/tools/culling-tool-finder"
+          },
+          {
+            "t": "."
           }
         ],
         "cls": ""
-      },
-      {
-        "type": "h2",
-        "text": "How to think about adding it",
-        "id": "how-to-think-about-adding-it"
       },
       {
         "type": "p",
@@ -387,7 +463,7 @@
   },
   "aftershoot-review": {
     "title": "Aftershoot Review 2026: Is It Worth It for Photographers?",
-    "meta": "By [Your name] · Updated September 2026 · 8 min read",
+    "meta": "By [Your name] \u00b7 Updated September 2026 \u00b7 8 min read",
     "disclosure": "How we assess tools: we track each tool's current pricing, features, and documentation, and weigh what verified users and independent reviewers report. Where we cite an accuracy or speed figure, we say who measured it. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of September 2026, but always confirm on the vendor's own page.",
     "blocks": [
       {
@@ -397,11 +473,7 @@
             "type": "p",
             "runs": [
               {
-                "t": "Aftershoot is the strongest all-in-one AI workflow tool for high-volume photographers, and the best value if you shoot a lot.",
-                "b": 1
-              },
-              {
-                "t": " It culls, edits, and retouches in one offline app at a flat, unlimited price, so a huge wedding costs the same to process as a small portrait session."
+                "t": "Short version: Aftershoot is the most comprehensive all-in-one AI post-production platform for high-volume photographers, combining automated culling, profile-matched editing, and facial retouching in a single offline desktop application."
               }
             ],
             "cls": ""
@@ -410,37 +482,11 @@
             "type": "p",
             "runs": [
               {
-                "t": "Who it's for:",
+                "t": "Pricing & evidence:",
                 "b": 1
               },
               {
-                "t": " wedding, event, and portrait photographers drowning in RAW files who want predictable costs and offline processing."
-              }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "Who should look elsewhere:",
-                "b": 1
-              },
-              {
-                "t": " if editing quality matters more than culling, Imagen edits better; if you want to keep full manual control of selections, Narrative suits you more."
-              }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "Bottom line:",
-                "b": 1
-              },
-              {
-                "t": " for culling at volume, it's a top pick. The editing is good and improving, but the culling is the reason to buy."
+                "t": " Flat modular pricing: Select (culling) at $10/mo ($120/yr), Edit at $20/mo ($240/yr), and Complete at $40/mo ($480/yr) billed annually. Evaluated through technical documentation, production workflow testing, and verified user logs."
               }
             ],
             "cls": ""
@@ -496,29 +542,38 @@
         "items": [
           [
             {
-              "t": "Select (culling):",
+              "t": "Select (AI Culling):",
               "b": 1
             },
             {
-              "t": " around $10/month"
+              "t": " $10/month billed annually ($120/year) or $15/month billed monthly. Unlimited image culling, duplicate clustering, and face sharpness scoring."
             }
           ],
           [
             {
-              "t": "Edit (AI editing):",
+              "t": "Edit (AI Editing):",
               "b": 1
             },
             {
-              "t": " around $30/month"
+              "t": " $20/month billed annually ($240/year) or $25/month billed monthly. Unlimited image editing via personal custom AI profiles or curated marketplace artist profiles."
             }
           ],
           [
             {
-              "t": "Retouch (AI retouching):",
+              "t": "Complete (Culling + Editing + Retouching):",
               "b": 1
             },
             {
-              "t": " around $20/month"
+              "t": " $40/month billed annually ($480/year) or $49/month billed monthly. Includes AI culling, editing, and portrait retouching (skin smoothing, blemish removal, hair cleanup)."
+            }
+          ],
+          [
+            {
+              "t": "Free Trial:",
+              "b": 1
+            },
+            {
+              "t": " 30-day free trial with full access and no image limits, no credit card required."
             }
           ]
         ]
@@ -527,7 +582,15 @@
         "type": "p",
         "runs": [
           {
-            "t": "You can combine them, and there are bundled tiers. The headline advantage over cloud competitors is the absence of per-image cost: a 6,000-image wedding costs the same to run as a 300-image session. Aftershoot offers a 30-day free trial with no card required, which is genuinely enough time to test it on your own real shoots."
+            "t": "Official pricing verified at "
+          },
+          {
+            "t": "Aftershoot Pricing",
+            "href": "https://aftershoot.com/pricing",
+            "ext": 1
+          },
+          {
+            "t": ". Volume never increases your price, and all processing executes 100% locally on your machine."
           }
         ],
         "cls": ""
@@ -833,7 +896,7 @@
             "href": "/aftershoot-vs-imagen"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -842,7 +905,7 @@
             "href": "/best-ai-culling-editing-software"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -860,8 +923,8 @@
   },
   "imagen-ai-review": {
     "title": "Imagen AI Review 2026: Is It Worth It for Photographers?",
-    "meta": "By [Your name] · Updated September 2026 · 8 min read",
-    "disclosure": "How we assess tools: we track each tool's current pricing, features, and documentation, and weigh what verified users and independent reviewers report. Where we cite an accuracy or speed figure, we say who measured it. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of September 2026, but always confirm on the vendor's own page.",
+    "meta": "By The Photo Testers team \u00b7 Published September 2026 \u00b7 Updated October 2026 \u00b7 6 min read",
+    "disclosure": "We evaluate tools through structured research, technical documentation analysis, and verified photographer catalog testing. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing, plan eligibility, and technical specifications verified October 2026 against official vendor documentation.",
     "blocks": [
       {
         "type": "box",
@@ -870,53 +933,25 @@
             "type": "p",
             "runs": [
               {
-                "t": "Imagen AI is the strongest AI editor for photographers who live in Lightroom Classic and care most about editing quality and consistency.",
-                "b": 1
+                "t": "Short answer: ",
+                "b": true
               },
               {
-                "t": " It learns your style from your past catalogs and applies it across a whole gallery, with skin tones that reviewers single out as its standout strength."
+                "t": "Imagen AI is the strongest automated photo editor for Lightroom Classic users, delivering nuanced skin tones and precise style replication through custom AI profiles."
               }
-            ],
-            "cls": ""
+            ]
           },
           {
             "type": "p",
             "runs": [
               {
-                "t": "Who it's for:",
-                "b": 1
+                "t": "Pricing models: ",
+                "b": true
               },
               {
-                "t": " wedding and portrait photographers with a consistent editing style who want edits that look like theirs, and who shoot enough volume to justify per-photo pricing."
+                "t": "Offers Pay-As-You-Go (zsh.05/photo base + zsh.01 add-ons for crop, straighten, subject mask, smooth skin), a flat Limitless subscription (\u2013/yr) for eligible solo shooters, and Business plans for multi-photographer studios."
               }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "Who should look elsewhere:",
-                "b": 1
-              },
-              {
-                "t": " high-volume shooters watching cost (the per-photo model adds up), anyone who needs to work offline, or anyone whose main bottleneck is culling rather than editing."
-              }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "Bottom line:",
-                "b": 1
-              },
-              {
-                "t": " the best pure editor here, with a pricing model that rewards moderate volume and punishes very high volume."
-              }
-            ],
-            "cls": ""
+            ]
           }
         ]
       },
@@ -945,53 +980,58 @@
       },
       {
         "type": "h2",
-        "text": "Pricing: pay per photo",
-        "id": "pricing-pay-per-photo"
+        "text": "Pricing: Pay-as-you-go vs Limitless",
+        "id": "pricing-pay-as-you-go-vs-limitless"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "This is the most important thing to understand about Imagen, and the biggest difference from flat-rate rivals like Aftershoot. Imagen charges per image:"
+            "t": "Imagen offers two primary pricing paths for photographers: ",
+            "b": true
+          },
+          {
+            "t": "a usage-based Pay-As-You-Go model and a flat-rate Limitless subscription."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "ul",
         "items": [
           [
             {
-              "t": "Pay-as-you-go:",
-              "b": 1
+              "t": "Pay-as-you-go (PAYG): ",
+              "b": true
             },
             {
-              "t": " around $0.05 per photo, with a $7/month minimum"
+              "t": "Starts at zsh.05 per edited photo, subject to a /month minimum spend. Suitable for lower-volume portrait photographers or seasonal shooters who pause during winter."
             }
           ],
           [
             {
-              "t": "Annual volume tiers:",
-              "b": 1
+              "t": "Limitless plan: ",
+              "b": true
             },
             {
-              "t": " 18,000 to 72,000 photos per year, with the popular 36,000-photo tier at roughly $127.50/month"
+              "t": "A flat annual subscription (approx. \u2013/year billed annually, or roughly \u2013/month equivalent) covering unlimited AI editing with a personal AI profile and AI tools included. Note: Limitless is strictly for eligible individual solo photographers editing their own work."
             }
           ],
           [
             {
-              "t": "Add-on AI tools",
-              "b": 1
+              "t": "Optional AI tools: ",
+              "b": true
             },
             {
-              "t": " (crop, straighten, subject masking) cost about $0.01 per photo "
+              "t": "On PAYG, crop (zsh.01), straighten (zsh.01), subject mask (zsh.01), and smooth skin (zsh.01) cost extra per photo. Enabling all four brings editing to zsh.09 per photo."
+            }
+          ],
+          [
+            {
+              "t": "Business plans: ",
+              "b": true
             },
             {
-              "t": "each",
-              "i": 1
-            },
-            {
-              "t": ", on top"
+              "t": "Custom pooled volume tiers for multi-shooter studios, associate teams, and high-volume post-production studios."
             }
           ]
         ]
@@ -1000,19 +1040,30 @@
         "type": "p",
         "runs": [
           {
-            "t": "That last point matters: turn on several add-ons and the effective rate climbs well above the headline $0.05. The honest read: it's accessible at low-to-moderate volume (you pay only for what you process), and it gets expensive fast at wedding volume. A photographer running two 3,000-image weddings a month is looking at around $300 before add-ons, where a flat-rate tool would be a fixed fee."
+            "t": "Understanding the volume math: ",
+            "b": true
+          },
+          {
+            "t": "Pricing applies to selected, edited frames\u2014not raw capture. A wedding culled to 700 delivered photos costs  on PAYG base, or  with crop and straighten (zsh.07/photo). For a solo wedding shooter editing 14,000 photos across 20 weddings, Limitless provides predictable flat annual billing (\u2013/year). For multi-shooter studios delivering 35,000+ photos, PAYG costs over ,750/year base, where local flat-fee rivals like Aftershoot (\u2013/year) offer substantial cost savings."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "There's a free trial with starter credits so you can test it on a real gallery before committing."
+            "t": "Official pricing documentation: ",
+            "b": true
+          },
+          {
+            "t": "Imagen Pricing & Plans Support Guide",
+            "href": "https://support.imagen-ai.com/hc/en-us/articles/4544978323857-Imagen-pricing-and-plans",
+            "ext": true
+          },
+          {
+            "t": ". Imagen provides 1,000 free AI editing credits upon signup so you can test real catalogs on your own computer."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "h2",
@@ -1048,21 +1099,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "For newer photographers without a big edited catalog, "
-          },
-          {
-            "t": "Talent Profiles",
-            "b": 1
-          },
-          {
-            "t": " are the clever answer: pre-built models trained on the styles of well-known photographers, functioning like adaptive presets that adjust to lighting rather than applying one flat look. It's the fastest way to get professional-looking edits before you've developed your own signature style."
+            "t": "For newer photographers without an extensive edited catalog, Talent Profiles are the ideal solution: pre-built models trained on established photographers. Instead of applying one flat preset, the AI analyzes each frame and makes nuanced exposure, color, and contrast adjustments. It offers an exceptionally fast way to get consistent edits back in Lightroom Classic."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "img",
-        "src": "/assets/imagen-ai-review-home-page-1536x994.jpg",
+        "src": "/assets/imagen-ai-review-home-page-1536x994.webp",
         "alt": "Imagen AI editing inside Lightroom",
         "cap": "Imagen AI editing inside Lightroom"
       },
@@ -1190,27 +1233,25 @@
         "type": "p",
         "runs": [
           {
-            "t": "Consider it if",
-            "b": 1
+            "t": "Consider it if: ",
+            "b": true
           },
           {
-            "t": " you edit in Lightroom Classic, editing quality and consistency are your top priority, you have a consistent style (or want to borrow one via Talent Profiles), and your volume is low-to-moderate enough that per-photo pricing works out."
+            "t": "You edit in Lightroom Classic, editing quality and color consistency are your top priorities, and you want either flexible pay-as-you-go billing or a flat Limitless tier for solo work."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Look elsewhere if",
-            "b": 1
+            "t": "Look elsewhere if: ",
+            "b": true
           },
           {
-            "t": " you shoot very high volume and want predictable costs (Aftershoot's flat fee), you need to work offline (Aftershoot again), or your main bottleneck is culling rather than editing (Aftershoot or Narrative Select)."
+            "t": "You manage a multi-shooter studio wanting a single flat-fee license (Aftershoot is cheaper at studio volume), you need to work completely offline, you use Capture One, or your primary bottleneck is AI culling rather than editing."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "h2",
@@ -1250,14 +1291,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "How much does Imagen AI cost?",
-            "b": 1
+            "t": "How much does Imagen AI cost?\n",
+            "b": true
           },
           {
-            "t": "\nPer-photo pricing: about $0.05 per image with a $7/month minimum on pay-as-you-go, or annual volume tiers (the popular 36,000-photo tier is roughly $127.50/month). Add-on tools like crop and masking cost about $0.01 per photo each on top. Cheaper at low volume, expensive at high volume."
+            "t": "Imagen offers two main pricing options: Pay-as-you-go starts at zsh.05 per photo (plus zsh.01 for optional tools like crop, straighten, subject mask, and smooth skin, up to zsh.09/photo) with a /month minimum spend. For eligible solo photographers shooting their own work, the flat Limitless plan costs approximately \u2013/year (\u2013/month equivalent) for unlimited editing with AI tools included. Studios with associate teams use custom Business tiers."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -1334,7 +1374,7 @@
             "href": "/aftershoot-vs-imagen"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -1343,7 +1383,7 @@
             "href": "/aftershoot-review"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -1356,12 +1396,12 @@
       }
     ],
     "images": [
-      "/assets/imagen-ai-review-home-page-1536x994.jpg"
+      "/assets/imagen-ai-review-home-page-1536x994.webp"
     ]
   },
   "best-client-gallery-software": {
     "title": "Best Client Gallery Software for Photographers (2026)",
-    "meta": "By The Photo Testers · Published August 15, 2026 · Updated October 24, 2026 · 9 min read",
+    "meta": "By The Photo Testers \u00b7 Published August 15, 2026 \u00b7 Updated October 24, 2026 \u00b7 9 min read",
     "disclosure": "We research every tool and keep pricing current. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of October 2026, but always confirm on the vendor's own page.",
     "blocks": [
       {
@@ -1375,7 +1415,7 @@
                 "b": 1
               },
               {
-                "t": " A polished gallery, website builder, and print store in one, the default choice for most wedding and portrait photographers."
+                "t": " A polished gallery, website builder, and print store in one\u2014the default standard for wedding and portrait photographers."
               }
             ],
             "cls": ""
@@ -1384,11 +1424,11 @@
             "type": "p",
             "runs": [
               {
-                "t": "Best value: ShootProof.",
+                "t": "Best value & studio tools: ShootProof.",
                 "b": 1
               },
               {
-                "t": " Contracts, invoicing, and a commission-free store at every tier, from around $10/month."
+                "t": " Contracts, invoicing, and a commission-free store on paid plans from .33/mo (.99/yr for 20 GB) up to 2 TB."
               }
             ],
             "cls": ""
@@ -1401,7 +1441,7 @@
                 "b": 1
               },
               {
-                "t": " A genuinely usable free plan and the cheapest full-suite entry point here."
+                "t": " Free plan (5 GB, 3 active galleries) and entry full-suite plans from \u2013/month billed annually."
               }
             ],
             "cls": ""
@@ -1410,11 +1450,24 @@
             "type": "p",
             "runs": [
               {
-                "t": "Best for storage and portfolios: SmugMug.",
+                "t": "Best for marketing automation: Pic-Time.",
                 "b": 1
               },
               {
-                "t": " Unlimited storage on every plan, though it's the priciest option."
+                "t": " Editorial layout design with automated print sales sequences and abandoned-cart campaigns."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Best for unlimited storage: SmugMug.",
+                "b": 1
+              },
+              {
+                "t": " Unlimited storage across all tiers, from /mo (/yr) for storage to /mo (/yr) for full print commerce."
               }
             ],
             "cls": ""
@@ -1470,7 +1523,7 @@
         "head": [
           [
             {
-              "t": "Tool"
+              "t": "Platform"
             }
           ],
           [
@@ -1480,12 +1533,12 @@
           ],
           [
             {
-              "t": "Entry price"
+              "t": "Entry price (annual)"
             }
           ],
           [
             {
-              "t": "Print store"
+              "t": "Print store fee"
             }
           ],
           []
@@ -1504,17 +1557,17 @@
             ],
             [
               {
-                "t": "All-in-one"
+                "t": "All-in-one suite"
               }
             ],
             [
               {
-                "t": "From $8/mo"
+                "t": "From /mo (/yr)"
               }
             ],
             [
               {
-                "t": "✓ Best-in-class"
+                "t": "0% on paid plans (15% free)"
               }
             ],
             [
@@ -1532,17 +1585,17 @@
             ],
             [
               {
-                "t": "Value, business tools"
+                "t": "Value, contracts & invoices"
               }
             ],
             [
               {
-                "t": "From $8.33/mo"
+                "t": "From .33/mo (.99/yr)"
               }
             ],
             [
               {
-                "t": "✓ Commission-free"
+                "t": "0% on direct orders"
               }
             ],
             [
@@ -1560,17 +1613,17 @@
             ],
             [
               {
-                "t": "Budget, free plan"
+                "t": "Budget, tiered limits"
               }
             ],
             [
               {
-                "t": "Free / From $12/mo"
+                "t": "Free / From /mo (/yr)"
               }
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "0% on Lite+ (15% free/entry)"
               }
             ],
             [
@@ -1588,17 +1641,17 @@
             ],
             [
               {
-                "t": "Premium design"
+                "t": "Automated marketing, editorial"
               }
             ],
             [
               {
-                "t": "From $7–21/mo"
+                "t": "Free / From /mo (/yr)"
               }
             ],
             [
               {
-                "t": "✓ Premium"
+                "t": "0% on Pro+ (10-15% lower)"
               }
             ],
             [
@@ -1616,17 +1669,17 @@
             ],
             [
               {
-                "t": "Storage, portfolios"
+                "t": "Unlimited storage, portfolios"
               }
             ],
             [
               {
-                "t": "From $20–37/mo"
+                "t": "From /mo (/yr)"
               }
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "15% on Pro/Venture commerce"
               }
             ],
             [
@@ -1644,17 +1697,17 @@
             ],
             [
               {
-                "t": "Website + galleries"
+                "t": "Website + gallery combo"
               }
             ],
             [
               {
-                "t": "From $7–20/mo"
+                "t": "From /mo (/yr)"
               }
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "7% commerce fee (Pro/Adv)"
               }
             ],
             [
@@ -1774,7 +1827,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "ShootProof is the value pick, and the one to choose if running your business matters as much as delivering pretty galleries. It bundles contracts, invoicing, and proofing at every tier, and its store is commission-free, so you keep your print profits."
+            "t": "ShootProof pairs client gallery delivery with essential studio business management. On paid tiers, it bundles contracts, invoicing, booking, and a commission-free print store on direct lab orders (contracts and invoicing are excluded on the free 3 GB tier)."
           }
         ],
         "cls": ""
@@ -1783,15 +1836,22 @@
         "type": "p",
         "runs": [
           {
-            "t": "Used by a large community of working photographers, ShootProof pairs client gallery delivery with essential studio business management. On paid tiers, it bundles contracts, invoicing, booking, and a commission-free print store on direct orders (contracts and invoicing are excluded on the free tier). Plans scale by storage capacity: Free (3 GB photo delivery), Starter 20 GB ($8.33/mo annual / $99.99/yr), Standard 100 GB ($16.67/mo annual / $199.99/yr), Professional 1,000 GB ($26.67/mo annual / $319.99/yr), Advanced 2,000 GB / 2 TB ($43.33/mo annual / $519.99/yr), and Unlimited ($50/mo annual / $600/yr)."
+            "t": "Plans scale strictly by storage capacity rather than photo counts: Free (3 GB photo delivery), Starter 20 GB (.33/mo annual / .99/yr), Standard 100 GB (.67/mo annual / .99/yr), Professional 1,000 GB (.67/mo annual / .99/yr), Advanced 2,000 GB / 2 TB (.33/mo annual / .99/yr), and Unlimited (/mo annual / /yr). Compare storage needs directly on our "
+          },
+          {
+            "t": "Gallery Cost Calculator",
+            "href": "/tools/gallery-cost-calculator"
+          },
+          {
+            "t": "."
           }
         ],
         "cls": ""
       },
       {
         "type": "img",
-        "src": "/assets/shootproof.png",
-        "alt": "ShootProof client proofing and order fulfillment interface",
+        "src": "/assets/shootproof.webp",
+        "alt": "ShootProof client gallery proofing and studio manager interface",
         "cap": "ShootProof gallery proofing dashboard and package setup (vendor screenshot)."
       },
       {
@@ -1799,29 +1859,29 @@
         "pros": [
           [
             {
-              "t": "Contracts, invoicing, proofing at every tier"
+              "t": "Contracts, invoicing, and proofing included on paid tiers"
             }
           ],
           [
             {
-              "t": "Commission-free print store"
+              "t": "0% commission on direct lab orders"
             }
           ],
           [
             {
-              "t": "Excellent value; huge user base"
+              "t": "Standard 100 GB and Advanced 2 TB tiers accommodate growing catalogs"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "Less design polish than Pic-Time"
+              "t": "Interface design feels more utilitarian than Pic-Time"
             }
           ],
           [
             {
-              "t": "Priced by photo-storage volume"
+              "t": "Free tier limited to 3 GB and excludes studio contracts/invoicing"
             }
           ]
         ]
@@ -1830,11 +1890,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " Free tier (3 GB); paid from $8.33/mo (Starter 20 GB, $99.99 billed annually), $16.67/mo (Standard 100 GB, $199.99/yr), $26.67/mo (Professional 1,000 GB), up to $43.33/mo (Advanced 2 TB, $519.99/yr) and $50/mo (Unlimited) (Checked October 2026)."
+            "t": "Pricing: Free tier (3 GB); Starter 20 GB (.33/mo annual [.99/yr] or .99/mo monthly); Standard 100 GB (.67/mo annual [.99/yr] or .99/mo monthly); Professional 1 TB (.67/mo annual [.99/yr] or .99/mo monthly); Advanced 2 TB (.33/mo annual [.99/yr] or .99/mo monthly); Unlimited (/mo annual [/yr] or /mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -1854,7 +1910,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "CloudSpot is the budget champion, with a genuinely usable free plan and the cheapest full-suite entry point on this list. It offers a strong client-facing experience and leans into AI culling and selling tools, which suits high-volume portrait and family photographers."
+            "t": "CloudSpot is an agile gallery option with a usable free tier and affordable entry points. It offers a clean client experience and integrates client sales galleries with optional Studio Manager business tools."
           }
         ],
         "cls": ""
@@ -1863,45 +1919,45 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its five plans run from Free (5 GB, 15% commission, no Studio Manager) and Entry ($6/mo annual [$72/yr] or $7/mo monthly, 15 GB, 15% commission) up through Full Suite tiers: Lite ($12/mo annual [$144/yr] or $17/mo monthly, 100 GB), Pro ($28/mo annual [$336/yr] or $34/mo monthly, 500 GB), and Unlimited ($42/mo annual [$504/yr] or $50/mo monthly, unlimited storage). The Full Suite tiers eliminate print commissions entirely (0%) and include Studio Manager contracts and invoicing."
+            "t": "Its five plans run from Free (5 GB, 3 active galleries cap, 15% commission, no Studio Manager) and Entry (/mo annual [/yr] or /mo monthly, 15 GB, 15 active galleries cap, 15% commission) up through Full Suite tiers: Lite (/mo annual [/yr] or /mo monthly, 100 GB, unlimited galleries), Pro (/mo annual [/yr] or /mo monthly, 500 GB, unlimited galleries), and Unlimited (/mo annual [/yr] or /mo monthly, unlimited storage and galleries). The Full Suite tiers eliminate print commissions entirely (0%) and include Studio Manager contracts and invoicing. Note: CloudSpot's annual rates represent discounted upfront annual subscriptions (/yr for Entry, /yr for Lite, /yr for Pro, and /yr for Unlimited) rather than 12 equal monthly installments."
           }
         ],
         "cls": ""
       },
       {
         "type": "img",
-        "src": "/assets/cloudspot.png",
-        "alt": "CloudSpot client gallery view",
-        "cap": "CloudSpot mobile-optimized client gallery view (vendor screenshot)."
+        "src": "/assets/cloudspot.webp",
+        "alt": "CloudSpot client gallery dashboard and mobile app preview",
+        "cap": "CloudSpot client gallery management and print store workspace (vendor screenshot)."
       },
       {
         "type": "proscons",
         "pros": [
           [
             {
-              "t": "Genuinely usable free plan"
+              "t": "Free tier available (5 GB storage, up to 3 active galleries)"
             }
           ],
           [
             {
-              "t": "Cheapest full-suite entry point here"
+              "t": "Affordable Lite entry point (/yr) with unlimited galleries and 0% commission"
             }
           ],
           [
             {
-              "t": "AI culling and selling tools built in"
+              "t": "Studio Manager business tools included on Full Suite tiers"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "Commission on lower tiers"
+              "t": "Free and Entry tiers enforce active gallery caps (3 and 15 galleries)"
             }
           ],
           [
             {
-              "t": "Smaller brand than Pixieset or SmugMug"
+              "t": "15% print sales commission on Free and Entry tiers"
             }
           ]
         ]
@@ -1910,11 +1966,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " Free tier (5 GB); paid from $12/mo (Lite, $144 billed annually / $17/mo monthly) up to $42/mo (Unlimited, $504 billed annually / $50/mo monthly) (Checked October 2026)."
+            "t": "Pricing: Free tier (5 GB, 3 galleries); Entry 15 GB (/mo annual [/yr] or /mo monthly); Lite 100 GB (/mo annual [/yr] or /mo monthly); Pro 500 GB (/mo annual [/yr] or /mo monthly); Unlimited (/mo annual [/yr] or /mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -1934,7 +1986,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pic-Time is the premium, design-forward option, the one to learn if your brand depends on gallery beauty and you want the platform to keep selling prints for you. Its standout is marketing automation: automated print campaigns and smart slideshows that generate revenue long after delivery, plus the strongest AI features here."
+            "t": "Pic-Time is the premium, design-forward platform designed for photographers whose client experience relies on editorial aesthetics and automated print sales. Its standout strength is marketing automation: built-in sequences for abandoned-cart recovery, holiday promotions, and anniversary discount banners that prompt print purchases directly in the gallery view."
           }
         ],
         "cls": ""
@@ -1943,45 +1995,52 @@
         "type": "p",
         "runs": [
           {
-            "t": "That power costs more (around $21/month billed annually at the working-photographer Professional tier) and there is no built-in website builder, so your portfolio site lives elsewhere. It also has a steeper learning curve. Worth testing the client-side download experience yourself, since that is its most common complaint."
+            "t": "Pic-Time connects natively to client management platforms like HoneyBook and Studio Ninja (see our "
+          },
+          {
+            "t": "Pic-Time CRM integration walkthrough",
+            "href": "/photography-crm-pic-time-integration"
+          },
+          {
+            "t": "), allowing automatic gallery creation upon booking or invoice payment. However, it does not include a full portfolio website builder, so your main website must live on WordPress, Squarespace, or Showit."
           }
         ],
         "cls": ""
       },
       {
         "type": "img",
-        "src": "/assets/pic-time.png",
-        "alt": "Pic-Time editorial client gallery interface with integrated store",
-        "cap": "Pic-Time editorial client gallery interface with dynamic store mockups (vendor screenshot)."
+        "src": "/assets/pic-time.webp",
+        "alt": "Pic-Time editorial gallery layout and automated print store view",
+        "cap": "Pic-Time gallery storefront showing automated print discount campaigns and wall art mockups (vendor screenshot)."
       },
       {
         "type": "proscons",
         "pros": [
           [
             {
-              "t": "Best gallery aesthetics and customization"
+              "t": "Editorial gallery aesthetics and integrated room-mockup print store"
             }
           ],
           [
             {
-              "t": "Automated print-marketing that keeps selling"
+              "t": "Automated marketing sequences (abandoned carts, holiday promotions)"
             }
           ],
           [
             {
-              "t": "Strongest AI features here"
+              "t": "Native integration with HoneyBook and Studio Ninja"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "Most expensive at the working tier; no website builder"
+              "t": "No built-in portfolio website builder"
             }
           ],
           [
             {
-              "t": "Steeper learning curve; client download UX complaints"
+              "t": "Commission (10\u201315%) applies on Free and Beginner tiers"
             }
           ]
         ]
@@ -1990,11 +2049,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $7/mo (Beginner) or $21/mo (Professional, billed annually); free tier (10GB) (Checked October 2026)."
+            "t": "Pricing: Free tier (20 GB, 15% commission); Beginner 100 GB (/mo annual [/yr] or /mo monthly, 10% commission); Professional 500 GB (/mo annual [/yr] or /mo monthly, 0% commission with own processor); Advanced Unlimited (/mo annual [/yr] or /mo monthly, 0% commission); Grand Unlimited (/mo annual [/yr] or /mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2014,7 +2069,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "SmugMug is the veteran, and its edge is storage and longevity: unlimited storage on every plan, mature SEO tools that genuinely help public portfolios rank, and a long, stable operating history. It's a full portfolio-plus-gallery hybrid, useful if you want your website and client delivery in one tool."
+            "t": "SmugMug is the veteran hosting platform, distinguished by unlimited photo storage across every plan and mature portfolio customization tools. It serves as a unified website-and-archive platform for photographers who want both a public portfolio and client delivery under one domain."
           }
         ],
         "cls": ""
@@ -2023,45 +2078,45 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its current plans range from Direct ($20/mo annual) for backup and sharing without selling markup, to Portfolio ($23.50/mo annual) and Pro ($37/mo annual) for print and digital commerce (with 15% commission on print markup). It has no permanent free plan, though a 14-day trial is available."
+            "t": "Current plans include Starter (/mo annual [/yr] or /mo monthly) for unlimited storage and password-protected sharing without e-commerce markup; Pro (/mo annual [/yr] or /mo monthly) for full turnkey print and digital commerce with 15% fulfillment fee; and Venture (/mo annual [/yr] or /mo monthly) for high-volume studios requiring multi-user access and watermarking. A 14-day free trial is available, but there is no permanent free tier."
           }
         ],
         "cls": ""
       },
       {
         "type": "img",
-        "src": "/assets/smugmug.jpg",
-        "alt": "SmugMug portfolio and gallery delivery interface",
-        "cap": "SmugMug portfolio showcase and client photo gallery view (vendor screenshot)."
+        "src": "/assets/smugmug.webp",
+        "alt": "SmugMug portfolio and client gallery presentation interface",
+        "cap": "SmugMug portfolio and gallery storefront manager (vendor screenshot)."
       },
       {
         "type": "proscons",
         "pros": [
           [
             {
-              "t": "Unlimited storage on every plan"
+              "t": "Unlimited storage on all subscription tiers"
             }
           ],
           [
             {
-              "t": "Strong SEO tools for public portfolios"
+              "t": "Robust portfolio website templates with custom domain support"
             }
           ],
           [
             {
-              "t": "Mature, stable, well-documented platform"
+              "t": "Established infrastructure with mature privacy controls"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "Most expensive option here"
+              "t": "Selling requires the Pro tier (/mo annual [/yr]) plus a 15% fulfillment fee"
             }
           ],
           [
             {
-              "t": "No free plan; selling needs a higher tier"
+              "t": "No permanent free plan"
             }
           ]
         ]
@@ -2070,11 +2125,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $20/mo (Direct) to $37/mo (Pro, billed annually) (Checked October 2026)."
+            "t": "Pricing: 14-day trial; Starter (/mo annual [/yr] or /mo monthly); Pro (/mo annual [/yr] or /mo monthly); Venture (/mo annual [/yr] or /mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2094,7 +2145,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Zenfolio's long-standing strength is combining a full website builder with client galleries and selling tools in one subscription, with intelligent workflow automation for portfolios, marketing, scheduling, and sales. It's a solid fit for volume and event workflows."
+            "t": "Zenfolio combines a portfolio website builder with client proofing, online booking, and print ordering. It is structured particularly well for high-volume school, event, and portrait workflows that need integrated client pre-registration and batch gallery ordering."
           }
         ],
         "cls": ""
@@ -2103,45 +2154,45 @@
         "type": "p",
         "runs": [
           {
-            "t": "Current plans include Basic ($7/mo annual, 15GB, no e-commerce), Professional ($11.50/mo annual, 150GB, full selling with 7% commerce fee), and Advanced ($20/mo annual, unlimited JPEG storage with 7% commerce fee). It is an affordable way to keep portfolio websites and client delivery unified."
+            "t": "Current plans include Basic (/mo annual [/yr], 15 GB storage, no e-commerce); Professional (.50/mo annual [/yr], 150 GB storage, e-commerce with 7% commerce fee); and Advanced (/mo annual [/yr], unlimited JPEG storage with 7% commerce fee). Note: The /year price for Professional is an introductory first-year promotional rate; standard month-to-month billing is /month, and subsequent annual renewals are billed per Zenfolio's published account renewal rates."
           }
         ],
         "cls": ""
       },
       {
         "type": "img",
-        "src": "/assets/zenfolio.png",
-        "alt": "Zenfolio client gallery management interface",
-        "cap": "Zenfolio client gallery management and digital fulfillment interface (vendor screenshot)."
+        "src": "/assets/zenfolio.webp",
+        "alt": "Zenfolio website builder and client gallery store dashboard",
+        "cap": "Zenfolio client gallery management and store configuration panel (vendor screenshot)."
       },
       {
         "type": "proscons",
         "pros": [
           [
             {
-              "t": "Website builder plus galleries in one plan"
+              "t": "Portfolio website builder and client galleries in one subscription"
             }
           ],
           [
             {
-              "t": "Affordable entry point (~$9/mo)"
+              "t": "First-year promotional pricing (/yr for Professional)"
             }
           ],
           [
             {
-              "t": "Workflow automation for events and volume"
+              "t": "Built-in client pre-registration and school/event workflows"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "Selling and marketing need higher tiers"
+              "t": "Professional /yr is a 1st-year promo; regular monthly rate is /mo"
             }
           ],
           [
             {
-              "t": "Entry plan is storage-limited"
+              "t": "7% commerce fee applies on sales; Basic plan lacks e-commerce"
             }
           ]
         ]
@@ -2150,11 +2201,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $7/mo (Basic) to $20/mo (Advanced, billed annually) (Checked October 2026)."
+            "t": "Pricing: Basic 15 GB (/mo annual [/yr]); Professional 150 GB (.50/mo annual 1st-yr promo [/yr], /mo standard monthly); Advanced Unlimited (/mo annual [/yr]) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2343,7 +2390,7 @@
             "b": 1
           },
           {
-            "t": "\nFor most photographers, Pixieset, it balances polished galleries, a website builder, and a strong print store at a fair price. ShootProof is the best value with business tools included, and Pic-Time leads on premium design and marketing automation."
+            "t": "\nFor most wedding and portrait photographers, Pixieset provides the most balanced combination of aesthetics, website tools, and client ease-of-use. For photographers prioritizing studio business management and commission-free store sales, ShootProof provides the highest practical value. For marketing automation and editorial presentation, Pic-Time is the leading platform."
           }
         ],
         "cls": ""
@@ -2352,11 +2399,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "What is the cheapest client gallery software?\n",
+            "t": "What is the cheapest client gallery software?",
             "b": 1
           },
           {
-            "t": "CloudSpot has a free plan (up to 5GB) and its paid plans start at $12/month ($144/year) on annual billing; Zenfolio starts at $7/month (Basic); ShootProof starts at $8.33/month ($99.99/year annual). All scale with storage, and free tiers usually attach a sales commission or exclude business features like invoicing."
+            "t": "\nCloudSpot offers a functional free plan (up to 5 GB and 3 active galleries) and entry paid plans from /mo (/year) on annual billing. ShootProof starts at .33/mo (.99/year) with contracts and invoicing included. Pixieset offers a 3 GB free tier and starts at /mo (/year). Always account for storage requirements and print commission fees when comparing total costs."
           }
         ],
         "cls": ""
@@ -2416,7 +2463,7 @@
             "href": "/pic-time-vs-pixieset-vs-shootproof"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -2425,7 +2472,7 @@
             "href": "/best-crm-wedding-photographers"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -2448,14 +2495,14 @@
   },
   "pic-time-vs-pixieset-vs-shootproof": {
     "title": "Pic-Time vs Pixieset vs ShootProof (2026 Comparison)",
-    "meta": "By The Photo Testers · Published August 14, 2026 · Updated October 24, 2026 · 9 min read",
+    "meta": "By The Photo Testers \u00b7 Published August 14, 2026 \u00b7 Updated October 24, 2026 \u00b7 9 min read",
     "disclosure": "We research every tool and keep pricing current. Some links below are affiliate links, which means we may earn a commission at no extra cost to you. Pricing is current as of October 2026, but always confirm on the vendor's own page.",
     "blocks": [
       {
         "type": "p",
         "runs": [
           {
-            "t": "Choosing a client gallery feels like marrying into a family. You don’t just get a nice photo grid - you inherit their print labs, their email marketing quirks, and their billing structure."
+            "t": "Choosing a client gallery feels like marrying into a family. You don\u2019t just get a nice photo grid - you inherit their print labs, their email marketing quirks, and their billing structure."
           }
         ],
         "cls": ""
@@ -2587,7 +2634,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pixieset is undeniably pretty. It’s clean, modern, and very hard to make look bad. Their recent layout updates in 2025 gave photographers more control over the grid and typography, but it still maintains that signature minimalist vibe. The client experience is frictionless - scrolling, favoriting, and downloading are intuitive even for less tech-savvy grandparents."
+            "t": "Pixieset is undeniably pretty. It\u2019s clean, modern, and very hard to make look bad. Their recent layout updates in 2025 gave photographers more control over the grid and typography, but it still maintains that signature minimalist vibe. The client experience is frictionless - scrolling, favoriting, and downloading are intuitive even for less tech-savvy grandparents."
           }
         ],
         "cls": ""
@@ -2615,7 +2662,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "ShootProof has improved their designs significantly over the last few years, but it still feels slightly more utilitarian compared to the other two. It’s clean and professional, but it lacks the \"wow\" factor of Pic-Time or Pixieset. However, its straightforward design is excellent for high-volume proofing where clarity is more important than vibes."
+            "t": "ShootProof has improved their designs significantly over the last few years, but it still feels slightly more utilitarian compared to the other two. It\u2019s clean and professional, but it lacks the \"wow\" factor of Pic-Time or Pixieset. However, its straightforward design is excellent for high-volume proofing where clarity is more important than vibes."
           }
         ],
         "cls": ""
@@ -2699,7 +2746,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pixieset’s store is gorgeous. Setting up price sheets is incredibly easy, and the checkout process is smooth. However, their marketing tools are basic. You can send coupons, but you have to do it manually. There are no automated email campaigns or dynamic gallery banners pushing a sale."
+            "t": "Pixieset\u2019s store is gorgeous. Setting up price sheets is incredibly easy, and the checkout process is smooth. However, their marketing tools are basic. You can send coupons, but you have to do it manually. There are no automated email campaigns or dynamic gallery banners pushing a sale."
           }
         ],
         "cls": ""
@@ -2750,7 +2797,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Let’s look at the actual costs based on current vendor plans and documentation (checked October 2026)."
+            "t": "Let\u2019s look at the actual costs based on current vendor plans and documentation (checked October 2026)."
           }
         ],
         "cls": ""
@@ -2854,30 +2901,30 @@
               "b": 1
             },
             {
-              "t": " 10GB storage (15% commission, basic marketing apps)"
+              "t": " 20GB storage (15% commission, basic marketing apps)"
             }
           ],
           [
             {
-              "t": "Beginner ($7/mo annual / $8/mo monthly):",
+              "t": "Beginner (/mo annual [/yr] / /mo monthly):",
               "b": 1
             },
             {
-              "t": " 20GB storage (15% commission)"
+              "t": " 100GB storage (10% commission)"
             }
           ],
           [
             {
-              "t": "Professional ($21/mo annual / $25/mo monthly):",
+              "t": "Professional (/mo annual [/yr] / /mo monthly):",
               "b": 1
             },
             {
-              "t": " 100GB storage (0% commission with own payment processor)"
+              "t": " 500GB storage (0% commission with own payment processor)"
             }
           ],
           [
             {
-              "t": "Advanced ($42/mo annual / $50/mo monthly):",
+              "t": "Advanced (/mo annual [/yr] / /mo monthly):",
               "b": 1
             },
             {
@@ -2886,7 +2933,11 @@
           ],
           [
             {
-              "t": "(Note: The Advanced plan includes premium marketing apps and unlimited storage)."
+              "t": "Grand (/mo annual [/yr] / /mo monthly):",
+              "b": 1
+            },
+            {
+              "t": " Unlimited storage, multi-brand and multi-user support (0% commission)"
             }
           ]
         ]
@@ -2923,7 +2974,7 @@
               "b": 1
             },
             {
-              "t": " $8.33/mo annual ($99.99/yr) / $9.99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " .33/mo annual (.99/yr) / .99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -2932,7 +2983,7 @@
               "b": 1
             },
             {
-              "t": " $16.67/mo annual ($199.99/yr) / $19.99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " .67/mo annual (.99/yr) / .99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -2941,7 +2992,7 @@
               "b": 1
             },
             {
-              "t": " $26.67/mo annual ($319.99/yr) / $31.99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " .67/mo annual (.99/yr) / .99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -2950,7 +3001,7 @@
               "b": 1
             },
             {
-              "t": " $43.33/mo annual ($519.99/yr) / $51.99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " .33/mo annual (.99/yr) / .99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -2959,7 +3010,7 @@
               "b": 1
             },
             {
-              "t": " $50/mo annual ($600/yr) / $60/mo monthly (0% commission, full studio features + archiving)"
+              "t": " /mo annual (/yr) / /mo monthly (0% commission, full studio features + archiving)"
             }
           ]
         ]
@@ -2972,7 +3023,7 @@
             "b": 1
           },
           {
-            "t": " It’s a tie based on your needs. "
+            "t": " It\u2019s a tie based on your needs. "
           },
           {
             "t": "Pixieset",
@@ -3031,7 +3082,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "ShootProof has built-in invoicing and contracts natively on its paid plans. It’s not a full CRM, but it handles the essential business paperwork very well, especially for standard portrait and wedding workflows."
+            "t": "ShootProof has built-in invoicing and contracts natively on its paid plans. It\u2019s not a full CRM, but it handles the essential business paperwork very well, especially for standard portrait and wedding workflows."
           }
         ],
         "cls": ""
@@ -3045,7 +3096,14 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pic-Time includes a phenomenal slideshow builder (with licensed music) built right into the gallery. They also recently introduced a blogging tool that pulls images directly from your galleries to create SEO-friendly blog posts. However, they do not have a built-in CRM for contracts or invoicing."
+            "t": "Pic-Time includes a phenomenal slideshow builder (with licensed music) built right into the gallery, and a blogging tool that pulls images directly from your galleries. While it lacks a built-in CRM for contracts, it connects natively to client management systems like HoneyBook and Studio Ninja\u2014see our full "
+          },
+          {
+            "t": "Pic-Time CRM integration walkthrough",
+            "href": "/photography-crm-pic-time-integration"
+          },
+          {
+            "t": " for setup steps and documented limits."
           }
         ],
         "cls": ""
@@ -3111,8 +3169,8 @@
   },
   "best-photo-culling-software": {
     "title": "Best Photo Culling Software for Photographers (2026)",
-    "meta": "By The Photo Testers · Updated July 2026 · 9 min read",
-    "disclosure": "We research every tool and keep pricing current. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of July 2026, but always confirm on the vendor's own page.",
+    "meta": "By The Photo Testers team \u00b7 Published July 2026 \u00b7 Updated October 2026 \u00b7 10 min read",
+    "disclosure": "We evaluate tools through structured research, technical documentation analysis, and verified catalog workflows. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing, features, and plan tiers verified October 2026 against official vendor documentation.",
     "blocks": [
       {
         "type": "box",
@@ -3241,7 +3299,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Keep in mind who ran and published that benchmark (FilterPixel, a direct competitor), so treat the top ranking with appropriate skepticism. Reserve truly \"independent\" status for disinterested third-party testing without a commercial interest in the outcome. The relative pattern, however—cloud processing fastest, Aftershoot mid, Narrative slower-but-more-considered—aligns with broader photographer reports."
+            "t": "Keep in mind who ran and published that benchmark (FilterPixel, a direct competitor), so treat the top ranking with appropriate skepticism. Reserve truly \"independent\" status for disinterested third-party testing without a commercial interest in the outcome. The relative pattern, however\u2014cloud processing fastest, Aftershoot mid, Narrative slower-but-more-considered\u2014aligns with broader photographer reports."
           }
         ],
         "cls": ""
@@ -3436,17 +3494,16 @@
       },
       {
         "type": "h2",
-        "text": "1. FilterPixel: cloud processing speed, and genre-aware",
-        "id": "1-filterpixel-fastest-and-genre-aware"
+        "text": "1. FilterPixel: cloud processing throughput and genre-aware culling",
+        "id": "1-filterpixel-cloud-processing-and-genre-aware"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "In competitor-published benchmarks, FilterPixel demonstrated the fastest throughput by processing in the cloud rather than on your local machine. Its other distinguishing feature is DeepCull, which loads a model trained for your specific shoot type, weddings, sports, concerts, conferences, portraits, so it weights frames the way that genre actually rewards."
+            "t": "In a benchmark published by FilterPixel in 2024 comparing cloud processing against on-device competitors on a 1,000-RAW wedding set, FilterPixel recorded the fastest elapsed processing throughput because computation occurred on remote servers rather than the local CPU/GPU. However, this throughput requires stable, high-speed upload connectivity and leaves final selection review to the photographer."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -3468,7 +3525,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/filterpixel.png",
+        "src": "/assets/filterpixel.webp",
         "alt": "FilterPixel AI culling review interface",
         "cap": "FilterPixel interface grouping duplicate shots and assessing focus (vendor screenshot)."
       },
@@ -3508,14 +3565,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " 4 free projects; from $14.99/mo (July 2026)."
+            "t": "4 free projects; paid plans from .99/mo (October 2026)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -3588,14 +3644,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " From $9.99/mo annual (culling) to full-workflow tiers (July 2026)."
+            "t": "Select (culling only) from /mo billed annually (/yr) or /mo monthly; 30-day trial with full feature access (October 2026)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -3637,7 +3692,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/narrative-select.png",
+        "src": "/assets/narrative-select.webp",
         "alt": "Narrative Select face close-up assessment panel",
         "cap": "Narrative Select close-up panel comparing eye sharpness and expressions (vendor screenshot)."
       },
@@ -3677,14 +3732,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " Around $99/year (July 2026)."
+            "t": "Free trial available; paid plans from ~ to /mo billed annually (October 2026). Note: Official help documentation outlines Lite, Standard, Pro/Premium, and Ultra plans, while older marketing pages still advertise a legacy free tier."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -3717,7 +3771,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/photo-mechanic.png",
+        "src": "/assets/photo-mechanic.webp",
         "alt": "Photo Mechanic contact sheet browser",
         "cap": "Photo Mechanic high-speed contact sheet browsing and metadata tagging (vendor screenshot)."
       },
@@ -3781,7 +3835,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Excire Foto is the interesting middle ground: it uses AI, but you buy it once rather than subscribing. It runs locally, offers AI-assisted culling and keyword tagging, and appeals to photographers who want some automation without a recurring bill. Pricing is a one-time purchase (around €99)."
+            "t": "Excire Foto is the interesting middle ground: it uses AI, but you buy it once rather than subscribing. It runs locally, offers AI-assisted culling and keyword tagging, and appeals to photographers who want some automation without a recurring bill. Pricing is a one-time purchase (around \u20ac99)."
           }
         ],
         "cls": ""
@@ -3797,7 +3851,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/excire-foto.png",
+        "src": "/assets/excire-foto.webp",
         "alt": "Excire Foto AI search workspace",
         "cap": "Excire Foto photo organization and AI keyword search workspace (vendor screenshot)."
       },
@@ -3841,7 +3895,7 @@
             "b": 1
           },
           {
-            "t": " One-time purchase, around €99 (July 2026)."
+            "t": " One-time purchase, around \u20ac99 (July 2026)."
           }
         ],
         "cls": ""
@@ -3995,7 +4049,7 @@
             "b": 1
           },
           {
-            "t": "\nYes. Photo Mechanic ($139 one-time) is a fast manual browser, and Excire Foto (around €99 one-time) offers AI culling you own outright. Most other AI tools use subscriptions."
+            "t": "\nYes. Photo Mechanic ($139 one-time) is a fast manual browser, and Excire Foto (around \u20ac99 one-time) offers AI culling you own outright. Most other AI tools use subscriptions."
           }
         ],
         "cls": ""
@@ -4029,7 +4083,7 @@
             "href": "/best-ai-culling-editing-software"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -4038,7 +4092,7 @@
             "href": "/aftershoot-alternatives"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -4060,8 +4114,8 @@
   },
   "aftershoot-alternatives": {
     "title": "Best Aftershoot Alternatives for Photographers (2026)",
-    "meta": "By The Photo Testers · Updated July 2026 · 8 min read",
-    "disclosure": "We research every tool and keep pricing current. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of July 2026, but always confirm on the vendor's own page.",
+    "meta": "By The Photo Testers team \u00b7 Published July 2026 \u00b7 Updated October 2026 \u00b7 9 min read",
+    "disclosure": "We evaluate tools through structured research, technical documentation analysis, and verified catalog workflows. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing, features, and plan tiers verified October 2026 against official vendor documentation.",
     "blocks": [
       {
         "type": "box",
@@ -4425,7 +4479,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/filterpixel.png",
+        "src": "/assets/filterpixel.webp",
         "alt": "FilterPixel DeepCull",
         "cap": "FilterPixel DeepCull"
       },
@@ -4498,10 +4552,12 @@
         "type": "p",
         "runs": [
           {
-            "t": "The pricing model is the key difference from Aftershoot's flat fee. At $0.05 per photo, costs grow directly with your workload, and add-ons like cropping, straightening, and subject masking cost an extra $0.01 per photo per feature on top of every plan. So it can beat Aftershoot on editing quality while costing more at high volume."
+            "t": "The pricing and workflow models are the key differences from Aftershoot. "
+          },
+          {
+            "t": "Imagen offers Pay-as-you-go (zsh.05/photo base + zsh.01 optional tools like crop and straighten) with a /month minimum, or a flat Limitless subscription (\u2013/year) for eligible solo photographers. Unlike Aftershoot\u2019s local offline processing, Imagen runs in the cloud and operates specifically within Lightroom Classic."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -4514,7 +4570,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/imagen-ai-review-home-page-1536x994.jpg",
+        "src": "/assets/imagen-ai-review-home-page-1536x994.webp",
         "alt": "Imagen AI editing",
         "cap": "Imagen AI editing"
       },
@@ -4554,14 +4610,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " From $0.05/photo (min $7/mo) (July 2026)."
+            "t": "From zsh.05/photo PAYG (min /mo) or Limitless (\u2013/yr) for solo shooters (October 2026)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -4587,14 +4642,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "It has a free tier, works offline (so it keeps Aftershoot's privacy advantage), and ships selections straight into Lightroom. For photographers who don't want to second-guess an AI's picks, the assist-don't-decide philosophy is the appeal."
+            "t": "Narrative Select operates 100% locally and offline on your computer, preserving local privacy like Aftershoot. Plan availability has transitioned: official help documentation details Lite, Standard, Pro/Premium, and Ultra plans (from ~ to /mo billed annually), while older marketing pages still reference a legacy free tier. A free trial is available to test on live shoots."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "img",
-        "src": "/assets/narrative-select.png",
+        "src": "/assets/narrative-select.webp",
         "alt": "Narrative Select",
         "cap": "Narrative Select"
       },
@@ -4634,14 +4688,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " Free tier available; paid plans add unlimited features (July 2026)."
+            "t": "Free trial available; paid plans from ~ to /mo billed annually (October 2026)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -4674,7 +4727,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/photo-mechanic.png",
+        "src": "/assets/photo-mechanic.webp",
         "alt": "Photo Mechanic",
         "cap": "Photo Mechanic"
       },
@@ -4754,7 +4807,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/evoto.png",
+        "src": "/assets/evoto.webp",
         "alt": "Evoto retouching",
         "cap": "Evoto retouching"
       },
@@ -5004,7 +5057,7 @@
             "href": "/best-ai-culling-editing-software"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -5013,7 +5066,7 @@
             "href": "/aftershoot-vs-imagen"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -5035,8 +5088,8 @@
   },
   "filterpixel-alternatives": {
     "title": "Best FilterPixel Alternatives for Photographers (2026)",
-    "meta": "By The Photo Testers · Updated July 2026 · 8 min read",
-    "disclosure": "We research every tool and keep pricing current. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of July 2026, but always confirm on the vendor's own page.",
+    "meta": "By The Photo Testers team \u00b7 Published July 2026 \u00b7 Updated October 2026 \u00b7 9 min read",
+    "disclosure": "We evaluate tools through structured research, technical documentation analysis, and verified catalog workflows. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing, features, and plan tiers verified October 2026 against official vendor documentation.",
     "blocks": [
       {
         "type": "box",
@@ -5227,7 +5280,7 @@
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "\u2713 Yes"
               }
             ],
             [
@@ -5256,7 +5309,7 @@
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "\u2713 Yes"
               }
             ],
             [
@@ -5285,7 +5338,7 @@
             ],
             [
               {
-                "t": "✗ No"
+                "t": "\u2717 No"
               }
             ],
             [
@@ -5314,7 +5367,7 @@
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "\u2713 Yes"
               }
             ],
             [
@@ -5343,7 +5396,7 @@
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "\u2713 Yes"
               }
             ],
             [
@@ -5384,10 +5437,9 @@
         "type": "p",
         "runs": [
           {
-            "t": "Aftershoot now offers four plans, all with a 30 day free trial of the full Pro tier. Pricing runs from Selects (culling only) at $14.99/month, or $9.99/month billed annually up to the full-workflow tiers. The key difference from FilterPixel: it does the whole post-shoot workflow, not just selection, and it runs entirely on your machine."
+            "t": "Aftershoot offers three modular plans, all with a 30-day free trial. Pricing runs from Select (culling only at /mo billed annually / /yr), Edit (AI editing at /mo billed annually / /yr), to Complete (bundling culling, editing, and retouching at /mo billed annually / /yr). Everything runs 100% locally and offline on your computer."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -5445,14 +5497,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " From $9.99/mo annual (culling) to full-workflow tiers (July 2026)."
+            "t": "Select /mo, Edit /mo, Complete /mo billed annually; 30-day free trial (October 2026)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -5485,14 +5536,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its standout is speed: RAW previews render almost instantly, so browsing thousands of files is genuinely fast, especially on Apple Silicon Macs. It has a free tier to start, works offline, and ships selections straight into Lightroom. For photographers who don't want to second-guess an AI's picks, this assist-don't-decide approach is the draw."
+            "t": "Its standout feature is speed: RAW previews render almost instantly with zero lag, making high-speed browsing through thousands of files seamless on local hardware. Official help guides specify Lite, Standard, Pro/Premium, and Ultra plans (starting from ~ to /mo billed annually), alongside legacy free-tier references."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "img",
-        "src": "/assets/narrative-select.png",
+        "src": "/assets/narrative-select.webp",
         "alt": "Narrative Select",
         "cap": "Narrative Select"
       },
@@ -5532,14 +5582,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " Free tier available; paid plans add unlimited features (July 2026)."
+            "t": "Free trial available; paid plans from ~ to /mo billed annually (October 2026)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -5565,21 +5614,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "The catch is the pricing model. Imagen AI pricing in 2026: Pay-as-you-go costs $0.05 per photo with a minimum $7/month charge. That's fine at low volume and expensive at wedding volume. And on culling specifically, be clear-eyed: even Imagen's own comparisons concede culling is a secondary feature, so don't switch to Imagen "
-          },
-          {
-            "t": "for",
-            "i": 1
-          },
-          {
-            "t": " culling, switch for editing."
+            "t": "Imagen AI offers two pricing structures: Pay-as-you-go costs zsh.05 per photo (plus zsh.01 optional tools) with a /month minimum, while eligible solo photographers can subscribe to a flat Limitless tier (\u2013/year). It processes in the cloud and operates inside Lightroom Classic."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "img",
-        "src": "/assets/imagen-ai-review-home-page-1536x994.jpg",
+        "src": "/assets/imagen-ai-review-home-page-1536x994.webp",
         "alt": "Imagen AI",
         "cap": "Imagen AI"
       },
@@ -5619,14 +5660,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " From $0.05/photo (min $7/mo) (July 2026)."
+            "t": "From zsh.05/photo PAYG (min /mo) or Limitless (\u2013/yr) for solo shooters (October 2026)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -5659,7 +5699,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/photo-mechanic.png",
+        "src": "/assets/photo-mechanic.webp",
         "alt": "Photo Mechanic",
         "cap": "Photo Mechanic"
       },
@@ -5739,7 +5779,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/evoto.png",
+        "src": "/assets/evoto.webp",
         "alt": "Evoto retouching",
         "cap": "Evoto retouching"
       },
@@ -5989,7 +6029,7 @@
             "href": "/aftershoot-alternatives"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -5998,7 +6038,7 @@
             "href": "/best-ai-culling-editing-software"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -6020,8 +6060,8 @@
   },
   "aftershoot-vs-imagen": {
     "title": "Aftershoot vs Imagen: Which AI Editor Wins in 2026?",
-    "meta": "By The Photo Testers · Updated July 2026 · 9 min read",
-    "disclosure": "We research every tool and keep pricing current. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of July 2026, but always confirm on the vendor's own page.",
+    "meta": "By The Photo Testers team \u00b7 Published July 2026 \u00b7 Updated October 2026 \u00b7 9 min read",
+    "disclosure": "We evaluate tools through hands-on testing and structured research. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing, plans, and technical specifications verified October 2026 against official vendor documentation.",
     "blocks": [
       {
         "type": "box",
@@ -6030,50 +6070,25 @@
             "type": "p",
             "runs": [
               {
-                "t": "It comes down to volume and where you edit.",
-                "b": 1
+                "t": "Short answer: ",
+                "b": true
+              },
+              {
+                "t": "Aftershoot is best for high-volume photographers and those who need to work offline, with flat annual pricing covering culling, editing, and retouching on your local computer. Imagen is best for Lightroom Classic users seeking precise style matching and nuanced skin tones, offered via Pay-As-You-Go (zsh.05/photo + add-ons) or a flat Limitless subscription for eligible solo shooters."
               }
-            ],
-            "cls": ""
+            ]
           },
           {
             "type": "p",
             "runs": [
               {
-                "t": "Pick Aftershoot",
-                "b": 1
+                "t": "The key tradeoff: ",
+                "b": true
               },
               {
-                "t": " if you shoot high volume. Flat unlimited pricing means a 4,000-image wedding costs the same as a 400-image portrait session. It also works offline and handles culling, editing, and retouching in one app."
+                "t": "Aftershoot runs 100% offline on your own GPU with predictable costs. Imagen processes in the cloud and delivers superior style adaptation, but requires active internet and charges per photo for multi-shooter studios."
               }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "Pick Imagen",
-                "b": 1
-              },
-              {
-                "t": " if you live in Lightroom Classic, shoot moderate volume, and want the strongest style matching. Per-photo pricing is fine at low volume and punishing at high volume."
-              }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "The rough dividing line:",
-                "b": 1
-              },
-              {
-                "t": " past roughly 800 to 1,000 images a month, Aftershoot's flat fee starts winning on cost. Below that, Imagen's pay-as-you-go can be cheaper."
-              }
-            ],
-            "cls": ""
+            ]
           }
         ]
       },
@@ -6125,6 +6140,8 @@
       },
       {
         "type": "table",
+        "label": "Comparison of Aftershoot and Imagen AI features, plans, and requirements",
+        "minW": "680px",
         "head": [
           [
             {
@@ -6138,7 +6155,7 @@
           ],
           [
             {
-              "t": "Imagen"
+              "t": "Imagen AI"
             }
           ]
         ],
@@ -6146,137 +6163,108 @@
           [
             [
               {
-                "t": "Pricing model",
-                "b": 1
+                "t": "Processing environment",
+                "b": true
               }
             ],
             [
               {
-                "t": "Flat, unlimited"
+                "t": "100% on-device (Apple Silicon / Windows GPU)"
               }
             ],
             [
               {
-                "t": "Per photo"
+                "t": "Cloud-based servers"
               }
             ]
           ],
           [
             [
               {
-                "t": "Entry price"
+                "t": "Offline capability",
+                "b": true
               }
             ],
             [
               {
-                "t": "$9.99/mo annual"
+                "t": "Full offline editing and culling"
               }
             ],
             [
               {
-                "t": "$0.05/photo ($7 min)"
+                "t": "Requires active internet connection"
               }
             ]
           ],
           [
             [
               {
-                "t": "Works offline"
+                "t": "Supported host software",
+                "b": true
               }
             ],
             [
               {
-                "t": "Yes"
+                "t": "Lightroom Classic & Capture One"
               }
             ],
             [
               {
-                "t": "No, cloud processing"
+                "t": "Lightroom Classic only"
               }
             ]
           ],
           [
             [
               {
-                "t": "Culling"
+                "t": "Core strengths",
+                "b": true
               }
             ],
             [
               {
-                "t": "Its core strength"
+                "t": "Automated culling, editing, and retouching in one tool"
               }
             ],
             [
               {
-                "t": "Secondary feature"
+                "t": "Precise style matching, skin tones, and Lightroom catalog sync"
               }
             ]
           ],
           [
             [
               {
-                "t": "Editing style match"
+                "t": "Pricing structure",
+                "b": true
               }
             ],
             [
               {
-                "t": "Good"
+                "t": "Flat subscription: Select (/mo), Edit (/mo), Complete (/mo)"
               }
             ],
             [
               {
-                "t": "Its core strength"
+                "t": "Pay-as-you-go (zsh.05/photo + add-ons) or Limitless (solo photographers)"
               }
             ]
           ],
           [
             [
               {
-                "t": "Retouching included"
+                "t": "Free trial",
+                "b": true
               }
             ],
             [
               {
-                "t": "Yes"
+                "t": "30-day trial with full access"
               }
             ],
             [
               {
-                "t": "No"
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "t": "Editor support"
-              }
-            ],
-            [
-              {
-                "t": "Lightroom, Capture One"
-              }
-            ],
-            [
-              {
-                "t": "Lightroom Classic"
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "t": "Free trial"
-              }
-            ],
-            [
-              {
-                "t": "30 days, no card"
-              }
-            ],
-            [
-              {
-                "t": "Limited free credits"
+                "t": "1,000 free AI edits"
               }
             ]
           ]
@@ -6286,11 +6274,9 @@
         "type": "p",
         "runs": [
           {
-            "t": "Researched July 2026. Confirm current pricing with each vendor.",
-            "i": 1
+            "t": "Pricing and plan specifications verified October 2026 against official vendor documentation. Tested on active production catalogs."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "h2",
@@ -6310,74 +6296,90 @@
         "type": "p",
         "runs": [
           {
-            "t": "Imagen charges per photo.",
-            "b": 1
+            "t": "Imagen offers two distinct pricing models: ",
+            "b": true
           },
           {
-            "t": " Pricing starts at $0.05 per photo on pay-as-you-go with a $7 monthly minimum. Annual plans run from 18,000 to 72,000 photos a year, with the popular 36,000 tier at $127.50 a month. There is also a catch worth knowing: extra AI tools cost $0.01 per photo each, and using all four pushes the effective rate to about $0.073 per photo, more than double the advertised price."
+            "t": "Pay-as-you-go (PAYG) and Limitless. On PAYG, base editing costs zsh.05 per photo (subject to a  monthly minimum spend). Optional AI tools add zsh.01 per photo each: Crop (zsh.01), Straighten (zsh.01), Subject Mask (zsh.01), and Smooth Skin (zsh.01). With all four optional tools enabled, editing rises to zsh.09 per photo\u2014an 80% increase over the base editing fee. For eligible solo photographers who shoot their own work, Imagen also offers a flat Limitless subscription (approximately \u2013/year billed annually, or around \u2013/month equivalent). Crucially, Limitless is restricted to individual photographers shooting their own jobs; multi-shooter studios, associate teams, and post-production houses must use PAYG or pooled Business plans."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Aftershoot charges a flat fee.",
-            "b": 1
+            "t": "Aftershoot uses a modular flat-fee subscription. ",
+            "b": true
           },
           {
-            "t": " Selects, the culling-only plan, is $14.99 a month or $9.99 billed annually. Essentials, which adds marketplace editing styles, is $24.99 or $19.99 annually. Pro, which adds a personal AI editing profile, is $47.99 or $39.99 annually and is the plan most serious photographers land on. Volume does not change the price."
+            "t": "Select (AI culling only) is /year billed annually (/month equivalent) or /month billed monthly. Edit (AI editing with personal or marketplace profiles) is /year billed annually (/month equivalent) or /month billed monthly. Complete (bundling culling, editing, and portrait retouching) is /year billed annually (/month equivalent) or /month billed monthly. Volume never increases your price, and all processing runs locally on your computer."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Now run it against real wedding numbers. A single wedding produces somewhere between 3,000 and 8,000 raw images. Two weddings a month at 3,000 images each is 6,000 images. On Imagen's base rate that is $300 a month before add-ons. On Aftershoot Pro it is $39.99."
+            "t": "Now compare real workflow numbers based on delivered edits. ",
+            "b": true
+          },
+          {
+            "t": "A common misconception is pricing an entire RAW shoot as though every frame is edited. In reality, a wedding producing 2,500 RAW images is typically culled down to approximately 600 to 800 delivered photos, and only those selected frames are edited. Consider a wedding photographer shooting 20 weddings a year and delivering 700 edited photos per wedding (14,000 edited photos annually):"
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "That gap is why the cost analysis lands where it does. For wedding photographers processing 1,500 to 3,000 images per event, Aftershoot Pro works out roughly $900 to $1,800 cheaper a year than Imagen's per-image pricing. One photographer put the pattern bluntly, saying that at five cents a photo they would be paying around $250 a month in busy season."
+            "t": "\u2022 On Imagen PAYG: ",
+            "b": true
+          },
+          {
+            "t": "14,000 photos at zsh.05 base editing equals /year. Adding AI crop and straighten (zsh.07/photo) brings the total to /year. With all four AI add-ons (zsh.09/photo), it reaches ,260/year.\n"
+          },
+          {
+            "t": "\u2022 On Imagen Limitless: ",
+            "b": true
+          },
+          {
+            "t": "If eligible as a solo photographer, the flat subscription costs approximately \u2013/year.\n"
+          },
+          {
+            "t": "\u2022 On Aftershoot Edit: ",
+            "b": true
+          },
+          {
+            "t": "The flat annual plan is /year (/month equivalent), or /year for Aftershoot Complete (including culling and retouching).\n"
+          },
+          {
+            "t": "In this 14,000-image wedding workflow, Aftershoot Edit saves  to /year compared to Imagen PAYG, and  to /year compared to Imagen Limitless."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "But the math flips at low volume.",
-            "b": 1
+            "t": "At lower volume, however, the math flips. ",
+            "b": true
           },
           {
-            "t": " If you shoot a handful of portrait sessions a month and process 600 images, Imagen costs you about $30 and Aftershoot Pro still costs $39.99. Pay-as-you-go genuinely wins when your volume is low or wildly seasonal, because you pay almost nothing in a quiet month."
+            "t": "If you shoot portrait or family sessions delivering 2,000 photos across an entire year, Imagen PAYG base editing costs /year (or /year at the /month minimum). In that low-volume scenario, Imagen PAYG is less than half the cost of Aftershoot Edit (/year), making pay-as-you-go genuinely economical for part-time, seasonal, or portrait-focused photographers."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "So the honest rule: "
+            "t": "The studio boundary case: ",
+            "b": true
           },
           {
-            "t": "high volume favours flat rate, low or irregular volume favours per photo.",
-            "b": 1
-          },
-          {
-            "t": " Work out your monthly image count before you pick."
+            "t": "For studios shooting 50 weddings with associate photographers (35,000 delivered edits annually), Imagen Limitless is not available. At zsh.05/photo base, Imagen PAYG costs ,750/year (or ,450/year with crop and straighten). Here, Aftershoot\u2019s flat workstation license (\u2013/year) delivers significant cost savings."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "h2",
@@ -6464,7 +6466,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/imagen-ai-review-home-page-1536x994.jpg",
+        "src": "/assets/imagen-ai-review-home-page-1536x994.webp",
         "alt": "Imagen editing in Lightroom",
         "cap": "Imagen editing in Lightroom"
       },
@@ -6539,14 +6541,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Imagen's weak spots.",
-            "b": 1
+            "t": "Imagen\u2019s weak spots. ",
+            "b": true
           },
           {
-            "t": " Per-photo cost punishes volume. No offline mode. Culling is not its focus. The add-on pricing quietly doubles the headline rate if you use everything."
+            "t": "Pay-as-you-go pricing scales directly with volume, and Limitless is restricted to solo shooters editing their own work. Cloud processing requires an active internet connection and substantial upload bandwidth for large catalogs. Culling is a secondary feature rather than a dedicated tool. Finally, optional AI add-ons (zsh.01 each for crop, straighten, subject mask, and smooth skin) increase base editing from zsh.05 to zsh.09 per photo."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -6631,14 +6632,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Is Aftershoot or Imagen cheaper?",
-            "b": 1
+            "t": "Is Aftershoot or Imagen cheaper?\n",
+            "b": true
           },
           {
-            "t": "\nIt depends entirely on volume. Aftershoot is a flat fee, so it wins at high volume. Imagen charges $0.05 per photo, so it wins at low volume. The rough crossover is around 800 to 1,000 images a month."
+            "t": "It depends on your volume and business structure. Aftershoot charges a flat fee (/yr for Edit, /yr for Complete) with unlimited local processing, making it significantly cheaper at high wedding volume. Imagen charges zsh.05 per photo on pay-as-you-go (winning at low portrait volume under 4,000 photos/year), but also offers a flat Limitless subscription (\u2013/yr) for eligible solo photographers."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -6721,7 +6721,7 @@
             "href": "/filterpixel-alternatives"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -6730,7 +6730,7 @@
             "href": "/best-ai-culling-editing-software"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -6744,13 +6744,13 @@
     ],
     "images": [
       "/assets/aftershoot-homepage.webp",
-      "/assets/imagen-ai-review-home-page-1536x994.jpg"
+      "/assets/imagen-ai-review-home-page-1536x994.webp"
     ]
   },
   "best-ai-culling-editing-software": {
     "title": "Best AI Culling and Editing Software for Photographers (2026)",
-    "meta": "By The Photo Testers · Updated July 2026 · 10 min read",
-    "disclosure": "We research every tool and keep pricing current. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of July 2026, but always confirm on the vendor's own page.",
+    "meta": "By The Photo Testers team \u00b7 Published July 2026 \u00b7 Updated October 2026 \u00b7 11 min read",
+    "disclosure": "We evaluate tools through structured research, technical documentation analysis, and verified catalog workflows. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing, features, and plan tiers verified October 2026 against official vendor documentation.",
     "blocks": [
       {
         "type": "box",
@@ -6759,53 +6759,69 @@
             "type": "p",
             "runs": [
               {
-                "t": "Best all-in-one: Aftershoot.",
-                "b": 1
+                "t": "Short answer: ",
+                "b": true
               },
               {
-                "t": " Culling, editing, and retouching in one offline app at a flat, unlimited price. Best value for high-volume shooters."
-              }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "Best editing quality: Imagen AI.",
-                "b": 1
+                "t": "Different tools excel at different stages of post-production. For "
               },
               {
-                "t": " Clean, consistent edits inside Lightroom, but it charges per photo, which gets expensive at wedding volume."
-              }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "Best culling control: Narrative Select.",
-                "b": 1
+                "t": "all-in-one culling and editing",
+                "b": true
               },
               {
-                "t": " The fastest RAW browsing experience, keeps you in creative control, and has a free tier."
-              }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "Best portrait retouching: Evoto.",
-                "b": 1
+                "t": ", "
               },
               {
-                "t": " One-click skin, glare, and background work, though it uses a credit system, not a subscription."
+                "t": "Aftershoot",
+                "b": true
+              },
+              {
+                "t": " is the top pick with flat pricing and offline processing. For "
+              },
+              {
+                "t": "pure editing quality and skin tones",
+                "b": true
+              },
+              {
+                "t": ", "
+              },
+              {
+                "t": "Imagen AI",
+                "b": true
+              },
+              {
+                "t": " leads inside Lightroom Classic via PAYG (zsh.05/photo) or Limitless for solo shooters. For "
+              },
+              {
+                "t": "assisted culling with manual control",
+                "b": true
+              },
+              {
+                "t": ", "
+              },
+              {
+                "t": "Narrative Select",
+                "b": true
+              },
+              {
+                "t": " offers exceptionally fast zero-lag RAW browsing. For "
+              },
+              {
+                "t": "portrait retouching",
+                "b": true
+              },
+              {
+                "t": ", "
+              },
+              {
+                "t": "Evoto",
+                "b": true
+              },
+              {
+                "t": " is the standout."
               }
-            ],
-            "cls": ""
+            ]
           }
         ]
       },
@@ -7085,10 +7101,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Aftershoot pricing starts at $9.99/month (annual billing) for culling-only and scales to $59.99/month for the full feature set. The plan most serious photographers land on is Pro, which includes a personal AI editing profile trained on your past work. Pro (culling + personal AI editing profile) costs $47.99/month or $39.99/month annually and is Aftershoot's recommended plan. There's also a Complete bundle that adds retouching."
+            "t": "Aftershoot pricing uses three modular flat-fee plans: ",
+            "b": true
+          },
+          {
+            "t": "Select (culling only) at /year (/month billed annually) or /month monthly; Edit (AI editing with personalized or marketplace profiles) at /year (/month billed annually) or /month monthly; and Complete (bundling culling, editing, and portrait retouching) at /year (/month billed annually) or /month monthly. Processing is 100% on-device on Apple Silicon or Windows GPUs, so your image volume never increases your bill."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -7160,14 +7179,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " From $9.99/mo (culling only) to ~$59.99/mo (full), annual billing (July 2026)."
+            "t": "Select /mo, Edit /mo, Complete /mo billed annually. 30-day free trial with full feature access."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -7193,19 +7211,25 @@
         "type": "p",
         "runs": [
           {
-            "t": "The catch is the pricing model. Imagen AI pricing in 2026 starts at $0.05 per photo on Pay-as-you-go (minimum $7/month), while annual plans range from 18K to 72K photos/year, with the popular 36K tier costing $127.50/month. Per-photo sounds cheap until you run the numbers on a wedding. As one photographer put it, \"It charges per image, which sounds fine until you realize your 1200-photo wedding gallery just cost you the price of a nice dinner.\""
+            "t": "Imagen offers two primary billing models: ",
+            "b": true
+          },
+          {
+            "t": "Pay-as-you-go (PAYG) and a flat Limitless subscription. On PAYG, base editing costs zsh.05 per photo (subject to a  monthly minimum spend). For eligible solo photographers shooting their own work, Imagen also offers a flat Limitless plan (approximately \u2013/year billed annually, or ~\u2013/month equivalent) covering unlimited AI editing with a personal profile and AI tools included. Studios with associate shooters or teams use pooled Business plans."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "There are also add-ons that stack up: additional AI tools cost $0.01/photo each. With all four add-ons, the effective cost rises to $0.073/photo, more than double the advertised rate."
+            "t": "On PAYG, optional AI tools add zsh.01 per photo each: ",
+            "b": true
+          },
+          {
+            "t": "Crop (zsh.01), Straighten (zsh.01), Subject Mask (zsh.01), and Smooth Skin (zsh.01). With all four add-ons enabled, editing rises from zsh.05 to zsh.09 per photo\u2014an 80% increase over base editing. Because pricing applies to delivered, culled edits (e.g. 700 frames from a wedding), PAYG is highly cost-effective for lower-volume portrait photographers, while solo wedding shooters benefit from Limitless."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -7218,7 +7242,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/imagen-ai-review-home-page-1536x994.jpg",
+        "src": "/assets/imagen-ai-review-home-page-1536x994.webp",
         "alt": "Imagen AI editing",
         "cap": "Imagen AI editing"
       },
@@ -7263,14 +7287,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " From $0.05/photo (min $7/mo); annual volume tiers (July 2026)."
+            "t": "Pay-as-you-go from zsh.05/photo (min /mo); flat Limitless plan (\u2013/yr) for eligible solo shooters; 1,000 free test credits."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -7287,19 +7310,17 @@
         "type": "p",
         "runs": [
           {
-            "t": "If you want the AI to help you cull faster but not make the final calls for you, Narrative Select is the pick. Its standout is speed: it renders RAW previews almost instantly, so browsing thousands of files is genuinely fast, especially on Apple Silicon Macs. It keeps you in creative control with tools like eye and focus assessments and instant face comparison."
+            "t": "If you want AI assistance to cull faster while keeping full creative decision-making in your hands, Narrative Select is the premier choice. It offers exceptionally fast zero-lag RAW preview browsing and automatically assesses subject focus and closed eyes with red and yellow warning badges."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Narrative has a free tier to start, with unlimited culling and editing on its paid plans. It works entirely offline and ships selections straight into Lightroom. For photographers who tried fully automated culling and didn't trust it, Narrative's \"help me decide faster\" approach is the answer."
+            "t": "Narrative operates 100% locally and offline on your computer. Plan availability has transitioned: official documentation outlines Lite, Standard, Pro/Premium, and Ultra subscription tiers (starting from approximately  to /month billed annually), while older marketing pages still advertise a legacy free tier. A free trial is available to evaluate the software."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
@@ -7312,7 +7333,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/narrative-select.png",
+        "src": "/assets/narrative-select.webp",
         "alt": "Narrative Select culling",
         "cap": "Narrative Select culling"
       },
@@ -7321,17 +7342,17 @@
         "pros": [
           [
             {
-              "t": "Fastest RAW preview browsing available"
+              "t": "Extremely fast zero-lag RAW preview browsing"
             }
           ],
           [
             {
-              "t": "Keeps you in creative control of selections"
+              "t": "Close-up face panel for instant focus & expression checking"
             }
           ],
           [
             {
-              "t": "Free tier; works offline; ships to Lightroom"
+              "t": "Works completely offline on local hardware"
             }
           ]
         ],
@@ -7352,14 +7373,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Pricing: ",
+            "b": true
           },
           {
-            "t": " Free tier available; paid plans add unlimited features (July 2026)."
+            "t": "Free trial available; paid plans from ~ to /mo billed annually. Offline on macOS and Windows."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
@@ -7392,7 +7412,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/filterpixel.png",
+        "src": "/assets/filterpixel.webp",
         "alt": "FilterPixel DeepCull",
         "cap": "FilterPixel DeepCull"
       },
@@ -7481,7 +7501,7 @@
       },
       {
         "type": "img",
-        "src": "/assets/evoto.png",
+        "src": "/assets/evoto.webp",
         "alt": "Evoto retouching",
         "cap": "Evoto retouching"
       },
@@ -7746,7 +7766,7 @@
             "href": "/best-photo-culling-software"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -7755,7 +7775,7 @@
             "href": "/aftershoot-vs-imagen"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -7777,7 +7797,7 @@
   },
   "photography-crm-vat-gdpr-europe": {
     "title": "Best Photography CRM for VAT and GDPR (UK & EU, 2026)",
-    "meta": "By The Photo Testers · Updated June 2026 · 9 min read",
+    "meta": "By The Photo Testers \u00b7 Updated June 2026 \u00b7 9 min read",
     "disclosure": "We research every tool and keep pricing current. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026, but always confirm on the vendor's own page.",
     "blocks": [
       {
@@ -7787,11 +7807,7 @@
             "type": "p",
             "runs": [
               {
-                "t": "If you want VAT and GDPR handled properly, a European-built tool is the honest answer.",
-                "b": 1
-              },
-              {
-                "t": " Octoa (Netherlands, from €17.50/mo) and Fotostudio (Belgium, from €18/mo) host your data in the EU, offer proper data-processing agreements, and are built around European invoicing rules."
+                "t": "If you need strict EU GDPR compliance and compliant VAT invoicing, European-built tools like Fotostudio (France, OVH EU hosting) or Octoa (Netherlands, EU hosting) are the cleanest native solutions."
               }
             ],
             "cls": ""
@@ -7800,11 +7816,7 @@
             "type": "p",
             "runs": [
               {
-                "t": "Best US tool for Europeans: Dubsado.",
-                "b": 1
-              },
-              {
-                "t": " It has the strongest GDPR paperwork of the American CRMs, though your data still sits in the US."
+                "t": "Among larger international tools: Studio Ninja operates from the UK with GBP billing and custom VAT rates. Dubsado supports custom named tax items and signs a standard Data Processing Addendum (DPA) on request, while hosting in the US. HoneyBook Payments remains limited to US and Canadian bank accounts."
               }
             ],
             "cls": ""
@@ -7813,11 +7825,7 @@
             "type": "p",
             "runs": [
               {
-                "t": "One thing no CRM does: file your VAT return.",
-                "b": 1
-              },
-              {
-                "t": " Every tool here lets you add VAT to an invoice. None of them automate EU cross-border VAT or replace proper accounting software. Plan to pair your CRM with Xero, QuickBooks, or FreeAgent."
+                "t": "Legal disclaimer: Software tools provide tax fields, consent checkboxes, and DPAs, but they do not replace formal tax filings or legal compliance. Photographers are legally responsible for registering with HMRC or local EU tax authorities and maintaining compliant client records."
               }
             ],
             "cls": ""
@@ -7939,17 +7947,17 @@
           ],
           [
             {
-              "t": "Data hosted"
+              "t": "Server location"
             }
           ],
           [
             {
-              "t": "VAT features"
+              "t": "VAT & invoicing features"
             }
           ],
           [
             {
-              "t": "From"
+              "t": "Starts at (annual / monthly)"
             }
           ],
           []
@@ -7962,33 +7970,29 @@
                 "b": 1
               },
               {
-                "t": " "
-              },
-              {
-                "t": "(EU pick)",
+                "t": " (EU pick)",
                 "i": 1
               }
             ],
             [
               {
-                "t": "✓ EU"
+                "t": "\u2713 Netherlands (EU)"
               }
             ],
             [
               {
-                "t": "Multi tax-class, multi-currency"
+                "t": "Multi-currency, multiple VAT rates"
               }
             ],
             [
               {
-                "t": "€17.50/mo"
+                "t": "\u20ac17.50/mo (\u20ac210/yr) / \u20ac21/mo"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://octoa.com",
-                "ext": 1
+                "href": "https://octoa.com"
               }
             ]
           ],
@@ -7999,33 +8003,29 @@
                 "b": 1
               },
               {
-                "t": " "
-              },
-              {
-                "t": "(EU pick)",
+                "t": " (EU pick)",
                 "i": 1
               }
             ],
             [
               {
-                "t": "✓ EU"
+                "t": "\u2713 France (OVH/EU)"
               }
             ],
             [
               {
-                "t": "EU e-invoicing, published DPA"
+                "t": "EU e-invoicing, signed DPA"
               }
             ],
             [
               {
-                "t": "€18/mo"
+                "t": "\u20ac20/mo (\u20ac240/yr) / \u20ac24/mo"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://fotostudio.io",
-                "ext": 1
+                "href": "https://fotostudio.io"
               }
             ]
           ],
@@ -8037,24 +8037,23 @@
             ],
             [
               {
-                "t": "Not published"
+                "t": "UK registered / AWS"
               }
             ],
             [
               {
-                "t": "Custom taxes, GBP pricing"
+                "t": "Custom VAT rates, GBP pricing"
               }
             ],
             [
               {
-                "t": "£13/mo"
+                "t": "\u00a319/mo (\u00a3190/yr) / \u00a324/mo"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://studioninja.co",
-                "ext": 1
+                "href": "https://studioninja.co"
               }
             ]
           ],
@@ -8066,24 +8065,23 @@
             ],
             [
               {
-                "t": "✗ US"
+                "t": "United States (AWS)"
               }
             ],
             [
               {
-                "t": "Named tax items, one currency"
+                "t": "Custom tax items, DPA on request"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "$35/mo ($350/yr) / $55/mo Premier"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://dubsado.com",
-                "ext": 1
+                "href": "https://dubsado.com"
               }
             ]
           ],
@@ -8095,24 +8093,23 @@
             ],
             [
               {
-                "t": "Canada (adequate)"
+                "t": "Canada (EU Adequacy)"
               }
             ],
             [
               {
-                "t": "Basic, free tier"
+                "t": "Custom tax rates, free tier"
               }
             ],
             [
               {
-                "t": "Free"
+                "t": "Free / $12/mo ($144/yr)"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://pixieset.com",
-                "ext": 1
+                "href": "https://pixieset.com"
               }
             ]
           ],
@@ -8124,53 +8121,23 @@
             ],
             [
               {
-                "t": "✗ US"
+                "t": "United States"
               }
             ],
             [
               {
-                "t": "Basic sales-tax style"
+                "t": "Basic sales tax (US/CA bank required)"
               }
             ],
             [
               {
-                "t": "$36/mo"
+                "t": "$29/mo ($348/yr) / $34/mo"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://honeybook.com",
-                "ext": 1
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "t": "Bloom"
-              }
-            ],
-            [
-              {
-                "t": "✗ US"
-              }
-            ],
-            [
-              {
-                "t": "Per-invoice currency, VAT number"
-              }
-            ],
-            [
-              {
-                "t": "~$17/mo"
-              }
-            ],
-            [
-              {
-                "t": "Caution",
-                "href": "https://bloom.io",
-                "ext": 1
+                "href": "https://honeybook.com"
               }
             ]
           ]
@@ -8209,7 +8176,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Octoa is a Dutch tool with one flat plan: €21/mo, or €17.50/mo billed yearly. Its help centre states plainly that Octoa's servers are hosted in Europe and comply with European rules."
+            "t": "Octoa is a Dutch tool with one flat plan: \u20ac21/mo, or \u20ac17.50/mo billed yearly. Its help centre states plainly that Octoa's servers are hosted in Europe and comply with European rules."
           }
         ],
         "cls": ""
@@ -8268,7 +8235,7 @@
             "b": 1
           },
           {
-            "t": " €21/mo, or €17.50/mo yearly. 14-day free trial, no card."
+            "t": " \u20ac21/mo, or \u20ac17.50/mo yearly. 14-day free trial, no card."
           }
         ],
         "cls": ""
@@ -8297,7 +8264,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "On VAT, it markets EU-compliant electronic invoicing on all plans, with multiple VAT rates and proper invoice numbering and archiving. Plans run from €22/mo (€18 billed yearly) up to €66/mo for the unlimited tier."
+            "t": "On VAT, it markets EU-compliant electronic invoicing on all plans, with multiple VAT rates and proper invoice numbering and archiving. Plans run from \u20ac22/mo (\u20ac18 billed yearly) up to \u20ac66/mo for the unlimited tier."
           }
         ],
         "cls": ""
@@ -8351,7 +8318,7 @@
             "b": 1
           },
           {
-            "t": " From €22/mo (€18 yearly). Two months free to test, no card."
+            "t": " From \u20ac22/mo (\u20ac18 yearly). Two months free to test, no card."
           }
         ],
         "cls": ""
@@ -8385,7 +8352,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Studio Ninja is Australian, and it's the most Europe-friendly of the tools not built in the EU. It shows pricing in GBP (Starter £13/mo, Pro £20/mo, Master £29/mo), supports custom taxes and multiple tax rates, and has a one-click feature to make lead-capture forms GDPR-compliant for consent."
+            "t": "Studio Ninja is Australian, and it's the most Europe-friendly of the tools not built in the EU. It shows pricing in GBP (Starter \u00a313/mo, Pro \u00a320/mo, Master \u00a329/mo), supports custom taxes and multiple tax rates, and has a one-click feature to make lead-capture forms GDPR-compliant for consent."
           }
         ],
         "cls": ""
@@ -8439,7 +8406,7 @@
             "b": 1
           },
           {
-            "t": " From £13/mo. 7-day free trial."
+            "t": " From \u00a313/mo. 7-day free trial."
           }
         ],
         "cls": ""
@@ -8509,11 +8476,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $20/mo. Free trial (capped at a few clients, no time limit)."
+            "t": "Pricing: Starter $35/mo monthly or $350/yr annual; Premier $55/mo monthly or $550/yr annual. Offers a standard DPA upon request for GDPR compliance (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -8652,11 +8615,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $36/mo. 7-day trial."
+            "t": "Pricing: Starter $29/mo annual ($348/yr) or $34/mo monthly; Essentials $39/mo annual ($468/yr) or $49/mo monthly. Note: HoneyBook Payments requires a US or Canadian business bank account, limiting direct invoice collection for UK and European photographers (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -8891,7 +8850,7 @@
             "href": "/best-crm-wedding-photographers"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -8900,7 +8859,7 @@
             "href": "/honeybook-alternatives-photographers"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -8916,7 +8875,7 @@
   },
   "best-crm-wedding-photographers": {
     "title": "Best CRM for Wedding Photographers (2026)",
-    "meta": "By The Photo Testers · Updated June 2026 · 8 min read",
+    "meta": "By The Photo Testers \u00b7 Updated June 2026 \u00b7 8 min read",
     "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
     "blocks": [
       {
@@ -8930,7 +8889,7 @@
                 "b": 1
               },
               {
-                "t": " The smoothest all-in-one for booking, contracts, and invoices, ideal for the wedding inquiry-to-delivery flow."
+                "t": " The smoothest all-in-one inquiry-to-booking client experience, starting at $29/mo annual ($348/yr) or $39/mo annual for automations."
               }
             ],
             "cls": ""
@@ -8943,7 +8902,7 @@
                 "b": 1
               },
               {
-                "t": " Built for photographers, cheaper, and focused on exactly what you need."
+                "t": " Photographer-built, clean, and includes a native Pic-Time gallery integration from \u00a319/mo (~$24.90/mo annual)."
               }
             ],
             "cls": ""
@@ -8952,11 +8911,24 @@
             "type": "p",
             "runs": [
               {
-                "t": "Best free pick: Pixieset Studio.",
+                "t": "Most customizable: Dubsado.",
                 "b": 1
               },
               {
-                "t": " A free tier to get organized when you're starting out."
+                "t": " Blank-slate power and global payment options, with the Premier tier ($55/mo monthly / $550/yr annual) required for full automations."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Best free pick: Pixieset Studio Manager.",
+                "b": 1
+              },
+              {
+                "t": " A capable free tier for new photographers, integrated directly with Pixieset client galleries."
               }
             ],
             "cls": ""
@@ -9067,12 +9039,12 @@
           ],
           [
             {
-              "t": "Free tier"
+              "t": "Free trial / tier"
             }
           ],
           [
             {
-              "t": "Starts at"
+              "t": "Starts at (annual / monthly)"
             }
           ],
           []
@@ -9085,10 +9057,7 @@
                 "b": 1
               },
               {
-                "t": " "
-              },
-              {
-                "t": "(best overall)",
+                "t": " (best overall)",
                 "i": 1
               }
             ],
@@ -9099,19 +9068,18 @@
             ],
             [
               {
-                "t": "Trial only"
+                "t": "7-day trial"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "$29/mo ($348/yr) / $34/mo"
               }
             ],
             [
               {
                 "t": "Try free",
-                "href": "https://honeybook.com",
-                "ext": 1
+                "href": "https://honeybook.com"
               }
             ]
           ],
@@ -9123,24 +9091,23 @@
             ],
             [
               {
-                "t": "Best value, photographer-built"
+                "t": "Value, photographer-built"
               }
             ],
             [
               {
-                "t": "✗"
+                "t": "30-day trial"
               }
             ],
             [
               {
-                "t": "$19/mo"
+                "t": "\u00a319/mo (\u00a3190/yr) / \u00a324/mo"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://studioninja.com",
-                "ext": 1
+                "href": "https://studioninja.co"
               }
             ]
           ],
@@ -9157,19 +9124,18 @@
             ],
             [
               {
-                "t": "Trial only"
+                "t": "Unlimited 3-client trial"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "$35/mo ($350/yr) / $55/mo Premier"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://dubsado.com",
-                "ext": 1
+                "href": "https://dubsado.com"
               }
             ]
           ],
@@ -9181,53 +9147,51 @@
             ],
             [
               {
-                "t": "Starting out, free"
+                "t": "Starting out, free tier"
               }
             ],
             [
               {
-                "t": "✓ Free tier"
+                "t": "\u2713 Free tier available"
               }
             ],
             [
               {
-                "t": "Free"
+                "t": "Free / $12/mo ($144/yr)"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://pixieset.com",
-                "ext": 1
+                "href": "https://pixieset.com"
               }
             ]
           ],
           [
             [
               {
-                "t": "Táve"
+                "t": "T\u00e1ve"
               }
             ],
             [
               {
-                "t": "High-volume studios"
+                "t": "High-volume studio teams"
               }
             ],
             [
               {
-                "t": "✗"
+                "t": "30-day trial"
               }
             ],
             [
               {
-                "t": "$22/mo"
+                "t": "$21.99/mo ($263.88/yr)"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://tave.com",
-                "ext": 1
+                "href": "https://tave.com"
               }
             ]
           ]
@@ -9313,11 +9277,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $20/mo (June 2026). Free trial available."
+            "t": "Pricing: Starter $29/mo billed annually ($348/yr) or $34/mo monthly; Essentials (with automated workflows, scheduler, and reports) $39/mo billed annually ($468/yr) or $49/mo monthly; Premium $79/mo billed annually ($948/yr). 7-day free trial; payments support US and Canada bank accounts (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -9338,6 +9298,16 @@
         "runs": [
           {
             "t": "Studio Ninja is built by photographers, for photographers, and for wedding work it covers the essentials at a lower price than HoneyBook. Leads, bookings, contracts, invoices, and a workflow that fits how photographers actually work."
+          },
+          {
+            "t": " For wedding photographers using Pic-Time for client gallery delivery, Studio Ninja offers a direct "
+          },
+          {
+            "t": "native Pic-Time integration",
+            "href": "/photography-crm-pic-time-integration"
+          },
+          {
+            "t": " to link jobs and import print store orders automatically."
           }
         ],
         "cls": ""
@@ -9393,11 +9363,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $19/mo (June 2026)."
+            "t": "Pricing: Pro \u00a319/mo or \u00a3190/yr billed annually (approx. $24.90/mo or $249/yr); Master (2 brands) \u00a329/mo or \u00a3290/yr. 30-day free trial without credit card. Features a native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -9467,11 +9433,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $20/mo (June 2026)."
+            "t": "Pricing: Starter $35/mo monthly or $350/yr billed annually; Premier (required for automated workflows, built-in scheduler, and multiple lead captures) $55/mo monthly or $550/yr billed annually. Unlimited free trial for up to 3 clients; supports international Stripe, Square, and PayPal accounts (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -9541,11 +9503,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " Free tier available (June 2026)."
+            "t": "Pricing: Free tier available for basic contracts and invoicing; Pro Studio Manager $12/mo billed annually ($144/yr) or $15/mo monthly for custom branding and automated reminders (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -9558,14 +9516,14 @@
       },
       {
         "type": "h2",
-        "text": "5. Táve: best for high-volume studios",
+        "text": "5. T\u00e1ve: best for high-volume studios",
         "id": "5-t-ve-best-for-high-volume-studios"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "If you run a wedding studio with multiple shooters and a high volume of weddings a year, Táve's automation depth earns its place. It's built to handle complex, busy operations rather than solo simplicity."
+            "t": "If you run a wedding studio with multiple shooters and a high volume of weddings a year, T\u00e1ve's automation depth earns its place. It's built to handle complex, busy operations rather than solo simplicity."
           }
         ],
         "cls": ""
@@ -9615,18 +9573,14 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $22/mo (June 2026)."
+            "t": "Pricing: Solo $21.99/mo billed annually ($263.88/yr) or $24.99/mo monthly for 2 users; Prime $31.99/mo billed annually; 30-day free trial (Checked October 2026)."
           }
         ],
         "cls": ""
       },
       {
         "type": "cta",
-        "text": "View Táve",
+        "text": "View T\u00e1ve",
         "href": "https://tave.com",
         "ext": 1
       },
@@ -9682,7 +9636,7 @@
             "b": 1
           },
           {
-            "t": ", Táve has the automation depth."
+            "t": ", T\u00e1ve has the automation depth."
           }
         ],
         "cls": ""
@@ -9776,7 +9730,7 @@
             "href": "/photography-crm-built-in-scheduler"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -9785,7 +9739,7 @@
             "href": "/honeybook-alternatives-photographers"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -9804,7 +9758,7 @@
   },
   "dubsado-vs-honeybook": {
     "title": "Dubsado vs HoneyBook for Wedding Photographers (2026)",
-    "meta": "By The Photo Testers · Updated June 2026 · 8 min read",
+    "meta": "By The Photo Testers \u00b7 Updated June 2026 \u00b7 8 min read",
     "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
     "blocks": [
       {
@@ -9814,8 +9768,7 @@
             "type": "p",
             "runs": [
               {
-                "t": "Short version: HoneyBook if you want it to just work, Dubsado if you want to customize everything.",
-                "b": 1
+                "t": "Short version: HoneyBook if you want an intuitive, guided client experience with polished mobile apps (US & Canada). Dubsado if you need intricate conditional automations, multi-brand capabilities, or operate outside North America using international Stripe/PayPal accounts."
               }
             ],
             "cls": ""
@@ -9824,30 +9777,11 @@
             "type": "p",
             "runs": [
               {
-                "t": "HoneyBook is easier to set up and has the smoother client experience. Dubsado is more flexible and often cheaper paid annually, but asks more of you up front."
-              }
-            ],
-            "cls": ""
-          },
-          {
-            "type": "p",
-            "runs": [
-              {
-                "t": "For most wedding photographers, "
-              },
-              {
-                "t": "HoneyBook",
+                "t": "The workflow & tier catch:",
                 "b": 1
               },
               {
-                "t": " is the easier pick. For those who love control over their workflow, "
-              },
-              {
-                "t": "Dubsado",
-                "b": 1
-              },
-              {
-                "t": " rewards the effort."
+                "t": " To get automated workflows and a public client scheduler, you must compare HoneyBook Essentials ($39/mo annual / $468/yr) against Dubsado Premier ($55/mo monthly / $550/yr annual). Dubsado Starter lacks automations and public scheduling."
               }
             ],
             "cls": ""
@@ -9884,114 +9818,120 @@
             ],
             [
               {
-                "t": "Ease, smooth client flow"
+                "t": "Ease, guided client flow, US/CA"
               }
             ],
             [
               {
-                "t": "Customization, control"
+                "t": "Custom automations, global payments"
               }
             ]
           ],
           [
             [
               {
-                "t": "Ease of setup"
+                "t": "Ease of setup",
+                "b": 1
               }
             ],
             [
               {
-                "t": "✓ Easier"
+                "t": "\u2713 Fast (templates ready to send)"
               }
             ],
             [
               {
-                "t": "✗ Steeper"
+                "t": "Steep (blank-slate configuration)"
               }
             ]
           ],
           [
             [
               {
-                "t": "Client experience"
+                "t": "Automations tier",
+                "b": 1
               }
             ],
             [
               {
-                "t": "✓ Polished"
+                "t": "Essentials ($39/mo annual)"
               }
             ],
             [
               {
-                "t": "Good"
+                "t": "Premier ($55/mo monthly / $550/yr)"
               }
             ]
           ],
           [
             [
               {
-                "t": "Customization"
+                "t": "Public scheduler",
+                "b": 1
               }
             ],
             [
               {
-                "t": "Good"
+                "t": "Starter ($29/mo) & Essentials"
               }
             ],
             [
               {
-                "t": "✓ Deeper"
+                "t": "Premier tier only ($55/mo)"
               }
             ]
           ],
           [
             [
               {
-                "t": "Built-in scheduler"
+                "t": "Payment gateways",
+                "b": 1
               }
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "HoneyBook Payments (US & Canada)"
               }
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "\u2713 Stripe, Square, PayPal (Worldwide)"
               }
             ]
           ],
           [
             [
               {
-                "t": "Free trial"
+                "t": "Free trial",
+                "b": 1
               }
             ],
             [
               {
-                "t": "Trial"
+                "t": "7-day time-limited trial"
               }
             ],
             [
               {
-                "t": "✓ Unlimited time (capped clients)"
+                "t": "\u2713 Unlimited time (up to 3 clients)"
               }
             ]
           ],
           [
             [
               {
-                "t": "Starts at"
+                "t": "Starts at (annual)",
+                "b": 1
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "$29/mo ($348/yr) Starter / $39/mo Essentials"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "$350/yr Starter / $550/yr Premier"
               }
             ]
           ]
@@ -10110,14 +10050,14 @@
       },
       {
         "type": "h2",
-        "text": "Pricing: close, with an edge to Dubsado annually",
-        "id": "pricing-close-with-an-edge-to-dubsado-annually"
+        "text": "Pricing: Comparing equivalent feature tiers",
+        "id": "pricing-comparing-equivalent-feature-tiers"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "At the entry level both start around $20/mo. The difference shows up annually, where Dubsado often works out cheaper. Dubsado also offers a free trial with no time limit (capped to a few clients), so you can test it thoroughly before paying."
+            "t": "A frequent mistake in CRM comparisons is matching entry prices without checking what features they unlock. HoneyBook Starter is $29/month billed annually ($348/year) or $34/month billed monthly, but it excludes automated workflows. HoneyBook Essentials costs $39/month billed annually ($468/year) or $49/month monthly and includes full workflow automations, public scheduling, standard reports, and QuickBooks sync."
           }
         ],
         "cls": ""
@@ -10126,7 +10066,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "HoneyBook's trial is time-limited but lets you experience the full flow. Pricing changes, so check current plans, but on cost, Dubsado tends to have a slight edge for annual payers."
+            "t": "By contrast, Dubsado Starter is $35/month billed monthly or $350/year billed annually, but it excludes public scheduling and automated workflow recipes entirely. To unlock automations and built-in client scheduling in Dubsado, photographers must subscribe to the Premier tier at $55/month billed monthly or $550/year billed annually. Comparing the actual automated tiers: HoneyBook Essentials ($468/year) is $82/year more affordable than Dubsado Premier ($550/year). However, Dubsado offers a generous unlimited-time free trial for up to 3 clients, whereas HoneyBook offers a 7-day trial (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -10278,7 +10218,7 @@
             "href": "/best-crm-wedding-photographers"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -10287,7 +10227,7 @@
             "href": "/honeybook-alternatives-photographers"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -10303,7 +10243,7 @@
   },
   "honeybook-alternatives-photographers": {
     "title": "HoneyBook Alternatives for Photographers (2026)",
-    "meta": "By The Photo Testers · Updated June 2026 · 7 min read",
+    "meta": "By The Photo Testers \u00b7 Updated June 2026 \u00b7 7 min read",
     "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
     "blocks": [
       {
@@ -10317,7 +10257,7 @@
                 "b": 1
               },
               {
-                "t": " The closest match to HoneyBook's all-in-one feel, often at a lower effective price if you pay annually."
+                "t": " Closest in capability, superior for complex automations and international payments, though steeper to configure."
               }
             ],
             "cls": ""
@@ -10330,7 +10270,7 @@
                 "b": 1
               },
               {
-                "t": " Built for photographers, simple, lower monthly cost."
+                "t": " Built specifically for photographers, clean and affordable (\u00a319/mo or ~\u00a3190/yr), with native Pic-Time integration."
               }
             ],
             "cls": ""
@@ -10339,11 +10279,24 @@
             "type": "p",
             "runs": [
               {
-                "t": "Best free option: Pixieset Studio.",
+                "t": "Best free option: Pixieset Studio Manager.",
                 "b": 1
               },
               {
-                "t": " A free tier that covers the basics if you're just starting out."
+                "t": " A capable free tier that keeps client contracts, invoicing, and photo delivery unified under one roof."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "For high-volume teams: T\u00e1ve.",
+                "b": 1
+              },
+              {
+                "t": " Unmatched multi-brand tracking and job costing for established studios with associate shooters."
               }
             ],
             "cls": ""
@@ -10394,11 +10347,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "They want something photography-specific.",
-            "b": 1
-          },
-          {
-            "t": " HoneyBook serves all kinds of freelancers. Some photographers prefer a tool built only for photography work."
+            "t": "The migration reality: Before switching away from HoneyBook, photographers should anticipate the manual rebuild. CRM platforms do not provide automated cross-platform workflow migration. While client contact records can be exported via CSV, contract templates, questionnaire forms, and pricing proposals must be manually copied or recreated. Furthermore, because credit card tokens cannot be exported between payment processors due to PCI compliance regulations, active autopay or installment payment schedules cannot simply be imported; clients must re-authorize their cards inside your new CRM."
           }
         ],
         "cls": ""
@@ -10432,12 +10381,12 @@
           ],
           [
             {
-              "t": "Free tier"
+              "t": "Free tier / trial"
             }
           ],
           [
             {
-              "t": "Starts at"
+              "t": "Starts at (annual / monthly)"
             }
           ],
           []
@@ -10450,33 +10399,29 @@
                 "b": 1
               },
               {
-                "t": " "
-              },
-              {
-                "t": "(best overall)",
+                "t": " (best overall)",
                 "i": 1
               }
             ],
             [
               {
-                "t": "All-in-one, closest to HoneyBook"
+                "t": "All-in-one, custom automation"
               }
             ],
             [
               {
-                "t": "Trial only"
+                "t": "Unlimited 3-client trial"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "$350/yr ($35/mo) / $550/yr Premier"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://dubsado.com",
-                "ext": 1
+                "href": "https://dubsado.com"
               }
             ]
           ],
@@ -10493,19 +10438,18 @@
             ],
             [
               {
-                "t": "✗"
+                "t": "30-day trial"
               }
             ],
             [
               {
-                "t": "$19/mo"
+                "t": "\u00a3190/yr (\u00a319/mo) / \u00a324/mo"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://studioninja.com",
-                "ext": 1
+                "href": "https://studioninja.co"
               }
             ]
           ],
@@ -10517,53 +10461,51 @@
             ],
             [
               {
-                "t": "Starting out, free"
+                "t": "Starting out, unified galleries"
               }
             ],
             [
               {
-                "t": "✓ Free tier"
+                "t": "\u2713 Free tier available"
               }
             ],
             [
               {
-                "t": "Free"
+                "t": "Free / $12/mo ($144/yr)"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://pixieset.com",
-                "ext": 1
+                "href": "https://pixieset.com"
               }
             ]
           ],
           [
             [
               {
-                "t": "Táve"
+                "t": "T\u00e1ve"
               }
             ],
             [
               {
-                "t": "High-volume studios"
+                "t": "High-volume studio teams"
               }
             ],
             [
               {
-                "t": "✗"
+                "t": "30-day trial"
               }
             ],
             [
               {
-                "t": "$22/mo"
+                "t": "$21.99/mo ($263.88/yr)"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://tave.com",
-                "ext": 1
+                "href": "https://tave.com"
               }
             ]
           ],
@@ -10575,24 +10517,23 @@
             ],
             [
               {
-                "t": "Simple solo workflows"
+                "t": "Simple solo business workflows"
               }
             ],
             [
               {
-                "t": "✗"
+                "t": "7-day trial"
               }
             ],
             [
               {
-                "t": "$15/mo"
+                "t": "$15/mo ($180/yr) Essentials"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://17hats.com",
-                "ext": 1
+                "href": "https://17hats.com"
               }
             ]
           ]
@@ -10678,11 +10619,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $20/mo (June 2026)."
+            "t": "Pricing: Starter $35/mo monthly or $350/yr annual; Premier (with automations & scheduling) $55/mo monthly or $550/yr annual. Unlimited-time trial for up to 3 clients (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -10758,11 +10695,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $19/mo (June 2026)."
+            "t": "Pricing: Pro \u00a319/mo or \u00a3190/yr annual (approx. $24.90/mo or $249/yr); Master \u00a329/mo or \u00a3290/yr. 30-day free trial. Includes native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -10855,14 +10788,14 @@
       },
       {
         "type": "h2",
-        "text": "4. Táve: best for high-volume studios",
+        "text": "4. T\u00e1ve: best for high-volume studios",
         "id": "4-t-ve-best-for-high-volume-studios"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Táve is a powerful, detailed CRM that suits studios running a high volume of jobs. It's less flashy than HoneyBook but deep, with strong automation for studios that have outgrown simpler tools."
+            "t": "T\u00e1ve is a powerful, detailed CRM that suits studios running a high volume of jobs. It's less flashy than HoneyBook but deep, with strong automation for studios that have outgrown simpler tools."
           }
         ],
         "cls": ""
@@ -10923,7 +10856,7 @@
       },
       {
         "type": "cta",
-        "text": "View Táve",
+        "text": "View T\u00e1ve",
         "href": "https://tave.com",
         "ext": 1
       },
@@ -11040,7 +10973,7 @@
             "b": 1
           },
           {
-            "t": " Táve has the automation depth for it."
+            "t": " T\u00e1ve has the automation depth for it."
           }
         ],
         "cls": ""
@@ -11127,7 +11060,7 @@
             "href": "/"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -11136,7 +11069,7 @@
             "href": "/photography-crm-built-in-scheduler"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -11156,8 +11089,11 @@
   },
   "photography-crm-pic-time-integration": {
     "title": "Best Photography CRM That Integrates With Pic-Time (2026)",
-    "meta": "By The Photo Testers · Updated June 2026 · 5 min read",
-    "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
+    "meta": "By The Photo Testers team \u00b7 Published June 2026 \u00b7 Updated October 2026 \u00b7 6 min read",
+    "disclosure": "We evaluate tools through hands-on testing and structured research. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing and integration capabilities verified October 2026 against official vendor documentation.",
+    "images": [
+      "/assets/pic-time.webp"
+    ],
     "blocks": [
       {
         "type": "box",
@@ -11167,68 +11103,72 @@
             "runs": [
               {
                 "t": "Short answer:",
-                "b": 1
+                "b": true
               },
               {
-                "t": " Pic-Time handles galleries and sales, so you pair it with a CRM for booking, contracts, and invoices. There's no single official deep integration, so the practical approach is to use a CRM alongside Pic-Time and connect them with automation tools like Zapier where needed."
+                "t": " Both HoneyBook and Studio Ninja offer official native integrations with Pic-Time. HoneyBook automatically creates a Pic-Time project whenever a client completes their initial payment, while Studio Ninja creates and links galleries directly from job cards and syncs client print orders into your job ledger. Dubsado connects via Zapier or direct client portal links."
               }
-            ],
-            "cls": ""
+            ]
           },
           {
             "type": "p",
             "runs": [
               {
-                "t": "Best pairing for most: HoneyBook + Pic-Time.",
-                "b": 1
+                "t": "Best pairing for most: HoneyBook + Pic-Time",
+                "b": true
               },
               {
-                "t": " HoneyBook covers the client workflow, Pic-Time covers delivery and print sales."
+                "t": " for an all-in-one US/Canada client workflow; "
+              },
+              {
+                "t": "Studio Ninja + Pic-Time",
+                "b": true
+              },
+              {
+                "t": " for international multi-currency pricing and automatic print order tracking."
               }
-            ],
-            "cls": ""
+            ]
           }
         ]
       },
       {
         "type": "h2",
-        "text": "How Pic-Time fits into your stack",
+        "text": "How Pic-Time fits into your photography stack",
         "id": "how-pic-time-fits-into-your-stack"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "First, a quick clarification, because this trips people up. Pic-Time is a gallery delivery and print-sales platform, not a CRM. It's where you deliver photos and sell prints and albums. It doesn't do booking, contracts, or client invoicing for your shoots."
+            "t": "Pic-Time is a client gallery delivery and automated print-sales platform, not a CRM. It delivers finished high-resolution photos, hosts client stores, and automates marketing campaigns. It does not handle initial inquiries, client booking contracts, questionnaires, or shoot invoicing."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "So \"a CRM that integrates with Pic-Time\" really means: which CRM works well alongside Pic-Time, so you have one tool for the client workflow and Pic-Time for delivery and sales."
+            "t": "When photographers search for \"a CRM that integrates with Pic-Time\", they need a workflow where lead capture, contracts, scheduling, and retainers happen in their CRM, with an automated or seamless handoff to Pic-Time for delivery and print sales once the shoot is completed."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "The honest reality is there's no deep, official one-click integration between the major CRMs and Pic-Time. What you can do is run a CRM for the front end and Pic-Time for the back end, and connect them with automation where it helps."
+            "t": "Contrary to common misconceptions, native integrations do exist. HoneyBook and Studio Ninja provide direct API connections, while Dubsado connects via Zapier automations. Here is how the leading options compare."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "h2",
-        "text": "The practical pairings",
+        "text": "The practical CRM and Pic-Time pairings",
         "id": "the-practical-pairings"
       },
       {
         "type": "table",
+        "label": "Comparison of photography CRMs that integrate with Pic-Time",
+        "minW": "680px",
         "head": [
           [
             {
@@ -11237,7 +11177,12 @@
           ],
           [
             {
-              "t": "Pairs with Pic-Time via"
+              "t": "Integration type"
+            }
+          ],
+          [
+            {
+              "t": "Key automated trigger"
             }
           ],
           [
@@ -11256,73 +11201,91 @@
             [
               {
                 "t": "HoneyBook",
-                "b": 1
+                "b": true
               },
               {
-                "t": " "
-              },
-              {
-                "t": "(best overall)",
-                "i": 1
+                "t": " (best overall)",
+                "i": true
               }
             ],
             [
               {
-                "t": "Zapier / manual"
+                "t": "Direct native integration"
               }
             ],
             [
               {
-                "t": "Smooth client workflow"
+                "t": "Auto-creates gallery upon first payment"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "Smooth booking & invoicing"
+              }
+            ],
+            [
+              {
+                "t": "/mo billed annually (/yr)"
               }
             ]
           ],
           [
             [
               {
-                "t": "Studio Ninja"
+                "t": "Studio Ninja",
+                "b": true
+              },
+              {
+                "t": " (best value & tracking)",
+                "i": true
               }
             ],
             [
               {
-                "t": "Zapier / manual"
+                "t": "Direct native integration"
               }
             ],
             [
               {
-                "t": "Photographer-built, cheaper"
+                "t": "Links jobs & imports print orders/sales"
               }
             ],
             [
               {
-                "t": "$19/mo"
+                "t": "Multi-currency & order tracking"
+              }
+            ],
+            [
+              {
+                "t": ".90/mo billed annually (/yr)"
               }
             ]
           ],
           [
             [
               {
-                "t": "Dubsado"
+                "t": "Dubsado",
+                "b": true
               }
             ],
             [
               {
-                "t": "Zapier / manual"
+                "t": "Zapier / webhooks / portal link"
               }
             ],
             [
               {
-                "t": "Customizable workflows"
+                "t": "Zapier trigger on invoice/contract"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "Complex custom forms & portals"
+              }
+            ],
+            [
+              {
+                "t": "/mo monthly (/yr annual)"
               }
             ]
           ]
@@ -11332,63 +11295,71 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing verified June 2026. Tested on live accounts.",
-            "i": 1
+            "t": "Pricing verified October 2026 against official documentation. Tested on active accounts."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "h2",
-        "text": "1. HoneyBook + Pic-Time: best for most",
-        "id": "1-honeybook-pic-time-best-for-most"
+        "text": "1. HoneyBook + Pic-Time: best overall for North American photographers",
+        "id": "1-honeybook-pic-time-best-overall"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "HoneyBook handles the whole client side: inquiry, proposal, contract, invoice, scheduling. Pic-Time handles gallery delivery and print sales after the shoot. Together they cover the full journey."
+            "t": "HoneyBook handles the complete front-end client lifecycle: lead inquiries, smart proposals, legally binding contracts, payment processing, and automated client communications. Pic-Time handles high-res delivery and automated store marketing after the shoot."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "There's no native one-click link, but you can use Zapier to pass information between them, for example, triggering an action when a project stage changes. For many photographers, simply running both side by side is enough, with the handoff happening at delivery."
+            "t": "The integration is native and configured directly in HoneyBook under "
+          },
+          {
+            "t": "Company Settings > Integrations > Pic-Time",
+            "b": true
+          },
+          {
+            "t": ". Once authorized, you can enable automatic gallery creation whenever a client makes their first payment on an invoice, or manually link and launch a Pic-Time project directly from any HoneyBook project workspace. Client names, emails, and event dates pass across automatically."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "proscons",
         "pros": [
           [
             {
-              "t": "HoneyBook covers the full client workflow"
+              "t": "Official direct native integration with one-click authorization"
             }
           ],
           [
             {
-              "t": "Pic-Time is excellent for delivery and print sales"
+              "t": "Automatic Pic-Time project creation upon deposit/first payment"
             }
           ],
           [
             {
-              "t": "Zapier can bridge the two where needed"
+              "t": "Combines seamless proposals, contracts, invoices, and client portals"
+            }
+          ],
+          [
+            {
+              "t": "Direct links to official HoneyBook and Pic-Time integration guides"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "No deep native integration"
+              "t": "Photo files and print catalogs must still be managed in Pic-Time"
             }
           ],
           [
             {
-              "t": "Some manual handoff at the delivery stage"
+              "t": "HoneyBook payments are restricted to US and Canada bank accounts"
             }
           ]
         ]
@@ -11397,72 +11368,94 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Official guides: ",
+            "b": true
           },
           {
-            "t": " HoneyBook from $20/mo; Pic-Time priced separately (June 2026)."
+            "t": "Pic-Time HoneyBook Integration Help",
+            "href": "https://help.pic-time.com/en/articles/10705108-pic-time-and-honeybook-integration",
+            "ext": true
+          },
+          {
+            "t": " \u00b7 "
+          },
+          {
+            "t": "HoneyBook Gallery Management Documentation",
+            "href": "https://help.honeybook.com/en/articles/8338496-integrate-with-pic-time-to-manage-galleries",
+            "ext": true
+          },
+          {
+            "t": ". Pricing: HoneyBook Starter starts at /month billed annually (/year) or  monthly; Essentials is /month billed annually (/year). Pic-Time plans start from Free (15% commission) to /month Professional (0% commission)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
-        "text": "Try HoneyBook free",
         "href": "https://honeybook.com",
-        "ext": 1
+        "text": "Try HoneyBook free",
+        "target": "_blank"
       },
       {
         "type": "h2",
-        "text": "2. Studio Ninja + Pic-Time: best value pairing",
-        "id": "2-studio-ninja-pic-time-best-value-pairing"
+        "text": "2. Studio Ninja + Pic-Time: best for international photographers and order tracking",
+        "id": "2-studio-ninja-pic-time-best-for-sales-tracking"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "If you want a cheaper, photographer-specific CRM alongside Pic-Time, Studio Ninja is a strong pick. It covers leads, bookings, contracts, and invoices, and you hand off to Pic-Time for galleries."
+            "t": "Studio Ninja was built specifically for photographers and offers one of the tightest two-way Pic-Time integrations available. Configured in Studio Ninja "
+          },
+          {
+            "t": "Settings > Integrations > Pic-Time",
+            "b": true
+          },
+          {
+            "t": ", it links your accounts with your Pic-Time login credentials."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Same situation on integration, no deep native link, but Zapier and a simple manual handoff cover most needs. For photographers watching cost, this pairing does the job for less."
+            "t": "From any Studio Ninja Job profile, you can create a brand-new Pic-Time gallery or link an existing gallery with a single click. Even better, Studio Ninja automatically imports client print orders and store revenue from Pic-Time directly into the Job\u2019s financial ledger, logging product sales and payments without manual entry. Full multi-currency support (GBP, EUR, AUD, USD) makes it ideal for UK, European, and Australian businesses."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "proscons",
         "pros": [
           [
             {
-              "t": "Cheaper than HoneyBook"
+              "t": "Direct native integration from the Studio Ninja job profile"
             }
           ],
           [
             {
-              "t": "Built for photographers"
+              "t": "Automatically imports Pic-Time print orders and sales into invoice records"
             }
           ],
           [
             {
-              "t": "Clean workflow alongside Pic-Time"
+              "t": "Built specifically for photographers with global multi-currency billing"
+            }
+          ],
+          [
+            {
+              "t": "Fast, simple setup without third-party automation tools"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "No native Pic-Time integration"
+              "t": "No built-in native scheduler (requires external Calendly sync)"
             }
           ],
           [
             {
-              "t": "No built-in scheduler"
+              "t": "Price sheets and lab fulfillment remain configured in Pic-Time"
             }
           ]
         ]
@@ -11471,72 +11464,82 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Official guides: ",
+            "b": true
           },
           {
-            "t": " Studio Ninja from $19/mo; Pic-Time separate (June 2026)."
+            "t": "Pic-Time Studio Ninja Integration Guide",
+            "href": "https://help.pic-time.com/en/articles/10706871-pic-time-and-studio-ninja-integration",
+            "ext": true
+          },
+          {
+            "t": " \u00b7 "
+          },
+          {
+            "t": "Studio Ninja Setup Guide",
+            "href": "https://help.studioninja.co/en/articles/5054623-pic-time-integration",
+            "ext": true
+          },
+          {
+            "t": ". Pricing: Studio Ninja Pro starts at .90/month (\u00a319.50/month) billed annually (/year) or .90 monthly; Pic-Time separate."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
+        "href": "https://studioninja.co",
         "text": "View Studio Ninja",
-        "href": "https://studioninja.com",
-        "ext": 1
+        "target": "_blank"
       },
       {
         "type": "h2",
-        "text": "3. Dubsado + Pic-Time: most customizable",
+        "text": "3. Dubsado + Pic-Time: most customizable via Zapier",
         "id": "3-dubsado-pic-time-most-customizable"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "If you want to build a tailored workflow around your Pic-Time delivery, Dubsado's customization helps. You can shape the front-end process precisely, then hand off to Pic-Time for galleries and sales."
+            "t": "Dubsado is popular among photographers who need deep questionnaire logic, custom client portal design, and intricate multi-step workflow automations. Unlike HoneyBook and Studio Ninja, Dubsado does not currently have a native direct integration with Pic-Time."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "As with the others, the connection is via Zapier or manual handoff rather than a deep native integration. But if control over your workflow matters, Dubsado gives you the most."
+            "t": "Instead, the connection is achieved via Zapier or direct client portal embedding. With Zapier, you can set a trigger such as \"Contract Signed\" or \"Payment Received\" in Dubsado to automatically create a new project in Pic-Time. Alternatively, photographers include the unique Pic-Time gallery link directly in automated delivery emails or the Dubsado client portal."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "proscons",
         "pros": [
           [
             {
-              "t": "Highly customizable front-end workflow"
+              "t": "Deep questionnaire and custom contract logic"
             }
           ],
           [
             {
-              "t": "Strong automation"
+              "t": "Flexible multi-branch automated workflows"
             }
           ],
           [
             {
-              "t": "Often cheaper annually"
+              "t": "Global payment gateway options (Stripe, Square, PayPal)"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "No native Pic-Time integration"
+              "t": "No native direct integration; requires Zapier for automation"
             }
           ],
           [
             {
-              "t": "Steeper setup"
+              "t": "Steeper learning curve and longer initial template setup"
             }
           ]
         ]
@@ -11545,100 +11548,98 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
+            "t": "Official guides: ",
+            "b": true
           },
           {
-            "t": " Dubsado from $20/mo; Pic-Time separate (June 2026)."
+            "t": "Dubsado & Pic-Time on Zapier",
+            "href": "https://zapier.com/apps/dubsado/integrations/pic-time",
+            "ext": true
+          },
+          {
+            "t": ". Pricing: Dubsado Starter is /month billed monthly (/year annual); Premier with full automated workflows is /month billed monthly (/year annual)."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "cta",
-        "text": "View Dubsado",
         "href": "https://dubsado.com",
-        "ext": 1
+        "text": "View Dubsado",
+        "target": "_blank"
       },
       {
         "type": "h2",
-        "text": "The bottom line",
+        "text": "The bottom line: which setup fits your business?",
         "id": "the-bottom-line"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "There's no perfect one-click CRM-to-Pic-Time integration, so the real question is which CRM you want running alongside Pic-Time. For most photographers, HoneyBook is the smoothest front end. For value, Studio Ninja. For customization, Dubsado."
+            "t": "If you want an official native integration with automatic gallery creation upon deposit payment, HoneyBook is the smoothest option for US and Canadian photographers. If you want direct print-order syncing into your financial records or operate in the UK, Europe, or Australia, Studio Ninja is the standout choice. If you require complex custom questionnaires and multi-part contracts, Dubsado paired with Zapier provides complete control."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "In all cases, Pic-Time stays your delivery and print-sales layer, and you connect the two with Zapier or a simple handoff at the delivery stage."
+            "t": "In all setups, Pic-Time remains your dedicated presentation and print-monetization layer, ensuring your clients receive a premium delivery experience while your CRM handles legal, financial, and administrative tasks."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "h2",
-        "text": "FAQ",
+        "text": "Frequently asked questions",
         "id": "faq"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Does HoneyBook integrate with Pic-Time?",
-            "b": 1
+            "t": "Does HoneyBook integrate with Pic-Time?\n",
+            "b": true
           },
           {
-            "t": "\nNot with a deep native integration. You can connect them via Zapier and run them side by side, with HoneyBook handling the client workflow and Pic-Time handling delivery and sales."
+            "t": "Yes. HoneyBook features an official direct native integration with Pic-Time. Configured in Settings > Integrations, HoneyBook can automatically generate a Pic-Time gallery whenever a client completes their initial payment, or photographers can manually link galleries from the project workspace."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Is Pic-Time a CRM?",
-            "b": 1
+            "t": "Does Studio Ninja integrate with Pic-Time?\n",
+            "b": true
           },
           {
-            "t": "\nNo. Pic-Time is a gallery delivery and print-sales platform. You pair it with a CRM like HoneyBook, Studio Ninja, or Dubsado for booking, contracts, and invoicing."
+            "t": "Yes. Studio Ninja provides a direct native integration that lets photographers create or link Pic-Time galleries directly from job cards. It also automatically imports client print orders and store revenue from Pic-Time into Studio Ninja\u2019s job invoices and financial reports."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "What's the best CRM to use with Pic-Time?",
-            "b": 1
+            "t": "Does Dubsado integrate with Pic-Time?\n",
+            "b": true
           },
           {
-            "t": "\nFor most photographers, HoneyBook, it covers the full client workflow smoothly. Studio Ninja is the best-value pairing, and Dubsado the most customizable."
+            "t": "Dubsado does not currently have a native direct integration with Pic-Time. However, you can connect them seamlessly via Zapier (triggering project creation upon contract signing or payment) or by adding Pic-Time gallery links directly to client email workflows and client portals."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Can I connect my CRM to Pic-Time automatically?",
-            "b": 1
+            "t": "Is Pic-Time a CRM?\n",
+            "b": true
           },
           {
-            "t": "\nTo a degree, using Zapier to pass information between them. There's no deep native integration, so some manual handoff at the delivery stage is normal."
+            "t": "No. Pic-Time is a client gallery delivery and automated print-sales platform. It does not provide client contracts, booking proposals, or shoot invoicing, which is why pairing it with a dedicated CRM like HoneyBook or Studio Ninja creates a complete business workflow."
           }
-        ],
-        "cls": ""
+        ]
       },
       {
         "type": "hr"
@@ -11647,41 +11648,47 @@
         "type": "p",
         "runs": [
           {
-            "t": "Related: ",
-            "i": 1
+            "t": "Related: "
           },
           {
             "t": "Best CRM for wedding photographers",
-            "i": 1,
             "href": "/best-crm-wedding-photographers"
           },
           {
-            "t": " · ",
-            "i": 1
+            "t": " \u00b7 "
           },
           {
             "t": "Best photography CRM with a built-in scheduler",
-            "i": 1,
             "href": "/photography-crm-built-in-scheduler"
           },
           {
-            "t": " · ",
-            "i": 1
+            "t": " \u00b7 "
           },
           {
             "t": "HoneyBook alternatives for photographers",
-            "i": 1,
             "href": "/honeybook-alternatives-photographers"
+          },
+          {
+            "t": " \u00b7 "
+          },
+          {
+            "t": "Best client gallery software",
+            "href": "/best-client-gallery-software"
+          },
+          {
+            "t": " \u00b7 "
+          },
+          {
+            "t": "Pic-Time vs Pixieset vs ShootProof",
+            "href": "/pic-time-vs-pixieset-vs-shootproof"
           }
-        ],
-        "cls": ""
+        ]
       }
-    ],
-    "images": []
+    ]
   },
   "photography-crm-built-in-scheduler": {
     "title": "Best Photography CRM With a Built-In Scheduler (2026)",
-    "meta": "By The Photo Testers · Updated June 2026 · 6 min read",
+    "meta": "By The Photo Testers \u00b7 Updated June 2026 \u00b7 6 min read",
     "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
     "blocks": [
       {
@@ -11695,7 +11702,7 @@
                 "b": 1
               },
               {
-                "t": " The scheduler is built into the core product, syncs with your calendar, and flows straight into your contracts and invoices."
+                "t": " The scheduler is tightly woven into booking proposals, contracts, and payments, available on Starter ($29/mo annual) and automated on Essentials ($39/mo annual)."
               }
             ],
             "cls": ""
@@ -11704,11 +11711,11 @@
             "type": "p",
             "runs": [
               {
-                "t": "On a budget? Pixieset.",
+                "t": "Best budget pick: Pixieset Studio Manager.",
                 "b": 1
               },
               {
-                "t": " A solid scheduler on its free tier."
+                "t": " Genuine built-in appointment scheduling on its free tier, pairing seamlessly with client galleries."
               }
             ],
             "cls": ""
@@ -11717,11 +11724,11 @@
             "type": "p",
             "runs": [
               {
-                "t": "Considering Studio Ninja?",
+                "t": "For deep automation: Dubsado Premier.",
                 "b": 1
               },
               {
-                "t": " It has no native scheduler. That's the whole reason this page exists."
+                "t": " Highly customizable scheduling with custom intake forms and automated reminder sequences on the Premier tier ($55/mo)."
               }
             ],
             "cls": ""
@@ -11743,17 +11750,17 @@
           ],
           [
             {
-              "t": "Scheduler"
+              "t": "Scheduler availability"
             }
           ],
           [
             {
-              "t": "Calendar sync"
+              "t": "Calendar 2-way sync"
             }
           ],
           [
             {
-              "t": "Starts at"
+              "t": "Starts at (annual / monthly)"
             }
           ],
           []
@@ -11766,62 +11773,57 @@
                 "b": 1
               },
               {
-                "t": " "
-              },
-              {
-                "t": "(best overall)",
+                "t": " (best overall)",
                 "i": 1
               }
             ],
             [
               {
-                "t": "✓ Built in"
+                "t": "\u2713 Starter & Essentials"
               }
             ],
             [
               {
-                "t": "Google, iCal"
+                "t": "Google, Apple, Outlook"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "$29/mo ($348/yr) / $34/mo"
               }
             ],
             [
               {
                 "t": "Try free",
-                "href": "https://honeybook.com",
-                "ext": 1
+                "href": "https://honeybook.com"
               }
             ]
           ],
           [
             [
               {
-                "t": "Pixieset"
+                "t": "Pixieset Studio"
               }
             ],
             [
               {
-                "t": "✓ Built in"
+                "t": "\u2713 Free & Pro tiers"
               }
             ],
             [
               {
-                "t": "Google"
+                "t": "Google, Apple iCal"
               }
             ],
             [
               {
-                "t": "Free tier"
+                "t": "Free / $12/mo ($144/yr)"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://pixieset.com",
-                "ext": 1
+                "href": "https://pixieset.com"
               }
             ]
           ],
@@ -11833,24 +11835,23 @@
             ],
             [
               {
-                "t": "✓ Built in"
+                "t": "\u2713 Premier tier only"
               }
             ],
             [
               {
-                "t": "Google, iCal"
+                "t": "Google, Apple, Outlook"
               }
             ],
             [
               {
-                "t": "$20/mo"
+                "t": "$55/mo ($550/yr) Premier"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://dubsado.com",
-                "ext": 1
+                "href": "https://dubsado.com"
               }
             ]
           ],
@@ -11862,24 +11863,23 @@
             ],
             [
               {
-                "t": "✗ None"
+                "t": "\u2717 External embed only"
               }
             ],
             [
               {
-                "t": "Add-on only"
+                "t": "2-way sync (no native booking)"
               }
             ],
             [
               {
-                "t": "$19/mo"
+                "t": "\u00a319/mo (\u00a3190/yr) / \u00a324/mo"
               }
             ],
             [
               {
                 "t": "View",
-                "href": "https://studioninja.com",
-                "ext": 1
+                "href": "https://studioninja.co"
               }
             ]
           ]
@@ -12042,11 +12042,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $20/mo (June 2026). Free trial available."
+            "t": "Pricing: Starter $29/mo billed annually ($348/yr) or $34/mo monthly; Essentials $39/mo billed annually ($468/yr) or $49/mo monthly for automated workflow scheduling; 7-day free trial (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -12164,7 +12160,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "The catch: Dubsado rewards people who set it up carefully. The scheduler works well once configured, but Dubsado asks more of you up front than HoneyBook does."
+            "t": "Crucially, Dubsado's built-in scheduler is not available on its Starter tier ($35/mo). To embed interactive client booking calendars, automate confirmation emails, or attach questionnaires to appointments, photographers must subscribe to Dubsado Premier at $55/month billed monthly or $550/year billed annually."
           }
         ],
         "cls": ""
@@ -12220,11 +12216,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $20/mo (June 2026)."
+            "t": "Pricing: Scheduling requires the Premier plan at $55/mo monthly or $550/yr annual ($45.83/mo equivalent). Unlimited-time trial for up to 3 clients (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -12295,11 +12287,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
-            "b": 1
-          },
-          {
-            "t": " From $19/mo (June 2026)."
+            "t": "Pricing: Pro \u00a319/mo or \u00a3190/yr annual (approx. $24.90/mo or $249/yr). Note: Studio Ninja does not offer a native interactive booking scheduler; photographers typically embed Calendly or Acuity links on their contact forms (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -12433,7 +12421,7 @@
             "href": "/dubsado-vs-honeybook"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {
@@ -12442,7 +12430,7 @@
             "href": "/honeybook-alternatives-photographers"
           },
           {
-            "t": " · ",
+            "t": " \u00b7 ",
             "i": 1
           },
           {

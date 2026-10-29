@@ -13,6 +13,8 @@ interface PlatformPlan {
   limit: string;
   commission: string;
   slug: string;
+  isPromo?: boolean;
+  promoNote?: string;
 }
 
 export function GalleryCostCalculator() {
@@ -57,12 +59,12 @@ export function GalleryCostCalculator() {
   const totalLabel = valid ? totalPhotos.toLocaleString('en-US') : '—';
   const gbLabel = valid ? `${storageGB.toFixed(1)} GB` : '—';
 
-  const getPlans = (total: number, gb: number): PlatformPlan[] => {
+  const getPlans = (total: number, gb: number, activeShoots: number): PlatformPlan[] => {
     const list: PlatformPlan[] = [];
 
     // Pixieset (Client Gallery plans, annual billing, verified current vendor docs)
     if (gb <= 3) {
-      list.push({ platform: 'Pixieset', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '3GB storage limit', commission: '15%', slug: 'pixieset' });
+      list.push({ platform: 'Pixieset', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '3GB storage limit (free tier)', commission: '15%', slug: 'pixieset' });
     } else if (gb <= 10) {
       list.push({ platform: 'Pixieset', planName: 'Basic', monthlyCost: 8, annualCost: 96, limit: '10GB storage limit', commission: '0%', slug: 'pixieset' });
     } else if (gb <= 100) {
@@ -91,7 +93,7 @@ export function GalleryCostCalculator() {
 
     // Pic-Time (Annual billing, 0% commission with own payment processor, verified current vendor docs)
     if (gb <= 10) {
-      list.push({ platform: 'Pic-Time', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '10GB storage limit', commission: '15%', slug: 'pic-time' });
+      list.push({ platform: 'Pic-Time', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '10GB storage limit (free tier)', commission: '15%', slug: 'pic-time' });
     } else if (gb <= 20) {
       list.push({ platform: 'Pic-Time', planName: 'Beginner', monthlyCost: 7, annualCost: 84, limit: '20GB storage limit', commission: '15%', slug: 'pic-time' });
     } else if (gb <= 100) {
@@ -115,16 +117,37 @@ export function GalleryCostCalculator() {
     if (gb <= 15) {
       list.push({ platform: 'Zenfolio', planName: 'Basic', monthlyCost: 7, annualCost: 84, limit: '15GB storage limit; no client selling', commission: 'No e-commerce', slug: 'zenfolio' });
     } else if (gb <= 150) {
-      list.push({ platform: 'Zenfolio', planName: 'Professional', monthlyCost: 11.50, annualCost: 138, limit: '150GB storage limit, client selling included', commission: '7% commerce fee', slug: 'zenfolio' });
+      list.push({
+        platform: 'Zenfolio',
+        planName: 'Professional',
+        monthlyCost: 11.50,
+        annualCost: 138,
+        limit: '150GB storage limit, client selling included',
+        commission: '7% commerce fee',
+        slug: 'zenfolio',
+        isPromo: true,
+        promoNote: 'First-year promo rate ($138/yr); standard annual renewal applies',
+      });
     } else {
-      list.push({ platform: 'Zenfolio', planName: 'Advanced', monthlyCost: 20, annualCost: 240, limit: 'Unlimited JPEG storage, advanced selling', commission: '7% commerce fee', slug: 'zenfolio' });
+      list.push({
+        platform: 'Zenfolio',
+        planName: 'Advanced',
+        monthlyCost: 20,
+        annualCost: 240,
+        limit: 'Unlimited JPEG storage, advanced selling',
+        commission: '7% commerce fee',
+        slug: 'zenfolio',
+        isPromo: true,
+        promoNote: 'First-year promo rate ($240/yr); standard annual renewal applies',
+      });
     }
 
-    // CloudSpot (Five tiers: Free 5GB, Entry 15GB [$72/yr], Lite 100GB [$144/yr], Pro 500GB [$336/yr], Unlimited [$504/yr])
-    if (gb <= 5) {
-      list.push({ platform: 'CloudSpot', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '5GB storage limit (3 galleries)', commission: '15%', slug: 'cloudspot' });
-    } else if (gb <= 15) {
-      list.push({ platform: 'CloudSpot', planName: 'Entry', monthlyCost: 6, annualCost: 72, limit: '15GB storage limit (15 galleries)', commission: '15%', slug: 'cloudspot' });
+    // CloudSpot (Five tiers: Free 5GB [3 galleries max], Entry 15GB [$72/yr, 15 galleries max], Lite 100GB [$144/yr, unlimited galleries], Pro 500GB [$336/yr], Unlimited [$504/yr])
+    // Gallery limits enforced under 1-gallery-per-shoot 12-month retention assumption
+    if (gb <= 5 && activeShoots <= 3) {
+      list.push({ platform: 'CloudSpot', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '5GB storage limit (max 3 active galleries)', commission: '15%', slug: 'cloudspot' });
+    } else if (gb <= 15 && activeShoots <= 15) {
+      list.push({ platform: 'CloudSpot', planName: 'Entry', monthlyCost: 6, annualCost: 72, limit: '15GB storage limit (max 15 active galleries)', commission: '15%', slug: 'cloudspot' });
     } else if (gb <= 100) {
       list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 12, annualCost: 144, limit: '100GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
     } else if (gb <= 500) {
@@ -136,7 +159,7 @@ export function GalleryCostCalculator() {
     return list.sort((a, b) => a.annualCost - b.annualCost);
   };
 
-  const rows = valid ? getPlans(totalPhotos, storageGB) : [];
+  const rows = valid ? getPlans(totalPhotos, storageGB, nShoots) : [];
 
   return (
     <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
@@ -280,7 +303,7 @@ export function GalleryCostCalculator() {
               Assumes about 5MB per delivered JPEG.
             </p>
             <p className="m-0">
-              Retention assumption: calculated on keeping a 12-month delivery archive active online. Deleting or archiving older client galleries frees up concurrent storage capacity.
+              Retention assumption: calculated on a 1-gallery-per-shoot basis over a 12-month delivery archive. Platforms with active gallery limits (e.g. CloudSpot Free capped at 3 galleries, Entry at 15 galleries) require higher tiers once annual shoots exceed those limits, even if total gigabytes would fit.
             </p>
           </div>
         </form>
@@ -326,7 +349,7 @@ export function GalleryCostCalculator() {
                 >
                   {isLowest && (
                     <p className="m-0 mb-2.5 text-[13px] font-semibold tracking-[0.04em] uppercase text-[#3159D7]">
-                      Lowest estimated cost
+                      Lowest estimated cost {r.isPromo ? '(First-year promotional rate)' : ''}
                     </p>
                   )}
                   <div className="flex flex-wrap justify-between gap-4 sm:gap-6 items-start">
@@ -339,6 +362,11 @@ export function GalleryCostCalculator() {
                       <p className="m-0 text-[14px] text-[#60645F]">
                         Store commission: {r.commission}
                       </p>
+                      {r.isPromo && r.promoNote && (
+                        <p className="m-0 mt-2 text-[13px] font-medium text-[#9A3412] bg-[#FEF3F2] px-2.5 py-1 rounded border border-[#FECDCA] inline-block">
+                          Notice: {r.promoNote}
+                        </p>
+                      )}
                     </div>
                     <div className="text-right tabular-nums">
                       <p className="m-0 font-serif text-[30px] leading-[1.1] text-[#20221F]">

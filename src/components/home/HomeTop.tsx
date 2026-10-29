@@ -39,15 +39,21 @@ export function HomeHero() {
       <article style={{ minWidth: 0 }}>
         <Link href={lead.href} style={{ display: 'block', textDecoration: 'none', color: '#20221F' }}>
           <figure style={{ margin: '0 0 18px', background: '#1B1C1A', borderRadius: '4px', overflow: 'hidden', aspectRatio: '4/3', border: '1px solid #DFE2DB' }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/hero-camera-laptop.png"
-              alt="A mirrorless camera with a large lens beside an open laptop showing a grid of landscape and still-life photos, on a sunlit desk by a window"
-              width={1448}
-              height={1086}
-              fetchPriority="high"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '55% 50%', display: 'block' }}
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/assets/hero-camera-laptop-480.webp 480w, /assets/hero-camera-laptop-800.webp 800w, /assets/hero-camera-laptop.webp 1448w"
+                sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 720px"
+              />
+              <img
+                src="/assets/hero-camera-laptop.png"
+                alt="A mirrorless camera with a large lens beside an open laptop showing a grid of landscape and still-life photos, on a sunlit desk by a window"
+                width={1448}
+                height={1086}
+                fetchPriority="high"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: '55% 50%', display: 'block' }}
+              />
+            </picture>
           </figure>
         </Link>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px 14px', fontSize: '14px', color: '#60645F', marginBottom: '8px' }}>
@@ -67,12 +73,12 @@ export function HomeHero() {
 }
 
 const SHOTS = [
-  { href: '/best-client-gallery-software#pixieset', src: '/assets/pixieset-v3.jpg', alt: 'Pixieset client gallery screenshot', pos: '80% 50%', name: 'Pixieset', sub: 'Client gallery guide' },
-  { href: '/pic-time-vs-pixieset-vs-shootproof', src: '/assets/pic-time.png', alt: 'Pic-Time gallery screenshot', pos: '50% 0', name: 'Pic-Time', sub: 'Gallery comparison' },
-  { href: '/best-crm-wedding-photographers', src: '/assets/honeybook-scheduler.png', alt: 'HoneyBook scheduler screenshot', pos: '50% 30%', name: 'HoneyBook', sub: 'Wedding CRM guide' },
-  { href: '/dubsado-vs-honeybook', src: '/assets/dubsado.png', alt: 'Dubsado workflow screenshot', pos: '0 0', name: 'Dubsado', sub: 'Dubsado vs HoneyBook' },
-  { href: '/filterpixel-alternatives', src: '/assets/filterpixel.png', alt: 'FilterPixel culling screenshot', pos: '50% 50%', name: 'FilterPixel', sub: 'FilterPixel alternatives' },
-  { href: '/best-photo-culling-software#narrative-select', src: '/assets/narrative-select.png', alt: 'Narrative Select culling screenshot', pos: '50% 50%', name: 'Narrative Select', sub: 'Culling software guide' },
+  { href: '/best-client-gallery-software#pixieset', src: '/assets/pixieset-v3.webp', alt: 'Pixieset client gallery screenshot', pos: '80% 50%', name: 'Pixieset', sub: 'Client gallery guide' },
+  { href: '/pic-time-vs-pixieset-vs-shootproof', src: '/assets/pic-time.webp', alt: 'Pic-Time gallery screenshot', pos: '50% 0', name: 'Pic-Time', sub: 'Gallery comparison' },
+  { href: '/best-crm-wedding-photographers', src: '/assets/honeybook-scheduler.webp', alt: 'HoneyBook scheduler screenshot', pos: '50% 30%', name: 'HoneyBook', sub: 'Wedding CRM guide' },
+  { href: '/dubsado-vs-honeybook', src: '/assets/dubsado.webp', alt: 'Dubsado workflow screenshot', pos: '0 0', name: 'Dubsado', sub: 'Dubsado vs HoneyBook' },
+  { href: '/filterpixel-alternatives', src: '/assets/filterpixel.webp', alt: 'FilterPixel culling screenshot', pos: '50% 50%', name: 'FilterPixel', sub: 'FilterPixel alternatives' },
+  { href: '/best-photo-culling-software#narrative-select', src: '/assets/narrative-select.webp', alt: 'Narrative Select culling screenshot', pos: '50% 50%', name: 'Narrative Select', sub: 'Culling software guide' },
 ];
 
 export function HomeInside() {

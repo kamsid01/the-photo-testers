@@ -169,8 +169,28 @@ export function CullingToolFinder() {
       });
     });
 
+    const isOfflineRequired = answers['offline'] === 0; // "Yes, often"
+    const cloudTools = new Set(['FilterPixel', 'Imagen AI', 'Evoto']);
+
+    // Sort all tools by raw score for transparent score breakdown
     const sorted = Object.entries(sc).sort((a, b) => b[1] - a[1]);
-    return { sorted, why };
+
+    // Apply strict offline compatibility constraint if offline is required:
+    let topName = sorted.length > 0 ? sorted[0][0] : 'Aftershoot';
+    let runnerName = sorted.length > 1 ? sorted[1][0] : null;
+    let constraintNote: string | null = null;
+
+    if (isOfflineRequired && cloudTools.has(topName)) {
+      const offlineCandidates = sorted.filter(([t]) => !cloudTools.has(t));
+      if (offlineCandidates.length > 0) {
+        const excludedCloudTool = topName;
+        topName = offlineCandidates[0][0];
+        runnerName = offlineCandidates.length > 1 ? offlineCandidates[1][0] : excludedCloudTool;
+        constraintNote = `Compatibility constraint applied: ${excludedCloudTool} scored highest on budget points, but its AI engine operates in the cloud and cannot work offline. ${topName} is recommended as your primary offline-compatible starting point.`;
+      }
+    }
+
+    return { sorted, why, topName, runnerName, constraintNote };
   };
 
   const handleNext = () => {
@@ -210,10 +230,8 @@ export function CullingToolFinder() {
   };
 
   if (done) {
-    const { sorted, why } = score();
-    const topName = sorted.length > 0 ? sorted[0][0] : 'Aftershoot';
+    const { sorted, why, topName, runnerName, constraintNote } = score();
     const topDetail = TOOLS[topName] || TOOLS.Aftershoot;
-    const runnerName = sorted.length > 1 ? sorted[1][0] : null;
     const runnerDetail = runnerName ? TOOLS[runnerName] : null;
 
     return (
@@ -225,19 +243,25 @@ export function CullingToolFinder() {
         >
           Suggested starting point
         </p>
-        <h3 className="m-0 mb-3.5 font-serif font-medium text-[clamp(36px,4.4vw,52px)] leading-none text-[#20221F]">
+        <h2 className="m-0 mb-3.5 font-serif font-medium text-[clamp(36px,4.4vw,52px)] leading-none text-[#20221F]">
           {topName}
-        </h3>
+        </h2>
         <p className="m-0 mb-6 text-[18px] leading-[1.55] text-[#20221F] max-w-[36em]">
           {topDetail.reason}
         </p>
 
+        {constraintNote && (
+          <div className="mb-6 p-3.5 px-4 bg-[#FBF7EF] border border-[#E7D9BC] rounded text-[14px] leading-[1.5] text-[#4F3A12]">
+            <strong>Compatibility constraint:</strong> {constraintNote}
+          </div>
+        )}
+
         {/* Why it fits / limitations */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#DFE2DB] border border-[#DFE2DB] mb-6">
           <div className="bg-white p-4 sm:p-5">
-            <h4 className="m-0 mb-2 text-[14px] font-semibold text-[#20221F]">
+            <h3 className="m-0 mb-2 text-[14px] font-semibold text-[#20221F]">
               Why it fits your answers
-            </h4>
+            </h3>
             <ul className="m-0 pl-4 text-[15px] leading-[1.5] text-[#4A4E49] space-y-1 list-disc">
               {(why[topName] || []).map((w, wi) => (
                 <li key={wi}>{w.text}</li>
@@ -245,9 +269,9 @@ export function CullingToolFinder() {
             </ul>
           </div>
           <div className="bg-white p-4 sm:p-5">
-            <h4 className="m-0 mb-2 text-[14px] font-semibold text-[#9A3412]">
+            <h3 className="m-0 mb-2 text-[14px] font-semibold text-[#9A3412]">
               Important limitation
-            </h4>
+            </h3>
             <p className="m-0 text-[15px] leading-[1.5] text-[#4A4E49]">{topDetail.limit}</p>
           </div>
         </div>

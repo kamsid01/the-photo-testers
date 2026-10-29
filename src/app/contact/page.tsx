@@ -9,6 +9,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thephototesters.com/contact',
   },
+  openGraph: {
+    title: 'Contact | The Photo Testers',
+    description:
+      'Questions, corrections, or a software tool we should test. Reach out to The Photo Testers editorial team.',
+    url: 'https://www.thephototesters.com/contact',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact The Photo Testers',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact | The Photo Testers',
+    description:
+      'Questions, corrections, or a software tool we should test. Reach out to The Photo Testers editorial team.',
+    images: ['/og/default.jpg'],
+  },
 };
 
 export default function ContactPage() {

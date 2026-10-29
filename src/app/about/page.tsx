@@ -4,11 +4,33 @@ import { InfoLayout } from '@/components/info/InfoLayout';
 import { getSiteData } from '@/lib/site-data';
 
 export const metadata: Metadata = {
-  title: 'About The Photo Testers',
+  title: 'About The Photo Testers: Independent Photography Software Evaluation',
   description:
     'An independent publication helping photographers choose the software behind their bookings, editing, delivery, and sales.',
   alternates: {
     canonical: 'https://www.thephototesters.com/about',
+  },
+  openGraph: {
+    title: 'About The Photo Testers: Independent Photography Software Evaluation',
+    description:
+      'An independent publication helping photographers choose the software behind their bookings, editing, delivery, and sales.',
+    url: 'https://www.thephototesters.com/about',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'About The Photo Testers',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About The Photo Testers: Independent Photography Software Evaluation',
+    description:
+      'An independent publication helping photographers choose the software behind their bookings, editing, delivery, and sales.',
+    images: ['/og/default.jpg'],
   },
 };
 

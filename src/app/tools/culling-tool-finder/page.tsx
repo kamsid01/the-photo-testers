@@ -10,6 +10,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thephototesters.com/tools/culling-tool-finder',
   },
+  openGraph: {
+    title: 'AI Culling Tool Finder: Which Tool Fits Your Workflow?',
+    description:
+      'Five quick questions about your volume, priorities, and workflow point to a sensible culling tool to trial first, with a runner-up.',
+    url: 'https://www.thephototesters.com/tools/culling-tool-finder',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'AI Culling Tool Finder',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Culling Tool Finder: Which Tool Fits Your Workflow?',
+    description:
+      'Five quick questions about your volume, priorities, and workflow point to a sensible culling tool to trial first, with a runner-up.',
+    images: ['/og/default.jpg'],
+  },
 };
 
 export default function CullingToolFinderPage() {

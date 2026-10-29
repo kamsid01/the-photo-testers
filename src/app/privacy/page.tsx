@@ -9,6 +9,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thephototesters.com/privacy',
   },
+  openGraph: {
+    title: 'Privacy Policy | The Photo Testers',
+    description:
+      'This policy explains what information The Photo Testers collects, how we use it, and your privacy rights.',
+    url: 'https://www.thephototesters.com/privacy',
+    type: 'website',
+    images: [
+      {
+        url: '/og/default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Privacy Policy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | The Photo Testers',
+    description:
+      'This policy explains what information The Photo Testers collects, how we use it, and your privacy rights.',
+    images: ['/og/default.jpg'],
+  },
 };
 
 export default function PrivacyPage() {

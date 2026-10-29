@@ -1,461 +1,476 @@
 {
- "categories": [
-  {
-   "slug": "client-crms",
-   "name": "Client CRMs",
-   "title": "Photography CRM & Client Management Software",
-   "desc": "Inquiries, contracts, invoices, questionnaires, and client email in one place.",
-   "status": "published",
-   "img": "/assets/honeybook-scheduler.png",
-   "startHere": "best-crm-wedding-photographers",
-   "related": [
-    "booking-scheduling",
-    "gallery-delivery"
-   ],
-   "tools": [
-    "pricing-calculator"
-   ],
-   "intro": [
-    "A photography CRM handles the business side of your studio: inquiries, bookings, contracts, invoices, questionnaires, and client communication, so you spend less time on admin and more behind the camera. The best one for you depends on what you need most. Some are built for deep automation, some for simple booking, some specifically for European VAT and GDPR compliance.",
-    "When choosing, look at: automated workflows (emails, contracts, payment reminders), a branded client portal, contracts with e-signatures, invoicing and online payments, scheduling, and, if you shoot in the UK or EU, correct VAT handling and a signable data-processing agreement. Pricing matters too, some tools charge a flat monthly fee while others scale with use."
-   ]
+  "categories": [
+    {
+      "slug": "client-crms",
+      "name": "Client CRMs",
+      "title": "Photography CRM & Client Management Software",
+      "desc": "Inquiries, contracts, invoices, questionnaires, and client email in one place.",
+      "status": "published",
+      "img": "/assets/honeybook-scheduler.png",
+      "startHere": "best-crm-wedding-photographers",
+      "related": [
+        "booking-scheduling",
+        "gallery-delivery"
+      ],
+      "tools": [
+        "pricing-calculator"
+      ],
+      "intro": [
+        "A photography CRM handles the business side of your studio: inquiries, bookings, contracts, invoices, questionnaires, and client communication, so you spend less time on admin and more behind the camera. The best one for you depends on what you need most. Some are built for deep automation, some for simple booking, some specifically for European VAT and GDPR compliance.",
+        "When choosing, look at: automated workflows (emails, contracts, payment reminders), a branded client portal, contracts with e-signatures, invoicing and online payments, scheduling, and, if you shoot in the UK or EU, correct VAT handling and a signable data-processing agreement. Pricing matters too, some tools charge a flat monthly fee while others scale with use."
+      ]
+    },
+    {
+      "slug": "gallery-delivery",
+      "name": "Gallery Delivery",
+      "title": "Client Gallery Software for Photographers",
+      "desc": "Delivering finished galleries, downloads, proofing, and in-gallery print sales.",
+      "status": "published",
+      "img": "/assets/pic-time.png",
+      "startHere": "best-client-gallery-software",
+      "related": [
+        "print-album-sales",
+        "portfolio-websites"
+      ],
+      "tools": [
+        "gallery-cost-calculator"
+      ],
+      "intro": [
+        "Client gallery software is where your finished photos go to be delivered, viewed, downloaded, and often bought. A good platform makes your galleries feel like an extension of your brand: it loads fast, downloads cleanly, and sells prints without you chasing anyone.",
+        "When choosing, look at: a branded, password-protected gallery, favoriting and proofing tools, full-resolution and watermarked download options, a built-in print store (and whether it takes a commission on sales), storage that fits your shooting volume, and a clean mobile experience, since most clients open their gallery on a phone. Pricing almost always scales with storage, so compare platforms at your real volume, not the headline entry price."
+      ]
+    },
+    {
+      "slug": "ai-culling-editing",
+      "name": "AI Culling & Editing",
+      "title": "AI Culling & Editing Software for Photographers",
+      "desc": "Selecting keepers, applying your edit, and retouching across large shoots.",
+      "status": "published",
+      "img": "/assets/filterpixel.png",
+      "startHere": "best-ai-culling-editing-software",
+      "related": [
+        "gallery-delivery",
+        "client-crms"
+      ],
+      "tools": [
+        "culling-tool-finder"
+      ],
+      "intro": [
+        "AI culling and editing software automates the slowest parts of post-production: selecting the keepers from thousands of shots, applying your editing style across a whole gallery, and retouching portraits. Used well, these tools cut hours off every wedding or portrait session.",
+        "It helps to be clear about three different jobs. Culling is picking the best frames and removing blinks, blurs and duplicates. Editing is applying your color and tone across the set. Retouching is the close-up work on skin, glare and backgrounds. Some tools are excellent at one of these; some do all three. When comparing, weigh culling accuracy, editing quality (skin tones especially), whether the tool runs offline or in the cloud, and the pricing model, a flat monthly fee versus per-photo pricing changes the cost a lot depending on your volume."
+      ]
+    },
+    {
+      "slug": "booking-scheduling",
+      "name": "Booking & Scheduling",
+      "title": "Booking & Scheduling Software",
+      "desc": "Online booking for sessions and mini-sessions, synced to your calendar.",
+      "liveDesc": "Automate your calendar and let clients book mini-sessions and shoots online.",
+      "status": "developing",
+      "related": [
+        "client-crms",
+        "gallery-delivery"
+      ],
+      "elsewhere": [
+        "photography-crm-built-in-scheduler",
+        "best-crm-wedding-photographers"
+      ],
+      "elsewhereNote": "Several CRMs include a scheduler. Our CRM coverage compares them."
+    },
+    {
+      "slug": "portfolio-websites",
+      "name": "Portfolio Websites",
+      "title": "Portfolio Website Builders",
+      "desc": "Sites that show your best work and turn visitors into inquiries.",
+      "liveDesc": "Build a beautiful, fast portfolio website to showcase your best photography work.",
+      "status": "developing",
+      "related": [
+        "gallery-delivery",
+        "client-crms"
+      ],
+      "elsewhere": [
+        "best-client-gallery-software"
+      ],
+      "elsewhereNote": "Pixieset, SmugMug, Zenfolio, and ShootProof include website builders. Our gallery guide covers what each includes."
+    },
+    {
+      "slug": "print-album-sales",
+      "name": "Print & Album Sales",
+      "title": "Print & Album Sales Platforms",
+      "desc": "Selling prints, albums, and wall art directly to clients.",
+      "liveDesc": "Maximize your revenue by selling professional prints, albums, and wall art directly to clients.",
+      "status": "developing",
+      "related": [
+        "gallery-delivery",
+        "portfolio-websites"
+      ],
+      "elsewhere": [
+        "pic-time-vs-pixieset-vs-shootproof",
+        "best-client-gallery-software"
+      ],
+      "elsewhereNote": "Most gallery platforms include a print store. Our gallery coverage compares stores and commissions."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "the-admin-work-thats-quietly-costing-you-bookings",
+      "short": "The admin work that's quietly costing you bookings",
+      "cat": "client-crms",
+      "type": "editorial",
+      "date": "2026-10-21",
+      "summary": "Why slow replies lose bookings, what CRMs actually automate, and the setup cost photographers skip.",
+      "evidence": "editorial",
+      "pull": "A CRM does not win you the booking; a fast, warm, human reply does.",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "how-ai-culling-changed-wedding-post-production",
+      "short": "How AI culling changed wedding post-production",
+      "cat": "ai-culling-editing",
+      "type": "editorial",
+      "date": "2026-10-15",
+      "summary": "What AI culling changed, what it still can't do, and why skipping the human review pass burns photographers.",
+      "evidence": "editorial",
+      "pull": "What used to be hours of manual sorting becomes a review rather than a search.",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "aftershoot-review",
+      "short": "Aftershoot review",
+      "product": "Aftershoot",
+      "cat": "ai-culling-editing",
+      "type": "review",
+      "date": "2026-09-28",
+      "summary": "Real 2026 pricing, culling accuracy, editing quality, and honest pros and cons. Is Aftershoot worth it?",
+      "img": "/assets/aftershoot-homepage.webp",
+      "imgPos": "100% 50%",
+      "imgCaption": "Aftershoot's homepage, showing its culling grid. Captured from the vendor's site.",
+      "evidence": "research",
+      "checked": "October 2026",
+      "bylinePlaceholder": true,
+      "pricing": [
+        [
+          "Select (culling)",
+          "around $10/month",
+          "billed annually"
+        ],
+        [
+          "Edit (AI editing)",
+          "around $30/month",
+          "billed annually"
+        ],
+        [
+          "Retouch (AI retouching)",
+          "around $20/month",
+          "billed annually"
+        ]
+      ],
+      "pricingNote": "Flat fee, not per image. Bundles available. 30-day free trial, no card required.",
+      "alts": [
+        "imagen-ai-review",
+        "aftershoot-alternatives",
+        "aftershoot-vs-imagen"
+      ],
+      "evidenceNotes": [
+        {
+          "match": "On accuracy, Aftershoot reports",
+          "tags": [
+            "Vendor claim",
+            "Third-party benchmark"
+          ],
+          "note": "The 90% figure is Aftershoot's own. The 1,000 images in about 9 minutes figure was published by FilterPixel, a competitor."
+        },
+        {
+          "match": "The honest caveat every credible reviewer",
+          "tags": [
+            "Research: user and reviewer reports"
+          ]
+        }
+      ],
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "imagen-ai-review",
+      "short": "Imagen AI review",
+      "product": "Imagen AI",
+      "cat": "ai-culling-editing",
+      "type": "review",
+      "date": "2026-09-28",
+      "summary": "Imagen AI review (2026): evaluating Pay-As-You-Go vs Limitless pricing, editing quality, skin tone handling, and Lightroom Classic integration.",
+      "img": "/assets/imagen-ai-review-home-page-1536x994.webp",
+      "imgCaption": "Imagen's editing workspace, as published by the vendor.",
+      "evidence": "research",
+      "checked": "October 2026",
+      "bylinePlaceholder": true,
+      "alts": [
+        "aftershoot-review",
+        "aftershoot-vs-imagen",
+        "best-ai-culling-editing-software"
+      ],
+      "pricing": [
+        [
+          "Pay-as-you-go",
+          "around $0.05 per photo",
+          "$7/month minimum"
+        ],
+        [
+          "Annual volume tiers",
+          "36,000-photo tier around $127.50/month",
+          "18,000 to 72,000 photos per year"
+        ],
+        [
+          "Add-on AI tools",
+          "about $0.01 per photo each",
+          "charged on top of editing"
+        ]
+      ],
+      "pricingNote": "Per-photo pricing. Free trial with starter credits.",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "best-client-gallery-software",
+      "short": "Best client gallery software",
+      "cat": "gallery-delivery",
+      "type": "guide",
+      "date": "2026-08-15",
+      "summary": "Pixieset, ShootProof, Pic-Time, SmugMug, Zenfolio, and CloudSpot compared on real 2026 pricing and features.",
+      "img": "/assets/pixieset-v3.webp",
+      "imgPos": "80% 50%",
+      "evidence": "research",
+      "checked": "October 2026",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "pic-time-vs-pixieset-vs-shootproof",
+      "short": "Pic-Time vs Pixieset vs ShootProof",
+      "cat": "gallery-delivery",
+      "type": "comparison",
+      "date": "2026-08-14",
+      "summary": "Three gallery platforms compared on pricing, print sales, and client experience.",
+      "imgs": [
+        "/assets/pic-time.webp",
+        "/assets/pixieset-v3.webp",
+        "/assets/shootproof.webp"
+      ],
+      "img": "/assets/pic-time.webp",
+      "vs": [
+        "Pic-Time",
+        "Pixieset",
+        "ShootProof"
+      ],
+      "evidence": "research",
+      "checked": "October 2026",
+      "chooseIf": [
+        {
+          "name": "Pic-Time",
+          "text": "you want automated, campaign-driven print sales. Its built-in marketing sequences and gallery banner automations give it an edge for passive store revenue."
+        },
+        {
+          "name": "Pixieset",
+          "text": "you value aesthetics and want an all-in-one ecosystem (website, CRM, galleries) that is effortless to use."
+        },
+        {
+          "name": "ShootProof",
+          "text": "you do high-volume shoots (like schools, dance studios, or sports), need robust client invoicing and contracts on paid plans, or want zero commission on direct orders."
+        }
+      ],
+      "pricingAssumption": "Storage tiers differ by platform; compare at your own volume with the Gallery Cost Calculator.",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "best-photo-culling-software",
+      "short": "Best photo culling software",
+      "cat": "ai-culling-editing",
+      "type": "guide",
+      "date": "2026-07-28",
+      "summary": "Best photo culling software (2026): comparing FilterPixel, Aftershoot, Narrative Select, Photo Mechanic, and Excire Foto on speed, AI accuracy, and workflow.",
+      "img": "/assets/photo-mechanic.webp",
+      "evidence": "research",
+      "checked": "October 2026",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "aftershoot-alternatives",
+      "short": "Aftershoot alternatives",
+      "cat": "ai-culling-editing",
+      "type": "alternatives",
+      "date": "2026-07-27",
+      "summary": "The best Aftershoot alternatives in 2026: FilterPixel, Imagen AI, Narrative Select, Photo Mechanic, and Evoto compared on workflows and trade-offs.",
+      "img": "/assets/narrative-select.webp",
+      "evidence": "research",
+      "checked": "October 2026",
+      "from": "Aftershoot",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "filterpixel-alternatives",
+      "short": "FilterPixel alternatives",
+      "cat": "ai-culling-editing",
+      "type": "alternatives",
+      "date": "2026-07-21",
+      "summary": "The best FilterPixel alternatives in 2026: Aftershoot, Narrative Select, Imagen AI, Photo Mechanic, and Evoto compared on offline speed and privacy.",
+      "img": "/assets/filterpixel.webp",
+      "evidence": "research",
+      "checked": "October 2026",
+      "from": "FilterPixel",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "aftershoot-vs-imagen",
+      "short": "Aftershoot vs Imagen",
+      "cat": "ai-culling-editing",
+      "type": "comparison",
+      "date": "2026-07-20",
+      "summary": "Aftershoot vs Imagen: comparing flat-rate local processing with Imagen's PAYG and Limitless tiers, workflow limits, and real costs.",
+      "imgs": [
+        "/assets/aftershoot-homepage.webp",
+        "/assets/imagen-ai-review-home-page-1536x994.webp"
+      ],
+      "img": "/assets/aftershoot-homepage.webp",
+      "vs": [
+        "Aftershoot",
+        "Imagen"
+      ],
+      "evidence": "research",
+      "checked": "October 2026",
+      "chooseIf": [
+        {
+          "name": "Aftershoot",
+          "text": "you shoot high volume. Flat unlimited pricing means a 4,000-image wedding costs the same as a 400-image portrait session. It also works offline and handles culling, editing, and retouching in one app.",
+          "href": "/aftershoot-review"
+        },
+        {
+          "name": "Imagen",
+          "text": "you live in Lightroom Classic, shoot moderate volume, and want the strongest style matching. Per-photo pricing is fine at low volume and punishing at high volume.",
+          "href": "/imagen-ai-review"
+        }
+      ],
+      "pricingAssumption": "Aftershoot is a flat monthly fee; Imagen charges per photo. The dividing line of roughly 800 to 1,000 images a month comes from the article\u2019s own cost math at July 2026 prices. Costs are not charted because the two pricing models are not directly comparable at a single volume.",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "best-ai-culling-editing-software",
+      "short": "Best AI culling and editing software",
+      "cat": "ai-culling-editing",
+      "type": "guide",
+      "date": "2026-07-15",
+      "summary": "The best AI photo culling, editing, and retouching software for photographers in 2026, comparing Aftershoot, Imagen AI, Narrative Select, FilterPixel, and Evoto.",
+      "img": "/assets/evoto.webp",
+      "evidence": "research",
+      "checked": "October 2026",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "photography-crm-vat-gdpr-europe",
+      "short": "CRMs for VAT and GDPR (UK & EU)",
+      "cat": "client-crms",
+      "type": "guide",
+      "date": "2026-06-27",
+      "summary": "Which CRMs handle VAT and GDPR properly, and where each tool hosts your data.",
+      "evidence": "research",
+      "checked": "October 2026",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "best-crm-wedding-photographers",
+      "short": "Best CRM for wedding photographers",
+      "cat": "client-crms",
+      "type": "guide",
+      "date": "2026-06-26",
+      "summary": "HoneyBook, Studio Ninja, Dubsado, Pixieset Studio, and T\u00e1ve compared on real 2026 pricing and workflows.",
+      "img": "/assets/honeybook-scheduler.webp",
+      "evidence": "stated-hands-on",
+      "checked": "October 2026",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "dubsado-vs-honeybook",
+      "short": "Dubsado vs HoneyBook",
+      "cat": "client-crms",
+      "type": "comparison",
+      "date": "2026-06-26",
+      "summary": "HoneyBook vs Dubsado compared on pricing, automations, client experience, and ease of use.",
+      "imgs": [
+        "/assets/dubsado.png",
+        "/assets/honeybook-scheduler.png"
+      ],
+      "img": "/assets/dubsado.webp",
+      "vs": [
+        "Dubsado",
+        "HoneyBook"
+      ],
+      "evidence": "stated-hands-on",
+      "checked": "October 2026",
+      "chooseIf": [
+        {
+          "name": "HoneyBook",
+          "text": "you want a CRM that works smoothly out of the box, you value a polished client experience, and you\u2019d rather not spend a day configuring software."
+        },
+        {
+          "name": "Dubsado",
+          "text": "you want deep control over your workflow, you\u2019re happy to invest setup time, and you want a slightly lower annual cost."
+        }
+      ],
+      "pricingAssumption": "Prices as listed in June 2026. Dubsado\u2019s edge applies when paid annually.",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "honeybook-alternatives-photographers",
+      "short": "HoneyBook alternatives",
+      "cat": "client-crms",
+      "type": "alternatives",
+      "date": "2026-06-26",
+      "summary": "Cheaper picks, free tiers, and what each HoneyBook alternative is good for.",
+      "img": "/assets/studio-ninja.webp",
+      "evidence": "stated-hands-on",
+      "checked": "October 2026",
+      "from": "HoneyBook",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "photography-crm-pic-time-integration",
+      "short": "CRMs that work with Pic-Time",
+      "cat": "client-crms",
+      "type": "guide",
+      "date": "2026-06-26",
+      "summary": "HoneyBook and Studio Ninja offer native Pic-Time integrations, while Dubsado connects via Zapier. Compare setup, triggers, order sync, and costs.",
+      "img": "/assets/pic-time.webp",
+      "evidence": "stated-hands-on",
+      "checked": "October 2026",
+      "updated": "2026-10-28"
+    },
+    {
+      "slug": "photography-crm-built-in-scheduler",
+      "short": "CRMs with a built-in scheduler",
+      "cat": "client-crms",
+      "type": "guide",
+      "date": "2026-06-25",
+      "summary": "Which photography CRMs have a real built-in scheduler, and which do not.",
+      "img": "/assets/honeybook-scheduler.webp",
+      "evidence": "stated-hands-on",
+      "checked": "October 2026",
+      "updated": "2026-10-28"
+    }
+  ],
+  "types": {
+    "review": "Review",
+    "comparison": "Comparison",
+    "guide": "Buying guide",
+    "alternatives": "Alternatives",
+    "editorial": "Editorial"
   },
-  {
-   "slug": "gallery-delivery",
-   "name": "Gallery Delivery",
-   "title": "Client Gallery Software for Photographers",
-   "desc": "Delivering finished galleries, downloads, proofing, and in-gallery print sales.",
-   "status": "published",
-   "img": "/assets/pic-time.png",
-   "startHere": "best-client-gallery-software",
-   "related": [
-    "print-album-sales",
-    "portfolio-websites"
-   ],
-   "tools": [
-    "gallery-cost-calculator"
-   ],
-   "intro": [
-    "Client gallery software is where your finished photos go to be delivered, viewed, downloaded, and often bought. A good platform makes your galleries feel like an extension of your brand: it loads fast, downloads cleanly, and sells prints without you chasing anyone.",
-    "When choosing, look at: a branded, password-protected gallery, favoriting and proofing tools, full-resolution and watermarked download options, a built-in print store (and whether it takes a commission on sales), storage that fits your shooting volume, and a clean mobile experience, since most clients open their gallery on a phone. Pricing almost always scales with storage, so compare platforms at your real volume, not the headline entry price."
-   ]
-  },
-  {
-   "slug": "ai-culling-editing",
-   "name": "AI Culling & Editing",
-   "title": "AI Culling & Editing Software for Photographers",
-   "desc": "Selecting keepers, applying your edit, and retouching across large shoots.",
-   "status": "published",
-   "img": "/assets/filterpixel.png",
-   "startHere": "best-ai-culling-editing-software",
-   "related": [
-    "gallery-delivery",
-    "client-crms"
-   ],
-   "tools": [
-    "culling-tool-finder"
-   ],
-   "intro": [
-    "AI culling and editing software automates the slowest parts of post-production: selecting the keepers from thousands of shots, applying your editing style across a whole gallery, and retouching portraits. Used well, these tools cut hours off every wedding or portrait session.",
-    "It helps to be clear about three different jobs. Culling is picking the best frames and removing blinks, blurs and duplicates. Editing is applying your color and tone across the set. Retouching is the close-up work on skin, glare and backgrounds. Some tools are excellent at one of these; some do all three. When comparing, weigh culling accuracy, editing quality (skin tones especially), whether the tool runs offline or in the cloud, and the pricing model, a flat monthly fee versus per-photo pricing changes the cost a lot depending on your volume."
-   ]
-  },
-  {
-   "slug": "booking-scheduling",
-   "name": "Booking & Scheduling",
-   "title": "Booking & Scheduling Software",
-   "desc": "Online booking for sessions and mini-sessions, synced to your calendar.",
-   "liveDesc": "Automate your calendar and let clients book mini-sessions and shoots online.",
-   "status": "developing",
-   "related": [
-    "client-crms",
-    "gallery-delivery"
-   ],
-   "elsewhere": [
-    "photography-crm-built-in-scheduler",
-    "best-crm-wedding-photographers"
-   ],
-   "elsewhereNote": "Several CRMs include a scheduler. Our CRM coverage compares them."
-  },
-  {
-   "slug": "portfolio-websites",
-   "name": "Portfolio Websites",
-   "title": "Portfolio Website Builders",
-   "desc": "Sites that show your best work and turn visitors into inquiries.",
-   "liveDesc": "Build a beautiful, fast portfolio website to showcase your best photography work.",
-   "status": "developing",
-   "related": [
-    "gallery-delivery",
-    "client-crms"
-   ],
-   "elsewhere": [
-    "best-client-gallery-software"
-   ],
-   "elsewhereNote": "Pixieset, SmugMug, Zenfolio, and ShootProof include website builders. Our gallery guide covers what each includes."
-  },
-  {
-   "slug": "print-album-sales",
-   "name": "Print & Album Sales",
-   "title": "Print & Album Sales Platforms",
-   "desc": "Selling prints, albums, and wall art directly to clients.",
-   "liveDesc": "Maximize your revenue by selling professional prints, albums, and wall art directly to clients.",
-   "status": "developing",
-   "related": [
-    "gallery-delivery",
-    "portfolio-websites"
-   ],
-   "elsewhere": [
-    "pic-time-vs-pixieset-vs-shootproof",
-    "best-client-gallery-software"
-   ],
-   "elsewhereNote": "Most gallery platforms include a print store. Our gallery coverage compares stores and commissions."
+  "evidence": {
+    "research": {
+      "label": "Research-based",
+      "text": "Assessed from current pricing, features, and documentation, weighed against what verified users and independent reviewers report. Figures name who measured them."
+    },
+    "stated-hands-on": {
+      "label": "Hands-on, as stated",
+      "text": "The article states the tools were tested hands-on on real accounts. Pricing was checked at publication."
+    },
+    "editorial": {
+      "label": "Editorial perspective",
+      "text": "An opinion piece drawing on photography workflows. It does not rank or score products."
+    }
   }
- ],
- "articles": [
-  {
-   "slug": "the-admin-work-thats-quietly-costing-you-bookings",
-   "short": "The admin work that's quietly costing you bookings",
-   "cat": "client-crms",
-   "type": "editorial",
-   "date": "2026-10-21",
-   "summary": "Why slow replies lose bookings, what CRMs actually automate, and the setup cost photographers skip.",
-   "evidence": "editorial",
-   "pull": "A CRM does not win you the booking; a fast, warm, human reply does."
-  },
-  {
-   "slug": "how-ai-culling-changed-wedding-post-production",
-   "short": "How AI culling changed wedding post-production",
-   "cat": "ai-culling-editing",
-   "type": "editorial",
-   "date": "2026-10-15",
-   "summary": "What AI culling changed, what it still can't do, and why skipping the human review pass burns photographers.",
-   "evidence": "editorial",
-   "pull": "What used to be hours of manual sorting becomes a review rather than a search."
-  },
-  {
-   "slug": "aftershoot-review",
-   "short": "Aftershoot review",
-   "product": "Aftershoot",
-   "cat": "ai-culling-editing",
-   "type": "review",
-   "date": "2026-09-28",
-   "summary": "Real 2026 pricing, culling accuracy, editing quality, and honest pros and cons. Is Aftershoot worth it?",
-   "img": "/assets/aftershoot-homepage.webp",
-   "imgPos": "100% 50%",
-   "imgCaption": "Aftershoot's homepage, showing its culling grid. Captured from the vendor's site.",
-   "evidence": "research",
-   "checked": "September 2026",
-   "bylinePlaceholder": true,
-   "pricing": [
-    [
-     "Select (culling)",
-     "around $10/month",
-     "billed annually"
-    ],
-    [
-     "Edit (AI editing)",
-     "around $30/month",
-     "billed annually"
-    ],
-    [
-     "Retouch (AI retouching)",
-     "around $20/month",
-     "billed annually"
-    ]
-   ],
-   "pricingNote": "Flat fee, not per image. Bundles available. 30-day free trial, no card required.",
-   "alts": [
-    "imagen-ai-review",
-    "aftershoot-alternatives",
-    "aftershoot-vs-imagen"
-   ],
-   "evidenceNotes": [
-    {
-     "match": "On accuracy, Aftershoot reports",
-     "tags": [
-      "Vendor claim",
-      "Third-party benchmark"
-     ],
-     "note": "The 90% figure is Aftershoot's own. The 1,000 images in about 9 minutes figure was published by FilterPixel, a competitor."
-    },
-    {
-     "match": "The honest caveat every credible reviewer",
-     "tags": [
-      "Research: user and reviewer reports"
-     ]
-    }
-   ]
-  },
-  {
-   "slug": "imagen-ai-review",
-   "short": "Imagen AI review",
-   "product": "Imagen AI",
-   "cat": "ai-culling-editing",
-   "type": "review",
-   "date": "2026-09-28",
-   "summary": "Real 2026 per-photo pricing, editing quality, culling, and honest pros and cons. Is Imagen AI worth it?",
-   "img": "/assets/imagen-ai-review-home-page-1536x994.jpg",
-   "imgCaption": "Imagen's editing workspace, as published by the vendor.",
-   "evidence": "research",
-   "checked": "September 2026",
-   "bylinePlaceholder": true,
-   "alts": [
-    "aftershoot-review",
-    "aftershoot-vs-imagen",
-    "best-ai-culling-editing-software"
-   ],
-   "pricing": [
-    [
-     "Pay-as-you-go",
-     "around $0.05 per photo",
-     "$7/month minimum"
-    ],
-    [
-     "Annual volume tiers",
-     "36,000-photo tier around $127.50/month",
-     "18,000 to 72,000 photos per year"
-    ],
-    [
-     "Add-on AI tools",
-     "about $0.01 per photo each",
-     "charged on top of editing"
-    ]
-   ],
-   "pricingNote": "Per-photo pricing. Free trial with starter credits."
-  },
-  {
-   "slug": "best-client-gallery-software",
-   "short": "Best client gallery software",
-   "cat": "gallery-delivery",
-   "type": "guide",
-   "date": "2026-08-15",
-   "summary": "Pixieset, ShootProof, Pic-Time, SmugMug, Zenfolio, and CloudSpot compared on real 2026 pricing and features.",
-   "img": "/assets/pixieset-v3.jpg",
-   "imgPos": "80% 50%",
-   "evidence": "research",
-   "checked": "October 2026",
-   "updated": "2026-10-24"
-  },
-  {
-   "slug": "pic-time-vs-pixieset-vs-shootproof",
-   "short": "Pic-Time vs Pixieset vs ShootProof",
-   "cat": "gallery-delivery",
-   "type": "comparison",
-   "date": "2026-08-14",
-   "summary": "Three gallery platforms compared on pricing, print sales, and client experience.",
-   "imgs": [
-    "/assets/pic-time.png",
-    "/assets/pixieset-v3.jpg",
-    "/assets/shootproof.png"
-   ],
-   "img": "/assets/pic-time.png",
-   "vs": [
-    "Pic-Time",
-    "Pixieset",
-    "ShootProof"
-   ],
-   "evidence": "research",
-   "checked": "October 2026",
-   "chooseIf": [
-    {
-     "name": "Pic-Time",
-     "text": "you want automated, campaign-driven print sales. Its built-in marketing sequences and gallery banner automations give it an edge for passive store revenue."
-    },
-    {
-     "name": "Pixieset",
-     "text": "you value aesthetics and want an all-in-one ecosystem (website, CRM, galleries) that is effortless to use."
-    },
-    {
-     "name": "ShootProof",
-     "text": "you do high-volume shoots (like schools, dance studios, or sports), need robust client invoicing and contracts on paid plans, or want zero commission on direct orders."
-    }
-   ],
-   "pricingAssumption": "Storage tiers differ by platform; compare at your own volume with the Gallery Cost Calculator.",
-   "updated": "2026-10-24"
-  },
-  {
-   "slug": "best-photo-culling-software",
-   "short": "Best photo culling software",
-   "cat": "ai-culling-editing",
-   "type": "guide",
-   "date": "2026-07-28",
-   "summary": "Aftershoot, FilterPixel, Narrative, and Photo Mechanic compared on 2026 speed benchmarks and pricing.",
-   "img": "/assets/photo-mechanic.png",
-   "evidence": "research",
-   "checked": "July 2026"
-  },
-  {
-   "slug": "aftershoot-alternatives",
-   "short": "Aftershoot alternatives",
-   "cat": "ai-culling-editing",
-   "type": "alternatives",
-   "date": "2026-07-27",
-   "summary": "FilterPixel, Imagen, Narrative, Photo Mechanic and more, on 2026 pricing and what each does best.",
-   "img": "/assets/narrative-select.png",
-   "evidence": "research",
-   "checked": "July 2026",
-   "from": "Aftershoot"
-  },
-  {
-   "slug": "filterpixel-alternatives",
-   "short": "FilterPixel alternatives",
-   "cat": "ai-culling-editing",
-   "type": "alternatives",
-   "date": "2026-07-21",
-   "summary": "Aftershoot, Narrative, Imagen, Photo Mechanic and more, on 2026 pricing and what each does best.",
-   "img": "/assets/filterpixel.png",
-   "evidence": "research",
-   "checked": "July 2026",
-   "from": "FilterPixel"
-  },
-  {
-   "slug": "aftershoot-vs-imagen",
-   "short": "Aftershoot vs Imagen",
-   "cat": "ai-culling-editing",
-   "type": "comparison",
-   "date": "2026-07-20",
-   "summary": "Pricing, culling accuracy, and editing quality, plus the cost math most reviews skip.",
-   "imgs": [
-    "/assets/aftershoot-homepage.webp",
-    "/assets/imagen-ai-review-home-page-1536x994.jpg"
-   ],
-   "img": "/assets/aftershoot-homepage.webp",
-   "vs": [
-    "Aftershoot",
-    "Imagen"
-   ],
-   "evidence": "research",
-   "checked": "July 2026",
-   "chooseIf": [
-    {
-     "name": "Aftershoot",
-     "text": "you shoot high volume. Flat unlimited pricing means a 4,000-image wedding costs the same as a 400-image portrait session. It also works offline and handles culling, editing, and retouching in one app.",
-     "href": "/aftershoot-review"
-    },
-    {
-     "name": "Imagen",
-     "text": "you live in Lightroom Classic, shoot moderate volume, and want the strongest style matching. Per-photo pricing is fine at low volume and punishing at high volume.",
-     "href": "/imagen-ai-review"
-    }
-   ],
-   "pricingAssumption": "Aftershoot is a flat monthly fee; Imagen charges per photo. The dividing line of roughly 800 to 1,000 images a month comes from the article’s own cost math at July 2026 prices. Costs are not charted because the two pricing models are not directly comparable at a single volume."
-  },
-  {
-   "slug": "best-ai-culling-editing-software",
-   "short": "Best AI culling and editing software",
-   "cat": "ai-culling-editing",
-   "type": "guide",
-   "date": "2026-07-15",
-   "summary": "Aftershoot, Imagen, Narrative, FilterPixel, and Evoto compared on 2026 pricing and features.",
-   "img": "/assets/evoto.png",
-   "evidence": "research",
-   "checked": "July 2026"
-  },
-  {
-   "slug": "photography-crm-vat-gdpr-europe",
-   "short": "CRMs for VAT and GDPR (UK & EU)",
-   "cat": "client-crms",
-   "type": "guide",
-   "date": "2026-06-27",
-   "summary": "Which CRMs handle VAT and GDPR properly, and where each tool hosts your data.",
-   "evidence": "research",
-   "checked": "June 2026"
-  },
-  {
-   "slug": "best-crm-wedding-photographers",
-   "short": "Best CRM for wedding photographers",
-   "cat": "client-crms",
-   "type": "guide",
-   "date": "2026-06-26",
-   "summary": "Best overall, best value, and best free pick, with pros, cons, and current pricing.",
-   "img": "/assets/honeybook-scheduler.png",
-   "evidence": "stated-hands-on",
-   "checked": "June 2026"
-  },
-  {
-   "slug": "dubsado-vs-honeybook",
-   "short": "Dubsado vs HoneyBook",
-   "cat": "client-crms",
-   "type": "comparison",
-   "date": "2026-06-26",
-   "summary": "Features, ease of use, and current pricing for wedding photographers.",
-   "imgs": [
-    "/assets/dubsado.png",
-    "/assets/honeybook-scheduler.png"
-   ],
-   "img": "/assets/dubsado.png",
-   "vs": [
-    "Dubsado",
-    "HoneyBook"
-   ],
-   "evidence": "stated-hands-on",
-   "checked": "June 2026",
-   "chooseIf": [
-    {
-     "name": "HoneyBook",
-     "text": "you want a CRM that works smoothly out of the box, you value a polished client experience, and you’d rather not spend a day configuring software."
-    },
-    {
-     "name": "Dubsado",
-     "text": "you want deep control over your workflow, you’re happy to invest setup time, and you want a slightly lower annual cost."
-    }
-   ],
-   "pricingAssumption": "Prices as listed in June 2026. Dubsado’s edge applies when paid annually."
-  },
-  {
-   "slug": "honeybook-alternatives-photographers",
-   "short": "HoneyBook alternatives",
-   "cat": "client-crms",
-   "type": "alternatives",
-   "date": "2026-06-26",
-   "summary": "Cheaper picks, free tiers, and what each HoneyBook alternative is good for.",
-   "img": "/assets/studio-ninja.webp",
-   "evidence": "stated-hands-on",
-   "checked": "June 2026",
-   "from": "HoneyBook"
-  },
-  {
-   "slug": "photography-crm-pic-time-integration",
-   "short": "CRMs that work with Pic-Time",
-   "cat": "client-crms",
-   "type": "guide",
-   "date": "2026-06-26",
-   "summary": "Which photography CRMs pair with Pic-Time galleries and how to connect them.",
-   "img": "/assets/pic-time.png",
-   "evidence": "stated-hands-on",
-   "checked": "June 2026"
-  },
-  {
-   "slug": "photography-crm-built-in-scheduler",
-   "short": "CRMs with a built-in scheduler",
-   "cat": "client-crms",
-   "type": "guide",
-   "date": "2026-06-25",
-   "summary": "Which photography CRMs have a real built-in scheduler, and which do not.",
-   "img": "/assets/honeybook-scheduler.png",
-   "evidence": "stated-hands-on",
-   "checked": "June 2026"
-  }
- ],
- "types": {
-  "review": "Review",
-  "comparison": "Comparison",
-  "guide": "Buying guide",
-  "alternatives": "Alternatives",
-  "editorial": "Editorial"
- },
- "evidence": {
-  "research": {
-   "label": "Research-based",
-   "text": "Assessed from current pricing, features, and documentation, weighed against what verified users and independent reviewers report. Figures name who measured them."
-  },
-  "stated-hands-on": {
-   "label": "Hands-on, as stated",
-   "text": "The article states the tools were tested hands-on on real accounts. Pricing was checked at publication."
-  },
-  "editorial": {
-   "label": "Editorial perspective",
-   "text": "An opinion piece drawing on photography workflows. It does not rank or score products."
-  }
- }
 }
