@@ -1499,7 +1499,7 @@
                 "b": 1
               },
               {
-                "t": " Contracts, invoicing, and a commission-free store on paid plans from $8.33/mo ($99.99/yr for 20 GB) up to 2 TB."
+                "t": " Contracts, invoicing, and a commission-free store on paid plans from $8.33/mo ($99.99/yr for 20 GB) or $9.99/mo monthly up to 2 TB."
               }
             ],
             "cls": ""
@@ -1538,7 +1538,7 @@
                 "b": 1
               },
               {
-                "t": " Unlimited storage across all tiers, from $11/mo ($132/yr) for storage to $23.50/mo ($282/yr) for full print commerce."
+                "t": " Unlimited storage across all tiers, from $20/mo ($240/yr) for storage and sharing up to $37/mo ($444/yr) for advanced commerce."
               }
             ],
             "cls": ""
@@ -1656,7 +1656,7 @@
             ],
             [
               {
-                "t": "Free (3 GB) / Starter $8.33/mo ($99.99/yr)"
+                "t": "Free (3 GB) / Starter $8.33/mo ($99.99/yr) / $9.99/mo monthly"
               }
             ],
             [
@@ -1740,12 +1740,12 @@
             ],
             [
               {
-                "t": "Direct $11/mo ($132/yr) / Portfolio $23.50/mo ($282/yr)"
+                "t": "Direct $20/mo ($240/yr) / Portfolio $23.50/mo ($282/yr) / Pro $37/mo ($444/yr)"
               }
             ],
             [
               {
-                "t": "15% markup fee (Portfolio/Pro)"
+                "t": "15% markup fee (Portfolio/Pro); 0% on Direct"
               }
             ],
             [
@@ -1768,7 +1768,7 @@
             ],
             [
               {
-                "t": "Basic $7/mo ($84/yr) / Professional $11.50/mo ($138/yr promo)"
+                "t": "Basic $7/mo ($84/yr) / Professional $11.50/mo ($138/yr promo) / Advanced $20/mo ($240/yr promo)"
               }
             ],
             [
@@ -1902,7 +1902,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Plans scale strictly by storage capacity rather than photo counts: Free (3 GB photo delivery), Starter 20 GB ($8.33/mo annual / $99.99/yr), Standard 100 GB ($16.67/mo annual / $199.99/yr), Professional 1,000 GB ($26.67/mo annual / $319.99/yr), Advanced 2,000 GB / 2 TB ($43.33/mo annual / $519.99/yr), and Unlimited ($50/mo annual / $600/yr). Compare storage needs directly on our "
+            "t": "Plans scale strictly by storage capacity rather than photo counts: Free (3 GB photo delivery), Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly), Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly), Professional 1,000 GB / 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly), Advanced 2,000 GB / 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly), and Unlimited / Premium ($50/mo annual [$600/yr] or $60/mo monthly). Compare storage needs directly on our "
           },
           {
             "t": "Gallery Cost Calculator",
@@ -1956,7 +1956,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (3 GB); Starter 20 GB ($8.33/mo annual [$99.99/yr] or $10.99/mo monthly); Standard 100 GB ($16.67/mo annual [$199.99/yr] or $21.99/mo monthly); Professional 1 TB ($26.67/mo annual [$319.99/yr] or $34.99/mo monthly); Advanced 2 TB ($43.33/mo annual [$519.99/yr] or $54.99/mo monthly); Unlimited ($50/mo annual [$600/yr] or $65/mo monthly) (Checked October 2026)."
+            "t": "Pricing: Free tier (3 GB); Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly); Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly); Professional 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly); Advanced 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly); Premium Unlimited ($50/mo annual [$600/yr] or $60/mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2144,7 +2144,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Current plans include Direct ($11/mo billed annually [$132/yr] or $13/mo monthly) for unlimited storage and password-protected sharing without e-commerce markup; Portfolio ($23.50/mo billed annually [$282/yr] or $28/mo monthly) for portfolio websites with commerce; and Pro ($35/mo billed annually [$420/yr] or $42/mo monthly) for turnkey client sales with custom price lists and watermarking. A 14-day free trial is available, but there is no permanent free tier."
+            "t": "Current plans include Direct ($20/mo billed annually [$240/yr] or $29/mo monthly) for unlimited storage and password-protected sharing without e-commerce markup; Portfolio ($23.50/mo billed annually [$282/yr] or $35.50/mo monthly) for portfolio websites with commerce; and Pro ($37/mo billed annually [$444/yr] or $52/mo monthly) for turnkey client sales with custom price lists, packages, and watermarking. A 14-day free trial is available, but there is no permanent free tier."
           }
         ],
         "cls": ""
@@ -2177,7 +2177,7 @@
         "cons": [
           [
             {
-              "t": "Selling requires the Portfolio tier ($23.50/mo annual [$282/yr]) or Pro tier ($35/mo annual [$420/yr]) plus a 15% fulfillment fee"
+              "t": "Selling requires the Portfolio tier ($23.50/mo annual [$282/yr] or $35.50/mo monthly) or Pro tier ($37/mo annual [$444/yr] or $52/mo monthly) plus a 15% fulfillment fee"
             }
           ],
           [
@@ -2191,7 +2191,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: 14-day trial; Direct ($11/mo annual [$132/yr] or $13/mo monthly); Portfolio ($23.50/mo annual [$282/yr] or $28/mo monthly); Pro ($35/mo annual [$420/yr] or $42/mo monthly) (Checked October 2026)."
+            "t": "Pricing: 14-day trial; Direct ($20/mo annual [$240/yr] or $29/mo monthly); Portfolio ($23.50/mo annual [$282/yr] or $35.50/mo monthly); Pro ($37/mo annual [$444/yr] or $52/mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2241,7 +2241,7 @@
           ],
           [
             {
-              "t": "First-year promotional pricing (/yr for Professional)"
+              "t": "First-year promotional pricing ($138/yr for Professional)"
             }
           ],
           [
@@ -2267,7 +2267,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Basic 15 GB ($7/mo annual [$84/yr] or $9/mo monthly); Professional 150 GB ($11.50/mo annual first-year promo [$138/yr], standard account renewal applies; $23/mo standard monthly); Advanced Unlimited ($30/mo annual first-year promo [$360/yr], $36/mo monthly) (Checked October 2026)."
+            "t": "Pricing: Basic 15 GB ($7/mo annual [$84/yr] or $9/mo monthly); Professional 150 GB ($11.50/mo annual first-year promo [$138/yr], standard account renewal applies; $23/mo standard monthly); Advanced Unlimited ($20/mo annual first-year promo [$240/yr], standard account renewal applies; $40/mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -3031,7 +3031,7 @@
               "b": 1
             },
             {
-              "t": " $8.33/mo annual ($99.99/yr) / $10.99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " $8.33/mo annual ($99.99/yr) / $9.99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -3040,7 +3040,7 @@
               "b": 1
             },
             {
-              "t": " $16.67/mo annual ($199.99/yr) / $21.99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " $16.67/mo annual ($199.99/yr) / $19.99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -3049,7 +3049,7 @@
               "b": 1
             },
             {
-              "t": " $26.67/mo annual ($319.99/yr) / $34.99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " $26.67/mo annual ($319.99/yr) / $31.99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -3058,16 +3058,16 @@
               "b": 1
             },
             {
-              "t": " $43.33/mo annual ($519.99/yr) / $54.99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " $43.33/mo annual ($519.99/yr) / $51.99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
             {
-              "t": "Unlimited:",
+              "t": "Premium (Unlimited):",
               "b": 1
             },
             {
-              "t": " $50/mo annual ($600/yr) / $65/mo monthly (0% commission, full studio features + archiving)"
+              "t": " $50/mo annual ($600/yr) / $60/mo monthly (0% commission, full studio features + archiving)"
             }
           ]
         ]
@@ -5558,7 +5558,7 @@
             "b": true
           },
           {
-            "t": "Select /mo, Edit /mo, Complete /mo billed annually; 30-day free trial (October 2026)."
+            "t": "Select $10/mo ($120/yr), Edit $30/mo ($360/yr), Complete $45/mo ($540/yr) billed annually ($15/mo, $40/mo, $60/mo monthly); 30-day free trial (Checked October 2026)."
           }
         ]
       },
@@ -7240,7 +7240,7 @@
             "b": true
           },
           {
-            "t": "Select /mo, Edit /mo, Complete /mo billed annually. 30-day free trial with full feature access."
+            "t": "Select $10/mo ($120/yr), Edit $30/mo ($360/yr), Complete $45/mo ($540/yr) billed annually ($15/mo, $40/mo, $60/mo monthly). 30-day free trial with full feature access (Checked October 2026)."
           }
         ]
       },
@@ -8118,7 +8118,7 @@
             ],
             [
               {
-                "t": "Australia / UK entity (GCP & AWS)"
+                "t": "United States (Google Cloud Platform; company in Australia / UK)"
               }
             ],
             [
@@ -8128,7 +8128,7 @@
             ],
             [
               {
-                "t": "£20/mo (£200/yr) / £24/mo"
+                "t": "£20/mo monthly or £200/yr annual (~$260/yr)"
               }
             ],
             [
@@ -8433,7 +8433,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Studio Ninja is Australian, and it's the most Europe-friendly of the tools not built in the EU. It shows pricing in GBP (Starter £13/mo, Pro £20/mo, Master £29/mo), supports custom taxes and multiple tax rates, and has a one-click feature to make lead-capture forms GDPR-compliant for consent."
+            "t": "Studio Ninja is an Australian company (Studio Ninja Pty Ltd, with UK business registration) that shows pricing in GBP (Pro £20/mo monthly or £200/yr annual), supports custom tax rates for UK VAT, and includes built-in consent checkboxes on contact forms and contracts."
           }
         ],
         "cls": ""
@@ -8442,7 +8442,15 @@
         "type": "p",
         "runs": [
           {
-            "t": "Two catches. First, the currency is set per account and can't be changed once saved, and there's no true per-invoice multi-currency, awkward if you bill in both GBP and EUR. Second, we couldn't find where Studio Ninja hosts its data clearly published, so if data residency is critical to you, ask them directly before committing."
+            "t": "Two key considerations for European photographers. First, account currency is set once per company and cannot be changed per-invoice, making dual GBP/EUR billing clumsy. Second, regarding data residency: while the company operates from Australia and the UK, its official "
+          },
+          {
+            "t": "Studio Ninja Security documentation",
+            "href": "https://www.studioninja.co/security/",
+            "ext": true
+          },
+          {
+            "t": " confirms that customer data is hosted on Google Cloud Platform servers in the United States. Under UK and EU GDPR, photographers using Studio Ninja are responsible for cross-border data transfer compliance when transferring client personal data to US servers."
           }
         ],
         "cls": ""
@@ -8452,29 +8460,29 @@
         "pros": [
           [
             {
-              "t": "GBP pricing and custom taxes"
+              "t": "GBP pricing and custom tax rates for UK VAT"
             }
           ],
           [
             {
-              "t": "One-click GDPR consent on forms"
+              "t": "Native GDPR consent toggle for forms and contracts"
             }
           ],
           [
             {
-              "t": "Integrates with Xero and QuickBooks for VAT filing"
+              "t": "Direct integrations with Xero and QuickBooks"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "Currency locked once set, no real multi-currency"
+              "t": "Single account currency, no per-invoice multi-currency"
             }
           ],
           [
             {
-              "t": "Data-hosting location not clearly published"
+              "t": "Customer data hosted in the United States (Google Cloud Platform), requiring cross-border transfer safeguards"
             }
           ]
         ]
@@ -8487,7 +8495,23 @@
             "b": 1
           },
           {
-            "t": " £20/mo monthly or £200/yr annual (~$260/yr). 30-day free trial. Infrastructure hosted on Google Cloud Platform and AWS with European data transfer provisions."
+            "t": " Pro is £20/mo monthly or £200/yr annual (~$260/yr); Master is £30/mo monthly or £300/yr annual. 7-day free trial. Customer data is stored on Google Cloud Platform servers in the United States; review Studio Ninja's "
+          },
+          {
+            "t": "Privacy Policy",
+            "href": "https://www.studioninja.co/privacy-policy/",
+            "ext": true
+          },
+          {
+            "t": " and "
+          },
+          {
+            "t": "GDPR guide",
+            "href": "https://help.studioninja.co/en/articles/2242133-gdpr-features-in-studio-ninja",
+            "ext": true
+          },
+          {
+            "t": " before onboarding EU clients."
           }
         ],
         "cls": ""
@@ -9177,12 +9201,12 @@
             ],
             [
               {
-                "t": "30-day trial"
+                "t": "7-day trial"
               }
             ],
             [
               {
-                "t": "£20/mo (£200/yr) / £24/mo"
+                "t": "£20/mo monthly or £200/yr annual (~$260/yr)"
               }
             ],
             [
@@ -9397,7 +9421,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "It lacks a native scheduler, so you'll pair it with an external booking tool for consultation calls. But if value and a photography-specific focus matter more to you than an all-in-one, it's an excellent pick."
+            "t": "Studio Ninja includes native Online Booking for defined shoot sessions, but lacks a generalized consultation scheduler, so photographers often pair it with an external booking link for initial discovery calls. But if value and a photography-specific focus matter more to you than an all-in-one, it's an excellent pick."
           }
         ],
         "cls": ""
@@ -9430,7 +9454,7 @@
         "cons": [
           [
             {
-              "t": "No native scheduler"
+              "t": "No consultation scheduler (external link needed for discovery calls)"
             }
           ],
           [
@@ -9444,7 +9468,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Pro £19/mo or £190/yr billed annually (approx. $24.90/mo or $249/yr); Master (2 brands) £29/mo or £290/yr. 30-day free trial without credit card. Features a native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
+            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master (2 brands) is £30/mo monthly or £300/yr annual. 7-day free trial without credit card. Features a native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -10351,7 +10375,7 @@
                 "b": 1
               },
               {
-                "t": " Built specifically for photographers, clean and affordable (£19/mo or ~£190/yr), with native Pic-Time integration."
+                "t": " Built specifically for photographers, clean and affordable (£20/mo monthly or £200/yr annual), with native Pic-Time integration."
               }
             ],
             "cls": ""
@@ -10519,12 +10543,12 @@
             ],
             [
               {
-                "t": "30-day trial"
+                "t": "7-day trial"
               }
             ],
             [
               {
-                "t": "£20/mo (£200/yr) / £24/mo"
+                "t": "£20/mo monthly or £200/yr annual (~$260/yr)"
               }
             ],
             [
@@ -10762,7 +10786,7 @@
         "cons": [
           [
             {
-              "t": "No native scheduler, needs an external tool"
+              "t": "No consultation scheduler (external link needed for discovery calls)"
             }
           ],
           [
@@ -10776,7 +10800,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Pro £19/mo or £190/yr annual (approx. $24.90/mo or $249/yr); Master £29/mo or £290/yr. 30-day free trial. Includes native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
+            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master is £30/mo monthly or £300/yr annual. 7-day free trial without credit card. Includes native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -11333,7 +11357,7 @@
             ],
             [
               {
-                "t": "Multi-currency & order tracking"
+                "t": "£20/mo monthly or £200/yr annual (~$260/yr)"
               }
             ],
             [
@@ -11361,7 +11385,7 @@
             ],
             [
               {
-                "t": "Complex custom forms & portals"
+                "t": "Starter $35/mo ($335/yr) / Premier $55/mo ($525/yr)"
               }
             ],
             [
@@ -11562,7 +11586,7 @@
             "ext": true
           },
           {
-            "t": ". Pricing: Studio Ninja Pro is £20/month monthly or £200/year billed annually (~$260/year); Pic-Time subscription is separate."
+            "t": ". Pricing: Studio Ninja Pro is £20/month monthly or £200/year billed annually (~$260/year, £16.67/mo equivalent); Master is £30/mo monthly or £300/yr annual; Pic-Time subscription is separate. 7-day free trial."
           }
         ]
       },
@@ -11954,7 +11978,7 @@
             ],
             [
               {
-                "t": "£20/mo (£200/yr) / £24/mo"
+                "t": "£20/mo monthly or £200/yr annual (~$260/yr)"
               }
             ],
             [
@@ -12241,7 +12265,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Crucially, Dubsado's built-in scheduler is not available on its Starter tier ($35/mo). To embed interactive client booking calendars, automate confirmation emails, or attach questionnaires to appointments, photographers must subscribe to Dubsado Premier at $55/month billed monthly or $550/year billed annually."
+            "t": "Crucially, Dubsado's built-in scheduler is not available on its Starter tier ($35/mo monthly or $335/yr annual). To embed interactive client booking calendars, automate confirmation emails, or attach questionnaires to appointments, photographers must subscribe to Dubsado Premier at $55/month billed monthly or $525/year billed annually."
           }
         ],
         "cls": ""
@@ -12354,12 +12378,12 @@
         "cons": [
           [
             {
-              "t": "No native scheduler - you'll add an external tool"
+              "t": "Online Booking handles shoot bookings, but lacks a generalized consultation scheduler"
             }
           ],
           [
             {
-              "t": "That add-on is one more thing to pay for and maintain"
+              "t": "Discovery calls require an external scheduler or calendar link"
             }
           ]
         ]
@@ -12368,7 +12392,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Pro £20/mo monthly or £200/yr annual (approx. $260/yr). Includes native Online Booking, unlimited jobs, and two-way calendar sync with a 30-day free trial (Checked October 2026)."
+            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master is £30/mo monthly or £300/yr annual. Includes native Online Booking, unlimited jobs, and two-way calendar sync with a 7-day free trial (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -12414,11 +12438,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "Were you leaning Studio Ninja?",
+            "t": "Were you leaning toward Studio Ninja? ",
             "b": 1
           },
           {
-            "t": " Now you know to either pair it with a separate tool or pick one of the others."
+            "t": "Its native Online Booking handles structured shoot packages well, but if you need clients to self-schedule initial discovery calls, you'll still need an external booking tool."
           }
         ],
         "cls": ""
