@@ -1717,7 +1717,7 @@
             ],
             [
               {
-                "t": "0% on Pro+ (10-15% lower)"
+                "t": "0% on Pro+ (15% on Free/Beginner)"
               }
             ],
             [
@@ -2106,7 +2106,7 @@
           ],
           [
             {
-              "t": "Commission (10–15%) applies on Free and Beginner tiers"
+              "t": "15% print sales commission on Free and Beginner tiers"
             }
           ]
         ]
@@ -2115,7 +2115,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (3 GB ongoing, 15% commission); Beginner 20 GB ($7/mo annual [$84/yr] or $8/mo monthly, 10% commission with own processor / 15% standard); Professional 100 GB ($21/mo annual [$252/yr] or $25/mo monthly, 0% commission with own processor); Advanced Unlimited ($42/mo annual [$504/yr] or $50/mo monthly, 0% commission with own processor) (Checked October 2026)."
+            "t": "Pricing: Free tier (3 GB ongoing, 15% commission); Beginner 20 GB ($7/mo annual [$84/yr] or $8/mo monthly, 15% commission); Professional 100 GB ($21/mo annual [$252/yr] or $25/mo monthly, 0% commission with own processor); Advanced Unlimited ($42/mo annual [$504/yr] or $50/mo monthly, 0% commission with own processor) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2976,7 +2976,7 @@
               "b": 1
             },
             {
-              "t": " 20GB storage (10% commission with own processor / 15% standard)"
+              "t": " 20GB storage (15% commission)"
             }
           ],
           [
