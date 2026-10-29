@@ -14,7 +14,8 @@ interface FieldSpec {
   suffix?: string;
   min: number;
   max: number;
-  step: number;
+  inputStep: number;
+  sliderStep?: number;
   sMin?: number;
   sMax?: number;
   check: (v: number) => string;
@@ -65,9 +66,10 @@ export function PricingCalculator() {
       help: 'What you want to keep after tax, per year.',
       unitLabel: 'per year, after tax',
       prefix: sym,
-      min: 0,
+      min: 1,
       max: 1000000,
-      step: 5000,
+      inputStep: 1,
+      sliderStep: 5000,
       sMin: 10000,
       sMax: 150000,
       check: (v) => (v <= 0 ? 'Enter an amount above zero.' : v > 1000000 ? 'Enter 1,000,000 or less.' : ''),
@@ -79,7 +81,8 @@ export function PricingCalculator() {
       unitLabel: 'shoots',
       min: 1,
       max: 1000,
-      step: 1,
+      inputStep: 1,
+      sliderStep: 1,
       sMin: 5,
       sMax: 100,
       check: (v) => (v < 1 ? 'Enter at least 1 shoot.' : !Number.isInteger(v) ? 'Use a whole number of shoots.' : v > 1000 ? 'Enter 1,000 or fewer.' : ''),
@@ -92,8 +95,9 @@ export function PricingCalculator() {
       prefix: sym,
       min: 0,
       max: 1000000,
-      step: 500,
-      check: (v) => (v < 0 ? 'Costs can’t be negative.' : ''),
+      inputStep: 1,
+      sliderStep: 500,
+      check: (v) => (v < 0 ? 'Costs can’t be negative.' : v > 1000000 ? 'Enter 1,000,000 or less.' : ''),
     },
     {
       k: 'tax',
@@ -102,8 +106,9 @@ export function PricingCalculator() {
       unitLabel: 'percent',
       suffix: '%',
       min: 0,
-      max: 90,
-      step: 1,
+      max: 89,
+      inputStep: 1,
+      sliderStep: 1,
       sMin: 0,
       sMax: 50,
       check: (v) => (v < 0 ? 'Use 0% or more.' : v >= 90 ? 'Use a rate below 90%.' : ''),
@@ -116,10 +121,11 @@ export function PricingCalculator() {
       suffix: 'h',
       min: 0.5,
       max: 24,
-      step: 1,
-      sMin: 1,
+      inputStep: 0.5,
+      sliderStep: 0.5,
+      sMin: 0.5,
       sMax: 24,
-      check: (v) => (v <= 0 ? 'Enter at least half an hour.' : v > 24 ? 'Enter 24 hours or fewer.' : ''),
+      check: (v) => (v < 0.5 ? 'Enter at least 0.5 hours.' : v > 24 ? 'Enter 24 hours or fewer.' : ''),
     },
     {
       k: 'hiddenH',
@@ -129,7 +135,8 @@ export function PricingCalculator() {
       suffix: 'h',
       min: 0,
       max: 200,
-      step: 1,
+      inputStep: 1,
+      sliderStep: 1,
       sMin: 0,
       sMax: 80,
       check: (v) => (v < 0 ? 'Hours can’t be negative.' : v > 200 ? 'Enter 200 hours or fewer.' : ''),
@@ -281,7 +288,7 @@ export function PricingCalculator() {
                     inputMode="decimal"
                     min={f.min}
                     max={f.max}
-                    step={f.step}
+                    step={f.inputStep}
                     value={f.value}
                     onChange={(e) => f.setter(e.target.value)}
                     aria-invalid={f.error ? 'true' : 'false'}
@@ -310,7 +317,7 @@ export function PricingCalculator() {
                     aria-label={`${f.label} slider`}
                     min={f.sMin}
                     max={f.sMax}
-                    step={f.step}
+                    step={f.sliderStep || f.inputStep}
                     value={f.sliderVal}
                     onChange={(e) => f.setter(e.target.value)}
                     className="flex-1 min-w-0 h-8 accent-[#3159D7] cursor-pointer"

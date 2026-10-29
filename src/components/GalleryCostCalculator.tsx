@@ -266,7 +266,7 @@ export function GalleryCostCalculator() {
                   inputMode="numeric"
                   min="10"
                   max="10000"
-                  step="25"
+                  step="1"
                   value={photos}
                   onChange={(e) => setPhotos(e.target.value)}
                   aria-invalid={photosErr ? 'true' : 'false'}

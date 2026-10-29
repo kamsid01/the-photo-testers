@@ -111,28 +111,30 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
-a {
-  color: #2A4EC2;
-  text-underline-offset: 3px;
-}
+@layer base {
+  a {
+    color: #2A4EC2;
+    text-underline-offset: 3px;
+  }
 
-a:hover {
-  color: #1B3691;
-}
+  a:hover {
+    color: #1B3691;
+  }
 
-/* Persistent visual cues for inline text links (Accessibility) */
-p a, li a, dd a, td a, figcaption a {
-  text-decoration: underline;
-  text-decoration-color: rgba(42, 78, 194, 0.45);
-}
+  button, input, select, textarea {
+    font-family: inherit;
+    color: inherit;
+  }
 
-p a:hover, li a:hover, dd a:hover, td a:hover, figcaption a:hover {
-  text-decoration-color: currentColor;
-}
+  /* Persistent visual cues for inline text links in prose (Accessibility) */
+  :where(p, li, dd, td, figcaption) > a:not(nav a):not(aside a):not(header a):not(footer a):not([class*="no-underline"]):not([class*="btn"]):not([role="button"]):not([class*="button"]):not([class*="pt-hover-row"]):not([class*="pt-hover-blue"]) {
+    text-decoration: underline;
+    text-decoration-color: rgba(42, 78, 194, 0.45);
+  }
 
-button, input, select, textarea {
-  font-family: inherit;
-  color: inherit;
+  :where(p, li, dd, td, figcaption) > a:not(nav a):not(aside a):not(header a):not(footer a):not([class*="no-underline"]):not([class*="btn"]):not([role="button"]):not([class*="button"]):not([class*="pt-hover-row"]):not([class*="pt-hover-blue"]):hover {
+    text-decoration-color: currentColor;
+  }
 }
 
 :focus-visible {

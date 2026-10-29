@@ -16,7 +16,25 @@ export function Header() {
   const [q, setQ] = useState('');
 
   const catsRef = useRef<HTMLDivElement>(null);
+  const catBtnRef = useRef<HTMLButtonElement>(null);
   const searchRef = useRef<HTMLInputElement>(null);
+  const catsOpenRef = useRef(catsOpen);
+  const prevCatsOpen = useRef(catsOpen);
+  const wasEscapeRef = useRef(false);
+
+  useEffect(() => {
+    catsOpenRef.current = catsOpen;
+    if (prevCatsOpen.current && !catsOpen && wasEscapeRef.current) {
+      wasEscapeRef.current = false;
+      requestAnimationFrame(() => {
+        catBtnRef.current?.focus();
+      });
+      setTimeout(() => {
+        catBtnRef.current?.focus();
+      }, 10);
+    }
+    prevCatsOpen.current = catsOpen;
+  }, [catsOpen]);
 
   const p = pathname.replace(/\/+$/, '') || '/';
   const isArticle = !!site.bySlug[p.slice(1)];
@@ -56,7 +74,11 @@ export function Header() {
     };
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        setCatsOpen(false);
+        if (catsOpenRef.current) {
+          wasEscapeRef.current = true;
+          setCatsOpen(false);
+          catBtnRef.current?.focus();
+        }
         setSearchOpen(false);
         setMenuOpen(false);
       }
@@ -196,6 +218,7 @@ export function Header() {
 
             <div ref={catsRef} style={{ position: 'relative', display: 'flex' }}>
               <button
+                ref={catBtnRef}
                 type="button"
                 id="cat-button"
                 aria-expanded={catsOpen}
@@ -246,6 +269,14 @@ export function Header() {
                   id="cat-menu"
                   role="region"
                   aria-label="Categories"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Escape') {
+                      e.preventDefault();
+                      wasEscapeRef.current = true;
+                      setCatsOpen(false);
+                      catBtnRef.current?.focus();
+                    }
+                  }}
                   style={{
                     position: 'absolute',
                     top: 'calc(100% + 1px)',

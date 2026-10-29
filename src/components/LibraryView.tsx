@@ -23,13 +23,11 @@ function SearchParamsHandler({
 }) {
   const searchParams = useSearchParams();
   useEffect(() => {
-    if (searchParams) {
-      onParams({
-        q: searchParams.get('q'),
-        cat: searchParams.get('category'),
-        type: searchParams.get('type'),
-      });
-    }
+    onParams({
+      q: searchParams?.get('q') ?? null,
+      cat: searchParams?.get('category') ?? null,
+      type: searchParams?.get('type') ?? null,
+    });
   }, [searchParams, onParams]);
   return null;
 }
@@ -42,12 +40,24 @@ export function LibraryView() {
 
   const handleParams = useCallback(
     (params: { q: string | null; cat: string | null; type: string | null }) => {
-      if (params.q !== null) setQ(params.q);
-      if (params.cat !== null) setCat(params.cat);
-      if (params.type !== null) setType(params.type);
+      setQ(params.q || '');
+      setCat(params.cat || 'all');
+      setType(params.type || 'all');
     },
     []
   );
+
+  useEffect(() => {
+    const onPopState = () => {
+      if (typeof window === 'undefined') return;
+      const sp = new URLSearchParams(window.location.search);
+      setQ(sp.get('q') || '');
+      setCat(sp.get('category') || 'all');
+      setType(sp.get('type') || 'all');
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
 
   const qq = q.trim().toLowerCase();
   const matchQ = (a: ArticleSummary) =>
@@ -97,6 +107,9 @@ export function LibraryView() {
     setCat('all');
     setType('all');
     setSort('newest');
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(null, '', '/blog');
+    }
   };
 
   return (
@@ -174,9 +187,9 @@ export function LibraryView() {
         </form>
       </header>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '28px 56px', paddingTop: '28px' }}>
+      <div className="flex flex-col md:flex-row gap-7 md:gap-14 pt-7">
         {/* Left Filter Column */}
-        <div style={{ flex: '1 1 240px', maxWidth: '260px', minWidth: 0 }}>
+        <div className="w-full md:w-[240px] md:max-w-[260px] shrink-0">
           <fieldset style={{ border: 0, margin: '0 0 24px', padding: 0, minWidth: 0 }}>
             <legend
               style={{
@@ -190,7 +203,7 @@ export function LibraryView() {
             >
               Content type
             </legend>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <div className="flex flex-row flex-wrap md:flex-col gap-1.5">
               {typeOpts.map((o) => {
                 const on = type === o.value;
                 return (
@@ -199,21 +212,11 @@ export function LibraryView() {
                     type="button"
                     aria-pressed={on}
                     onClick={() => setType(o.value)}
+                    className="inline-flex md:flex justify-between items-center gap-3.5 min-h-[40px] px-3 rounded text-[15px] font-medium cursor-pointer text-left transition-colors"
                     style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      gap: '14px',
-                      minHeight: '40px',
-                      padding: '0 12px',
                       border: `1px solid ${on ? '#20221F' : '#DFE2DB'}`,
                       background: on ? '#20221F' : '#FFFFFF',
                       color: on ? '#FFFFFF' : '#20221F',
-                      borderRadius: '4px',
-                      fontSize: '15px',
-                      fontWeight: 500,
-                      cursor: 'pointer',
-                      textAlign: 'left',
                     }}
                   >
                     <span>{o.label}</span>
@@ -239,7 +242,7 @@ export function LibraryView() {
             >
               Category
             </legend>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <div className="flex flex-row flex-wrap md:flex-col gap-1.5">
               {catOpts.map((o) => {
                 const on = cat === o.value;
                 return (
@@ -248,21 +251,11 @@ export function LibraryView() {
                     type="button"
                     aria-pressed={on}
                     onClick={() => setCat(o.value)}
+                    className="inline-flex md:flex justify-between items-center gap-3.5 min-h-[40px] px-3 rounded text-[15px] font-medium cursor-pointer text-left transition-colors"
                     style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      gap: '14px',
-                      minHeight: '40px',
-                      padding: '0 12px',
                       border: `1px solid ${on ? '#20221F' : '#DFE2DB'}`,
                       background: on ? '#20221F' : '#FFFFFF',
                       color: on ? '#FFFFFF' : '#20221F',
-                      borderRadius: '4px',
-                      fontSize: '15px',
-                      fontWeight: 500,
-                      cursor: 'pointer',
-                      textAlign: 'left',
                     }}
                   >
                     <span>{o.label}</span>
@@ -329,7 +322,7 @@ export function LibraryView() {
                   fontSize: '15px',
                 }}
               >
-                <option value="newest">Newest first</option>
+                <option value="newest">Published date (newest first)</option>
                 <option value="title">Title, A to Z</option>
               </select>
             </div>
@@ -360,7 +353,11 @@ export function LibraryView() {
                     >
                       <span style={{ fontWeight: 600, color: '#20221F' }}>{a.typeLabel}</span>
                       <span>{a.catName}</span>
-                      <span>{a.updatedDateLabel ? `Updated ${a.updatedDateLabel}` : a.dateLabel}</span>
+                      <span>
+                        {a.updatedDateLabel && a.updatedDateLabel !== a.dateLabel
+                          ? `Published ${a.dateLabel} · Updated ${a.updatedDateLabel}`
+                          : `Published ${a.dateLabel}`}
+                      </span>
                     </p>
                     <h3
                       style={{

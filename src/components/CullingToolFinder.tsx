@@ -187,7 +187,7 @@ export function CullingToolFinder() {
           const excludedCloudTool = topName;
           topName = offlineCandidates[0][0];
           runnerName = offlineCandidates.length > 1 ? offlineCandidates[1][0] : null;
-          constraintNote = `Compatibility constraint applied: ${excludedCloudTool} scored highest on points, but its AI engine operates in the cloud and cannot work offline. ${topName} is recommended as your primary offline-compatible starting point.`;
+          constraintNote = `${excludedCloudTool} scored highest on points, but its AI engine operates in the cloud and cannot work offline. ${topName} is recommended as your primary offline-compatible starting point.`;
         } else {
           // topName is already offline, ensure runnerName is also offline
           runnerName = offlineCandidates.find(([t]) => t !== topName)?.[0] || null;
