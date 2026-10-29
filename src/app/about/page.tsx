@@ -82,7 +82,7 @@ export default function AboutPage() {
 
       <div className="text-[17.5px] leading-[1.68] text-[#20221F] font-sans">
         <p className="m-0 mb-4">
-          We are called The Photo Testers because our mission is practical evaluation. We examine tools through a mix of hands-on testing and structured research: opening accounts, loading test clients and real session details, testing actual jobs photographers run, and analyzing vendor documentation alongside verified user feedback. Booking, contracts, invoices, galleries, and culling workflows. Then we write down what held up and what got in the way.
+          We are called The Photo Testers because our mission is practical, evidence-based evaluation. We examine tools through a mix of hands-on testing and structured research: opening accounts and running realistic test workflows where practical, alongside thorough analysis of vendor documentation, policy verification, and verified user benchmarking. Booking, contracts, invoices, galleries, and culling workflows. Then we write down what held up and what got in the way.
         </p>
         <p className="m-0 mb-4">
           Most reviews you find online are written by someone who used one tool and guessed at the rest, or regurgitated straight off a software company’s homepage. Both are close to useless when you are about to hand over a card number every month.

@@ -18,9 +18,16 @@ export function Header() {
   const catsRef = useRef<HTMLDivElement>(null);
   const catBtnRef = useRef<HTMLButtonElement>(null);
   const searchRef = useRef<HTMLInputElement>(null);
+  const searchBtnDesktopRef = useRef<HTMLButtonElement>(null);
+  const searchBtnMobileRef = useRef<HTMLButtonElement>(null);
+  const menuBtnRef = useRef<HTMLButtonElement>(null);
+  const searchTriggerRef = useRef<'desktop' | 'mobile' | null>(null);
+
   const catsOpenRef = useRef(catsOpen);
   const prevCatsOpen = useRef(catsOpen);
   const wasEscapeRef = useRef(false);
+  const searchOpenRef = useRef(searchOpen);
+  const menuOpenRef = useRef(menuOpen);
 
   useEffect(() => {
     catsOpenRef.current = catsOpen;
@@ -35,6 +42,14 @@ export function Header() {
     }
     prevCatsOpen.current = catsOpen;
   }, [catsOpen]);
+
+  useEffect(() => {
+    searchOpenRef.current = searchOpen;
+  }, [searchOpen]);
+
+  useEffect(() => {
+    menuOpenRef.current = menuOpen;
+  }, [menuOpen]);
 
   const p = pathname.replace(/\/+$/, '') || '/';
   const isArticle = !!site.bySlug[p.slice(1)];
@@ -79,8 +94,24 @@ export function Header() {
           setCatsOpen(false);
           catBtnRef.current?.focus();
         }
-        setSearchOpen(false);
-        setMenuOpen(false);
+        if (searchOpenRef.current) {
+          setSearchOpen(false);
+          const trigger = searchTriggerRef.current;
+          searchTriggerRef.current = null;
+          requestAnimationFrame(() => {
+            if (trigger === 'mobile') {
+              searchBtnMobileRef.current?.focus();
+            } else {
+              searchBtnDesktopRef.current?.focus();
+            }
+          });
+        }
+        if (menuOpenRef.current) {
+          setMenuOpen(false);
+          requestAnimationFrame(() => {
+            menuBtnRef.current?.focus();
+          });
+        }
       }
     };
     document.addEventListener('mousedown', onDocClick);
@@ -136,11 +167,12 @@ export function Header() {
           style={{
             maxWidth: '1280px',
             margin: '0 auto',
-            padding: '0 clamp(16px,4vw,40px)',
+            padding: '0 clamp(10px, 3vw, 40px)',
             height: '68px',
             display: 'flex',
             alignItems: 'center',
-            gap: '24px',
+            justifyContent: 'space-between',
+            gap: 'clamp(8px, 2vw, 24px)',
           }}
         >
           <Link
@@ -149,12 +181,13 @@ export function Header() {
             style={{
               display: 'flex',
               alignItems: 'center',
-              flex: '0 0 auto',
+              flex: '0 1 auto',
+              minWidth: 0,
               textDecoration: 'none',
             }}
           >
-            <span style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true" style={{ flex: '0 0 auto' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 'clamp(6px, 1.8vw, 10px)', minWidth: 0 }}>
+              <svg viewBox="0 0 32 32" aria-hidden="true" style={{ width: 'clamp(24px, 6vw, 30px)', height: 'clamp(24px, 6vw, 30px)', flex: '0 0 auto' }}>
                 <path
                   d="M3 10V3h7M22 3h7v7M29 22v7h-7M10 29H3v-7"
                   fill="none"
@@ -173,7 +206,7 @@ export function Header() {
               <span
                 style={{
                   fontFamily: 'Newsreader,Georgia,serif',
-                  fontSize: '22px',
+                  fontSize: 'clamp(17px, 4.5vw, 22px)',
                   fontWeight: 500,
                   letterSpacing: '-0.012em',
                   lineHeight: 1,
@@ -385,8 +418,10 @@ export function Header() {
           </nav>
 
           <button
+            ref={searchBtnDesktopRef}
             type="button"
             onClick={() => {
+              searchTriggerRef.current = 'desktop';
               setSearchOpen((prev) => !prev);
               setCatsOpen(false);
               setMenuOpen(false);
@@ -416,10 +451,12 @@ export function Header() {
           </button>
 
           {/* Mobile controls */}
-          <div className="pt-mobile-only" style={{ marginLeft: 'auto', gap: '4px' }}>
+          <div className="pt-mobile-only" style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
             <button
+              ref={searchBtnMobileRef}
               type="button"
               onClick={() => {
+                searchTriggerRef.current = 'mobile';
                 setSearchOpen((prev) => !prev);
                 setCatsOpen(false);
                 setMenuOpen(false);
@@ -428,14 +465,15 @@ export function Header() {
               aria-expanded={searchOpen}
               aria-controls="site-search"
               style={{
-                width: '44px',
-                height: '44px',
+                width: '38px',
+                height: '38px',
                 display: 'grid',
                 placeItems: 'center',
                 background: 'none',
                 border: 0,
                 cursor: 'pointer',
                 color: '#20221F',
+                padding: 0,
               }}
             >
               <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true">
@@ -444,6 +482,7 @@ export function Header() {
               </svg>
             </button>
             <button
+              ref={menuBtnRef}
               type="button"
               onClick={() => {
                 setMenuOpen((prev) => !prev);
@@ -452,16 +491,16 @@ export function Header() {
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
               style={{
-                height: '44px',
-                padding: '0 12px',
+                height: '38px',
+                padding: '0 10px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '8px',
+                gap: '6px',
                 background: 'none',
                 border: '1px solid #DFE2DB',
                 borderRadius: '4px',
                 cursor: 'pointer',
-                fontSize: '15px',
+                fontSize: '14px',
                 fontWeight: 500,
                 color: '#20221F',
               }}
@@ -486,7 +525,7 @@ export function Header() {
               style={{
                 maxWidth: '860px',
                 margin: '0 auto',
-                padding: '20px clamp(16px,4vw,40px) 24px',
+                padding: '20px clamp(10px,3vw,40px) 24px',
               }}
             >
               <label
@@ -538,7 +577,15 @@ export function Header() {
                 </button>
                 <button
                   type="button"
-                  onClick={closeAll}
+                  onClick={() => {
+                    const trigger = searchTriggerRef.current;
+                    closeAll();
+                    if (trigger === 'mobile') {
+                      searchBtnMobileRef.current?.focus();
+                    } else {
+                      searchBtnDesktopRef.current?.focus();
+                    }
+                  }}
                   aria-label="Close search"
                   style={{
                     height: '48px',

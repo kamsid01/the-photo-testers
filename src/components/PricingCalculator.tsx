@@ -72,7 +72,14 @@ export function PricingCalculator() {
       sliderStep: 5000,
       sMin: 10000,
       sMax: 150000,
-      check: (v) => (v <= 0 ? 'Enter an amount above zero.' : v > 1000000 ? 'Enter 1,000,000 or less.' : ''),
+      check: (v) =>
+        v <= 0
+          ? 'Enter an amount above zero.'
+          : v > 1000000
+          ? 'Enter 1,000,000 or less.'
+          : !Number.isInteger(v)
+          ? 'Use a whole number.'
+          : '',
     },
     {
       k: 'shoots',
@@ -85,7 +92,14 @@ export function PricingCalculator() {
       sliderStep: 1,
       sMin: 5,
       sMax: 100,
-      check: (v) => (v < 1 ? 'Enter at least 1 shoot.' : !Number.isInteger(v) ? 'Use a whole number of shoots.' : v > 1000 ? 'Enter 1,000 or fewer.' : ''),
+      check: (v) =>
+        v < 1
+          ? 'Enter at least 1 shoot.'
+          : v > 1000
+          ? 'Enter 1,000 or fewer.'
+          : !Number.isInteger(v)
+          ? 'Use a whole number of shoots.'
+          : '',
     },
     {
       k: 'costs',
@@ -97,7 +111,14 @@ export function PricingCalculator() {
       max: 1000000,
       inputStep: 1,
       sliderStep: 500,
-      check: (v) => (v < 0 ? 'Costs can’t be negative.' : v > 1000000 ? 'Enter 1,000,000 or less.' : ''),
+      check: (v) =>
+        v < 0
+          ? 'Costs can’t be negative.'
+          : v > 1000000
+          ? 'Enter 1,000,000 or less.'
+          : !Number.isInteger(v)
+          ? 'Use a whole number.'
+          : '',
     },
     {
       k: 'tax',
@@ -111,7 +132,14 @@ export function PricingCalculator() {
       sliderStep: 1,
       sMin: 0,
       sMax: 50,
-      check: (v) => (v < 0 ? 'Use 0% or more.' : v >= 90 ? 'Use a rate below 90%.' : ''),
+      check: (v) =>
+        v < 0
+          ? 'Use 0% or more.'
+          : v > 89
+          ? 'Enter 89% or less.'
+          : !Number.isInteger(v)
+          ? 'Use a whole number.'
+          : '',
     },
     {
       k: 'shootH',
@@ -125,7 +153,14 @@ export function PricingCalculator() {
       sliderStep: 0.5,
       sMin: 0.5,
       sMax: 24,
-      check: (v) => (v < 0.5 ? 'Enter at least 0.5 hours.' : v > 24 ? 'Enter 24 hours or fewer.' : ''),
+      check: (v) =>
+        v < 0.5
+          ? 'Enter at least 0.5 hours.'
+          : v > 24
+          ? 'Enter 24 hours or fewer.'
+          : !Number.isInteger(Math.round(v * 100) / 50)
+          ? 'Use half-hour increments (e.g. 1.5, 2).'
+          : '',
     },
     {
       k: 'hiddenH',
@@ -139,7 +174,14 @@ export function PricingCalculator() {
       sliderStep: 1,
       sMin: 0,
       sMax: 80,
-      check: (v) => (v < 0 ? 'Hours can’t be negative.' : v > 200 ? 'Enter 200 hours or fewer.' : ''),
+      check: (v) =>
+        v < 0
+          ? 'Hours can’t be negative.'
+          : v > 200
+          ? 'Enter 200 hours or fewer.'
+          : !Number.isInteger(v)
+          ? 'Use a whole number of hours.'
+          : '',
     },
   ];
 

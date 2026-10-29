@@ -19,7 +19,7 @@ const TYPE_ORDER: [string, string][] = [
 function SearchParamsHandler({
   onParams,
 }: {
-  onParams: (params: { q: string | null; cat: string | null; type: string | null }) => void;
+  onParams: (params: { q: string | null; cat: string | null; type: string | null; sort: string | null }) => void;
 }) {
   const searchParams = useSearchParams();
   useEffect(() => {
@@ -27,6 +27,7 @@ function SearchParamsHandler({
       q: searchParams?.get('q') ?? null,
       cat: searchParams?.get('category') ?? null,
       type: searchParams?.get('type') ?? null,
+      sort: searchParams?.get('sort') ?? null,
     });
   }, [searchParams, onParams]);
   return null;
@@ -38,11 +39,29 @@ export function LibraryView() {
   const [type, setType] = useState('all');
   const [sort, setSort] = useState<'newest' | 'title'>('newest');
 
+  const syncToUrl = useCallback((newQ: string, newCat: string, newType: string, newSort: string) => {
+    if (typeof window === 'undefined') return;
+    const sp = new URLSearchParams();
+    const cleanQ = newQ.trim();
+    if (cleanQ) sp.set('q', cleanQ);
+    if (newCat && newCat !== 'all') sp.set('category', newCat);
+    if (newType && newType !== 'all') sp.set('type', newType);
+    if (newSort && newSort !== 'newest') sp.set('sort', newSort);
+
+    const qs = sp.toString();
+    const nextUrl = qs ? `/blog?${qs}` : '/blog';
+    const currentUrl = window.location.pathname + window.location.search;
+    if (currentUrl !== nextUrl) {
+      window.history.replaceState(null, '', nextUrl);
+    }
+  }, []);
+
   const handleParams = useCallback(
-    (params: { q: string | null; cat: string | null; type: string | null }) => {
+    (params: { q: string | null; cat: string | null; type: string | null; sort: string | null }) => {
       setQ(params.q || '');
       setCat(params.cat || 'all');
       setType(params.type || 'all');
+      setSort(params.sort === 'title' ? 'title' : 'newest');
     },
     []
   );
@@ -54,10 +73,32 @@ export function LibraryView() {
       setQ(sp.get('q') || '');
       setCat(sp.get('category') || 'all');
       setType(sp.get('type') || 'all');
+      const s = sp.get('sort');
+      setSort(s === 'title' ? 'title' : 'newest');
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
+
+  const onSelectType = (val: string) => {
+    setType(val);
+    syncToUrl(q, cat, val, sort);
+  };
+
+  const onSelectCat = (val: string) => {
+    setCat(val);
+    syncToUrl(q, val, type, sort);
+  };
+
+  const onSearchChange = (val: string) => {
+    setQ(val);
+    syncToUrl(val, cat, type, sort);
+  };
+
+  const onSortChange = (val: 'newest' | 'title') => {
+    setSort(val);
+    syncToUrl(q, cat, type, val);
+  };
 
   const qq = q.trim().toLowerCase();
   const matchQ = (a: ArticleSummary) =>
@@ -107,9 +148,7 @@ export function LibraryView() {
     setCat('all');
     setType('all');
     setSort('newest');
-    if (typeof window !== 'undefined') {
-      window.history.replaceState(null, '', '/blog');
-    }
+    syncToUrl('', 'all', 'all', 'newest');
   };
 
   return (
@@ -170,7 +209,7 @@ export function LibraryView() {
               id="lib-q"
               type="search"
               value={q}
-              onChange={(e) => setQ(e.target.value)}
+              onChange={(e) => onSearchChange(e.target.value)}
               placeholder="Product, workflow, or topic"
               autoComplete="off"
               style={{
@@ -187,9 +226,9 @@ export function LibraryView() {
         </form>
       </header>
 
-      <div className="flex flex-col md:flex-row gap-7 md:gap-14 pt-7">
+      <div className="flex flex-col min-[980px]:flex-row gap-7 min-[980px]:gap-14 pt-7">
         {/* Left Filter Column */}
-        <div className="w-full md:w-[240px] md:max-w-[260px] shrink-0">
+        <div className="w-full min-[980px]:w-[240px] min-[980px]:max-w-[260px] shrink-0">
           <fieldset style={{ border: 0, margin: '0 0 24px', padding: 0, minWidth: 0 }}>
             <legend
               style={{
@@ -203,7 +242,7 @@ export function LibraryView() {
             >
               Content type
             </legend>
-            <div className="flex flex-row flex-wrap md:flex-col gap-1.5">
+            <div className="flex flex-row flex-wrap min-[980px]:flex-col gap-1.5">
               {typeOpts.map((o) => {
                 const on = type === o.value;
                 return (
@@ -211,8 +250,8 @@ export function LibraryView() {
                     key={o.value}
                     type="button"
                     aria-pressed={on}
-                    onClick={() => setType(o.value)}
-                    className="inline-flex md:flex justify-between items-center gap-3.5 min-h-[40px] px-3 rounded text-[15px] font-medium cursor-pointer text-left transition-colors"
+                    onClick={() => onSelectType(o.value)}
+                    className="inline-flex min-[980px]:flex justify-between items-center gap-3.5 min-h-[40px] px-3 rounded text-[15px] font-medium cursor-pointer text-left transition-colors"
                     style={{
                       border: `1px solid ${on ? '#20221F' : '#DFE2DB'}`,
                       background: on ? '#20221F' : '#FFFFFF',
@@ -242,7 +281,7 @@ export function LibraryView() {
             >
               Category
             </legend>
-            <div className="flex flex-row flex-wrap md:flex-col gap-1.5">
+            <div className="flex flex-row flex-wrap min-[980px]:flex-col gap-1.5">
               {catOpts.map((o) => {
                 const on = cat === o.value;
                 return (
@@ -250,8 +289,8 @@ export function LibraryView() {
                     key={o.value}
                     type="button"
                     aria-pressed={on}
-                    onClick={() => setCat(o.value)}
-                    className="inline-flex md:flex justify-between items-center gap-3.5 min-h-[40px] px-3 rounded text-[15px] font-medium cursor-pointer text-left transition-colors"
+                    onClick={() => onSelectCat(o.value)}
+                    className="inline-flex min-[980px]:flex justify-between items-center gap-3.5 min-h-[40px] px-3 rounded text-[15px] font-medium cursor-pointer text-left transition-colors"
                     style={{
                       border: `1px solid ${on ? '#20221F' : '#DFE2DB'}`,
                       background: on ? '#20221F' : '#FFFFFF',
@@ -312,7 +351,7 @@ export function LibraryView() {
               <select
                 id="lib-sort"
                 value={sort}
-                onChange={(e) => setSort(e.target.value as 'newest' | 'title')}
+                onChange={(e) => onSortChange(e.target.value as 'newest' | 'title')}
                 style={{
                   height: '40px',
                   padding: '0 10px',
