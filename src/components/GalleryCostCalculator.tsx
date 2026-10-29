@@ -15,6 +15,8 @@ interface PlatformPlan {
   slug: string;
   isPromo?: boolean;
   promoNote?: string;
+  billingBasis?: string;
+  billingNote?: string;
 }
 
 export function GalleryCostCalculator() {
@@ -127,7 +129,7 @@ export function GalleryCostCalculator() {
         commission: '7% commerce fee',
         slug: 'zenfolio',
         isPromo: true,
-        promoNote: 'First-year promo rate ($138/yr); standard annual renewal applies',
+        promoNote: 'First-year promo rate ($138/yr); standard annual account renewal applies (monthly $23/mo rate is not an annual renewal quote)',
       });
     } else {
       list.push({
@@ -139,22 +141,22 @@ export function GalleryCostCalculator() {
         commission: '7% commerce fee',
         slug: 'zenfolio',
         isPromo: true,
-        promoNote: 'First-year promo rate ($240/yr); standard annual renewal applies',
+        promoNote: 'First-year promo rate ($240/yr); standard annual account renewal applies',
       });
     }
 
-    // CloudSpot (Five tiers: Free 5GB [3 galleries max], Entry 15GB [$72/yr, 15 galleries max], Lite 100GB [$144/yr, unlimited galleries], Pro 500GB [$34/mo, $408/yr], Unlimited [$50/mo, $600/yr])
+    // CloudSpot (Five tiers: Free 5GB [3 galleries max], Entry 15GB [$72/yr upfront, 15 galleries max], Lite 100GB [$144/yr upfront, unlimited galleries], Pro 500GB [$34/mo published rate], Unlimited [$50/mo published rate])
     // Gallery limits enforced under 1-gallery-per-shoot 12-month retention assumption
     if (gb <= 5 && activeShoots <= 3) {
       list.push({ platform: 'CloudSpot', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '5GB storage limit (max 3 active galleries)', commission: '15%', slug: 'cloudspot' });
     } else if (gb <= 15 && activeShoots <= 15) {
-      list.push({ platform: 'CloudSpot', planName: 'Entry', monthlyCost: 6, annualCost: 72, limit: '15GB storage limit (max 15 active galleries)', commission: '15%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Entry', monthlyCost: 6, annualCost: 72, limit: '15GB storage limit (max 15 active galleries)', commission: '15%', slug: 'cloudspot', billingBasis: 'Discounted upfront annual subscription ($72/yr)' });
     } else if (gb <= 100) {
-      list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 12, annualCost: 144, limit: '100GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 12, annualCost: 144, limit: '100GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot', billingBasis: 'Discounted upfront annual subscription ($144/yr)' });
     } else if (gb <= 500) {
-      list.push({ platform: 'CloudSpot', planName: 'Pro', monthlyCost: 34, annualCost: 408, limit: '500GB storage, unlimited galleries, Studio Manager ($34/mo published rate)', commission: '0%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Pro', monthlyCost: 34, annualCost: 408, limit: '500GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot', billingBasis: 'Estimated annual spend on monthly billing ($34/mo published rate)', billingNote: 'CloudSpot publishes a $34/mo rate; annual figure reflects 12 months at the published monthly rate rather than an upfront annual plan.' });
     } else {
-      list.push({ platform: 'CloudSpot', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited storage, all file types, Studio Manager ($50/mo published rate)', commission: '0%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited storage, all file types, Studio Manager', commission: '0%', slug: 'cloudspot', billingBasis: 'Estimated annual spend on monthly billing ($50/mo published rate)', billingNote: 'CloudSpot publishes a $50/mo rate; annual figure reflects 12 months at the published monthly rate rather than an upfront annual plan.' });
     }
 
     return list.sort((a, b) => a.annualCost - b.annualCost);
@@ -310,7 +312,7 @@ export function GalleryCostCalculator() {
         </form>
 
         <div className="p-3.5 px-4 bg-[#FBF7EF] border border-[#E7D9BC] rounded text-[14px] leading-[1.5] text-[#4F3A12]">
-          <strong>Pricing basis:</strong> published pricing as of October 2026. Annual rates reflect upfront 12-month commitments; verify standard renewal terms and promotional expirations with providers (e.g. Zenfolio Professional renews at standard annual rates). Confirm current rates, commissions, and storage limits with each provider before subscribing.
+          <strong>Pricing basis:</strong> published pricing as of October 2026. Annual rates reflect upfront 12-month commitments (such as CloudSpot Entry and Lite), while CloudSpot Pro and Unlimited display estimated annual spend on monthly billing ($34/mo and $50/mo published rates). Zenfolio Professional displays first-year promotional pricing ($138/yr); standard annual account renewal applies (monthly $23/mo rate is not an annual quote). Confirm current rates, commissions, and storage limits with each provider before subscribing.
         </div>
       </div>
 
@@ -363,6 +365,11 @@ export function GalleryCostCalculator() {
                       <p className="m-0 text-[14px] text-[#60645F]">
                         Store commission: {r.commission}
                       </p>
+                      {r.billingBasis && (
+                        <p className="m-0 mt-2 text-[12px] font-medium text-[#4A4E49] bg-[#F5F7F3] px-2.5 py-1 rounded border border-[#DFE2DB] inline-block">
+                          Basis: {r.billingBasis}
+                        </p>
+                      )}
                       {r.isPromo && r.promoNote && (
                         <p className="m-0 mt-2 text-[13px] font-medium text-[#9A3412] bg-[#FEF3F2] px-2.5 py-1 rounded border border-[#FECDCA] inline-block">
                           Notice: {r.promoNote}
@@ -377,7 +384,7 @@ export function GalleryCostCalculator() {
                       </p>
                       <p className="mt-0.5 mb-0 text-[14px] text-[#60645F]">
                         {sym}
-                        {r.monthlyCost} a month equivalent
+                        {r.monthlyCost} {r.billingBasis?.includes('monthly billing') ? 'published monthly rate' : 'a month equivalent'}
                       </p>
                     </div>
                   </div>

@@ -481,7 +481,7 @@
             "type": "p",
             "runs": [
               {
-                "t": "Short version: Aftershoot is the most comprehensive all-in-one AI post-production platform for high-volume photographers, combining automated culling, profile-matched editing, and facial retouching in a single offline desktop application."
+                "t": "Aftershoot is the strongest all-in-one AI workflow tool for high-volume photographers, and the best value if you shoot a lot. It culls, edits, and retouches in one offline app at a flat, unlimited price, so a huge wedding costs the same to process as a small portrait session."
               }
             ],
             "cls": ""
@@ -490,11 +490,37 @@
             "type": "p",
             "runs": [
               {
-                "t": "Pricing & evidence:",
+                "t": "Who it's for: ",
                 "b": 1
               },
               {
-                "t": " Flat modular pricing: Select (culling) at $10/mo ($120/yr), Edit at $30/mo ($360/yr), and Complete at $45/mo ($540/yr) billed annually. Evaluated through technical documentation, technical specifications and published documentation."
+                "t": "Wedding, event, and portrait photographers drowning in RAW files who want predictable costs and offline processing."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Who should look elsewhere: ",
+                "b": 1
+              },
+              {
+                "t": "If editing quality matters more than culling, Imagen edits better; if you want to keep full manual control of selections, Narrative suits you more."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Bottom line: ",
+                "b": 1
+              },
+              {
+                "t": "For culling at volume, it's a top pick. The editing is good and improving, but the culling is the reason to buy."
               }
             ],
             "cls": ""
@@ -941,25 +967,62 @@
             "type": "p",
             "runs": [
               {
-                "t": "Short answer: ",
-                "b": true
-              },
-              {
-                "t": "Imagen AI is the strongest automated photo editor for Lightroom Classic users, delivering nuanced skin tones and precise style replication through custom AI profiles."
+                "t": "Imagen AI is the strongest AI editor for photographers who live in Lightroom Classic and care most about editing quality and consistency. It learns your style from your past catalogs and applies it across a whole gallery, with skin tones that reviewers single out as its standout strength."
               }
-            ]
+            ],
+            "cls": ""
           },
           {
             "type": "p",
             "runs": [
               {
                 "t": "Pricing models: ",
-                "b": true
+                "b": 1
               },
               {
-                "t": "Offers Pay-As-You-Go ($0.05/photo base + $0.01 add-ons for crop, straighten, subject mask, smooth skin), a flat Limitless subscription (–/yr) for eligible solo shooters, and Business plans for multi-photographer studios."
+                "t": "Offers Pay-As-You-Go ($0.05/photo base + $0.01 add-ons for crop, straighten, subject mask, smooth skin), a flat Limitless subscription ($129/mo billed annually [$1,548/yr]) for eligible solo shooters, and Business plans for multi-photographer studios."
               }
-            ]
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Who it's for: ",
+                "b": 1
+              },
+              {
+                "t": "Wedding and portrait photographers with a consistent editing style who want automated edits that closely reflect their own signature look."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Who should look elsewhere: ",
+                "b": 1
+              },
+              {
+                "t": "Multi-shooter studios watching cost (the per-photo model adds up quickly), photographers who need to work offline, or anyone whose primary bottleneck is culling rather than editing."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Bottom line: ",
+                "b": 1
+              },
+              {
+                "t": "The premier pure automated editor for Lightroom Classic, with pricing tailored to both flexible usage and high-volume solo shooters."
+              }
+            ],
+            "cls": ""
           }
         ]
       },
@@ -1021,7 +1084,7 @@
               "b": true
             },
             {
-              "t": "A flat annual subscription (approx. –/year billed annually, or roughly –/month equivalent) covering unlimited AI editing with a personal AI profile and AI tools included. Note: Limitless is strictly for eligible individual solo photographers editing their own work."
+              "t": "A flat annual subscription ($129/month billed annually [$1,548/year], or $165/month billed monthly) covering unlimited personal edits for eligible solo photographers."
             }
           ],
           [
@@ -1436,7 +1499,7 @@
                 "b": 1
               },
               {
-                "t": " Contracts, invoicing, and a commission-free store on paid plans from .33/mo (.99/yr for 20 GB) up to 2 TB."
+                "t": " Contracts, invoicing, and a commission-free store on paid plans from $8.33/mo ($99.99/yr for 20 GB) up to 2 TB."
               }
             ],
             "cls": ""
@@ -1449,7 +1512,7 @@
                 "b": 1
               },
               {
-                "t": " Free plan (5 GB, 3 active galleries) and entry full-suite plans from –/month billed annually."
+                "t": " Free plan (5 GB, 3 active galleries) and entry plans from $6/mo billed annually ($72/yr)."
               }
             ],
             "cls": ""
@@ -1555,27 +1618,22 @@
           [
             [
               {
-                "t": "Pixieset",
-                "b": 1
-              },
-              {
-                "t": " (best overall)",
-                "i": 1
+                "t": "Pixieset"
               }
             ],
             [
               {
-                "t": "All-in-one suite"
+                "t": "All-in-one suite, design-forward"
               }
             ],
             [
               {
-                "t": "From $11/mo ($132/yr)"
+                "t": "Free (3 GB) / Basic $8/mo ($96/yr)"
               }
             ],
             [
               {
-                "t": "0% on paid plans (15% free)"
+                "t": "0% on paid plans (15% on free)"
               }
             ],
             [
@@ -1593,12 +1651,12 @@
             ],
             [
               {
-                "t": "Value, contracts & invoices"
+                "t": "Value, contracts & invoicing"
               }
             ],
             [
               {
-                "t": "From .33/mo (.99/yr)"
+                "t": "Free (3 GB) / Starter $8.33/mo ($99.99/yr)"
               }
             ],
             [
@@ -1626,7 +1684,7 @@
             ],
             [
               {
-                "t": "Free / From $11/mo ($132/yr)"
+                "t": "Free (5 GB) / Entry $6/mo ($72/yr)"
               }
             ],
             [
@@ -1654,7 +1712,7 @@
             ],
             [
               {
-                "t": "Free / From $11/mo ($132/yr)"
+                "t": "Free (3 GB ongoing) / Beginner $7/mo ($84/yr)"
               }
             ],
             [
@@ -1682,12 +1740,12 @@
             ],
             [
               {
-                "t": "From $11/mo ($132/yr)"
+                "t": "Direct $11/mo ($132/yr) / Portfolio $23.50/mo ($282/yr)"
               }
             ],
             [
               {
-                "t": "15% on Pro/Venture commerce"
+                "t": "15% markup fee (Portfolio/Pro)"
               }
             ],
             [
@@ -1710,7 +1768,7 @@
             ],
             [
               {
-                "t": "From $11/mo ($132/yr)"
+                "t": "Basic $7/mo ($84/yr) / Professional $11.50/mo ($138/yr promo)"
               }
             ],
             [
@@ -1927,7 +1985,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its five plans run from Free (5 GB, 3 active galleries cap, 15% commission, no Studio Manager) and Entry (/mo annual [/yr] or /mo monthly, 15 GB, 15 active galleries cap, 15% commission) up through Full Suite tiers: Lite (/mo annual [/yr] or /mo monthly, 100 GB, unlimited galleries), Pro (/mo annual [/yr] or /mo monthly, 500 GB, unlimited galleries), and Unlimited (/mo annual [/yr] or /mo monthly, unlimited storage and galleries). The Full Suite tiers eliminate print commissions entirely (0%) and include Studio Manager contracts and invoicing. Note: CloudSpot's annual rates represent discounted upfront annual subscriptions ($72/yr for Entry, $144/yr for Lite, $408/yr for Pro, and $600/yr for Unlimited) rather than 12 equal monthly installments."
+            "t": "Its five plans run from Free (5 GB, 3 active galleries cap, 15% commission, no Studio Manager) and Entry ($6/mo annual [$72/yr] or $9/mo monthly, 15 GB, 15 active galleries cap, 15% commission) up through Full Suite tiers: Lite ($12/mo annual [$144/yr] or $17/mo monthly, 100 GB, unlimited galleries), Pro ($34/mo published rate [approx. $408/yr spend] or $40/mo monthly, 500 GB, unlimited galleries), and Unlimited ($50/mo published rate [approx. $600/yr spend] or $57/mo monthly, unlimited storage and galleries). The Full Suite tiers eliminate print commissions entirely (0%) and include Studio Manager contracts and invoicing. Note: CloudSpot's annual rates represent discounted upfront annual subscriptions ($72/yr for Entry and $144/yr for Lite), while Pro and Unlimited annual totals represent estimated annual spend on monthly billing ($34/mo and $50/mo published rates)."
           }
         ],
         "cls": ""
@@ -1948,7 +2006,7 @@
           ],
           [
             {
-              "t": "Affordable Lite entry point (/yr) with unlimited galleries and 0% commission"
+              "t": "Affordable Lite entry point ($144/yr) with unlimited galleries and 0% commission"
             }
           ],
           [
@@ -1974,7 +2032,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (5 GB, 3 galleries); Entry 15 GB (/mo annual [/yr] or /mo monthly); Lite 100 GB (/mo annual [/yr] or /mo monthly); Pro 500 GB (/mo annual [/yr] or /mo monthly); Unlimited (/mo annual [/yr] or /mo monthly) (Checked October 2026)."
+            "t": "Pricing: Free tier (5 GB, 3 galleries); Entry 15 GB ($6/mo annual [$72/yr] or $9/mo monthly); Lite 100 GB ($12/mo annual [$144/yr] or $17/mo monthly); Pro 500 GB ($34/mo published rate [approx. $408/yr spend] or $40/mo monthly); Unlimited ($50/mo published rate [approx. $600/yr spend] or $57/mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2057,7 +2115,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (20 GB, 15% commission); Beginner 100 GB (/mo annual [/yr] or /mo monthly, 10% commission); Professional 500 GB (/mo annual [/yr] or /mo monthly, 0% commission with own processor); Advanced Unlimited (/mo annual [/yr] or /mo monthly, 0% commission); Grand Unlimited (/mo annual [/yr] or /mo monthly) (Checked October 2026)."
+            "t": "Pricing: Free tier (3 GB ongoing, 15% commission); Beginner 20 GB ($7/mo annual [$84/yr] or $8/mo monthly, 10% commission); Professional 100 GB ($21/mo annual [$252/yr] or $24/mo monthly, 0% commission with own processor); Advanced Unlimited ($42/mo annual [$504/yr] or $48/mo monthly, 0% commission) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2086,7 +2144,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Current plans include Starter (/mo annual [/yr] or /mo monthly) for unlimited storage and password-protected sharing without e-commerce markup; Pro (/mo annual [/yr] or /mo monthly) for full turnkey print and digital commerce with 15% fulfillment fee; and Venture (/mo annual [/yr] or /mo monthly) for high-volume studios requiring multi-user access and watermarking. A 14-day free trial is available, but there is no permanent free tier."
+            "t": "Current plans include Direct ($11/mo billed annually [$132/yr] or $13/mo monthly) for unlimited storage and password-protected sharing without e-commerce markup; Portfolio ($23.50/mo billed annually [$282/yr] or $28/mo monthly) for portfolio websites with commerce; and Pro ($35/mo billed annually [$420/yr] or $42/mo monthly) for turnkey client sales with custom price lists and watermarking. A 14-day free trial is available, but there is no permanent free tier."
           }
         ],
         "cls": ""
@@ -2119,7 +2177,7 @@
         "cons": [
           [
             {
-              "t": "Selling requires the Pro tier (/mo annual [/yr]) plus a 15% fulfillment fee"
+              "t": "Selling requires the Portfolio tier ($23.50/mo annual [$282/yr]) or Pro tier ($35/mo annual [$420/yr]) plus a 15% fulfillment fee"
             }
           ],
           [
@@ -2133,7 +2191,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: 14-day trial; Starter (/mo annual [/yr] or /mo monthly); Pro (/mo annual [/yr] or /mo monthly); Venture (/mo annual [/yr] or /mo monthly) (Checked October 2026)."
+            "t": "Pricing: 14-day trial; Direct ($11/mo annual [$132/yr] or $13/mo monthly); Portfolio ($23.50/mo annual [$282/yr] or $28/mo monthly); Pro ($35/mo annual [$420/yr] or $42/mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2209,7 +2267,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Basic 15 GB ($7/mo annual [$84/yr]); Professional 150 GB ($11.50/mo annual 1st-yr promo [$138/yr], $23/mo standard monthly); Advanced Unlimited (/mo annual [/yr]) (Checked October 2026)."
+            "t": "Pricing: Basic 15 GB ($7/mo annual [$84/yr] or $9/mo monthly); Professional 150 GB ($11.50/mo annual first-year promo [$138/yr], standard account renewal applies; $23/mo standard monthly); Advanced Unlimited ($30/mo annual first-year promo [$360/yr], $36/mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2909,43 +2967,34 @@
               "b": 1
             },
             {
-              "t": " 20GB storage (15% commission, basic marketing apps)"
+              "t": " 3GB ongoing storage (15% commission, basic marketing apps)"
             }
           ],
           [
             {
-              "t": "Beginner (/mo annual [/yr] / /mo monthly):",
+              "t": "Beginner ($7/mo annual [$84/yr] / $8/mo monthly):",
               "b": 1
             },
             {
-              "t": " 100GB storage (10% commission)"
+              "t": " 20GB storage (10% commission)"
             }
           ],
           [
             {
-              "t": "Professional (/mo annual [/yr] / /mo monthly):",
+              "t": "Professional ($21/mo annual [$252/yr] / $24/mo monthly):",
               "b": 1
             },
             {
-              "t": " 500GB storage (0% commission with own payment processor)"
+              "t": " 100GB storage (0% commission with own payment processor)"
             }
           ],
           [
             {
-              "t": "Advanced (/mo annual [/yr] / /mo monthly):",
+              "t": "Advanced ($42/mo annual [$504/yr] / $48/mo monthly):",
               "b": 1
             },
             {
               "t": " Unlimited storage (0% commission with own payment processor)"
-            }
-          ],
-          [
-            {
-              "t": "Grand (/mo annual [/yr] / /mo monthly):",
-              "b": 1
-            },
-            {
-              "t": " Unlimited storage, multi-brand and multi-user support (0% commission)"
             }
           ]
         ]
@@ -2982,7 +3031,7 @@
               "b": 1
             },
             {
-              "t": " .33/mo annual (.99/yr) / .99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " $8.33/mo annual ($99.99/yr) / $10.99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -2991,7 +3040,7 @@
               "b": 1
             },
             {
-              "t": " .67/mo annual (.99/yr) / .99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " $16.67/mo annual ($199.99/yr) / $21.99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -3000,7 +3049,7 @@
               "b": 1
             },
             {
-              "t": " .67/mo annual (.99/yr) / .99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " $26.67/mo annual ($319.99/yr) / $34.99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -3009,7 +3058,7 @@
               "b": 1
             },
             {
-              "t": " .33/mo annual (.99/yr) / .99/mo monthly (0% commission, contracts & invoicing included)"
+              "t": " $43.33/mo annual ($519.99/yr) / $54.99/mo monthly (0% commission, contracts & invoicing included)"
             }
           ],
           [
@@ -3018,7 +3067,7 @@
               "b": 1
             },
             {
-              "t": " /mo annual (/yr) / /mo monthly (0% commission, full studio features + archiving)"
+              "t": " $50/mo annual ($600/yr) / $65/mo monthly (0% commission, full studio features + archiving)"
             }
           ]
         ]
@@ -3577,7 +3626,7 @@
             "b": true
           },
           {
-            "t": "4 free projects; paid plans from .99/mo (October 2026)."
+            "t": "4 free projects; paid plans from $14$14.99/mo (October 2026)."
           }
         ]
       },
@@ -6069,7 +6118,7 @@
   "aftershoot-vs-imagen": {
     "title": "Aftershoot vs Imagen: Which AI Editor Wins in 2026?",
     "meta": "By The Photo Testers team · Published July 2026 · Updated October 2026 · 9 min read",
-    "disclosure": "We evaluate tools through hands-on testing and structured research. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing, plans, and technical specifications verified October 2026 against official vendor documentation.",
+    "disclosure": "We evaluate tools through structured research, published vendor benchmarks, and verified user feedback. Some links below are affiliate links.",
     "blocks": [
       {
         "type": "box",
@@ -6308,7 +6357,7 @@
             "b": true
           },
           {
-            "t": "Pay-as-you-go (PAYG) and Limitless. On PAYG, base editing costs $0.05 per photo (subject to a $7 monthly minimum spend). Optional AI tools add $0.01 per photo each: Crop ($0.01), Straighten ($0.01), Subject Mask ($0.01), and Smooth Skin ($0.01). With all four optional tools enabled, editing rises to $0.09 per photo—an 80% increase over the base editing fee. For eligible solo photographers who shoot their own work, Imagen also offers a flat Limitless subscription (approximately –/year billed annually, or around –/month equivalent). Crucially, Limitless is restricted to individual photographers shooting their own jobs; multi-shooter studios, associate teams, and post-production houses must use PAYG or pooled Business plans."
+            "t": "Pay-as-you-go (PAYG) and Limitless. On PAYG, base editing costs $0.05 per photo (subject to a $7 monthly minimum spend), with optional AI tools (crop, straighten, subject mask, smooth skin) costing $0.01 per photo each. Alternatively, solo photographers can opt for a flat Limitless subscription ($129/month billed annually [$1,548/year], or $165/month billed monthly). Crucially, Limitless is restricted to solo shooters editing their own work; multi-photographer studios and associate shooters must use PAYG or custom enterprise billing."
           }
         ]
       },
@@ -7223,7 +7272,7 @@
             "b": true
           },
           {
-            "t": "Pay-as-you-go (PAYG) and a flat Limitless subscription. On PAYG, base editing costs $0.05 per photo (subject to a $7 monthly minimum spend). For eligible solo photographers shooting their own work, Imagen also offers a flat Limitless plan (approximately –/year billed annually, or ~–/month equivalent) covering unlimited AI editing with a personal profile and AI tools included. Studios with associate shooters or teams use pooled Business plans."
+            "t": "Pay-as-you-go (PAYG) and a flat Limitless subscription. On PAYG, base editing costs $0.05 per photo (subject to a $7 monthly minimum), with modular add-ons (crop, straighten, subject mask, smooth skin) at $0.01 per photo each. Solo shooters can alternatively choose the flat Limitless plan ($129/month billed annually [$1,548/year], or $165/month billed monthly) covering unlimited personal catalog edits. Unlike Aftershoot’s local processing, Imagen edits in the cloud via Lightroom Classic catalogs, returning adjustments in minutes."
           }
         ]
       },
@@ -7299,7 +7348,7 @@
             "b": true
           },
           {
-            "t": "Pay-as-you-go from $0.05/photo (min $7/mo); flat Limitless plan (–/yr) for eligible solo shooters; 1,000 free test credits."
+            "t": "Pay-as-you-go from $0.05/photo (min $7/mo); flat Limitless plan ($129/mo annual [$1,548/yr] or $165/mo monthly) for eligible solo shooters; 1,000 free test credits (Checked October 2026)."
           }
         ]
       },
@@ -7875,10 +7924,18 @@
             "ext": true
           },
           {
-            "t": " and the official "
+            "t": ", the official "
           },
           {
-            "t": "EU GDPR portal",
+            "t": "European Commission Data Protection portal",
+            "href": "https://commission.europa.eu/law/law-topic/data-protection_en",
+            "ext": true
+          },
+          {
+            "t": ", and independent explanatory guides like "
+          },
+          {
+            "t": "Proton AG's GDPR.eu",
             "href": "https://gdpr.eu/",
             "ext": true
           },
@@ -8061,7 +8118,7 @@
             ],
             [
               {
-                "t": "UK registered / AWS"
+                "t": "Australia / UK entity (GCP & AWS)"
               }
             ],
             [
@@ -8071,7 +8128,7 @@
             ],
             [
               {
-                "t": "£19/mo (£190/yr) / £24/mo"
+                "t": "£20/mo (£200/yr) / £24/mo"
               }
             ],
             [
@@ -8099,7 +8156,7 @@
             ],
             [
               {
-                "t": "$35/mo ($350/yr) / $55/mo Premier"
+                "t": "$35/mo ($335/yr) / $55/mo Premier ($525/yr)"
               }
             ],
             [
@@ -8155,7 +8212,7 @@
             ],
             [
               {
-                "t": "$29/mo ($348/yr) / $34/mo"
+                "t": "$29/mo ($348/yr) / $36/mo"
               }
             ],
             [
@@ -8430,7 +8487,7 @@
             "b": 1
           },
           {
-            "t": " £20/mo monthly or £200/yr annual (~$260/yr). 7-day free trial. Infrastructure hosted on Google Cloud Platform and AWS with European data transfer provisions."
+            "t": " £20/mo monthly or £200/yr annual (~$260/yr). 30-day free trial. Infrastructure hosted on Google Cloud Platform and AWS with European data transfer provisions."
           }
         ],
         "cls": ""
@@ -8900,7 +8957,7 @@
   "best-crm-wedding-photographers": {
     "title": "Best CRM for Wedding Photographers (2026)",
     "meta": "By The Photo Testers · Updated June 2026 · 8 min read",
-    "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
+    "disclosure": "We evaluate tools through structured research, verified user feedback, and published vendor specifications. Some links below are affiliate links.",
     "blocks": [
       {
         "type": "box",
@@ -8913,7 +8970,7 @@
                 "b": 1
               },
               {
-                "t": " The smoothest all-in-one inquiry-to-booking client experience, starting at $29/mo annual ($348/yr) or $39/mo annual for automations."
+                "t": " The smoothest all-in-one inquiry-to-booking client experience, starting at $29/mo annual ($348/yr) or $49/mo annual for automations."
               }
             ],
             "cls": ""
@@ -8926,7 +8983,7 @@
                 "b": 1
               },
               {
-                "t": " Photographer-built, clean, and includes a native Pic-Time gallery integration from £19/mo (~$24.90/mo annual)."
+                "t": " Photographer-built, clean, and includes a native Pic-Time gallery integration from £20/mo monthly or £200/yr annual (~$260/yr)."
               }
             ],
             "cls": ""
@@ -8939,7 +8996,7 @@
                 "b": 1
               },
               {
-                "t": " Blank-slate power and global payment options, with the Premier tier ($55/mo monthly / $550/yr annual) required for full automations."
+                "t": " Blank-slate power and global payment options, with the Premier tier ($55/mo monthly / $525/yr annual) required for full automations."
               }
             ],
             "cls": ""
@@ -9092,12 +9149,12 @@
             ],
             [
               {
-                "t": "7-day trial"
+                "t": "30-day trial"
               }
             ],
             [
               {
-                "t": "$29/mo ($348/yr) / $34/mo"
+                "t": "$29/mo ($348/yr) / $36/mo"
               }
             ],
             [
@@ -9125,7 +9182,7 @@
             ],
             [
               {
-                "t": "£19/mo (£190/yr) / £24/mo"
+                "t": "£20/mo (£200/yr) / £24/mo"
               }
             ],
             [
@@ -9148,12 +9205,12 @@
             ],
             [
               {
-                "t": "Unlimited 3-client trial"
+                "t": "21-day trial with unlimited projects"
               }
             ],
             [
               {
-                "t": "$35/mo ($350/yr) / $55/mo Premier"
+                "t": "$35/mo ($335/yr) / $55/mo Premier ($525/yr)"
               }
             ],
             [
@@ -9301,7 +9358,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Starter $29/mo billed annually ($348/yr) or $34/mo monthly; Essentials (with automated workflows, scheduler, and reports) $39/mo billed annually ($468/yr) or $49/mo monthly; Premium $79/mo billed annually ($948/yr). 7-day free trial; payments support US and Canada bank accounts (Checked October 2026)."
+            "t": "Pricing: Starter $29/mo billed annually ($348/yr) or $36/mo monthly; Essentials (with automated workflows, scheduler, and reports) $49/mo billed annually ($588/yr) or $59/mo monthly; Premium $109/mo billed annually ($1,308/yr) or $129/mo monthly. 30-day free trial; payments support US and Canada bank accounts (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -9457,7 +9514,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Starter $35/mo monthly or $350/yr billed annually; Premier (required for automated workflows, built-in scheduler, and multiple lead captures) $55/mo monthly or $550/yr billed annually. Unlimited free trial for up to 3 clients; supports international Stripe, Square, and PayPal accounts (Checked October 2026)."
+            "t": "Pricing: Starter $35/mo monthly or $335/yr billed annually; Premier (required for automated workflows, built-in scheduler, and multiple lead captures) $55/mo monthly or $525/yr billed annually. 21-day free trial with unlimited projects; supports international Stripe, Square, and PayPal accounts (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -9726,7 +9783,7 @@
             "b": 1
           },
           {
-            "t": "\nHoneyBook and Dubsado have built-in schedulers; Studio Ninja does not. See our "
+            "t": "\nHoneyBook and Dubsado include flexible consultation and session schedulers with automated reminders. Studio Ninja includes a native Online Booking system for defined shoots, though general discovery calls often use an external booking link. See our guide to photography CRMs with built-in schedulers for the full comparison."
           },
           {
             "t": "guide to photography CRMs with built-in schedulers",
@@ -9783,7 +9840,7 @@
   "dubsado-vs-honeybook": {
     "title": "Dubsado vs HoneyBook for Wedding Photographers (2026)",
     "meta": "By The Photo Testers · Updated June 2026 · 8 min read",
-    "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
+    "disclosure": "We evaluate tools through structured research, verified user feedback, and published vendor specifications. Some links below are affiliate links.",
     "blocks": [
       {
         "type": "box",
@@ -9805,7 +9862,7 @@
                 "b": 1
               },
               {
-                "t": " To get automated workflows and a public client scheduler, you must compare HoneyBook Essentials ($39/mo annual / $468/yr) against Dubsado Premier ($55/mo monthly / $550/yr annual). Dubsado Starter lacks automations and public scheduling."
+                "t": " To get automated workflows and a public client scheduler, you must compare HoneyBook Essentials ($49/mo annual / $588/yr) against Dubsado Premier ($55/mo monthly / $525/yr annual). On annual billing, Dubsado Premier is $63/year cheaper than HoneyBook Essentials; on monthly billing, Dubsado Premier is $4/month cheaper. Dubsado Starter lacks automations and public scheduling."
               }
             ],
             "cls": ""
@@ -9965,7 +10022,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing verified June 2026. Both tested on live accounts.",
+            "t": "Pricing and features verified against official vendor documentation, October 2026.",
             "i": 1
           }
         ],
@@ -10268,7 +10325,7 @@
   "honeybook-alternatives-photographers": {
     "title": "HoneyBook Alternatives for Photographers (2026)",
     "meta": "By The Photo Testers · Updated June 2026 · 7 min read",
-    "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
+    "disclosure": "We evaluate tools through structured research, verified user feedback, and published vendor specifications. Some links below are affiliate links.",
     "blocks": [
       {
         "type": "box",
@@ -10434,12 +10491,12 @@
             ],
             [
               {
-                "t": "Unlimited 3-client trial"
+                "t": "21-day trial with unlimited projects"
               }
             ],
             [
               {
-                "t": "$350/yr ($35/mo) / $550/yr Premier"
+                "t": "$35/mo ($335/yr) / $55/mo Premier ($525/yr)"
               }
             ],
             [
@@ -10467,7 +10524,7 @@
             ],
             [
               {
-                "t": "£190/yr (£19/mo) / £24/mo"
+                "t": "£20/mo (£200/yr) / £24/mo"
               }
             ],
             [
@@ -10643,7 +10700,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Starter $35/mo monthly or $350/yr annual; Premier (with automations & scheduling) $55/mo monthly or $550/yr annual. Unlimited-time trial for up to 3 clients (Checked October 2026)."
+            "t": "Pricing: Starter $35/mo monthly or $335/yr annual; Premier (with automations & scheduling) $55/mo monthly or $525/yr annual. 21-day free trial with unlimited projects and clients (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -11114,7 +11171,7 @@
   "photography-crm-pic-time-integration": {
     "title": "Best Photography CRM That Integrates With Pic-Time (2026)",
     "meta": "By The Photo Testers team · Published June 2026 · Updated October 2026 · 6 min read",
-    "disclosure": "We evaluate tools through hands-on testing and structured research. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing and integration capabilities verified October 2026 against official vendor documentation.",
+    "disclosure": "We evaluate tools through structured research, official documentation, and verified user feedback. Some links below are affiliate links.",
     "images": [
       "/assets/pic-time.webp"
     ],
@@ -11249,7 +11306,7 @@
             ],
             [
               {
-                "t": "/mo billed annually (/yr)"
+                "t": "$29/mo billed annually ($348/yr) or $36/mo monthly"
               }
             ]
           ],
@@ -11281,7 +11338,7 @@
             ],
             [
               {
-                "t": "$9.90/mo billed annually ($118.80/yr)"
+                "t": "£20/mo monthly or £200/yr annual (~$260/yr)"
               }
             ]
           ],
@@ -11309,7 +11366,7 @@
             ],
             [
               {
-                "t": "/mo monthly (/yr annual)"
+                "t": "Starter $35/mo ($335/yr) / Premier $55/mo ($525/yr)"
               }
             ]
           ]
@@ -11505,7 +11562,7 @@
             "ext": true
           },
           {
-            "t": ". Pricing: Studio Ninja Pro starts at .90/month (£19.50/month) billed annually (/year) or .90 monthly; Pic-Time separate."
+            "t": ". Pricing: Studio Ninja Pro is £20/month monthly or £200/year billed annually (~$260/year); Pic-Time subscription is separate."
           }
         ]
       },
@@ -11713,7 +11770,7 @@
   "photography-crm-built-in-scheduler": {
     "title": "Best Photography CRM With a Built-In Scheduler (2026)",
     "meta": "By The Photo Testers · Updated June 2026 · 6 min read",
-    "disclosure": "We test every tool hands-on. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of June 2026.",
+    "disclosure": "We evaluate tools through structured research, verified user feedback, and published vendor specifications. Some links below are affiliate links.",
     "blocks": [
       {
         "type": "box",
@@ -11726,7 +11783,7 @@
                 "b": 1
               },
               {
-                "t": " The scheduler is tightly woven into booking proposals, contracts, and payments, available on Starter ($29/mo annual) and automated on Essentials ($39/mo annual)."
+                "t": " The scheduler is tightly woven into booking proposals, contracts, and payments, available on Starter ($29/mo annual) and automated on Essentials ($49/mo annual / $588/yr)."
               }
             ],
             "cls": ""
@@ -11752,7 +11809,7 @@
                 "b": 1
               },
               {
-                "t": " Highly customizable scheduling with custom intake forms and automated reminder sequences on the Premier tier ($55/mo)."
+                "t": " Highly customizable scheduling with custom intake forms and automated reminder sequences on the Premier tier ($55/mo monthly / $525/yr annual)."
               }
             ],
             "cls": ""
@@ -11913,7 +11970,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing verified June 2026. Scheduler tested on live accounts.",
+            "t": "Pricing and scheduler features verified against official vendor documentation, October 2026.",
             "i": 1
           }
         ],
@@ -12066,7 +12123,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Starter $29/mo billed annually ($348/yr) or $34/mo monthly; Essentials $39/mo billed annually ($468/yr) or $49/mo monthly for automated workflow scheduling; 7-day free trial (Checked October 2026)."
+            "t": "Pricing: Starter $29/mo billed annually ($348/yr) or $36/mo monthly; Essentials $49/mo billed annually ($588/yr) or $59/mo monthly for automated workflow scheduling; 30-day free trial (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -12240,7 +12297,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Scheduling requires the Premier plan at $55/mo monthly or $550/yr annual ($45.83/mo equivalent). Unlimited-time trial for up to 3 clients (Checked October 2026)."
+            "t": "Pricing: Scheduling requires the Premier plan at $55/mo monthly or $525/yr annual ($43.75/mo equivalent). 21-day free trial with unlimited projects and clients (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -12311,7 +12368,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Pro £20/mo monthly or £200/yr annual (approx. $260/yr). Includes native Online Booking, unlimited jobs, and two-way calendar sync with a 7-day free trial (Checked October 2026)."
+            "t": "Pricing: Pro £20/mo monthly or £200/yr annual (approx. $260/yr). Includes native Online Booking, unlimited jobs, and two-way calendar sync with a 30-day free trial (Checked October 2026)."
           }
         ],
         "cls": ""

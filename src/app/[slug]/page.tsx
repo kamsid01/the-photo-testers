@@ -313,7 +313,7 @@ export default async function PostPage({ params }: Props) {
               )}
 
               {/* Verdict Box */}
-              {hasVerdict && verdict && (
+              {hasVerdict && verdict && verdict.bestFor && verdict.elsewhere && verdict.bottom && (
                 <section
                   aria-labelledby="verdict-h"
                   className="bg-white border border-[#DFE2DB] border-t-2 border-t-[#20221F] p-5 sm:p-7 mb-7"

@@ -75,6 +75,7 @@ export interface ArticleSummary {
   pricing?: [string, string, string][];
   pricingNote?: string;
   pricingAssumption?: string;
+  verdict?: { headline: string; bestFor: string; elsewhere: string; bottom: string };
   chooseIf?: { name: string; text: string; href?: string }[];
   alts?: string[];
   evidenceNotes?: { match: string; tags: string[]; note?: string }[];
@@ -599,8 +600,11 @@ export function buildArticlePageData(slug: string) {
     heroAlt: `${a.product} interface, from the vendor’s website`,
     heroCaption: a.imgCaption || '',
     heroPos: a.imgPos || '50% 50%',
-    hasVerdict: !!verdict,
-    verdict,
+    hasVerdict: !!(
+      (a.verdict && a.verdict.headline && a.verdict.bestFor && a.verdict.elsewhere && a.verdict.bottom) ||
+      (verdict && verdict.headline && verdict.bestFor && verdict.elsewhere && verdict.bottom)
+    ),
+    verdict: a.verdict || (verdict && verdict.bestFor && verdict.elsewhere && verdict.bottom ? verdict : null),
     hasPricing: !!a.pricing,
     pricing: (a.pricing || []).map((p) => ({ plan: p[0], price: p[1], basis: p[2] })),
     pricingNote: a.pricingNote || '',

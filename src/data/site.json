@@ -189,7 +189,13 @@
           ]
         }
       ],
-      "updated": "2026-10-29"
+      "updated": "2026-10-29",
+      "verdict": {
+        "headline": "Aftershoot is the strongest all-in-one AI workflow tool for high-volume photographers, and the best value if you shoot a lot. It culls, edits, and retouches in one offline app at a flat, unlimited price, so a huge wedding costs the same to process as a small portrait session.",
+        "bestFor": "Wedding, event, and portrait photographers drowning in RAW files who want predictable costs and offline processing.",
+        "elsewhere": "If editing quality matters more than culling, Imagen edits better; if you want to keep full manual control of selections, Narrative suits you more.",
+        "bottom": "For culling at volume, it's a top pick. The editing is good and improving, but the culling is the reason to buy."
+      }
     },
     {
       "slug": "imagen-ai-review",
@@ -227,7 +233,13 @@
         ]
       ],
       "pricingNote": "Pay-as-you-go ($7/mo min) or flat Limitless ($129/mo annual). 1,000 free test credits.",
-      "updated": "2026-10-29"
+      "updated": "2026-10-29",
+      "verdict": {
+        "headline": "Imagen AI is the strongest AI editor for photographers who live in Lightroom Classic and care most about editing quality and consistency. It learns your style from your past catalogs and applies it across a whole gallery, with skin tones that reviewers single out as its standout strength.",
+        "bestFor": "Wedding and portrait photographers with a consistent editing style who want automated edits that closely reflect their own signature look.",
+        "elsewhere": "Multi-shooter studios watching cost (the per-photo model adds up quickly), photographers who need to work offline, or anyone whose primary bottleneck is culling rather than editing.",
+        "bottom": "The premier pure automated editor for Lightroom Classic, with pricing tailored to both flexible usage and high-volume solo shooters."
+      }
     },
     {
       "slug": "best-client-gallery-software",
@@ -343,7 +355,7 @@
         },
         {
           "name": "Imagen",
-          "text": "you live in Lightroom Classic, shoot moderate volume, and want the strongest style matching. Per-photo pricing is fine at low volume and punishing at high volume.",
+          "text": "you live in Lightroom Classic, shoot moderate volume, and want the strongest style matching. Pay-as-you-go pricing is economical for seasonal or lower volume, while high-volume solo shooters can opt for Limitless ($129/mo annual) or switch to Aftershoot’s flat $360/yr editing.",
           "href": "/imagen-ai-review"
         }
       ],
@@ -381,7 +393,7 @@
       "date": "2026-06-26",
       "summary": "HoneyBook, Studio Ninja, Dubsado, Pixieset Studio, and Táve compared on real 2026 pricing and workflows.",
       "img": "/assets/honeybook-scheduler.webp",
-      "evidence": "stated-hands-on",
+      "evidence": "research",
       "checked": "October 2026",
       "updated": "2026-10-29"
     },
@@ -401,7 +413,7 @@
         "Dubsado",
         "HoneyBook"
       ],
-      "evidence": "stated-hands-on",
+      "evidence": "research",
       "checked": "October 2026",
       "chooseIf": [
         {
@@ -424,7 +436,7 @@
       "date": "2026-06-26",
       "summary": "Cheaper picks, free tiers, and what each HoneyBook alternative is good for.",
       "img": "/assets/studio-ninja.webp",
-      "evidence": "stated-hands-on",
+      "evidence": "research",
       "checked": "October 2026",
       "from": "HoneyBook",
       "updated": "2026-10-29"
@@ -437,7 +449,7 @@
       "date": "2026-06-26",
       "summary": "HoneyBook and Studio Ninja offer native Pic-Time integrations, while Dubsado connects via Zapier. Compare setup, triggers, order sync, and costs.",
       "img": "/assets/pic-time.webp",
-      "evidence": "stated-hands-on",
+      "evidence": "research",
       "checked": "October 2026",
       "updated": "2026-10-29"
     },
@@ -449,7 +461,7 @@
       "date": "2026-06-25",
       "summary": "Which photography CRMs have a real built-in scheduler, and which do not.",
       "img": "/assets/honeybook-scheduler.webp",
-      "evidence": "stated-hands-on",
+      "evidence": "research",
       "checked": "October 2026",
       "updated": "2026-10-29"
     }
