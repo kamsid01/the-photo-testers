@@ -98,11 +98,11 @@ export function GalleryCostCalculator() {
     if (gb <= 3) {
       list.push({ platform: 'Pic-Time', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '3GB ongoing storage limit (10GB intro for 3 months; 15% store fee)', commission: '15%', slug: 'pic-time' });
     } else if (gb <= 20) {
-      list.push({ platform: 'Pic-Time', planName: 'Beginner', monthlyCost: 7, annualCost: 84, limit: '20GB storage limit ($8/mo monthly)', commission: '15%', slug: 'pic-time' });
+      list.push({ platform: 'Pic-Time', planName: 'Beginner', monthlyCost: 7, annualCost: 84, limit: '20GB storage limit ($8/mo monthly; 10% commission with own processor / 15% standard)', commission: '10-15%', slug: 'pic-time' });
     } else if (gb <= 100) {
-      list.push({ platform: 'Pic-Time', planName: 'Professional', monthlyCost: 21, annualCost: 252, limit: '100GB storage limit, store marketing tools ($24/mo monthly)', commission: '0% with own processor', slug: 'pic-time' });
+      list.push({ platform: 'Pic-Time', planName: 'Professional', monthlyCost: 21, annualCost: 252, limit: '100GB storage limit, store marketing tools ($25/mo monthly)', commission: '0% with own processor', slug: 'pic-time' });
     } else {
-      list.push({ platform: 'Pic-Time', planName: 'Advanced', monthlyCost: 42, annualCost: 504, limit: 'Unlimited storage, premium marketing apps ($48/mo monthly)', commission: '0% with own processor', slug: 'pic-time' });
+      list.push({ platform: 'Pic-Time', planName: 'Advanced', monthlyCost: 42, annualCost: 504, limit: 'Unlimited storage, premium marketing apps ($50/mo monthly)', commission: '0% with own processor', slug: 'pic-time' });
     }
 
     // SmugMug: Current Portfolio tier ($23.50/mo, $282/yr) for client selling with unlimited JPEG storage

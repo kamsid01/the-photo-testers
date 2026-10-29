@@ -90,7 +90,7 @@ function ContactFormInner() {
       setSent(true);
     } catch (err) {
       setSendError(
-        'Your message could not be sent right now. Please try again or email hello@thephototesters.com directly.'
+        'Your message could not be sent right now. Please check your connection and try submitting the form again.'
       );
     } finally {
       setSubmitting(false);

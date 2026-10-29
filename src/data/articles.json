@@ -1985,7 +1985,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its five plans run from Free (5 GB, 3 active galleries cap, 15% commission, no Studio Manager) and Entry ($6/mo annual [$72/yr] or $9/mo monthly, 15 GB, 15 active galleries cap, 15% commission) up through Full Suite tiers: Lite ($12/mo annual [$144/yr] or $17/mo monthly, 100 GB, unlimited galleries), Pro ($34/mo published rate [approx. $408/yr spend] or $40/mo monthly, 500 GB, unlimited galleries), and Unlimited ($50/mo published rate [approx. $600/yr spend] or $57/mo monthly, unlimited storage and galleries). The Full Suite tiers eliminate print commissions entirely (0%) and include Studio Manager contracts and invoicing. Note: CloudSpot's annual rates represent discounted upfront annual subscriptions ($72/yr for Entry and $144/yr for Lite), while Pro and Unlimited annual totals represent estimated annual spend on monthly billing ($34/mo and $50/mo published rates)."
+            "t": "Its five plans run from Free (5 GB, 3 active galleries cap, 15% commission, no Studio Manager) and Entry ($7/mo monthly or $72/yr annual upfront [$6/mo equivalent], 15 GB, 15 active galleries cap, 15% commission) up through Full Suite tiers: Lite ($17/mo monthly or $144/yr annual upfront [$12/mo equivalent], 100 GB, unlimited galleries), Pro ($34/mo published rate [approx. $408/yr spend over 12 months], 500 GB, unlimited galleries), and Unlimited ($50/mo published rate [approx. $600/yr spend over 12 months], unlimited storage and galleries). The Full Suite tiers eliminate print commissions entirely (0%) and include Studio Manager contracts and invoicing. Note: CloudSpot's annual rates represent discounted upfront annual subscriptions ($72/yr for Entry and $144/yr for Lite), while Pro and Unlimited annual totals represent estimated annual spend on monthly billing ($34/mo and $50/mo published rates)."
           }
         ],
         "cls": ""
@@ -2032,7 +2032,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (5 GB, 3 galleries); Entry 15 GB ($6/mo annual [$72/yr] or $9/mo monthly); Lite 100 GB ($12/mo annual [$144/yr] or $17/mo monthly); Pro 500 GB ($34/mo published rate [approx. $408/yr spend] or $40/mo monthly); Unlimited ($50/mo published rate [approx. $600/yr spend] or $57/mo monthly) (Checked October 2026)."
+            "t": "Pricing: Free tier (5 GB, 3 galleries); Entry 15 GB ($7/mo monthly or $72/yr annual [$6/mo equivalent]); Lite 100 GB ($17/mo monthly or $144/yr annual [$12/mo equivalent]); Pro 500 GB ($34/mo published rate [approx. $408/yr spend]); Unlimited ($50/mo published rate [approx. $600/yr spend]) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2115,7 +2115,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (3 GB ongoing, 15% commission); Beginner 20 GB ($7/mo annual [$84/yr] or $8/mo monthly, 10% commission); Professional 100 GB ($21/mo annual [$252/yr] or $24/mo monthly, 0% commission with own processor); Advanced Unlimited ($42/mo annual [$504/yr] or $48/mo monthly, 0% commission) (Checked October 2026)."
+            "t": "Pricing: Free tier (3 GB ongoing, 15% commission); Beginner 20 GB ($7/mo annual [$84/yr] or $8/mo monthly, 10% commission with own processor / 15% standard); Professional 100 GB ($21/mo annual [$252/yr] or $25/mo monthly, 0% commission with own processor); Advanced Unlimited ($42/mo annual [$504/yr] or $50/mo monthly, 0% commission with own processor) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -2976,12 +2976,12 @@
               "b": 1
             },
             {
-              "t": " 20GB storage (10% commission)"
+              "t": " 20GB storage (10% commission with own processor / 15% standard)"
             }
           ],
           [
             {
-              "t": "Professional ($21/mo annual [$252/yr] / $24/mo monthly):",
+              "t": "Professional ($21/mo annual [$252/yr] / $25/mo monthly):",
               "b": 1
             },
             {
@@ -2990,7 +2990,7 @@
           ],
           [
             {
-              "t": "Advanced ($42/mo annual [$504/yr] / $48/mo monthly):",
+              "t": "Advanced ($42/mo annual [$504/yr] / $50/mo monthly):",
               "b": 1
             },
             {
@@ -8442,15 +8442,15 @@
         "type": "p",
         "runs": [
           {
-            "t": "Two key considerations for European photographers. First, account currency is set once per company and cannot be changed per-invoice, making dual GBP/EUR billing clumsy. Second, regarding data residency: while the company operates from Australia and the UK, its official "
+            "t": "Two key considerations for European photographers. First, account currency is set once per company and cannot be changed per-invoice, making dual GBP/EUR billing clumsy. Second, regarding data residency: according to Studio Ninja's published February 2019 "
           },
           {
-            "t": "Studio Ninja Security documentation",
-            "href": "https://www.studioninja.co/security/",
+            "t": "security documentation",
+            "href": "https://help.studioninja.co/en/articles/2733816-how-is-my-data-protected-what-are-you-doing-about-data-security",
             "ext": true
           },
           {
-            "t": " confirms that customer data is hosted on Google Cloud Platform servers in the United States. Under UK and EU GDPR, photographers using Studio Ninja are responsible for cross-border data transfer compliance when transferring client personal data to US servers."
+            "t": ", customer data is hosted on Google Cloud Platform servers in the United States. Under UK and EU GDPR, photographers using Studio Ninja are responsible for cross-border data transfer compliance when transferring client personal data to US servers."
           }
         ],
         "cls": ""
@@ -8495,7 +8495,7 @@
             "b": 1
           },
           {
-            "t": " Pro is £20/mo monthly or £200/yr annual (~$260/yr); Master is £30/mo monthly or £300/yr annual. 7-day free trial. Customer data is stored on Google Cloud Platform servers in the United States; review Studio Ninja's "
+            "t": " Pro is £20/mo monthly or £200/yr annual (~$260/yr); Master (3 brands) is £29/mo monthly or £290/yr annual. 7-day free trial. Customer data is stored on Google Cloud Platform servers in the United States; review Studio Ninja's "
           },
           {
             "t": "Privacy Policy",
@@ -8507,7 +8507,7 @@
           },
           {
             "t": "GDPR guide",
-            "href": "https://help.studioninja.co/en/articles/2242133-gdpr-features-in-studio-ninja",
+            "href": "https://help.studioninja.co/en/articles/1916010-how-does-studio-ninja-help-me-be-gdpr-compliant",
             "ext": true
           },
           {
@@ -9468,7 +9468,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master (2 brands) is £30/mo monthly or £300/yr annual. 7-day free trial without credit card. Features a native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
+            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master (3 brands) is £29/mo monthly or £290/yr annual. 7-day free trial without credit card. Features a native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -10800,7 +10800,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master is £30/mo monthly or £300/yr annual. 7-day free trial without credit card. Includes native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
+            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master (3 brands) is £29/mo monthly or £290/yr annual. 7-day free trial without credit card. Includes native Pic-Time integration to link jobs and sync print orders (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -11586,7 +11586,7 @@
             "ext": true
           },
           {
-            "t": ". Pricing: Studio Ninja Pro is £20/month monthly or £200/year billed annually (~$260/year, £16.67/mo equivalent); Master is £30/mo monthly or £300/yr annual; Pic-Time subscription is separate. 7-day free trial."
+            "t": ". Pricing: Studio Ninja Pro is £20/month monthly or £200/year billed annually (~$260/year, £16.67/mo equivalent); Master (3 brands) is £29/mo monthly or £290/yr annual; Pic-Time subscription is separate. 7-day free trial."
           }
         ]
       },
@@ -12392,7 +12392,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master is £30/mo monthly or £300/yr annual. Includes native Online Booking, unlimited jobs, and two-way calendar sync with a 7-day free trial (Checked October 2026)."
+            "t": "Pricing: Pro is £20/mo monthly or £200/yr billed annually (approx. $260/yr, £16.67/mo equivalent); Master (3 brands) is £29/mo monthly or £290/yr annual. Includes native Online Booking, unlimited jobs, and two-way calendar sync with a 7-day free trial (Checked October 2026)."
           }
         ],
         "cls": ""

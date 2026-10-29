@@ -239,15 +239,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="mailto:hello@thephototesters.com"
-                  className="pt-hover-blue pt-hover-light-underline"
-                  style={{ color: '#20221F', textDecoration: 'none', fontSize: '15px' }}
-                >
-                  hello@thephototesters.com
-                </a>
-              </li>
-              <li>
                 <Link
                   href="/privacy"
                   className="pt-hover-blue pt-hover-light-underline"

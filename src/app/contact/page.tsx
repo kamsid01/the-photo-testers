@@ -66,14 +66,7 @@ export default function ContactPage() {
           Contact
         </h1>
         <p className="m-0 text-[18px] leading-[1.55] text-[#4A4E49]">
-          Questions, corrections, or a tool we should cover. Email{' '}
-          <a
-            href="mailto:hello@thephototesters.com"
-            className="text-[#3159D7] underline hover:text-[#20221F]"
-          >
-            hello@thephototesters.com
-          </a>{' '}
-          or use the form below.
+          Questions, corrections, software suggestions, or newsletter removal requests. Send a note using the form below and our editorial team will get back to you.
         </p>
       </header>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 export function NewsletterForm() {
   const [email, setEmail] = useState('');
@@ -156,7 +157,20 @@ export function NewsletterForm() {
           color: err ? '#B42318' : '#60645F',
         }}
       >
-        {err || 'Occasional updates. Request removal at any time by replying or emailing hello@thephototesters.com.'}
+        {err ? (
+          err
+        ) : (
+          <>
+            Occasional updates. Request removal at any time via the form on{' '}
+            <Link
+              href="/contact"
+              style={{ color: '#20221F', textDecoration: 'underline' }}
+            >
+              /contact
+            </Link>
+            .
+          </>
+        )}
       </p>
     </form>
   );
