@@ -33,8 +33,32 @@ export const metadata: Metadata = {
 };
 
 export default function ToolsIndexPage() {
+  const schemaBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thephototesters.com' },
+      { '@type': 'ListItem', position: 2, name: 'Free Tools', item: 'https://www.thephototesters.com/tools' },
+    ],
+  };
+
+  const schemaCollection = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Free Tools for Photographers | The Photo Testers',
+    description: 'Calculators and interactive tools for wedding and portrait photographers.',
+    url: 'https://www.thephototesters.com/tools',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'The Photo Testers',
+      url: 'https://www.thephototesters.com',
+    },
+  };
+
   return (
     <div className="bg-[#FAF9F6] min-h-[calc(100vh-200px)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCollection) }} />
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-8 md:py-14 pb-16 md:pb-24">
         <header className="max-w-[720px] pb-7">
           <h1 className="m-0 mb-3 font-serif font-medium text-[clamp(36px,4.4vw,52px)] leading-[1.05] tracking-[-0.015em] text-[#20221F]">

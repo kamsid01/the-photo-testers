@@ -11,8 +11,7 @@ export function InlineRuns({ runs }: { runs: RenderedRun[] }) {
         if (r.isLink && r.href) {
           const isExternal = r.target === '_blank' || r.href.startsWith('http');
           if (isExternal) {
-            const isAffiliate = r.rel?.includes('sponsored') || (r as any).affiliate;
-            const computedRel = r.rel || (isAffiliate ? 'sponsored nofollow noopener' : 'noopener noreferrer');
+            const computedRel = r.rel || (r.isSponsored ? 'sponsored nofollow noopener' : 'noopener noreferrer');
             return (
               <a
                 key={i}

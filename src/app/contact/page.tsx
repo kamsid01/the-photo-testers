@@ -34,7 +34,32 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const schemaBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thephototesters.com' },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.thephototesters.com/contact' },
+    ],
+  };
+
+  const schemaContact = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact | The Photo Testers',
+    description: 'Questions, corrections, or a software tool we should test. Reach out to The Photo Testers editorial team.',
+    url: 'https://www.thephototesters.com/contact',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'The Photo Testers',
+      url: 'https://www.thephototesters.com',
+    },
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaContact) }} />
     <InfoLayout currentPage="contact">
       <header className="mb-6">
         <h1 className="m-0 mb-3.5 font-serif font-medium text-[clamp(36px,4.4vw,52px)] leading-[1.05] tracking-[-0.015em] text-[#20221F]">
@@ -54,5 +79,6 @@ export default function ContactPage() {
 
       <ContactForm />
     </InfoLayout>
+    </>
   );
 }

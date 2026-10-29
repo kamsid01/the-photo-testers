@@ -35,8 +35,35 @@ export const metadata: Metadata = {
 };
 
 export default function PricingCalculatorPage() {
+  const schemaBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thephototesters.com' },
+      { '@type': 'ListItem', position: 2, name: 'Free Tools', item: 'https://www.thephototesters.com/tools' },
+      { '@type': 'ListItem', position: 3, name: 'Photography Pricing Calculator', item: 'https://www.thephototesters.com/tools/pricing-calculator' },
+    ],
+  };
+
+  const schemaApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Photography Pricing Calculator',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'All',
+    url: 'https://www.thephototesters.com/tools/pricing-calculator',
+    description: 'Work backwards from your desired salary to find what you actually need to charge per shoot, with tax and hidden business hours included.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  };
+
   return (
     <div className="bg-[#FAF9F6] min-h-[calc(100vh-200px)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaApp) }} />
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-6 md:py-10 pb-16 md:pb-24">
         {/* Breadcrumb */}
         <Breadcrumb

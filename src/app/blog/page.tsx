@@ -34,5 +34,39 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  return <LibraryView />;
+  const schemaBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thephototesters.com' },
+      { '@type': 'ListItem', position: 2, name: 'Reviews & Guides', item: 'https://www.thephototesters.com/blog' },
+    ],
+  };
+
+  const schemaCollection = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Photography Software Reviews, Comparisons & Guides | The Photo Testers',
+    description: 'Every review, comparison, and buying guide we have published, with the date it was published and what its findings are based on.',
+    url: 'https://www.thephototesters.com/blog',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'The Photo Testers',
+      url: 'https://www.thephototesters.com',
+    },
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCollection) }}
+      />
+      <LibraryView />
+    </>
+  );
 }

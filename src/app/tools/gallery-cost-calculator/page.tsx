@@ -35,8 +35,35 @@ export const metadata: Metadata = {
 };
 
 export default function GalleryCostCalculatorPage() {
+  const schemaBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thephototesters.com' },
+      { '@type': 'ListItem', position: 2, name: 'Free Tools', item: 'https://www.thephototesters.com/tools' },
+      { '@type': 'ListItem', position: 3, name: 'Gallery Cost Calculator', item: 'https://www.thephototesters.com/tools/gallery-cost-calculator' },
+    ],
+  };
+
+  const schemaApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Client Gallery Cost Calculator',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'All',
+    url: 'https://www.thephototesters.com/tools/gallery-cost-calculator',
+    description: 'Enter your annual shoot volume to see the plan you need across six client gallery platforms, and what it costs at published prices.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  };
+
   return (
     <div className="bg-[#FAF9F6] min-h-[calc(100vh-200px)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaApp) }} />
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-6 md:py-10 pb-16 md:pb-24">
         {/* Breadcrumb */}
         <Breadcrumb

@@ -7,6 +7,7 @@ export interface Run {
   i?: boolean;
   href?: string;
   ext?: boolean;
+  sponsored?: boolean;
 }
 
 export interface RenderedRun {
@@ -18,6 +19,7 @@ export interface RenderedRun {
   isB: boolean;
   isI: boolean;
   isPlain: boolean;
+  isSponsored?: boolean;
 }
 
 export interface RawBlock {
@@ -154,15 +156,26 @@ export function runsText(rs?: Run[]): string {
 export function formatRuns(rs?: Run[]): RenderedRun[] {
   return (rs || []).map((r) => {
     const link = !!r.href;
+    const isExternal = !!(r.ext || (r.href && r.href.startsWith('http')));
+    const isCommercial =
+      r.sponsored === true ||
+      (link && /^(view|try free|try aftershoot free|try filterpixel free|get started)$/i.test(r.t.trim()));
+
+    let rel: string | undefined = undefined;
+    if (isExternal) {
+      rel = isCommercial ? 'sponsored nofollow noopener' : 'noopener noreferrer';
+    }
+
     return {
       t: r.t,
       href: r.href,
-      target: r.ext ? '_blank' : undefined,
-      rel: r.ext ? 'sponsored nofollow noopener' : undefined,
+      target: isExternal ? '_blank' : undefined,
+      rel,
       isLink: link,
       isB: !link && !!r.b,
       isI: !link && !r.b && !!r.i,
       isPlain: !link && !r.b && !r.i,
+      isSponsored: isCommercial,
     };
   });
 }

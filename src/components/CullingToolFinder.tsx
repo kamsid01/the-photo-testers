@@ -25,10 +25,10 @@ const TOOLS: Record<string, ToolDetail> = {
     reason:
       'Editing quality matters most to you. Imagen learns your style from your past Lightroom catalogs and applies it across a whole gallery.',
     limit:
-      'It charges per photo, which adds up quickly at wedding volume, and it processes in the cloud, so you need an internet connection.',
+      'Its cloud AI charges $0.05/photo pay-as-you-go ($7/mo minimum) or $129/mo billed annually for Limitless, and processing requires an internet connection.',
     link: '/imagen-ai-review',
     linkText: 'Read the Imagen AI review',
-    short: 'Style-matched editing in Lightroom Classic, priced per photo.',
+    short: 'Style-matched editing in Lightroom Classic ($0.05/photo PAYG or $129/mo Limitless annual).',
   },
   'Narrative Select': {
     reason:
@@ -180,13 +180,18 @@ export function CullingToolFinder() {
     let runnerName = sorted.length > 1 ? sorted[1][0] : null;
     let constraintNote: string | null = null;
 
-    if (isOfflineRequired && cloudTools.has(topName)) {
+    if (isOfflineRequired) {
       const offlineCandidates = sorted.filter(([t]) => !cloudTools.has(t));
       if (offlineCandidates.length > 0) {
-        const excludedCloudTool = topName;
-        topName = offlineCandidates[0][0];
-        runnerName = offlineCandidates.length > 1 ? offlineCandidates[1][0] : excludedCloudTool;
-        constraintNote = `Compatibility constraint applied: ${excludedCloudTool} scored highest on budget points, but its AI engine operates in the cloud and cannot work offline. ${topName} is recommended as your primary offline-compatible starting point.`;
+        if (cloudTools.has(topName)) {
+          const excludedCloudTool = topName;
+          topName = offlineCandidates[0][0];
+          runnerName = offlineCandidates.length > 1 ? offlineCandidates[1][0] : null;
+          constraintNote = `Compatibility constraint applied: ${excludedCloudTool} scored highest on points, but its AI engine operates in the cloud and cannot work offline. ${topName} is recommended as your primary offline-compatible starting point.`;
+        } else {
+          // topName is already offline, ensure runnerName is also offline
+          runnerName = offlineCandidates.find(([t]) => t !== topName)?.[0] || null;
+        }
       }
     }
 

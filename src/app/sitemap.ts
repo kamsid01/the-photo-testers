@@ -7,20 +7,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Real modification dates for static pages and category hubs
   const staticPageDates: Record<string, string> = {
-    '': '2026-10-28',
-    '/about': '2026-10-28',
-    '/how-we-review': '2026-10-28',
+    '': '2026-10-29',
+    '/about': '2026-10-29',
+    '/how-we-review': '2026-10-29',
     '/affiliate-disclosure': '2026-10-24',
     '/privacy': '2026-10-24',
     '/contact': '2026-10-24',
-    '/blog': '2026-10-28',
-    '/tools': '2026-10-28',
+    '/blog': '2026-10-29',
+    '/tools': '2026-10-29',
     '/tools/pricing-calculator': '2026-10-24',
-    '/tools/culling-tool-finder': '2026-10-28',
-    '/tools/gallery-cost-calculator': '2026-10-28',
-    '/category/client-crms': '2026-10-28',
-    '/category/gallery-delivery': '2026-10-28',
-    '/category/ai-culling-editing': '2026-10-28',
+    '/tools/culling-tool-finder': '2026-10-29',
+    '/tools/gallery-cost-calculator': '2026-10-29',
+    '/category/client-crms': '2026-10-29',
+    '/category/gallery-delivery': '2026-10-29',
+    '/category/ai-culling-editing': '2026-10-29',
   };
 
   const staticPages = Object.entries(staticPageDates).map(([route, dateStr]) => ({

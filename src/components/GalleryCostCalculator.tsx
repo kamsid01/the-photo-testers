@@ -92,8 +92,9 @@ export function GalleryCostCalculator() {
     }
 
     // Pic-Time (Annual billing, 0% commission with own payment processor, verified current vendor docs)
-    if (gb <= 10) {
-      list.push({ platform: 'Pic-Time', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '10GB storage limit (free tier)', commission: '15%', slug: 'pic-time' });
+    // Free tier provides 10GB for 3 months, then 3GB ongoing; evaluated at 3GB under 12-month retention
+    if (gb <= 3) {
+      list.push({ platform: 'Pic-Time', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '3GB ongoing storage limit (10GB intro for 3 months; 15% store fee)', commission: '15%', slug: 'pic-time' });
     } else if (gb <= 20) {
       list.push({ platform: 'Pic-Time', planName: 'Beginner', monthlyCost: 7, annualCost: 84, limit: '20GB storage limit', commission: '15%', slug: 'pic-time' });
     } else if (gb <= 100) {
@@ -142,7 +143,7 @@ export function GalleryCostCalculator() {
       });
     }
 
-    // CloudSpot (Five tiers: Free 5GB [3 galleries max], Entry 15GB [$72/yr, 15 galleries max], Lite 100GB [$144/yr, unlimited galleries], Pro 500GB [$336/yr], Unlimited [$504/yr])
+    // CloudSpot (Five tiers: Free 5GB [3 galleries max], Entry 15GB [$72/yr, 15 galleries max], Lite 100GB [$144/yr, unlimited galleries], Pro 500GB [$34/mo, $408/yr], Unlimited [$50/mo, $600/yr])
     // Gallery limits enforced under 1-gallery-per-shoot 12-month retention assumption
     if (gb <= 5 && activeShoots <= 3) {
       list.push({ platform: 'CloudSpot', planName: 'Free', monthlyCost: 0, annualCost: 0, limit: '5GB storage limit (max 3 active galleries)', commission: '15%', slug: 'cloudspot' });
@@ -151,9 +152,9 @@ export function GalleryCostCalculator() {
     } else if (gb <= 100) {
       list.push({ platform: 'CloudSpot', planName: 'Lite', monthlyCost: 12, annualCost: 144, limit: '100GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
     } else if (gb <= 500) {
-      list.push({ platform: 'CloudSpot', planName: 'Pro', monthlyCost: 28, annualCost: 336, limit: '500GB storage, unlimited galleries, Studio Manager', commission: '0%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Pro', monthlyCost: 34, annualCost: 408, limit: '500GB storage, unlimited galleries, Studio Manager ($34/mo published rate)', commission: '0%', slug: 'cloudspot' });
     } else {
-      list.push({ platform: 'CloudSpot', planName: 'Unlimited', monthlyCost: 42, annualCost: 504, limit: 'Unlimited storage, all file types, Studio Manager', commission: '0%', slug: 'cloudspot' });
+      list.push({ platform: 'CloudSpot', planName: 'Unlimited', monthlyCost: 50, annualCost: 600, limit: 'Unlimited storage, all file types, Studio Manager ($50/mo published rate)', commission: '0%', slug: 'cloudspot' });
     }
 
     return list.sort((a, b) => a.annualCost - b.annualCost);

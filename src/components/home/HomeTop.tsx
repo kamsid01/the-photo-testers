@@ -46,7 +46,7 @@ export function HomeHero() {
                 sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 720px"
               />
               <img
-                src="/assets/hero-camera-laptop.png"
+                src="/assets/hero-camera-laptop.webp"
                 alt="A mirrorless camera with a large lens beside an open laptop showing a grid of landscape and still-life photos, on a sunlit desk by a window"
                 width={1448}
                 height={1086}
@@ -59,7 +59,7 @@ export function HomeHero() {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px 14px', fontSize: '14px', color: '#60645F', marginBottom: '8px' }}>
           <span style={{ fontWeight: 600, color: '#20221F' }}>{lead.typeLabel}</span>
           <span>{lead.catName}</span>
-          <span>Updated {lead.dateLabel}</span>
+          <span>Updated {lead.updatedDateLabel || lead.dateLabel}</span>
         </div>
         <h2 style={{ margin: '0 0 10px', fontFamily: SERIF, fontWeight: 500, fontSize: 'clamp(26px,2.4vw,32px)', lineHeight: 1.15, letterSpacing: '-0.01em' }}>
           <Link href={lead.href} className="pt-hover-blue" style={{ color: '#20221F', textDecoration: 'none' }}>{lead.title}</Link>

@@ -38,8 +38,39 @@ export default function AboutPage() {
   const site = getSiteData();
   const categories = site.categories;
 
+  const schemaBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thephototesters.com' },
+      { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.thephototesters.com/about' },
+    ],
+  };
+
+  const schemaAbout = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About The Photo Testers: Independent Photography Software Evaluation',
+    description: 'An independent publication helping photographers choose the software behind their bookings, editing, delivery, and sales.',
+    url: 'https://www.thephototesters.com/about',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'The Photo Testers',
+      url: 'https://www.thephototesters.com',
+    },
+  };
+
   return (
-    <InfoLayout currentPage="about">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaAbout) }}
+      />
+      <InfoLayout currentPage="about">
       <header className="mb-7">
         <h1 className="m-0 mb-3.5 font-serif font-medium text-[clamp(36px,4.4vw,52px)] leading-[1.05] tracking-[-0.015em] text-[#20221F]">
           About The Photo Testers
@@ -123,5 +154,6 @@ export default function AboutPage() {
         </p>
       </div>
     </InfoLayout>
+    </>
   );
 }

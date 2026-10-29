@@ -119,15 +119,39 @@ export default async function CategoryPage({ params }: Props) {
       : `${c.name.toLowerCase()} tools`;
 
   const lede = c.published ? c.desc : c.liveDesc || c.desc;
-  const latest = arts[0];
+  const latestUpdatedArticle = [...arts].sort((x, y) => (y.updated || y.date).localeCompare(x.updated || x.date))[0];
+  const categoryUpdatedLabel = latestUpdatedArticle?.updatedDateLabel || latestUpdatedArticle?.dateLabel || '';
   const statusLine = c.published
-    ? `${c.count} published articles · Last updated ${latest ? latest.dateLabel : ''}`
+    ? `${c.count} published articles · Last updated ${categoryUpdatedLabel}`
     : 'Coverage in development';
   const statusColor = c.published ? '#3159D7' : '#8A5A14';
 
   const tools = (c.tools || []).map((t) => TOOLS_BY[t]).filter(Boolean);
   const relatedCats = (c.related || []).map((s) => site.catBy[s]).filter(Boolean);
   const elsewhere = (c.elsewhere || []).map((s) => site.bySlug[s]).filter(Boolean);
+
+  const schemaBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thephototesters.com' },
+      { '@type': 'ListItem', position: 2, name: 'Reviews & Guides', item: 'https://www.thephototesters.com/blog' },
+      { '@type': 'ListItem', position: 3, name: c.name, item: `https://www.thephototesters.com/category/${slug}` },
+    ],
+  };
+
+  const schemaCollection = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${c.name} — Reviews, Comparisons & Guides | The Photo Testers`,
+    description: lede,
+    url: `https://www.thephototesters.com/category/${slug}`,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'The Photo Testers',
+      url: 'https://www.thephototesters.com',
+    },
+  };
 
   return (
     <div
@@ -137,6 +161,14 @@ export default async function CategoryPage({ params }: Props) {
         padding: '24px clamp(16px,4vw,40px) clamp(56px,7vw,96px)',
       }}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaCollection) }}
+      />
       <Breadcrumb
         items={[
           { label: 'Home', href: '/' },
@@ -231,8 +263,7 @@ export default async function CategoryPage({ params }: Props) {
                   Start here
                 </h2>
                 <p style={{ margin: '0 0 6px', fontSize: '14px', color: '#60645F' }}>
-                  <span style={{ fontWeight: 600, color: '#20221F' }}>{start.typeLabel}</span> · Updated{' '}
-                  {start.dateLabel} · {start.evidenceLabel}
+                  <span style={{ fontWeight: 600, color: '#20221F' }}>{start.typeLabel}</span> · {start.updatedDateLabel ? `Updated ${start.updatedDateLabel}` : `Published ${start.dateLabel}`} · {start.evidenceLabel}
                 </p>
                 <h3
                   style={{
@@ -323,7 +354,7 @@ export default async function CategoryPage({ params }: Props) {
                             {a.summary}
                           </p>
                           <p style={{ margin: 0, fontSize: '14px', color: '#60645F' }}>
-                            Updated {a.dateLabel} · {a.evidenceLabel}
+                            {a.updatedDateLabel ? `Updated ${a.updatedDateLabel}` : `Published ${a.dateLabel}`} · {a.evidenceLabel}
                           </p>
                         </article>
                       </li>

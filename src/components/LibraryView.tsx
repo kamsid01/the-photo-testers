@@ -360,7 +360,7 @@ export function LibraryView() {
                     >
                       <span style={{ fontWeight: 600, color: '#20221F' }}>{a.typeLabel}</span>
                       <span>{a.catName}</span>
-                      <span>{a.dateLabel}</span>
+                      <span>{a.updatedDateLabel ? `Updated ${a.updatedDateLabel}` : a.dateLabel}</span>
                     </p>
                     <h3
                       style={{

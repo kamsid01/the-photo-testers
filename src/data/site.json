@@ -6,7 +6,7 @@
       "title": "Photography CRM & Client Management Software",
       "desc": "Inquiries, contracts, invoices, questionnaires, and client email in one place.",
       "status": "published",
-      "img": "/assets/honeybook-scheduler.png",
+      "img": "/assets/honeybook-scheduler.webp",
       "startHere": "best-crm-wedding-photographers",
       "related": [
         "booking-scheduling",
@@ -26,7 +26,7 @@
       "title": "Client Gallery Software for Photographers",
       "desc": "Delivering finished galleries, downloads, proofing, and in-gallery print sales.",
       "status": "published",
-      "img": "/assets/pic-time.png",
+      "img": "/assets/pic-time.webp",
       "startHere": "best-client-gallery-software",
       "related": [
         "print-album-sales",
@@ -46,7 +46,7 @@
       "title": "AI Culling & Editing Software for Photographers",
       "desc": "Selecting keepers, applying your edit, and retouching across large shoots.",
       "status": "published",
-      "img": "/assets/filterpixel.png",
+      "img": "/assets/filterpixel.webp",
       "startHere": "best-ai-culling-editing-software",
       "related": [
         "gallery-delivery",
@@ -121,7 +121,8 @@
       "summary": "Why slow replies lose bookings, what CRMs actually automate, and the setup cost photographers skip.",
       "evidence": "editorial",
       "pull": "A CRM does not win you the booking; a fast, warm, human reply does.",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29",
+      "checked": "October 2026"
     },
     {
       "slug": "how-ai-culling-changed-wedding-post-production",
@@ -132,7 +133,8 @@
       "summary": "What AI culling changed, what it still can't do, and why skipping the human review pass burns photographers.",
       "evidence": "editorial",
       "pull": "What used to be hours of manual sorting becomes a review rather than a search.",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29",
+      "checked": "October 2026"
     },
     {
       "slug": "aftershoot-review",
@@ -151,21 +153,21 @@
       "pricing": [
         [
           "Select (culling)",
-          "around $10/month",
-          "billed annually"
+          "$10/month ($120/yr)",
+          "billed annually ($15/mo monthly)"
         ],
         [
           "Edit (AI editing)",
-          "around $30/month",
-          "billed annually"
+          "$30/month ($360/yr)",
+          "billed annually ($40/mo monthly)"
         ],
         [
-          "Retouch (AI retouching)",
-          "around $20/month",
-          "billed annually"
+          "Complete (all-in-one)",
+          "$45/month ($540/yr)",
+          "billed annually ($60/mo monthly)"
         ]
       ],
-      "pricingNote": "Flat fee, not per image. Bundles available. 30-day free trial, no card required.",
+      "pricingNote": "Flat annual or monthly fee, not per image. 30-day free trial, no card required.",
       "alts": [
         "imagen-ai-review",
         "aftershoot-alternatives",
@@ -187,7 +189,7 @@
           ]
         }
       ],
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "imagen-ai-review",
@@ -210,22 +212,22 @@
       "pricing": [
         [
           "Pay-as-you-go",
-          "around $0.05 per photo",
-          "$7/month minimum"
+          "$0.05 per photo base",
+          "$7/month minimum spend"
         ],
         [
-          "Annual volume tiers",
-          "36,000-photo tier around $127.50/month",
-          "18,000 to 72,000 photos per year"
+          "Limitless (Solo)",
+          "$129/mo billed annually ($1,548/yr)",
+          "$165/mo monthly; solo shooters editing own work"
         ],
         [
           "Add-on AI tools",
-          "about $0.01 per photo each",
-          "charged on top of editing"
+          "$0.01 per photo each",
+          "Crop, Straighten, Subject Mask, Smooth Skin"
         ]
       ],
-      "pricingNote": "Per-photo pricing. Free trial with starter credits.",
-      "updated": "2026-10-28"
+      "pricingNote": "Pay-as-you-go ($7/mo min) or flat Limitless ($129/mo annual). 1,000 free test credits.",
+      "updated": "2026-10-29"
     },
     {
       "slug": "best-client-gallery-software",
@@ -238,7 +240,7 @@
       "imgPos": "80% 50%",
       "evidence": "research",
       "checked": "October 2026",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "pic-time-vs-pixieset-vs-shootproof",
@@ -275,7 +277,7 @@
         }
       ],
       "pricingAssumption": "Storage tiers differ by platform; compare at your own volume with the Gallery Cost Calculator.",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "best-photo-culling-software",
@@ -287,7 +289,7 @@
       "img": "/assets/photo-mechanic.webp",
       "evidence": "research",
       "checked": "October 2026",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "aftershoot-alternatives",
@@ -300,7 +302,7 @@
       "evidence": "research",
       "checked": "October 2026",
       "from": "Aftershoot",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "filterpixel-alternatives",
@@ -313,7 +315,7 @@
       "evidence": "research",
       "checked": "October 2026",
       "from": "FilterPixel",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "aftershoot-vs-imagen",
@@ -345,8 +347,8 @@
           "href": "/imagen-ai-review"
         }
       ],
-      "pricingAssumption": "Aftershoot is a flat monthly fee; Imagen charges per photo. The dividing line of roughly 800 to 1,000 images a month comes from the article\u2019s own cost math at July 2026 prices. Costs are not charted because the two pricing models are not directly comparable at a single volume.",
-      "updated": "2026-10-28"
+      "pricingAssumption": "Aftershoot is a flat monthly fee; Imagen charges per photo. The dividing line of roughly 800 to 1,000 images a month comes from the article’s own cost math at July 2026 prices. Costs are not charted because the two pricing models are not directly comparable at a single volume.",
+      "updated": "2026-10-29"
     },
     {
       "slug": "best-ai-culling-editing-software",
@@ -358,7 +360,7 @@
       "img": "/assets/evoto.webp",
       "evidence": "research",
       "checked": "October 2026",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "photography-crm-vat-gdpr-europe",
@@ -369,7 +371,7 @@
       "summary": "Which CRMs handle VAT and GDPR properly, and where each tool hosts your data.",
       "evidence": "research",
       "checked": "October 2026",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "best-crm-wedding-photographers",
@@ -377,11 +379,11 @@
       "cat": "client-crms",
       "type": "guide",
       "date": "2026-06-26",
-      "summary": "HoneyBook, Studio Ninja, Dubsado, Pixieset Studio, and T\u00e1ve compared on real 2026 pricing and workflows.",
+      "summary": "HoneyBook, Studio Ninja, Dubsado, Pixieset Studio, and Táve compared on real 2026 pricing and workflows.",
       "img": "/assets/honeybook-scheduler.webp",
       "evidence": "stated-hands-on",
       "checked": "October 2026",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "dubsado-vs-honeybook",
@@ -391,8 +393,8 @@
       "date": "2026-06-26",
       "summary": "HoneyBook vs Dubsado compared on pricing, automations, client experience, and ease of use.",
       "imgs": [
-        "/assets/dubsado.png",
-        "/assets/honeybook-scheduler.png"
+        "/assets/dubsado.webp",
+        "/assets/honeybook-scheduler.webp"
       ],
       "img": "/assets/dubsado.webp",
       "vs": [
@@ -404,15 +406,15 @@
       "chooseIf": [
         {
           "name": "HoneyBook",
-          "text": "you want a CRM that works smoothly out of the box, you value a polished client experience, and you\u2019d rather not spend a day configuring software."
+          "text": "you want a CRM that works smoothly out of the box, you value a polished client experience, and you’d rather not spend a day configuring software."
         },
         {
           "name": "Dubsado",
-          "text": "you want deep control over your workflow, you\u2019re happy to invest setup time, and you want a slightly lower annual cost."
+          "text": "you want deep control over your workflow, you’re happy to invest setup time, and you want a slightly lower annual cost."
         }
       ],
-      "pricingAssumption": "Prices as listed in June 2026. Dubsado\u2019s edge applies when paid annually.",
-      "updated": "2026-10-28"
+      "pricingAssumption": "Prices as listed in June 2026. Dubsado’s edge applies when paid annually.",
+      "updated": "2026-10-29"
     },
     {
       "slug": "honeybook-alternatives-photographers",
@@ -425,7 +427,7 @@
       "evidence": "stated-hands-on",
       "checked": "October 2026",
       "from": "HoneyBook",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "photography-crm-pic-time-integration",
@@ -437,7 +439,7 @@
       "img": "/assets/pic-time.webp",
       "evidence": "stated-hands-on",
       "checked": "October 2026",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     },
     {
       "slug": "photography-crm-built-in-scheduler",
@@ -449,7 +451,7 @@
       "img": "/assets/honeybook-scheduler.webp",
       "evidence": "stated-hands-on",
       "checked": "October 2026",
-      "updated": "2026-10-28"
+      "updated": "2026-10-29"
     }
   ],
   "types": {

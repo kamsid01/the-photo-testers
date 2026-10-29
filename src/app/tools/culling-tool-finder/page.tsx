@@ -35,8 +35,35 @@ export const metadata: Metadata = {
 };
 
 export default function CullingToolFinderPage() {
+  const schemaBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thephototesters.com' },
+      { '@type': 'ListItem', position: 2, name: 'Free Tools', item: 'https://www.thephototesters.com/tools' },
+      { '@type': 'ListItem', position: 3, name: 'AI Culling Tool Finder', item: 'https://www.thephototesters.com/tools/culling-tool-finder' },
+    ],
+  };
+
+  const schemaApp = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'AI Culling Tool Finder',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'All',
+    url: 'https://www.thephototesters.com/tools/culling-tool-finder',
+    description: 'Five quick questions about your volume, priorities, and workflow point to a sensible culling tool to trial first, with a runner-up.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  };
+
   return (
     <div className="bg-[#FAF9F6] min-h-[calc(100vh-200px)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaApp) }} />
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-6 md:py-10 pb-16 md:pb-24">
         {/* Breadcrumb */}
         <Breadcrumb
