@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <style>
+    .v-frame {
+      stroke: #20221F;
+    }
+    @media (prefers-color-scheme: dark) {
+      .v-frame {
+        stroke: #FAF9F6;
+      }
+    }
+  </style>
+  <path
+    class="v-frame"
+    d="M3 10V3h7M22 3h7v7M29 22v7h-7M10 29H3v-7"
+    fill="none"
+    stroke="#20221F"
+    stroke-width="2.4"
+  />
+  <path
+    d="M10 16.5l4.2 4.2L22.5 11.5"
+    fill="none"
+    stroke="#3159D7"
+    stroke-width="2.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
