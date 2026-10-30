@@ -82,13 +82,13 @@ export default function AboutPage() {
 
       <div className="text-[17.5px] leading-[1.68] text-[#20221F] font-sans">
         <p className="m-0 mb-4">
-          We are called The Photo Testers because our mission is practical, evidence-based evaluation. We examine tools through a mix of hands-on testing and structured research: opening accounts and running realistic test workflows where practical, alongside thorough analysis of vendor documentation, policy verification, and verified user benchmarking. Booking, contracts, invoices, galleries, and culling workflows. Then we write down what held up and what got in the way.
+          We are called The Photo Testers because our mission is practical, evidence-based evaluation. We examine photography software through structured research: analyzing official vendor documentation, verifying pricing and subscription terms, examining technical capabilities, and evaluating real photographer workflows across booking, contracts, invoices, galleries, and culling. Then we write down what works, what falls short, and what gets in the way.
         </p>
         <p className="m-0 mb-4">
-          Most reviews you find online are written by someone who used one tool and guessed at the rest, or regurgitated straight off a software company’s homepage. Both are close to useless when you are about to hand over a card number every month.
+          Most software reviews online are either rewritten marketing copy or quick impressions from someone who only tried a single tool. Both leave photographers guessing when deciding which software to rely on for their business.
         </p>
         <p className="m-0 mb-4">
-          So we do the careful version. We test tools directly where hands-on evaluation is feasible, conduct deep research when assessing broad categories, clearly label the evidence basis on every article, and keep pricing current. When a tool changes its plans, we update the page. When something is annoying, we say so, even if we like the tool overall.
+          We take a more rigorous approach. We verify feature sets against official technical specifications and support documentation, clearly disclose the evidence basis on every article, and keep pricing updated. When a platform changes its plans or limits, we revise the guide. When something is frustrating, we say so plainly, even for tools we recommend overall.
         </p>
 
         <h2 className="mt-[1.8em] mb-[0.5em] font-serif font-medium text-[clamp(26px,2.5vw,32px)] leading-[1.15] text-[#20221F]">
@@ -143,10 +143,10 @@ export default function AboutPage() {
           Who writes this
         </h2>
         <p className="m-0 mb-4">
-          <strong className="font-semibold text-[#20221F]">The Photo Testers team.</strong> We are tired of software reviews that clearly have not touched or thoroughly understood the software. We set out to give professional and emerging photographers clear, transparent, and tested recommendations without vendor spin.
+          <strong className="font-semibold text-[#20221F]">The Photo Testers team.</strong> We are independent researchers focused on cutting through vendor marketing. We set out to give professional and emerging photographers clear, transparent, and thoroughly verified evaluations without spin.
         </p>
         <p className="m-0">
-          Questions, corrections, or a tool we should test?{' '}
+          Questions, corrections, or a tool we should evaluate?{' '}
           <Link href="/contact" className="text-[#3159D7] underline hover:text-[#20221F]">
             Contact us
           </Link>

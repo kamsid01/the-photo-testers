@@ -338,13 +338,13 @@ export function GalleryCostCalculator() {
         )}
 
         {valid ? (
-          <ol aria-live="polite" className="list-none m-0 p-0 grid gap-2.5">
+          <ol aria-live="polite" className="list-none m-0 p-0 flex flex-col gap-2.5 w-full min-w-0">
             {rows.map((r, i) => {
               const isLowest = i === 0;
               return (
                 <li
                   key={r.platform}
-                  className={`bg-white rounded p-4 sm:p-5 transition-colors ${
+                  className={`bg-white rounded p-3.5 sm:p-5 w-full min-w-0 transition-colors ${
                     isLowest
                       ? 'border-[1.5px] border-[#3159D7]'
                       : 'border border-[#DFE2DB]'
@@ -355,14 +355,14 @@ export function GalleryCostCalculator() {
                       Lowest estimated cost {r.isPromo ? '(First-year promotional rate)' : ''}
                     </p>
                   )}
-                  <div className="flex flex-wrap justify-between gap-4 sm:gap-6 items-start">
-                    <div className="flex-1 min-w-[260px]">
-                      <h3 className="m-0 mb-0.5 text-[19px] font-semibold text-[#20221F]">
+                  <div className="flex flex-wrap justify-between gap-3 sm:gap-6 items-start">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="m-0 mb-0.5 text-[18px] sm:text-[19px] font-semibold text-[#20221F]">
                         {r.platform}{' '}
                         <span className="font-normal text-[#60645F]">· {r.planName}</span>
                       </h3>
-                      <p className="m-0 mb-1.5 text-[15px] text-[#4A4E49]">{r.limit}</p>
-                      <p className="m-0 text-[14px] text-[#60645F]">
+                      <p className="m-0 mb-1.5 text-[14px] sm:text-[15px] text-[#4A4E49]">{r.limit}</p>
+                      <p className="m-0 text-[13px] sm:text-[14px] text-[#60645F]">
                         Store commission: {r.commission}
                       </p>
                       {r.billingBasis && (
@@ -376,13 +376,13 @@ export function GalleryCostCalculator() {
                         </p>
                       )}
                     </div>
-                    <div className="text-right tabular-nums">
-                      <p className="m-0 font-serif text-[30px] leading-[1.1] text-[#20221F]">
+                    <div className="text-left sm:text-right tabular-nums shrink-0">
+                      <p className="m-0 font-serif text-[26px] sm:text-[30px] leading-[1.1] text-[#20221F]">
                         {sym}
                         {r.annualCost.toLocaleString('en-US')}
                         <span className="font-sans text-[14px] text-[#60645F]"> /yr</span>
                       </p>
-                      <p className="mt-0.5 mb-0 text-[14px] text-[#60645F]">
+                      <p className="mt-0.5 mb-0 text-[13px] sm:text-[14px] text-[#60645F]">
                         {sym}
                         {r.monthlyCost} {r.billingBasis?.includes('monthly billing') ? 'published monthly rate' : 'a month equivalent'}
                       </p>

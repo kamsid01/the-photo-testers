@@ -39,22 +39,29 @@ export function LibraryView() {
   const [type, setType] = useState('all');
   const [sort, setSort] = useState<'newest' | 'title'>('newest');
 
-  const syncToUrl = useCallback((newQ: string, newCat: string, newType: string, newSort: string) => {
-    if (typeof window === 'undefined') return;
-    const sp = new URLSearchParams();
-    const cleanQ = newQ.trim();
-    if (cleanQ) sp.set('q', cleanQ);
-    if (newCat && newCat !== 'all') sp.set('category', newCat);
-    if (newType && newType !== 'all') sp.set('type', newType);
-    if (newSort && newSort !== 'newest') sp.set('sort', newSort);
+  const syncToUrl = useCallback(
+    (newQ: string, newCat: string, newType: string, newSort: string, push: boolean = false) => {
+      if (typeof window === 'undefined') return;
+      const sp = new URLSearchParams();
+      const cleanQ = newQ.trim();
+      if (cleanQ) sp.set('q', cleanQ);
+      if (newCat && newCat !== 'all') sp.set('category', newCat);
+      if (newType && newType !== 'all') sp.set('type', newType);
+      if (newSort && newSort !== 'newest') sp.set('sort', newSort);
 
-    const qs = sp.toString();
-    const nextUrl = qs ? `/blog?${qs}` : '/blog';
-    const currentUrl = window.location.pathname + window.location.search;
-    if (currentUrl !== nextUrl) {
-      window.history.replaceState(null, '', nextUrl);
-    }
-  }, []);
+      const qs = sp.toString();
+      const nextUrl = qs ? `/blog?${qs}` : '/blog';
+      const currentUrl = window.location.pathname + window.location.search;
+      if (currentUrl !== nextUrl) {
+        if (push) {
+          window.history.pushState(null, '', nextUrl);
+        } else {
+          window.history.replaceState(null, '', nextUrl);
+        }
+      }
+    },
+    []
+  );
 
   const handleParams = useCallback(
     (params: { q: string | null; cat: string | null; type: string | null; sort: string | null }) => {
@@ -82,22 +89,22 @@ export function LibraryView() {
 
   const onSelectType = (val: string) => {
     setType(val);
-    syncToUrl(q, cat, val, sort);
+    syncToUrl(q, cat, val, sort, true);
   };
 
   const onSelectCat = (val: string) => {
     setCat(val);
-    syncToUrl(q, val, type, sort);
+    syncToUrl(q, val, type, sort, true);
   };
 
   const onSearchChange = (val: string) => {
     setQ(val);
-    syncToUrl(val, cat, type, sort);
+    syncToUrl(val, cat, type, sort, false);
   };
 
   const onSortChange = (val: 'newest' | 'title') => {
     setSort(val);
-    syncToUrl(q, cat, type, val);
+    syncToUrl(q, cat, type, val, true);
   };
 
   const qq = q.trim().toLowerCase();
@@ -148,7 +155,7 @@ export function LibraryView() {
     setCat('all');
     setType('all');
     setSort('newest');
-    syncToUrl('', 'all', 'all', 'newest');
+    syncToUrl('', 'all', 'all', 'newest', true);
   };
 
   return (

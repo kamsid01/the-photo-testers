@@ -64,7 +64,7 @@ export default function GalleryCostCalculatorPage() {
     <div className="bg-[#FAF9F6] min-h-[calc(100vh-200px)]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumbs) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaApp) }} />
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-6 md:py-10 pb-16 md:pb-24">
+      <div className="max-w-[1280px] mx-auto px-3 sm:px-6 md:px-10 py-6 md:py-10 pb-16 md:pb-24">
         {/* Breadcrumb */}
         <Breadcrumb
           items={[

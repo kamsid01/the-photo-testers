@@ -158,7 +158,7 @@ export function PricingCalculator() {
           ? 'Enter at least 0.5 hours.'
           : v > 24
           ? 'Enter 24 hours or fewer.'
-          : !Number.isInteger(Math.round(v * 100) / 50)
+          : !Number.isInteger(v * 2)
           ? 'Use half-hour increments (e.g. 1.5, 2).'
           : '',
     },
