@@ -457,10 +457,16 @@ export function buildArticlePageData(slug: string) {
         return;
       }
       const ratio = im[0] / im[1] < 1.3 ? '4/3' : '16/9';
+      const isPromotional = /promotional/i.test(b.alt || '') || /promotional/i.test(b.cap || '');
+      const alt = isPromotional
+        ? (b.alt || b.cap || 'Promotional image').replace(/\s*screenshot\.?$/i, '').trim()
+        : b.alt
+        ? b.alt
+        : `${b.cap || 'Screenshot'} screenshot`;
       out.push({
         isImg: true,
         src: b.src,
-        alt: `${b.cap || b.alt || 'Screenshot'} screenshot`,
+        alt,
         cap: b.cap || b.alt,
         w: im[0],
         h: im[1],

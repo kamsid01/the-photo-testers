@@ -12599,7 +12599,7 @@
                   "ext": 1
                 },
                 {
-                  "t": " (/yr billed annually, equivalent to /mo; /mo monthly; or  lifetime)."
+                  "t": " ($156/year billed annually ($13/month equivalent), $35/month on monthly billing, or $549 for the photo-plugin Individual lifetime license)."
                 }
               ],
               [
@@ -12613,7 +12613,7 @@
                   "ext": 1
                 },
                 {
-                  "t": " (/mo, /yr, or  perpetual; Apple silicon required)."
+                  "t": " ($49/month, $399/year, or $799 perpetual; Apple silicon required)."
                 }
               ],
               [
@@ -12627,7 +12627,7 @@
                   "ext": 1
                 },
                 {
-                  "t": " (– perpetual license)."
+                  "t": " ($99–$249, depending on edition)."
                 }
               ],
               [
@@ -12641,7 +12641,7 @@
                   "ext": 1
                 },
                 {
-                  "t": " (Free tier; /mo billed annually or /mo monthly)."
+                  "t": " (Free tier; $12/month billed annually ($144/year), or $18/month on monthly billing)."
                 }
               ],
               [
@@ -13355,8 +13355,8 @@
       {
         "type": "img",
         "src": "/assets/3d-lut-creator.webp",
-        "alt": "3D LUT Creator promotional laptop workstation display",
-        "cap": "3D LUT Creator software running on a laptop workstation (Source: 3D LUT Creator official website)."
+        "alt": "Promotional image of a laptop displaying the 3D LUT Creator logo (Source: 3D LUT Creator official website).",
+        "cap": "Promotional image of a laptop displaying the 3D LUT Creator logo (Source: 3D LUT Creator official website)."
       },
       {
         "type": "p",
@@ -13421,7 +13421,7 @@
               "b": true
             },
             {
-              "t": "Sold under a lifetime license with free updates through version 1.xx: Grading Edition ($99, core A/B grid, curves, auto-match reference colors, Photoshop integration, and 33×33×33 LUT export); Standard Edition ($199, adds C/L contrast grid, channels, volume, 2D curves, masks, and 64×64×64 LUT export); Professional Edition ($249, adds Log and RAW support, color target matching via ColorChecker, waveform/parade analyzer, and batch processing)."
+              "t": "Sold under a lifetime license with free updates through all version 1.xx releases: Grading Edition ($99, includes A/B color grid, Curves, Photoshop two-way integration, Color Match reference transfer, and 33×33×33 maximum LUT export; other tabs excluded); Standard Edition ($199, adds C/L contrast grid, Channels, Volume, 2D Curves, and Masks, with 33×33×33 maximum LUT export; Color Match tool is disabled in Standard); Professional Edition ($249, unlocks 96×96×96 maximum LUT export, restores Color Match, and adds color target matching, Log/RAW support, waveform analyzer, and batch processing)."
             }
           ]
         ]
