@@ -12556,7 +12556,7 @@
   },
   "fylm-ai-alternatives": {
     "title": "Best Fylm.ai Alternatives for Photographers (2026)",
-    "meta": "By The Photo Testers team · Published October 2026 · Updated October 2026 · 7 min read",
+    "meta": "By The Photo Testers team · Published October 2026 · Updated October 2026 · 8 min read",
     "disclosure": "How we assess tools: we track each tool's current features, documentation, and pricing model, and weigh what users and independent reviewers report. Where a figure or claim comes from a vendor, we say so. Some links may be affiliate links, which means we may earn a commission if you sign up. It does not change what we write. These tools change often, so always confirm current pricing on the vendor's own page.",
     "blocks": [
       {
@@ -12566,11 +12566,11 @@
             "type": "p",
             "runs": [
               {
-                "t": "Fylm.ai is a cloud-based colour grading and LUT tool that works for both stills and video.",
+                "t": "Fylm.ai is a cloud-based colour grading and LUT platform that works for both stills and video.",
                 "b": true
               },
               {
-                "t": " For photographers, its appeal is creating film-style looks and exporting them as profiles you can use in Lightroom or Capture One."
+                "t": " For photographers, its appeal is creating film-style looks and exporting them as XMP profiles for Lightroom or ICC profiles for Capture One."
               }
             ],
             "cls": ""
@@ -12583,42 +12583,80 @@
                 "b": true
               },
               {
-                "t": " for plugin-based grading inside your editor, look at "
+                "t": "\n• For authentic film emulation directly inside Lightroom, Photoshop, or Capture One: "
               },
               {
-                "t": "Colourlab AI",
-                "b": true
+                "t": "Dehancer Photo",
+                "b": true,
+                "href": "https://www.dehancer.com/shop/dehancer-photo",
+                "ext": 1
               },
               {
-                "t": "; for one-click reference-matching on photos, "
+                "t": " ($13/mo or $156/yr; $199–$449 lifetime).\n• For AI colour matching across video and hybrid timelines on macOS: "
+              },
+              {
+                "t": "Colourlab Ai 4",
+                "b": true,
+                "href": "https://colourlab.ai/products/colourlab-ai-4/",
+                "ext": 1
+              },
+              {
+                "t": " ($49/mo, $399/yr, or $799 perpetual; Apple silicon required).\n• For surgical colour grading and custom LUT/ICC creation with a perpetual license: "
+              },
+              {
+                "t": "3D LUT Creator",
+                "b": true,
+                "href": "https://3dlutcreator.com/",
+                "ext": 1
+              },
+              {
+                "t": " ($99–$249 one-time).\n• For fast reference-based colour matching on photo batches: "
               },
               {
                 "t": "Polarr",
+                "b": true,
+                "href": "https://www.polarr.com/",
+                "ext": 1
+              },
+              {
+                "t": " (free trial; pay-as-you-go ~$0.05/image, or subscriptions from $1.99–$3.99/mo).\n• For a free, casual one-click auto-exposure and colour fix: "
+              },
+              {
+                "t": "Media.io Auto Color Correct",
+                "b": true,
+                "href": "https://www.media.io/auto-color-correct.html",
+                "ext": 1
+              },
+              {
+                "t": "."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Discontinued notice:",
                 "b": true
               },
               {
-                "t": "; for cloud grading like Fylm.ai, "
+                "t": " Note that "
               },
               {
                 "t": "Color.io",
                 "b": true
               },
               {
-                "t": "; for AI-generated LUTs, "
+                "t": ", previously recommended as a cloud equivalent, "
               },
               {
-                "t": "LUTGen.ai",
-                "b": true
+                "t": "shut down its online service on 31 December 2025",
+                "href": "https://www.cined.com/color-io-shutting-down-popular-film-emulation-and-color-grading-tool-goes-offline-december-31/",
+                "ext": 1
               },
               {
-                "t": "; and for a free quick fix, "
-              },
-              {
-                "t": "Media.io",
-                "b": true
-              },
-              {
-                "t": "."
+                "t": " and is no longer available to new users."
               }
             ],
             "cls": ""
@@ -12631,7 +12669,7 @@
                 "b": true
               },
               {
-                "t": " most of these are built more for video than stills. If your real need is simply consistent photo colour, your editor's own colour grading (Lightroom, Capture One) may already cover it."
+                "t": " Many dedicated grading tools are engineered primarily around video timelines or motion footage. If your primary goal is consistent, natural photo colour, Lightroom Classic and Capture One Pro already include robust colour wheels and tone curves."
               }
             ],
             "cls": ""
@@ -12647,7 +12685,13 @@
         "type": "p",
         "runs": [
           {
-            "t": "Fylm.ai is a cloud-based colour grading platform for creating film-style looks and LUTs. You work in a browser with no software to install, and it includes AI features such as AI Color Extract and its NeuralFilmAI engine."
+            "t": "Fylm.ai",
+            "b": true,
+            "href": "https://fylm.ai/",
+            "ext": 1
+          },
+          {
+            "t": " is a browser-based colour grading platform built on ACEScct colour science. It allows creators to grade stills and motion footage in the cloud without installing heavy desktop software, combining colour-management wheels with AI features like AI Color Extract and its NeuralFilmAI engine."
           }
         ],
         "cls": ""
@@ -12656,10 +12700,68 @@
         "type": "p",
         "runs": [
           {
-            "t": "It is used by both videographers and photographers. The photography angle is specific: Fylm.ai can export XMP profiles for Lightroom and Camera Raw, and ICC profiles for Capture One, so you can build a look once and apply it to your stills in the editor you already use. It runs on a freemium model, a free tier with limits on resolution, export formats and storage, and a paid subscription that unlocks the advanced AI features and higher-resolution exports. Fylm.ai does not publish detailed prices on third-party pages, so check the current plans on its own site."
+            "t": "While popular with cinematographers, Fylm.ai attracts photographers because it bridges the gap between cinematic grading and stills editing. Photographers can upload RAW or TIFF files, develop a bespoke film grade, and export the result as standard 3D LUTs (.CUBE), enhanced XMP camera profiles for Adobe Lightroom Classic and Camera Raw, or ICC profiles for Capture One Pro. This allows you to design a look in the cloud and apply it non-destructively to thousands of images in your desktop catalog."
           }
         ],
         "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "According to "
+          },
+          {
+            "t": "Fylm.ai's official pricing",
+            "href": "https://fylm.ai/pricing/",
+            "ext": 1
+          },
+          {
+            "t": " (verified October 2026), the platform offers four subscription tiers:"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Free ($0):",
+              "b": true
+            },
+            {
+              "t": " 3 projects, 1 GB cloud storage, standard 8-bit web grading tools, and community support."
+            }
+          ],
+          [
+            {
+              "t": "Lite ($7/month billed annually / $84/year, or $9/month monthly):",
+              "b": true
+            },
+            {
+              "t": " 10 projects, 10 GB cloud storage, 3D LUT and XMP/ICC profile export."
+            }
+          ],
+          [
+            {
+              "t": "Pro ($15/month billed annually / $180/year, or $19/month monthly):",
+              "b": true
+            },
+            {
+              "t": " Unlimited projects, 50 GB cloud storage, NeuralFilmAI, AI Color Extract, RAW image support, and 33-point / 65-point 3D LUT exports."
+            }
+          ],
+          [
+            {
+              "t": "Team ($30/month billed annually / $360/year, or $39/month monthly):",
+              "b": true
+            },
+            {
+              "t": " Multi-seat team collaboration, 100 GB storage, and priority rendering."
+            }
+          ]
+        ]
       },
       {
         "type": "h2",
@@ -12670,7 +12772,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "A few honest reasons photographers go looking:"
+            "t": "While Fylm.ai provides an elegant browser interface, photographers frequently look for alternatives due to three key workflow factors:"
           }
         ],
         "cls": ""
@@ -12679,11 +12781,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "It leans toward video.",
+            "t": "1. Browser and cloud round-tripping vs. in-editor plugins.",
             "b": true
           },
           {
-            "t": " Fylm.ai and most tools in this space are built primarily for film and video colour grading. If you only grade stills, some of the feature set is not for you."
+            "t": " Fylm.ai requires uploading your photos to a browser, grading them in the cloud, and downloading LUTs or profiles back to your machine. Many portrait, commercial, and wedding photographers prefer desktop plugins that operate directly within Lightroom Classic, Photoshop, or Capture One without round-tripping intermediate files."
           }
         ],
         "cls": ""
@@ -12692,11 +12794,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "You want grading inside your editor.",
+            "t": "2. Video-first design and unnecessary overhead.",
             "b": true
           },
           {
-            "t": " Fylm.ai is a separate cloud app. Some photographers would rather grade with a plugin that lives inside Premiere, Final Cut, DaVinci Resolve, or their photo editor."
+            "t": " Fylm.ai, ACES workflows, and similar cinematic suites are engineered with video productions in mind. If you strictly shoot still photography, much of the timeline and motion color science adds unnecessary operational complexity."
           }
         ],
         "cls": ""
@@ -12705,11 +12807,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "You want something simpler, or free.",
+            "t": "3. Ongoing subscription fees vs. perpetual ownership.",
             "b": true
           },
           {
-            "t": " If your real need is \"make my photos' colour consistent\" rather than building cinematic LUTs, there are lighter and cheaper options."
+            "t": " Fylm.ai is a recurring cloud SaaS subscription. For creators who prefer buying software once and owning it perpetually, dedicated desktop profile generators like 3D LUT Creator or Dehancer's lifetime options provide substantial long-term value."
           }
         ],
         "cls": ""
@@ -12718,7 +12820,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Here is what to consider instead, and who each suits."
+            "t": "Here is what to consider instead, and who each tool suits."
           }
         ],
         "cls": ""
@@ -12743,12 +12845,17 @@
           ],
           [
             {
-              "t": "Type"
+              "t": "Type / Host"
             }
           ],
           [
             {
-              "t": "Stills / Video"
+              "t": "OS Support"
+            }
+          ],
+          [
+            {
+              "t": "Pricing"
             }
           ]
         ],
@@ -12756,46 +12863,90 @@
           [
             [
               {
-                "t": "Colourlab AI",
-                "b": true
+                "t": "Dehancer Photo",
+                "b": true,
+                "href": "https://www.dehancer.com/shop/dehancer-photo",
+                "ext": 1
               }
             ],
             [
               {
-                "t": "Grading in your editor"
+                "t": "Authentic film stock emulation inside your editor"
               }
             ],
             [
               {
-                "t": "Plugin"
+                "t": "Plugin (Lightroom Classic, Photoshop, Capture One, Affinity)"
               }
             ],
             [
               {
-                "t": "Mainly video"
+                "t": "macOS & Windows"
+              }
+            ],
+            [
+              {
+                "t": "From $13/mo or $156/yr; $199–$449 lifetime"
               }
             ]
           ],
           [
             [
               {
-                "t": "Color.io",
-                "b": true
+                "t": "Colourlab Ai 4",
+                "b": true,
+                "href": "https://colourlab.ai/products/colourlab-ai-4/",
+                "ext": 1
               }
             ],
             [
               {
-                "t": "Cloud grading like Fylm.ai"
+                "t": "AI shot matching & timeline grading for hybrid shooters"
               }
             ],
             [
               {
-                "t": "Cloud"
+                "t": "Standalone app (DaVinci Resolve, Premiere Pro, Final Cut Pro)"
               }
             ],
             [
               {
-                "t": "Both"
+                "t": "macOS 14+ (Apple silicon M-series only)"
+              }
+            ],
+            [
+              {
+                "t": "$49/mo, $399/yr, or $799 perpetual"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "3D LUT Creator",
+                "b": true,
+                "href": "https://3dlutcreator.com/",
+                "ext": 1
+              }
+            ],
+            [
+              {
+                "t": "Surgical color grading and universal LUT/ICC creation"
+              }
+            ],
+            [
+              {
+                "t": "Standalone app + Photoshop plugin"
+              }
+            ],
+            [
+              {
+                "t": "macOS & Windows"
+              }
+            ],
+            [
+              {
+                "t": "$99–$249 perpetual license"
               }
             ]
           ],
@@ -12803,45 +12954,29 @@
             [
               {
                 "t": "Polarr",
-                "b": true
+                "b": true,
+                "href": "https://www.polarr.com/",
+                "ext": 1
               }
             ],
             [
               {
-                "t": "One-click photo colour match"
+                "t": "One-click reference matching for photo batches"
               }
             ],
             [
               {
-                "t": "App"
+                "t": "Desktop app & browser (Polarr Next)"
               }
             ],
             [
               {
-                "t": "Stills"
-              }
-            ]
-          ],
-          [
-            [
-              {
-                "t": "LUTGen.ai",
-                "b": true
+                "t": "macOS, Windows, Web"
               }
             ],
             [
               {
-                "t": "AI-generated LUTs"
-              }
-            ],
-            [
-              {
-                "t": "AI generator"
-              }
-            ],
-            [
-              {
-                "t": "Both"
+                "t": "Free trial; ~$0.05/photo or $1.99–$3.99/mo"
               }
             ]
           ],
@@ -12849,44 +12984,87 @@
             [
               {
                 "t": "Media.io",
-                "b": true
+                "b": true,
+                "href": "https://www.media.io/auto-color-correct.html",
+                "ext": 1
               }
             ],
             [
               {
-                "t": "Free quick auto-correct"
+                "t": "Free casual one-click auto exposure & color fix"
               }
             ],
             [
               {
-                "t": "Online"
+                "t": "Online browser utility"
               }
             ],
             [
               {
-                "t": "Both"
+                "t": "Web browser"
+              }
+            ],
+            [
+              {
+                "t": "Free tier; optional upgrades"
               }
             ]
           ],
           [
             [
               {
-                "t": "Lightroom / Capture One"
+                "t": "Lightroom / Capture One",
+                "b": true
               }
             ],
             [
               {
-                "t": "Grading you already own"
+                "t": "Comprehensive native grading you already own"
               }
             ],
             [
               {
-                "t": "Editor"
+                "t": "Desktop RAW editor"
               }
             ],
             [
               {
-                "t": "Stills"
+                "t": "macOS & Windows"
+              }
+            ],
+            [
+              {
+                "t": "Existing subscription / perpetual"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Color.io (Discontinued)",
+                "b": true,
+                "href": "https://www.cined.com/color-io-shutting-down-popular-film-emulation-and-color-grading-tool-goes-offline-december-31/",
+                "ext": 1
+              }
+            ],
+            [
+              {
+                "t": "Former cloud film grading platform"
+              }
+            ],
+            [
+              {
+                "t": "Online service (Shut down 31 Dec 2025)"
+              }
+            ],
+            [
+              {
+                "t": "Legacy offline only"
+              }
+            ],
+            [
+              {
+                "t": "Discontinued for new users"
               }
             ]
           ]
@@ -12896,7 +13074,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Researched October 2026. These tools change often, confirm current features and pricing on each vendor's page.",
+            "t": "Researched October 2026. These tools change often; confirm current features and pricing on each vendor's page.",
             "i": true
           }
         ],
@@ -12904,84 +13082,396 @@
       },
       {
         "type": "h3",
-        "text": "Colourlab AI",
-        "id": "colourlab-ai"
+        "text": "Dehancer Photo (Film emulation inside your editor)",
+        "id": "dehancer-photo-film-emulation-inside-your-editor"
+      },
+      {
+        "type": "img",
+        "src": "/assets/dehancer-photo.webp",
+        "alt": "Dehancer Photo film emulation interface",
+        "cap": "Dehancer Photo interface showing film stock profiles, optical grain, and print controls."
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "AI colour matching and balancing that runs as a plugin for Premiere Pro, Final Cut Pro and DaVinci Resolve. If you want grading to happen inside the editor you already work in rather than a separate cloud app, this is the closest fit, though it is aimed mainly at video work."
+            "t": "If you use Fylm.ai primarily to achieve realistic analogue film tones, "
+          },
+          {
+            "t": "Dehancer Photo",
+            "b": true,
+            "href": "https://www.dehancer.com/shop/dehancer-photo",
+            "ext": 1
+          },
+          {
+            "t": " is the strongest direct desktop alternative. Rather than operating in a separate cloud environment, Dehancer runs natively as a plugin inside Adobe Photoshop, Adobe Lightroom Classic, Capture One (via external editor workflow), and Affinity Photo."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Dehancer's core strength is its optical physics engine. It models film as a multi-stage analogue process rather than applying simple 1D or 3D color curves. It includes over 60 carefully measured film stock profiles (Kodak Portra, Ektar, Tri-X, Fujifilm Velvia, Provia, Ilford HP5, CineStill 800T), authentic optical film grain sampled from physical emulsions, halation (the reddish glow that appears around high-contrast edges on motion picture film), bloom (diffuse highlight glow), and print paper profiles (such as Kodak Endura and 2383)."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "OS Support & GPU: ",
+              "b": true
+            },
+            {
+              "t": "macOS 12+ (macOS 15 Sequoia recommended, Metal GPU required) and Windows 10/11 64-bit (Nvidia or AMD OpenCL GPU required)."
+            }
+          ],
+          [
+            {
+              "t": "Workflow: ",
+              "b": true
+            },
+            {
+              "t": "Dehancer operates on rasterized data or high-bitdepth TIFFs sent from Lightroom or Capture One. It supports batch editing using its \"Last Edits\" memory and Photoshop Batch Actions."
+            }
+          ],
+          [
+            {
+              "t": "Pricing: ",
+              "b": true
+            },
+            {
+              "t": "Available as a subscription for $13/month or $156/year, or as a perpetual lifetime license from $199 (single host) to $449 (multi-host bundle). A free watermarked trial is available from "
+            },
+            {
+              "t": "Dehancer's download center",
+              "href": "https://www.dehancer.com/",
+              "ext": 1
+            },
+            {
+              "t": "."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Colourlab Ai 4 (AI grading for hybrid shooter timelines)",
+        "id": "colourlab-ai-4-ai-grading-for-hybrid-shooter-timelines"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Colourlab Ai 4",
+            "b": true,
+            "href": "https://colourlab.ai/products/colourlab-ai-4/",
+            "ext": 1
+          },
+          {
+            "t": " is an advanced AI-powered grading application designed to automate color matching and look creation. Unlike Fylm.ai's browser model, Colourlab Ai 4 is a dedicated desktop application engineered specifically for video timelines and hybrid creators."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "It is critical to note Colourlab Ai 4's exact architecture: it is "
+          },
+          {
+            "t": "not a photo-editor plugin",
+            "b": true
+          },
+          {
+            "t": " for Lightroom or Photoshop. Instead, it connects to professional video editing suites:\n• "
+          },
+          {
+            "t": "DaVinci Resolve Studio:",
+            "b": true
+          },
+          {
+            "t": " Direct two-way Fetch and Push API connection.\n• "
+          },
+          {
+            "t": "DaVinci Resolve Free:",
+            "b": true
+          },
+          {
+            "t": " OpenTimelineIO (OTIO) file roundtripping.\n• "
+          },
+          {
+            "t": "Adobe Premiere Pro:",
+            "b": true
+          },
+          {
+            "t": " OTIO timeline roundtripping (a direct link integration is currently planned).\n• "
+          },
+          {
+            "t": "Apple Final Cut Pro:",
+            "b": true
+          },
+          {
+            "t": " XML roundtripping (direct link integration planned)."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Hardware & OS: ",
+              "b": true
+            },
+            {
+              "t": "Strictly requires Apple silicon (M1, M2, M3, or M4 chips) and macOS 14 (Sonoma) or newer. Intel Macs and Windows PCs are not supported."
+            }
+          ],
+          [
+            {
+              "t": "Still photography: ",
+              "b": true
+            },
+            {
+              "t": "Native RAW still photo support is currently listed by Colourlab as forthcoming. Photographers who shoot hybrid video projects will benefit most, while stills-only photographers will find it overpowered and cumbersome for catalog workflows."
+            }
+          ],
+          [
+            {
+              "t": "Pricing: ",
+              "b": true
+            },
+            {
+              "t": "$49/month, $399/year annual subscription, or $799 perpetual lifetime license, backed by a 14-day free trial."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "3D LUT Creator (Surgical color grading and profile generation)",
+        "id": "3d-lut-creator-surgical-color-grading-and-profile-generation"
+      },
+      {
+        "type": "img",
+        "src": "/assets/3d-lut-creator.webp",
+        "alt": "3D LUT Creator interface with A/B color grid",
+        "cap": "3D LUT Creator interface showing precision A/B color grid manipulation."
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "If your goal with Fylm.ai is creating custom 3D LUTs and ICC profiles with absolute color precision, "
+          },
+          {
+            "t": "3D LUT Creator",
+            "b": true,
+            "href": "https://3dlutcreator.com/",
+            "ext": 1
+          },
+          {
+            "t": " is the undisputed industry benchmark. Developed by Oleg Sharonov, it is a standalone desktop application for macOS and Windows with a direct two-way plugin bridge to Adobe Photoshop."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Unlike traditional grading wheels that adjust broad tonal ranges, 3D LUT Creator uses a revolutionary 2D A/B color grid and C/L contrast grid. You can select any precise hue and saturation point (for instance, shifting skin tones away from magenta or twisting green foliage into warm amber) and drag the grid vertex directly without shifting neighboring colors or introducing digital banding."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Profile exports: ",
+              "b": true
+            },
+            {
+              "t": "Exports universal 3D LUTs (.CUBE, 3DL), curves, Adobe Lightroom / Camera Raw enhanced profiles (.xmp), and Capture One ICC camera profiles (.icc)."
+            }
+          ],
+          [
+            {
+              "t": "Photoshop integration: ",
+              "b": true
+            },
+            {
+              "t": "Fetch and send images back and forth between Photoshop and 3D LUT Creator with a single click."
+            }
+          ],
+          [
+            {
+              "t": "Perpetual pricing: ",
+              "b": true
+            },
+            {
+              "t": "No recurring monthly subscriptions. It is sold under a perpetual license: Grading Edition ($99), Standard Edition ($199), and Pro Edition ($249, unlocking full ICC profile generation for Capture One, ACES color management, and advanced masking). A free demo is available."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Polarr (One-click reference matching for photo batches)",
+        "id": "polarr-one-click-reference-matching-for-photo-batches"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Polarr",
+            "b": true,
+            "href": "https://www.polarr.com/",
+            "ext": 1
+          },
+          {
+            "t": " (and its modern web-first platform Polarr Next) is the most photographer-centric tool for rapid color matching. Rather than requiring you to understand ACES color management or build LUT curves by hand, Polarr uses AI Color Match to analyze any reference photo and transfer its palette, contrast, and tone to your own images."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "If you see an editorial photograph, cinematic film still, or Pinterest board and want your shoot to match that aesthetic, you upload the reference image alongside your photos. Polarr aligns the exposures and color balances in one click. Polarr offers a free tier with 2,000 initial processing credits. Paid usage operates on either pay-as-you-go pricing (roughly $0.05 per processed image) or lightweight recurring plans starting from $1.99 to $3.99/month, making it significantly cheaper than high-end grading platforms."
           }
         ],
         "cls": ""
       },
       {
         "type": "h3",
-        "text": "Color.io",
-        "id": "color-io"
+        "text": "Media.io (Free online auto-color correction)",
+        "id": "media-io-free-online-auto-color-correction"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Cloud-based AI grading, the most direct like-for-like with Fylm.ai. It adapts pre-trained cinematic LUTs to your specific lighting and camera settings, and works for both stills and video. Worth a look if you like Fylm.ai's browser-based approach but want to compare the look and the workflow."
+            "t": "Media.io Auto Color Correct",
+            "b": true,
+            "href": "https://www.media.io/auto-color-correct.html",
+            "ext": 1
+          },
+          {
+            "t": " is a lightweight, web-based utility for photographers and casual content creators who just need a quick, automated image fix."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Unlike Fylm.ai, Media.io is not a creative color grading or LUT creation suite. It uses automated algorithms to balance underexposed shadows, remove color casts, and correct white balance in a single click. It is completely browser-based, requires no installation, and is free for occasional use, though it lacks RAW file support and professional profile exports."
           }
         ],
         "cls": ""
       },
       {
         "type": "h3",
-        "text": "Polarr (AI Color Match)",
-        "id": "polarr-ai-color-match"
+        "text": "Discontinued: Color.io (Shut down December 2025)",
+        "id": "discontinued-color-io-shut-down-december-2025"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "The most photography-friendly option here. Polarr applies the colour and tone of a reference image to your photo in one click. If your goal is simply \"make this shot match that look\" rather than building and exporting LUTs, this is far simpler than a full grading platform."
+            "t": "Color.io",
+            "b": true,
+            "href": "https://www.color.io/",
+            "ext": 1
+          },
+          {
+            "t": " was previously the most direct web-based alternative to Fylm.ai, offering film emulation and LUT creation in a browser."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Important status update: ",
+            "b": true
+          },
+          {
+            "t": "As reported by "
+          },
+          {
+            "t": "CineD",
+            "href": "https://www.cined.com/color-io-shutting-down-popular-film-emulation-and-color-grading-tool-goes-offline-december-31/",
+            "ext": 1
+          },
+          {
+            "t": ", Color.io's founder officially announced that the online platform shut down on "
+          },
+          {
+            "t": "31 December 2025",
+            "b": true
+          },
+          {
+            "t": ". While existing Pro subscribers received access to an offline legacy desktop build, the cloud platform is offline and closed to new registrations. We no longer recommend Color.io as an active alternative for photographers."
           }
         ],
         "cls": ""
       },
       {
         "type": "h3",
-        "text": "LUTGen.ai",
-        "id": "lutgen-ai"
+        "text": "Lightroom Classic and Capture One Pro (The tools you already own)",
+        "id": "lightroom-classic-and-capture-one-pro-the-tools-you-already-own"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Generates LUTs with AI, often from a text prompt or a reference image. Useful if what you actually want from Fylm.ai is the LUT output, and you would rather generate looks quickly than grade them by hand."
+            "t": "Before investing in a third-party color grading suite, it is worth evaluating the tools already inside your primary RAW converter:"
           }
         ],
         "cls": ""
       },
       {
-        "type": "h3",
-        "text": "Media.io (Auto Color Correct)",
-        "id": "media-io-auto-color-correct"
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Adobe Lightroom Classic: ",
+              "b": true
+            },
+            {
+              "t": "Features 3-Way Color Grading wheels (Shadows, Midtones, Highlights, and Global), Point Color for surgical hue-saturation-luminance sampling, the Calibration panel (a favorite among portrait photographers for rich skin tones), and tone curves."
+            }
+          ],
+          [
+            {
+              "t": "Capture One Pro: ",
+              "b": true
+            },
+            {
+              "t": "Includes an industry-standard Advanced Color Editor with dedicated Skin Tone uniformity sliders, 3-Way Color Balance wheels, and per-layer opacity grading."
+            }
+          ]
+        ]
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "A free, one-click online auto-correction tool for photos and videos. Not a serious grading platform, but if you just need a fast, free colour fix now and then, it does the job without a subscription."
-          }
-        ],
-        "cls": ""
-      },
-      {
-        "type": "h3",
-        "text": "Lightroom / Capture One (the one you may already have)",
-        "id": "lightroom-capture-one-the-one-you-may-already-have"
-      },
-      {
-        "type": "p",
-        "runs": [
-          {
-            "t": "Worth saying plainly: if you are a photographer whose real need is consistent, attractive colour, your editor already has colour grading built in. Lightroom's Color Grading panel and Capture One's colour tools cover a lot of what photographers reach for Fylm.ai to do. Before paying for another tool, it is worth checking whether what you already own gets you there."
+            "t": "If your objective is simply clean, consistent, flattering color across weddings or portraits, mastering your RAW editor's built-in toolset often eliminates the need for external grading software."
           }
         ],
         "cls": ""
@@ -12995,10 +13485,101 @@
         "type": "p",
         "runs": [
           {
-            "t": "Most of these tools, Fylm.ai included, come from the video and film colour grading world. They are genuinely useful for photographers who want cinematic, LUT-driven looks and the ability to build a profile once and reuse it. But if you are a wedding or portrait photographer whose colour mostly happens in Lightroom, a dedicated grading platform may be more than you need. Match the tool to whether you are chasing a specific cinematic look (worth a grading tool) or just consistent, clean colour (your editor probably covers it)."
+            "t": "Most dedicated grading suites—Fylm.ai included—originate from the film and motion picture industry. They are invaluable for photographers who want film-stock physics, custom LUT creation, and profiles they can share across video and still projects."
           }
         ],
         "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "However, workflow friction is real. Cloud roundtripping requires uploading heavy files, while standalone grading apps require exporting TIFF intermediates. Align your choice with your actual bottleneck:"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "For authentic film grain, halation, and stock profiles in your editor: ",
+              "b": true
+            },
+            {
+              "t": "Choose "
+            },
+            {
+              "t": "Dehancer Photo",
+              "href": "https://www.dehancer.com/shop/dehancer-photo",
+              "ext": 1
+            },
+            {
+              "t": "."
+            }
+          ],
+          [
+            {
+              "t": "For surgical color warping and perpetual-license LUT/ICC export: ",
+              "b": true
+            },
+            {
+              "t": "Choose "
+            },
+            {
+              "t": "3D LUT Creator",
+              "href": "https://3dlutcreator.com/",
+              "ext": 1
+            },
+            {
+              "t": "."
+            }
+          ],
+          [
+            {
+              "t": "For AI shot-matching across video timelines on Apple silicon: ",
+              "b": true
+            },
+            {
+              "t": "Choose "
+            },
+            {
+              "t": "Colourlab Ai 4",
+              "href": "https://colourlab.ai/products/colourlab-ai-4/",
+              "ext": 1
+            },
+            {
+              "t": "."
+            }
+          ],
+          [
+            {
+              "t": "For quick, automated reference matching on photos: ",
+              "b": true
+            },
+            {
+              "t": "Choose "
+            },
+            {
+              "t": "Polarr",
+              "href": "https://www.polarr.com/",
+              "ext": 1
+            },
+            {
+              "t": "."
+            }
+          ],
+          [
+            {
+              "t": "For general catalog color consistency: ",
+              "b": true
+            },
+            {
+              "t": "Stick with your existing RAW editor."
+            }
+          ]
+        ]
       },
       {
         "type": "h2",
@@ -13009,11 +13590,19 @@
         "type": "p",
         "runs": [
           {
-            "t": "Want grading inside your editor?",
+            "t": "Want film emulation, grain, and halation inside Lightroom or Photoshop?",
             "b": true
           },
           {
-            "t": " Colourlab AI."
+            "t": "\n"
+          },
+          {
+            "t": "Dehancer Photo",
+            "href": "https://www.dehancer.com/shop/dehancer-photo",
+            "ext": 1
+          },
+          {
+            "t": " ($13/mo or $199–$449 lifetime)."
           }
         ],
         "cls": ""
@@ -13022,11 +13611,19 @@
         "type": "p",
         "runs": [
           {
-            "t": "Want cloud grading like Fylm.ai, to compare?",
+            "t": "Want surgical color control and universal LUT/ICC creation without a subscription?",
             "b": true
           },
           {
-            "t": " Color.io."
+            "t": "\n"
+          },
+          {
+            "t": "3D LUT Creator",
+            "href": "https://3dlutcreator.com/",
+            "ext": 1
+          },
+          {
+            "t": " ($99–$249 perpetual license)."
           }
         ],
         "cls": ""
@@ -13035,11 +13632,19 @@
         "type": "p",
         "runs": [
           {
-            "t": "Just want to match a reference look on photos, fast?",
+            "t": "Want AI timeline shot-matching for video projects on macOS?",
             "b": true
           },
           {
-            "t": " Polarr."
+            "t": "\n"
+          },
+          {
+            "t": "Colourlab Ai 4",
+            "href": "https://colourlab.ai/products/colourlab-ai-4/",
+            "ext": 1
+          },
+          {
+            "t": " ($49/mo or $799 perpetual; Apple silicon required)."
           }
         ],
         "cls": ""
@@ -13048,11 +13653,19 @@
         "type": "p",
         "runs": [
           {
-            "t": "Mainly want the LUT output?",
+            "t": "Just want to match a reference photo look quickly across a batch?",
             "b": true
           },
           {
-            "t": " LUTGen.ai."
+            "t": "\n"
+          },
+          {
+            "t": "Polarr",
+            "href": "https://www.polarr.com/",
+            "ext": 1
+          },
+          {
+            "t": " (free trial; pay-as-you-go from ~$0.05/image)."
           }
         ],
         "cls": ""
@@ -13061,11 +13674,19 @@
         "type": "p",
         "runs": [
           {
-            "t": "Want a free, occasional quick fix?",
+            "t": "Looking for a free, occasional auto-balance fix?",
             "b": true
           },
           {
-            "t": " Media.io."
+            "t": "\n"
+          },
+          {
+            "t": "Media.io",
+            "href": "https://www.media.io/auto-color-correct.html",
+            "ext": 1
+          },
+          {
+            "t": " (free browser utility)."
           }
         ],
         "cls": ""
@@ -13074,11 +13695,19 @@
         "type": "p",
         "runs": [
           {
-            "t": "Already have Lightroom or Capture One?",
+            "t": "Looking for Color.io?",
             "b": true
           },
           {
-            "t": " Try their built-in colour grading first."
+            "t": "\nRemember that "
+          },
+          {
+            "t": "Color.io shut down its online service",
+            "href": "https://www.cined.com/color-io-shutting-down-popular-film-emulation-and-color-grading-tool-goes-offline-december-31/",
+            "ext": 1
+          },
+          {
+            "t": " in December 2025 and is no longer available for new users."
           }
         ],
         "cls": ""
@@ -13087,7 +13716,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "Most of these offer a free tier or trial, so test one or two on your own images before paying. And since this corner of software changes quickly, confirm the current pricing and features on each vendor's site before you commit."
+            "t": "Already paying for Lightroom or Capture One?",
+            "b": true
+          },
+          {
+            "t": "\nMaster their built-in Color Grading wheels and Color Editor tools before spending on external software."
           }
         ],
         "cls": ""
@@ -13105,7 +13738,59 @@
             "b": true
           },
           {
-            "t": "\nFylm.ai is a cloud-based colour grading platform for creating film-style looks and LUTs. It works for both stills and video, and can export XMP profiles for Lightroom and Camera Raw and ICC profiles for Capture One, which is why photographers use it."
+            "t": "\nFylm.ai is a cloud-based colour grading platform that uses ACEScct colour management to build cinematic looks and 3D LUTs. Photographers use it because it can export enhanced XMP camera profiles for Adobe Lightroom and Camera Raw, as well as ICC profiles for Capture One Pro."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "How much does Fylm.ai cost?",
+            "b": true
+          },
+          {
+            "t": "\nFylm.ai offers four plans: a Free tier (3 projects, 1 GB storage), Lite ($7/month billed annually or $9/month monthly), Pro ($15/month billed annually or $19/month monthly, unlocking NeuralFilmAI and RAW support), and Team ($30/month billed annually or $39/month monthly)."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "What is the closest alternative to Fylm.ai for photographers?",
+            "b": true
+          },
+          {
+            "t": "\nFor film emulation and profiles inside your editing software, Dehancer Photo is the closest alternative. For precision color grading, custom 3D LUTs, and ICC profile creation with one-time perpetual licensing, 3D LUT Creator is the most versatile choice."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "What happened to Color.io?",
+            "b": true
+          },
+          {
+            "t": "\nColor.io announced the shutdown of its online platform on 31 December 2025. While existing Pro subscribers received an offline legacy build, the service is discontinued and closed to new users."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Does Colourlab Ai 4 work inside Lightroom or Photoshop?",
+            "b": true
+          },
+          {
+            "t": "\nNo. Colourlab Ai 4 is a standalone macOS application that requires Apple silicon (M-series) and macOS 14+. It connects directly with DaVinci Resolve Studio via API, and with Premiere Pro and Final Cut Pro via OTIO/XML. Native RAW still photo support is currently listed as forthcoming."
           }
         ],
         "cls": ""
@@ -13118,7 +13803,7 @@
             "b": true
           },
           {
-            "t": "\nMedia.io offers free one-click auto colour correction, and several tools (including Fylm.ai itself) have free tiers with limits. For photographers, your existing editor's colour grading is effectively a \"free\" alternative you already own."
+            "t": "\nYes. Fylm.ai itself offers a free tier with 3 projects and 1 GB storage. Media.io offers free one-click auto colour correction in your browser. For photographers, your existing RAW editor (Lightroom Classic or Capture One) provides comprehensive color grading tools at no extra cost."
           }
         ],
         "cls": ""
@@ -13127,24 +13812,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "What is the closest alternative to Fylm.ai?",
+            "t": "Do photographers actually need a dedicated colour grading tool?",
             "b": true
           },
           {
-            "t": "\nColor.io is the most direct like-for-like, cloud-based AI grading that adapts cinematic LUTs and works for both stills and video. Colourlab AI is the closest if you want a plugin inside your editor instead of a cloud app."
-          }
-        ],
-        "cls": ""
-      },
-      {
-        "type": "p",
-        "runs": [
-          {
-            "t": "Do photographers actually need a colour grading tool?",
-            "b": true
-          },
-          {
-            "t": "\nNot necessarily. If you want cinematic, LUT-driven looks or to build a profile once and reuse it, a grading tool helps. If you just want consistent, clean colour, Lightroom's or Capture One's built-in tools usually cover it."
+            "t": "\nNot always. If you need authentic film emulsion physics (like grain, halation, and bloom), multi-camera video matching, or custom LUT/ICC profile authoring, dedicated tools are invaluable. If your goal is clean, consistent portrait or event colour, your RAW editor's built-in tools are usually more than sufficient."
           }
         ],
         "cls": ""

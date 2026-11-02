@@ -148,6 +148,8 @@ const IMG_META: Record<string, [number, number, string]> = {
   '/assets/smugmug.jpg': [1024, 587, '50% 50%'],
   '/assets/zenfolio.webp': [1024, 539, '50% 50%'],
   '/assets/zenfolio.png': [1024, 539, '50% 50%'],
+  '/assets/dehancer-photo.webp': [1528, 1000, '50% 50%'],
+  '/assets/3d-lut-creator.webp': [877, 527, '50% 50%'],
 };
 
 export function runsText(rs?: Run[]): string {
