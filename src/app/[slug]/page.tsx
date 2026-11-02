@@ -100,6 +100,7 @@ export default async function PostPage({ params }: Props) {
     shortlist,
     shortlistTitle,
     hasGenericBox,
+    boxBlocks,
     boxParas,
     boxTitle,
     hasAlts,
@@ -279,7 +280,7 @@ export default async function PostPage({ params }: Props) {
                 {hasDisclosure && (
                   <div className="mt-4 text-[15px] leading-[1.55] text-[#4A4E49]">
                     <p className="m-0">
-                      <strong className="text-[#20221F]">How this was assessed.</strong> {disclosure}
+                      <strong className="text-[#20221F]">How this was assessed.</strong> {disclosure?.replace(/^How we assess tools:\s*/i, '')}
                     </p>
                   </div>
                 )}
@@ -509,11 +510,35 @@ export default async function PostPage({ params }: Props) {
                   <p className="m-0 mb-3 text-[13px] font-semibold tracking-[0.05em] uppercase text-[#3159D7]">
                     {boxTitle}
                   </p>
-                  {boxParas.map((bp, bpi) => (
-                    <p key={bpi} className="m-0 mb-3 text-[16px] leading-[1.6] text-[#20221F]">
-                      <InlineRuns runs={bp.runs} />
-                    </p>
-                  ))}
+                  {boxBlocks && boxBlocks.length > 0 ? (
+                    boxBlocks.map((b: any, bi: number) => {
+                      if (b.isUl) {
+                        return (
+                          <ul
+                            key={bi}
+                            className="m-0 mb-3 pl-5 list-disc space-y-2 text-[16px] leading-[1.6] text-[#20221F]"
+                          >
+                            {b.items.map((it: any, lidx: number) => (
+                              <li key={lidx} className="pl-1">
+                                <InlineRuns runs={it.runs} />
+                              </li>
+                            ))}
+                          </ul>
+                        );
+                      }
+                      return (
+                        <p key={bi} className="m-0 mb-3 text-[16px] leading-[1.6] text-[#20221F]">
+                          <InlineRuns runs={b.runs} />
+                        </p>
+                      );
+                    })
+                  ) : (
+                    boxParas.map((bp, bpi) => (
+                      <p key={bpi} className="m-0 mb-3 text-[16px] leading-[1.6] text-[#20221F]">
+                        <InlineRuns runs={bp.runs} />
+                      </p>
+                    ))
+                  )}
                 </section>
               )}
 

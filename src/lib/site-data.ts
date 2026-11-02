@@ -498,6 +498,10 @@ export function buildArticlePageData(slug: string) {
   let boxParas: { runs: RenderedRun[] }[] = [];
   let decisionLead = '';
   let decisionParas: { runs: RenderedRun[] }[] = [];
+  let boxBlocks: (
+    | { isP: true; isUl?: false; runs: RenderedRun[] }
+    | { isUl: true; isP?: false; items: { runs: RenderedRun[] }[] }
+  )[] = [];
 
   if (box && box.blocks) {
     const ps = box.blocks.filter((x) => x.type === 'p');
@@ -536,12 +540,30 @@ export function buildArticlePageData(slug: string) {
       if (items.length && items.every(Boolean)) {
         shortlist = items as { label: string; tool: string; text: string; href: string; noHref: boolean }[];
       } else {
+        boxBlocks = box.blocks
+          .map((b) => {
+            if (b.type === 'p') return { isP: true, runs: formatRuns(b.runs) };
+            if (b.type === 'ul' && b.items) {
+              return { isUl: true, items: b.items.map((it: any) => ({ runs: formatRuns(it) })) };
+            }
+            return null;
+          })
+          .filter(Boolean) as any;
         boxParas = ps.map((p) => ({ runs: formatRuns(p.runs) }));
       }
     } else if (T === 'comparison') {
       decisionLead = ps[0] ? runsText(ps[0].runs).trim() : '';
       decisionParas = ps.slice(1).map((p) => ({ runs: formatRuns(p.runs) }));
     } else {
+      boxBlocks = box.blocks
+        .map((b) => {
+          if (b.type === 'p') return { isP: true, runs: formatRuns(b.runs) };
+          if (b.type === 'ul' && b.items) {
+            return { isUl: true, items: b.items.map((it: any) => ({ runs: formatRuns(it) })) };
+          }
+          return null;
+        })
+        .filter(Boolean) as any;
       boxParas = ps.map((p) => ({ runs: formatRuns(p.runs) }));
     }
   }
@@ -620,7 +642,8 @@ export function buildArticlePageData(slug: string) {
     hasShortlist: shortlist.length > 0,
     shortlist,
     shortlistTitle: T === 'alternatives' ? `Quick picks if you’re moving from ${a.from}` : 'The shortlist',
-    hasGenericBox: boxParas.length > 0,
+    hasGenericBox: boxBlocks.length > 0 || boxParas.length > 0,
+    boxBlocks,
     boxParas,
     boxTitle: 'The short answer',
     hasAlts: T === 'review' && !!a.alts,
