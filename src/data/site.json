@@ -476,6 +476,19 @@
       "evidence": "research",
       "checked": "October 2026",
       "updated": "2026-10-29"
+    },
+    {
+      "slug": "narrative-select-alternatives",
+      "short": "Best Narrative Select alternatives",
+      "cat": "ai-culling-editing",
+      "type": "alternatives",
+      "from": "Narrative Select",
+      "date": "2026-11-04",
+      "summary": "Narrative Select alternatives compared on verified 2026 pricing, processing location, trials, and limits: Aftershoot, FilterPixel, Photo Mechanic, Excire Foto 2027 and Imagen.",
+      "evidence": "research",
+      "pull": null,
+      "updated": "2026-11-04",
+      "checked": "November 2026"
     }
   ],
   "types": {

@@ -13956,5 +13956,1734 @@
         "cls": ""
       }
     ]
+  },
+  "narrative-select-alternatives": {
+    "title": "Best Narrative Select Alternatives for Photographers (2026)",
+    "meta": "By The Photo Testers team · Research-based · Prices verified November 4, 2026 · 9 min read",
+    "disclosure": "This is a research-based article. We did not run hands-on tests for it. Prices and features come from each vendor's official pricing pages and documentation, checked on November 4, 2026. Where a figure comes only from the vendor, or could not be confirmed, we say so. Some links may be affiliate links, which means we may earn a commission if you sign up. It does not change what we write. Prices change often, so confirm on the vendor's page before you buy.",
+    "blocks": [
+      {
+        "type": "box",
+        "blocks": [
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Narrative Select gives you AI assessments, but you choose the final keepers.",
+                "b": true
+              },
+              {
+                "t": " The right alternative depends on why you want to switch."
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "If you want an alternative:",
+                "b": true
+              }
+            ],
+            "cls": ""
+          },
+          {
+            "type": "ul",
+            "items": [
+              [
+                {
+                  "t": "You want the software to make the first selection for you: ",
+                  "b": true
+                },
+                {
+                  "t": "Aftershoot",
+                  "href": "https://aftershoot.com",
+                  "ext": 1
+                },
+                {
+                  "t": " ($10/mo billed annually ($120/yr), or $15/mo monthly for Select). Its AI-Automated mode surfaces a complete first pass of keepers for your review."
+                }
+              ],
+              [
+                {
+                  "t": "You want AI analysis to run in the cloud: ",
+                  "b": true
+                },
+                {
+                  "t": "FilterPixel",
+                  "href": "https://filterpixel.com",
+                  "ext": 1
+                },
+                {
+                  "t": " ($14.99/mo billed annually ($180/yr), or $19.99/mo monthly). Embedded previews are analyzed in the cloud while original RAW files remain on your computer."
+                }
+              ],
+              [
+                {
+                  "t": "You want to stop paying a subscription: ",
+                  "b": true
+                },
+                {
+                  "t": "Photo Mechanic",
+                  "href": "https://home.camerabits.com",
+                  "ext": 1
+                },
+                {
+                  "t": " ($299 perpetual, high-speed manual culling) or "
+                },
+                {
+                  "t": "Excire Foto 2027",
+                  "href": "https://excire.com",
+                  "ext": 1
+                },
+                {
+                  "t": " ($249 / €229 perpetual, local AI search and Smart Selection)."
+                }
+              ],
+              [
+                {
+                  "t": "Editing matters as much as culling: ",
+                  "b": true
+                },
+                {
+                  "t": "Imagen",
+                  "href": "https://imagen-ai.com",
+                  "ext": 1
+                },
+                {
+                  "t": " (from $0.05/photo with a $7/mo minimum spend commitment credited toward editing, or $129/mo billed annually ($1,548/yr) for Limitless)."
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "What Narrative Select does",
+        "id": "what-narrative-select-does"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Narrative Select",
+            "href": "https://narrative.so/select",
+            "ext": 1
+          },
+          {
+            "t": " is an installed desktop culling application for macOS and Windows built around giving you AI evidence while keeping the final keeper decisions in your hands."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Across its plan tiers, its culling engine includes:"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Per-image First Pass indicators: ",
+              "b": true
+            },
+            {
+              "t": "On all plans including Lite, Narrative displays individual image assessments, focus scores, and Smart Face Zoom to inspect eyes and sharpness rapidly."
+            }
+          ],
+          [
+            {
+              "t": "Scenes View and Close-ups panel: ",
+              "b": true
+            },
+            {
+              "t": "Available on the Standard plan and above, Narrative groups near-identical frames into scenes and displays all detected faces side-by-side in the Close-ups panel, allowing photographers to identify expression changes across burst shots instantly."
+            }
+          ],
+          [
+            {
+              "t": "AI First Pass categorization: ",
+              "b": true
+            },
+            {
+              "t": "In Scenes View, each photo is evaluated and placed into one of five categories: \"Best in scene\", \"above average\", \"average\", \"below average\", and \"undesirable\". According to Narrative's official documentation, an undesirable assessment \"never rejects or deletes a photo.\""
+            }
+          ],
+          [
+            {
+              "t": "Auto-rate via First Pass: ",
+              "b": true
+            },
+            {
+              "t": "An optional bulk action (Photo → Auto-rate via First Pass) translates these scene assessments into star ratings and color labels in one click. Narrative cautions that applying Auto-rate can overwrite existing image ratings."
+            }
+          ],
+          [
+            {
+              "t": "AI editing: ",
+              "b": true
+            },
+            {
+              "t": "Standard includes unlimited editing with Narrative AI Presets and Marketplace Presets. Premium and Ultra add personal AI presets trained on your personal editing catalog."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Selections, star ratings, and color tags export cleanly into Adobe Lightroom Classic, Adobe Photoshop, and Capture One Pro."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "h2",
+        "text": "Narrative pricing (verified November 4, 2026)",
+        "id": "narrative-pricing"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "According to "
+          },
+          {
+            "t": "Narrative's official pricing page",
+            "href": "https://narrative.so/pricing",
+            "ext": 1
+          },
+          {
+            "t": " (verified November 4, 2026), the platform offers four subscription tiers:"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "table",
+        "head": [
+          [
+            {
+              "t": "Plan"
+            }
+          ],
+          [
+            {
+              "t": "Annual billing"
+            }
+          ],
+          [
+            {
+              "t": "Monthly billing"
+            }
+          ],
+          [
+            {
+              "t": "Users"
+            }
+          ],
+          [
+            {
+              "t": "Key culling features"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "t": "Lite",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$10/mo ($120/yr)"
+              }
+            ],
+            [
+              {
+                "t": "$15/mo"
+              }
+            ],
+            [
+              {
+                "t": "1"
+              }
+            ],
+            [
+              {
+                "t": "Focus scores, Smart Face Zoom, per-image First Pass indicators. No Scenes View, Close-ups panel, or bulk Auto-rate"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Standard",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$20/mo ($240/yr)"
+              }
+            ],
+            [
+              {
+                "t": "$29/mo"
+              }
+            ],
+            [
+              {
+                "t": "1"
+              }
+            ],
+            [
+              {
+                "t": "Adds full AI First Pass, Scenes View, Close-ups panel, Best in scene tags, rank ordering, bulk Auto-rate, AI presets"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Premium",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$40/mo ($480/yr)"
+              }
+            ],
+            [
+              {
+                "t": "$59/mo"
+              }
+            ],
+            [
+              {
+                "t": "2"
+              }
+            ],
+            [
+              {
+                "t": "Adds personal AI presets (1 colour, 1 B&W), AI straightening"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Ultra",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$60/mo ($720/yr)"
+              }
+            ],
+            [
+              {
+                "t": "$79/mo"
+              }
+            ],
+            [
+              {
+                "t": "4"
+              }
+            ],
+            [
+              {
+                "t": "Up to 5 colour and 5 B&W personal presets, onboarding support"
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "All plans include unlimited images and projects. New accounts get a free trial of Ultra with no credit card required. The pricing page does not publish a fixed trial duration. There is no permanent free tier."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Current promotion (temporary, separate from standard pricing): ",
+            "b": true
+          },
+          {
+            "t": "In November 2026, Narrative advertises up to 30% off for new customers committing to an eligible 12-month annual plan. Monthly subscriptions and select plan upgrades do not qualify. Check "
+          },
+          {
+            "t": "Narrative's official Black Friday terms",
+            "href": "https://narrative.so",
+            "ext": 1
+          },
+          {
+            "t": " for current eligibility requirements."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "h2",
+        "text": "Why photographers look for an alternative",
+        "id": "why-photographers-look-for-an-alternative"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Photographers who move away from Narrative Select typically cite four workflow factors:"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "1. You want the software to make the initial selection, not just score it. ",
+            "b": true
+          },
+          {
+            "t": "While Narrative's First Pass and bulk Auto-rate assist the review, the photographer still evaluates each scene manually. Photographers with high seasonal volume often prefer an automated engine that presents a finished selection of keepers immediately."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "2. Grouping and bulk rating require the $20/month Standard tier. ",
+            "b": true
+          },
+          {
+            "t": "While Lite offers entry-level per-image indicators for $10/month, the defining features of Narrative—Scenes View, the Close-ups panel, \"Best in scene\" indicators, and bulk Auto-rate—are reserved for Standard ($20/month billed annually) and above."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "3. You prefer perpetual licensing over recurring subscriptions. ",
+            "b": true
+          },
+          {
+            "t": "Every Narrative tier requires an ongoing monthly or annual subscription. Photographers seeking to eliminate recurring operational costs prefer tools with perpetual licenses."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "4. Offloading hardware load to the cloud. ",
+            "b": true
+          },
+          {
+            "t": "Narrative runs its computer vision models locally on your computer. If your workstation slows down during high-volume ingest, a cloud-assisted engine can reduce local processing overhead."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "h2",
+        "text": "The alternatives at a glance",
+        "id": "the-alternatives-at-a-glance"
+      },
+      {
+        "type": "table",
+        "head": [
+          [
+            {
+              "t": "Tool"
+            }
+          ],
+          [
+            {
+              "t": "Verified price"
+            }
+          ],
+          [
+            {
+              "t": "Billing"
+            }
+          ],
+          [
+            {
+              "t": "Processing"
+            }
+          ],
+          [
+            {
+              "t": "Free option"
+            }
+          ],
+          [
+            {
+              "t": "Main limitation"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "t": "Aftershoot Select",
+                "b": true,
+                "href": "https://aftershoot.com",
+                "ext": 1
+              }
+            ],
+            [
+              {
+                "t": "$10/mo ($120/yr) annual, or $15/mo monthly"
+              }
+            ],
+            [
+              {
+                "t": "Subscription"
+              }
+            ],
+            [
+              {
+                "t": "Local (offline on computer)"
+              }
+            ],
+            [
+              {
+                "t": "30-day trial, no card"
+              }
+            ],
+            [
+              {
+                "t": "Culling only; AI editing and retouching are separate add-ons"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "FilterPixel Standard",
+                "b": true,
+                "href": "https://filterpixel.com",
+                "ext": 1
+              }
+            ],
+            [
+              {
+                "t": "$14.99/mo ($180/yr) annual, or $19.99/mo monthly"
+              }
+            ],
+            [
+              {
+                "t": "Subscription"
+              }
+            ],
+            [
+              {
+                "t": "Cloud (previews uploaded; originals stay local)"
+              }
+            ],
+            [
+              {
+                "t": "Free trial available"
+              }
+            ],
+            [
+              {
+                "t": "Includes 20 DeepCull shoots/yr on annual (2/mo on monthly); extra shoots $7.99 each"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Photo Mechanic",
+                "b": true,
+                "href": "https://home.camerabits.com",
+                "ext": 1
+              }
+            ],
+            [
+              {
+                "t": "$299 perpetual, or $14.99/mo, $149/yr"
+              }
+            ],
+            [
+              {
+                "t": "Perpetual or subscription"
+              }
+            ],
+            [
+              {
+                "t": "Local (on computer)"
+              }
+            ],
+            [
+              {
+                "t": "30-day trial advertised"
+              }
+            ],
+            [
+              {
+                "t": "Fast ingest and browsing only; no AI culling or face assessment"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Photo Mechanic Plus",
+                "b": true,
+                "href": "https://home.camerabits.com",
+                "ext": 1
+              }
+            ],
+            [
+              {
+                "t": "$399 perpetual, or $24.99/mo, $249/yr"
+              }
+            ],
+            [
+              {
+                "t": "Perpetual or subscription"
+              }
+            ],
+            [
+              {
+                "t": "Local (on computer)"
+              }
+            ],
+            [
+              {
+                "t": "30-day trial advertised"
+              }
+            ],
+            [
+              {
+                "t": "No AI culling; adds structured multi-drive catalog database"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Excire Foto 2027",
+                "b": true,
+                "href": "https://excire.com",
+                "ext": 1
+              }
+            ],
+            [
+              {
+                "t": "$249 / €229 new licence"
+              }
+            ],
+            [
+              {
+                "t": "One-time perpetual"
+              }
+            ],
+            [
+              {
+                "t": "Local (offline on computer)"
+              }
+            ],
+            [
+              {
+                "t": "14-day trial, no card"
+              }
+            ],
+            [
+              {
+                "t": "Standalone management app; Smart Selection assists rating, but does not batch-export to Lightroom like dedicated plugins"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Imagen",
+                "b": true,
+                "href": "https://imagen-ai.com",
+                "ext": 1
+              }
+            ],
+            [
+              {
+                "t": "From $0.05/photo ($7/mo min spend credited), or Limitless $129/mo ($1,548/yr)"
+              }
+            ],
+            [
+              {
+                "t": "Pay-as-you-go or subscription"
+              }
+            ],
+            [
+              {
+                "t": "Cloud (requires internet connection)"
+              }
+            ],
+            [
+              {
+                "t": "Free trial with initial photo credits"
+              }
+            ],
+            [
+              {
+                "t": "On PAYG, AI culling is a separate subscription from $12/mo (which covers the $7/mo minimum spend)"
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Prices checked on official vendor pages on November 4, 2026, excluding temporary promotions. Taxes may apply.",
+            "i": 1
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "h2",
+        "text": "1. Aftershoot: if you want the software to make the first selection",
+        "id": "1-aftershoot-if-you-want-the-software-to-make",
+        "productId": "aftershoot"
+      },
+      {
+        "type": "img",
+        "src": "/assets/aftershoot-homepage.webp",
+        "alt": "Aftershoot culling workspace showing keeper scores and duplicate clusters (Source: Aftershoot documentation).",
+        "cap": "Aftershoot culling workspace showing keeper scores and duplicate clusters (Source: Aftershoot documentation)."
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "If you find Narrative's manual scene review too time-consuming, "
+          },
+          {
+            "t": "Aftershoot",
+            "href": "https://aftershoot.com",
+            "ext": 1
+          },
+          {
+            "t": " is the closest direct competitor. Its defining feature is a dual-engine architecture:"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "AI-Automated mode: ",
+              "b": true
+            },
+            {
+              "t": "The software analyzes your entire shoot, detects duplicates, evaluates blinks and motion blur, picks the best frames automatically, and presents a curated set of keepers for your review."
+            }
+          ],
+          [
+            {
+              "t": "AI-Assisted mode: ",
+              "b": true
+            },
+            {
+              "t": "Similar to Narrative Select, the software groups duplicate shots, highlights face details, and tags technical issues while leaving every final keeper selection to you."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "According to "
+          },
+          {
+            "t": "Aftershoot's culling documentation",
+            "href": "https://aftershoot.com/culling/",
+            "ext": 1
+          },
+          {
+            "t": ", the software also features \"Cull to Target\", allowing photographers to specify an exact target count of deliverables (for example, 600 final wedding keepers from a 4,000-shot day). The software automatically adjusts sensitivity thresholds to hit that target. All processing runs 100% locally on your computer without cloud uploads. Ratings export to Lightroom Classic, Capture One, Photo Mechanic, and Adobe Bridge."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Pricing and plans: ",
+            "b": true
+          },
+          {
+            "t": "Sourced from "
+          },
+          {
+            "t": "Aftershoot's official pricing page",
+            "href": "https://aftershoot.com/pricing/",
+            "ext": 1
+          },
+          {
+            "t": ":"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Aftershoot Select (Culling only): ",
+              "b": true
+            },
+            {
+              "t": "$10/month billed annually ($120/year) or $15 billed monthly, with unlimited images and shoots."
+            }
+          ],
+          [
+            {
+              "t": "Editing modules: ",
+              "b": true
+            },
+            {
+              "t": "AI editing and retouching are separate products. Aftershoot Edit costs $30/month billed annually ($360/year), Retouch costs $20/month billed annually ($240/year), or all three come bundled in Aftershoot Complete for $45/month billed annually ($540/year)."
+            }
+          ],
+          [
+            {
+              "t": "Free trial: ",
+              "b": true
+            },
+            {
+              "t": "30-day free trial with full access and no credit card required."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Consider it if: ",
+            "b": true
+          },
+          {
+            "t": "You want the option of a fully automated first-pass cull to review, with local processing that doesn't rely on cloud uploads."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Keep in mind: ",
+            "b": true
+          },
+          {
+            "t": "Aftershoot Select is strictly for culling. If you also need AI color editing, factoring in the Edit module raises the annual cost to $480–$540/year."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "cta",
+        "text": "Try Aftershoot free",
+        "href": "https://aftershoot.com",
+        "ext": 1
+      },
+      {
+        "type": "h2",
+        "text": "2. FilterPixel: if you want AI analysis to run in the cloud",
+        "id": "2-filterpixel-if-you-want-ai-analysis-to-run-in-the",
+        "productId": "filterpixel"
+      },
+      {
+        "type": "img",
+        "src": "/assets/filterpixel.webp",
+        "alt": "FilterPixel interface grouping duplicate shots and assessing focus (Source: FilterPixel documentation).",
+        "cap": "FilterPixel interface grouping duplicate shots and assessing focus (Source: FilterPixel documentation)."
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "FilterPixel",
+            "href": "https://filterpixel.com",
+            "ext": 1
+          },
+          {
+            "t": " is a desktop application for macOS and Windows whose heavy AI analysis executes in the cloud rather than stressing your local CPU and GPU."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "According to "
+          },
+          {
+            "t": "FilterPixel's official architecture documentation",
+            "href": "https://filterpixel.com/pricing",
+            "ext": 1
+          },
+          {
+            "t": ", your original RAW files never leave your computer. FilterPixel extracts small embedded JPEG previews from your RAW files and uploads only these lightweight previews to its cloud servers. The cloud engine performs face detection, focus assessment, and blink scoring before returning metadata to your desktop app."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "FilterPixel advertises specialized \"DeepCull\" AI models tuned for specific photography genres, including weddings, portraits, and sports events. Because analysis occurs server-side, hardware load on entry-level laptops is minimal, though workflow responsiveness remains dependent on internet upload speeds."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Pricing and plans: ",
+            "b": true
+          },
+          {
+            "t": "According to "
+          },
+          {
+            "t": "FilterPixel's official pricing",
+            "href": "https://filterpixel.com/pricing",
+            "ext": 1
+          },
+          {
+            "t": ":"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Standard: ",
+              "b": true
+            },
+            {
+              "t": "$14.99/month on annual billing ($180/year) or $19.99 billed monthly. Includes unlimited Basic culling plus 20 DeepCull shoots per year on annual billing (or 2 shoots per month on monthly billing). Additional DeepCull shoots cost $7.99 each."
+            }
+          ],
+          [
+            {
+              "t": "Pro: ",
+              "b": true
+            },
+            {
+              "t": "$34.99/month on annual billing ($420/year), including unlimited Basic culling and 60 DeepCull shoots per year."
+            }
+          ],
+          [
+            {
+              "t": "Studio: ",
+              "b": true
+            },
+            {
+              "t": "$64.99/month on annual billing ($780/year), including unlimited Basic culling and 180 DeepCull shoots per year."
+            }
+          ],
+          [
+            {
+              "t": "Free trial: ",
+              "b": true
+            },
+            {
+              "t": "FilterPixel provides a free trial with DeepCull and Basic project access to test automated and assisted culling without requiring a credit card."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Consider it if: ",
+            "b": true
+          },
+          {
+            "t": "You work on a less powerful laptop and want cloud servers to handle heavy computer vision workloads while keeping original RAW files on your local drive."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Keep in mind: ",
+            "b": true
+          },
+          {
+            "t": "You must monitor your plan's DeepCull shoot allowances; exceeding your included quota incurs per-shoot fees of $7.99 each."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "cta",
+        "text": "View FilterPixel",
+        "href": "https://filterpixel.com",
+        "ext": 1
+      },
+      {
+        "type": "h2",
+        "text": "3. Photo Mechanic: if you want fast manual culling and the option to own it",
+        "id": "3-photo-mechanic-if-you-want-fast-manual-culling",
+        "productId": "photo-mechanic"
+      },
+      {
+        "type": "img",
+        "src": "/assets/photo-mechanic.webp",
+        "alt": "Photo Mechanic high-speed contact sheet browsing and metadata tagging (Source: Camera Bits documentation).",
+        "cap": "Photo Mechanic high-speed contact sheet browsing and metadata tagging (Source: Camera Bits documentation)."
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "For photographers who want to escape recurring subscriptions and do not need artificial intelligence, "
+          },
+          {
+            "t": "Photo Mechanic by Camera Bits",
+            "href": "https://home.camerabits.com",
+            "ext": 1
+          },
+          {
+            "t": " remains the undisputed gold standard for high-speed ingest and manual culling."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Unlike AI tools that scan pixels for focus and expression scores, Photo Mechanic reads embedded JPEG previews directly from memory cards or local storage with zero rendering delay. Photographers can toggle full-screen previews, rate keepers with numeric hotkeys, and apply structured IPTC metadata at the speed of keypresses."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Pricing and licensing: ",
+            "b": true
+          },
+          {
+            "t": "Sourced from the "
+          },
+          {
+            "t": "Camera Bits official store",
+            "href": "https://home.camerabits.com",
+            "ext": 1
+          },
+          {
+            "t": ":"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Photo Mechanic (Browsing & Ingest): ",
+              "b": true
+            },
+            {
+              "t": "$299 perpetual one-time license, or a subscription at $14.99/month or $149/year."
+            }
+          ],
+          [
+            {
+              "t": "Photo Mechanic Plus (Adds Catalog Database): ",
+              "b": true
+            },
+            {
+              "t": "$399 perpetual one-time license, or a subscription at $24.99/month or $249/year."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Perpetual licenses include 12 months of official software updates and technical support. After 12 months, the software remains fully functional on supported operating systems without mandatory upgrade fees. Each license allows one user on up to two computers. Camera Bits advertises a 30-day free trial."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Consider it if: ",
+            "b": true
+          },
+          {
+            "t": "You want maximum manual speed, bulletproof metadata ingest, and the financial peace of mind of a one-time perpetual purchase."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Keep in mind: ",
+            "b": true
+          },
+          {
+            "t": "Photo Mechanic does not provide AI focus scores, face zoom panels, or automated keeper suggestions. You evaluate every frame manually."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "cta",
+        "text": "View Photo Mechanic",
+        "href": "https://home.camerabits.com",
+        "ext": 1
+      },
+      {
+        "type": "h2",
+        "text": "4. Excire Foto 2027: if you want local AI with no subscription",
+        "id": "4-excire-foto-2027-if-you-want-local-ai-with-no",
+        "productId": "excire-foto"
+      },
+      {
+        "type": "img",
+        "src": "/assets/excire-foto.webp",
+        "alt": "Excire Foto photo organization and AI keyword search workspace (Source: Excire documentation).",
+        "cap": "Excire Foto photo organization and AI keyword search workspace (Source: Excire documentation)."
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Excire Foto 2027",
+            "href": "https://excire.com/en/excire-foto/",
+            "ext": 1
+          },
+          {
+            "t": " is a standalone digital asset management (DAM) and photo-organization application for macOS and Windows that runs proprietary AI models 100% locally on your computer with zero cloud dependence."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Unlike Narrative Select, which operates as a lightweight front-end ingest utility, Excire Foto is a complete image database. It automatically analyzes your catalog for visible subjects, facial expressions, and composition. For culling, Excire includes:"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Smart Selection: ",
+              "b": true
+            },
+            {
+              "t": "Excire's official documentation highlights an automated Smart Selection tool that evaluates sharpness, subject framing, and facial expressions (including smiles and open eyes) to recommend keepers across duplicate sequences."
+            }
+          ],
+          [
+            {
+              "t": "Survey Mode: ",
+              "b": true
+            },
+            {
+              "t": "Allows side-by-side comparison of duplicate frames to assign star ratings and color labels."
+            }
+          ],
+          [
+            {
+              "t": "AI Search: ",
+              "b": true
+            },
+            {
+              "t": "Search entire multi-year archives by text prompt, color dominance, or reference photo."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Note that Excire Foto is a separate product from Excire Search, which is a plugin designed specifically for Lightroom Classic."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Pricing and licensing: ",
+            "b": true
+          },
+          {
+            "t": "Sourced from "
+          },
+          {
+            "t": "Excire's official pricing page",
+            "href": "https://excire.com/en/pricing/",
+            "ext": 1
+          },
+          {
+            "t": ":"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "New License: ",
+              "b": true
+            },
+            {
+              "t": "$249 / €229 one-time perpetual purchase."
+            }
+          ],
+          [
+            {
+              "t": "Upgrade Pricing: ",
+              "b": true
+            },
+            {
+              "t": "Existing customers can upgrade for $99 from the 2024 version, or $79 from the 2025 version."
+            }
+          ],
+          [
+            {
+              "t": "Free Trial: ",
+              "b": true
+            },
+            {
+              "t": "An officially documented 14-day free trial with complete feature access and no credit card required."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Consider it if: ",
+            "b": true
+          },
+          {
+            "t": "You want AI-assisted culling combined with permanent catalog management and one-time perpetual ownership."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Keep in mind: ",
+            "b": true
+          },
+          {
+            "t": "Excire Foto is an extensive catalog manager rather than an ingest-to-Lightroom pipeline. Its culling interface is built around database organization rather than the rapid hotkey workflows of dedicated culling tools."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "cta",
+        "text": "View Excire Foto",
+        "href": "https://excire.com",
+        "ext": 1
+      },
+      {
+        "type": "h2",
+        "text": "5. Imagen: if editing matters as much as culling",
+        "id": "5-imagen-if-editing-matters-as-much-as-culling",
+        "productId": "imagen"
+      },
+      {
+        "type": "img",
+        "src": "/assets/imagen-ai-review-home-page-1536x994.webp",
+        "alt": "Imagen AI editing and culling management dashboard (Source: Imagen documentation).",
+        "cap": "Imagen AI editing and culling management dashboard (Source: Imagen documentation)."
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "If you use Narrative primarily for its combination of culling and AI editing, "
+          },
+          {
+            "t": "Imagen",
+            "href": "https://imagen-ai.com",
+            "ext": 1
+          },
+          {
+            "t": " represents the strongest integrated alternative."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Imagen began as an AI personalized photo-editing platform for Adobe Lightroom Classic catalogs and has expanded into automated AI culling. According to "
+          },
+          {
+            "t": "Imagen's official culling documentation",
+            "href": "https://imagen-ai.com/culling/",
+            "ext": 1
+          },
+          {
+            "t": ", its engine analyzes focus, expressions, blinks, and duplicate clusters in the cloud, syncing ratings and custom color profiles directly back into your Lightroom catalog."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Pricing structure: ",
+            "b": true
+          },
+          {
+            "t": "Verified on "
+          },
+          {
+            "t": "Imagen's official pricing page",
+            "href": "https://imagen-ai.com/pricing/",
+            "ext": 1
+          },
+          {
+            "t": ":"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Pay-as-you-go (PAYG) editing: ",
+              "b": true
+            },
+            {
+              "t": "Charges from $0.05 per edited photo, subject to a $7/month minimum account spend commitment. The $7/month is not an added surcharge; it is credited directly toward your photo editing usage and rolls over indefinitely if unused. Optional AI tools (AI Crop, AI Straighten, Subject Mask, Denoise) cost $0.01 per photo each."
+            }
+          ],
+          [
+            {
+              "t": "AI Culling on PAYG: ",
+              "b": true
+            },
+            {
+              "t": "Available as a dedicated add-on subscription starting at $12/month. Officially, subscribing to the $12/month AI Culling module satisfies and covers the $7/month minimum account spend requirement."
+            }
+          ],
+          [
+            {
+              "t": "Limitless Plan: ",
+              "b": true
+            },
+            {
+              "t": "$129/month billed annually ($1,548/year) or $165/month billed monthly. Designed for solo photographers, Limitless includes unlimited personalized AI editing and unlimited AI culling with no per-photo fees. Studios with multiple editors require the Business plan."
+            }
+          ],
+          [
+            {
+              "t": "Free Trial: ",
+              "b": true
+            },
+            {
+              "t": "New accounts receive 1,000 free AI editing credits and a culling trial without requiring upfront billing details."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Consider it if: ",
+            "b": true
+          },
+          {
+            "t": "You want a unified post-production workflow where AI culling and catalog-wide AI editing are handled by a single vendor."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Keep in mind: ",
+            "b": true
+          },
+          {
+            "t": "Imagen is designed primarily around cloud-connected Adobe Lightroom Classic workflows. It is not built for standalone culling outside the Adobe ecosystem."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "cta",
+        "text": "View Imagen",
+        "href": "https://imagen-ai.com",
+        "ext": 1
+      },
+      {
+        "type": "h2",
+        "text": "So, which alternative?",
+        "id": "so-which-alternative"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Choose Aftershoot",
+            "b": true
+          },
+          {
+            "t": " if you want the option of a fully automated first pass that selects your keepers for review, processed locally on your workstation without cloud uploads."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Choose FilterPixel",
+            "b": true
+          },
+          {
+            "t": " if you prefer cloud servers to process heavy computer vision models while keeping your original RAW files safely on your local drive."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Choose Photo Mechanic",
+            "b": true
+          },
+          {
+            "t": " if you want maximum manual browsing speed, robust metadata ingest, and the freedom of a one-time perpetual license with zero AI dependencies."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Choose Excire Foto 2027",
+            "b": true
+          },
+          {
+            "t": " if you want local AI search, automated Smart Selection, and a one-time perpetual license that doubles as an archive management tool."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Choose Imagen",
+            "b": true
+          },
+          {
+            "t": " if you want AI culling tightly integrated with personalized catalog-wide AI editing under either flexible pay-as-you-go pricing or a flat Limitless subscription."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "One final consideration: If your only frustration with Narrative Select is that Lite lacks Scenes View and the Close-ups panel, upgrading to the Standard plan ($20/month billed annually) provides the full feature set without switching platforms. Whichever alternative you explore, trial it on a previously culled wedding or portrait gallery to measure how closely its keeper suggestions match your personal creative standards."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "h2",
+        "text": "FAQ",
+        "id": "faq"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "What is the best Narrative Select alternative?",
+            "b": true
+          },
+          {
+            "t": "\nThe right choice depends on your reason for switching. "
+          },
+          {
+            "t": "Aftershoot",
+            "href": "https://aftershoot.com",
+            "ext": 1
+          },
+          {
+            "t": " is best if you want the software to make the initial keeper selection for you. "
+          },
+          {
+            "t": "FilterPixel",
+            "href": "https://filterpixel.com",
+            "ext": 1
+          },
+          {
+            "t": " is best for cloud-based preview analysis. "
+          },
+          {
+            "t": "Photo Mechanic",
+            "href": "https://home.camerabits.com",
+            "ext": 1
+          },
+          {
+            "t": " is best for high-speed manual culling with a perpetual license. "
+          },
+          {
+            "t": "Excire Foto 2027",
+            "href": "https://excire.com",
+            "ext": 1
+          },
+          {
+            "t": " is best for local AI organizing with no subscription. "
+          },
+          {
+            "t": "Imagen",
+            "href": "https://imagen-ai.com",
+            "ext": 1
+          },
+          {
+            "t": " is best if editing and culling are needed in a single workflow."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Does Narrative Select Lite include First Pass?",
+            "b": true
+          },
+          {
+            "t": "\nNarrative Lite includes individual per-image First Pass indicators (focus scores and eye sharpness assessments), but omits Scenes View, the Close-ups panel, \"Best in scene\" comparison badges, rank ordering, and bulk Auto-rate via First Pass. Accessing scene-level grouping and one-click bulk rating requires the Standard plan ($20/month billed annually) or higher."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Is there a free alternative to Narrative Select?",
+            "b": true
+          },
+          {
+            "t": "\nNone of the professional AI culling engines offers an unrestricted permanent free plan. However, comprehensive trials are available: Aftershoot provides a 30-day trial with no credit card required, Excire Foto 2027 provides a 14-day trial without a card, FilterPixel offers a free trial covering DeepCull and Basic projects, and Photo Mechanic advertises a 30-day evaluation."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Is there a Narrative Select alternative without a subscription?",
+            "b": true
+          },
+          {
+            "t": "\nYes. "
+          },
+          {
+            "t": "Photo Mechanic",
+            "href": "https://home.camerabits.com",
+            "ext": 1
+          },
+          {
+            "t": " is sold as a $299 perpetual license ($399 for Photo Mechanic Plus), including 12 months of software updates. "
+          },
+          {
+            "t": "Excire Foto 2027",
+            "href": "https://excire.com",
+            "ext": 1
+          },
+          {
+            "t": " is sold as a $249 / €229 one-time perpetual license that runs local AI models without subscription renewals."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Does FilterPixel upload my original RAW files?",
+            "b": true
+          },
+          {
+            "t": "\nNo. FilterPixel extracts low-resolution embedded JPEG previews from your RAW files and uploads only these small preview files to its cloud servers. Your original RAW files stay safely stored on your local computer."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "How does Imagen's pay-as-you-go pricing and monthly minimum work?",
+            "b": true
+          },
+          {
+            "t": "\nImagen PAYG charges from $0.05 per edited photo, subject to a $7/month minimum account spend commitment. The $7 is not an added surcharge—it is credited directly toward your editing usage and rolls over if unspent. If you add an AI Culling subscription (starting at $12/month), that culling subscription covers and fulfills the $7/month account minimum requirement."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Can Excire Foto 2027 automatically select keepers?",
+            "b": true
+          },
+          {
+            "t": "\nYes. Excire Foto 2027 includes a dedicated "
+          },
+          {
+            "t": "Smart Selection",
+            "b": true
+          },
+          {
+            "t": " feature that analyzes sharpness, composition, and facial expressions (including smiles and open eyes) to recommend keepers across duplicate sequences. However, Excire Foto is primarily a complete desktop photo-management database, so it does not function as an in-editor Lightroom plugin like Narrative Select or Aftershoot."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "hr"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Related: ",
+            "i": 1
+          },
+          {
+            "t": "Best photo culling software",
+            "href": "/best-photo-culling-software"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Aftershoot review",
+            "href": "/aftershoot-review"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Best Aftershoot alternatives",
+            "href": "/aftershoot-alternatives"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Best FilterPixel alternatives",
+            "href": "/filterpixel-alternatives"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Aftershoot vs Imagen",
+            "href": "/aftershoot-vs-imagen"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Imagen AI review",
+            "href": "/imagen-ai-review"
+          }
+        ],
+        "cls": ""
+      }
+    ]
   }
 }
