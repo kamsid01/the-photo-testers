@@ -14619,7 +14619,7 @@
             ],
             [
               {
-                "t": "Standalone management app; Smart Selection assists rating, but does not batch-export to Lightroom like dedicated plugins"
+                "t": "Standalone photo-management application focused on catalog organization and search; assess its export workflow against your editing setup"
               }
             ]
           ],
@@ -14857,12 +14857,12 @@
             "t": "According to "
           },
           {
-            "t": "FilterPixel's official pricing and product FAQ",
-            "href": "https://accounts.filterpixel.com/pricing",
+            "t": "FilterPixel's official DeepCull architecture documentation",
+            "href": "https://filterpixel.com/deepcull",
             "ext": 1
           },
           {
-            "t": ", your original RAW files never leave your computer. FilterPixel extracts small embedded JPEG previews from your RAW files and uploads only these lightweight previews to its cloud servers. The cloud engine performs face detection, focus assessment, and blink scoring before returning metadata to your desktop app."
+            "t": ", your original RAW files never leave your computer. When you import a shoot, the desktop application generates lightweight low-resolution previews on your machine and uploads only those preview files to FilterPixel's cloud for AI scoring. Full-resolution RAW files remain on your local drive throughout the process and are never uploaded or stored on FilterPixel's servers."
           }
         ],
         "cls": ""
@@ -14915,7 +14915,7 @@
               "b": true
             },
             {
-              "t": "$34.99/month on annual billing ($420/year) or $44.99 billed monthly, including unlimited Basic culling plus 70 DeepCull shoots per year on annual billing (or 6 shoots per month on monthly billing)."
+              "t": "$34.99/month on annual billing ($420/year) or $49.99 billed monthly, including unlimited Basic culling plus 70 DeepCull shoots per year on annual billing (or 6 shoots per month on monthly billing)."
             }
           ],
           [
@@ -14924,7 +14924,7 @@
               "b": true
             },
             {
-              "t": "$64.99/month on annual billing ($780/year) or $79.99 billed monthly, including unlimited Basic culling plus 140 DeepCull shoots per year on annual billing (or 12 shoots per month on monthly billing)."
+              "t": "$64.99/month on annual billing ($780/year) or $99.99 billed monthly, including unlimited Basic culling plus 140 DeepCull shoots per year on annual billing (or 12 shoots per month on monthly billing)."
             }
           ],
           [
@@ -15611,7 +15611,15 @@
             "b": true
           },
           {
-            "t": "\nNo. FilterPixel extracts low-resolution embedded JPEG previews from your RAW files and uploads only these small preview files to its cloud servers. Your original RAW files stay safely stored on your local computer."
+            "t": "\nNo. According to "
+          },
+          {
+            "t": "FilterPixel's official DeepCull architecture documentation",
+            "href": "https://filterpixel.com/deepcull",
+            "ext": 1
+          },
+          {
+            "t": ", your original RAW files never leave your computer. FilterPixel generates low-resolution previews on your machine and uploads only those lightweight preview files to its cloud servers for AI scoring. Your full-resolution RAW files stay safely on your local drive and are never uploaded or stored on FilterPixel's servers."
           }
         ],
         "cls": ""

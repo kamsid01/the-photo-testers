@@ -82,7 +82,7 @@ Photographers who move away from Narrative Select typically cite four workflow f
 | **FilterPixel Standard** | $14.99/mo ($180/yr) annual, or $19.99/mo monthly | Subscription | Cloud (previews uploaded; originals stay local) | Free trial available | Includes 20 DeepCull shoots/yr on annual (2/mo on monthly); extra shoots $7.99 each |
 | **Photo Mechanic** | $299 perpetual, or $14.99/mo, $149/yr | Perpetual or subscription | Local (on computer) | 30-day trial advertised | Fast ingest and browsing only; no AI culling or face assessment |
 | **Photo Mechanic Plus** | $399 perpetual, or $24.99/mo, $249/yr | Perpetual or subscription | Local (on computer) | 30-day trial advertised | No AI culling; adds structured multi-drive catalog database |
-| **Excire Foto 2027** | $249 / €229 new licence | One-time perpetual | Local (offline on computer) | 14-day trial, no card | Standalone management app; Smart Selection assists rating, but does not batch-export to Lightroom like dedicated plugins |
+| **Excire Foto 2027** | $249 / €229 new licence | One-time perpetual | Local (offline on computer) | 14-day trial, no card | Standalone photo-management application focused on catalog organization and search; assess its export workflow against your editing setup |
 | **Imagen** | From $0.05/photo ($7/mo min spend credited), or Limitless $129/mo ($1,548/yr) | Pay-as-you-go or subscription | Cloud (requires internet connection) | Free trial with initial photo credits | On PAYG, AI culling is a separate subscription at $12/mo billed annually ($144/yr) or $18/mo monthly (which covers the $7/mo minimum spend) |
 
 </ComparisonTable>
@@ -116,14 +116,14 @@ According to [Aftershoot's culling documentation](https://aftershoot.com/culling
 
 [FilterPixel](https://filterpixel.com) is a desktop application for macOS and Windows whose heavy AI analysis executes in the cloud rather than stressing your local CPU and GPU.
 
-According to [FilterPixel's official pricing and product FAQ](https://accounts.filterpixel.com/pricing), your original RAW files never leave your computer. FilterPixel extracts small embedded JPEG previews from your RAW files and uploads only these lightweight previews to its cloud servers. The cloud engine performs face detection, focus assessment, and blink scoring before returning metadata to your desktop app.
+According to [FilterPixel's official DeepCull architecture documentation](https://filterpixel.com/deepcull), your original RAW files never leave your computer. When you import a shoot, the desktop application generates lightweight low-resolution previews on your machine and uploads only those preview files to FilterPixel's cloud for AI scoring. Full-resolution RAW files remain on your local drive throughout the process and are never uploaded or stored on FilterPixel's servers.
 
 FilterPixel advertises specialized "DeepCull" AI models tuned for specific photography genres, including weddings, portraits, and sports events. Because analysis occurs server-side, hardware load on entry-level laptops is minimal, though workflow responsiveness remains dependent on internet upload speeds.
 
 **Pricing and plans:** Sourced from [FilterPixel's official pricing page](https://accounts.filterpixel.com/pricing):
 - **Standard:** $14.99/month on annual billing ($180/year) or $19.99 billed monthly. Includes unlimited Basic culling plus 20 DeepCull shoots per year on annual billing (or 2 shoots per month on monthly billing). Additional DeepCull shoots cost $7.99 each.
-- **Pro:** $34.99/month on annual billing ($420/year) or $44.99 billed monthly, including unlimited Basic culling plus 70 DeepCull shoots per year on annual billing (or 6 shoots per month on monthly billing).
-- **Studio:** $64.99/month on annual billing ($780/year) or $79.99 billed monthly, including unlimited Basic culling plus 140 DeepCull shoots per year on annual billing (or 12 shoots per month on monthly billing).
+- **Pro:** $34.99/month on annual billing ($420/year) or $49.99 billed monthly, including unlimited Basic culling plus 70 DeepCull shoots per year on annual billing (or 6 shoots per month on monthly billing).
+- **Studio:** $64.99/month on annual billing ($780/year) or $99.99 billed monthly, including unlimited Basic culling plus 140 DeepCull shoots per year on annual billing (or 12 shoots per month on monthly billing).
 - **Free trial:** FilterPixel provides a free trial with DeepCull and Basic project access to test automated and assisted culling without requiring a credit card.
 
 **Consider it if:** You work on a less powerful laptop and want cloud servers to handle heavy computer vision workloads while keeping original RAW files on your local drive.
@@ -223,7 +223,7 @@ None of the professional AI culling engines offers an unrestricted permanent fre
 Yes. [Photo Mechanic](https://home.camerabits.com) is sold as a $299 perpetual license ($399 for Photo Mechanic Plus), including 12 months of software updates. [Excire Foto 2027](https://excire.com) is sold as a $249 / €229 one-time perpetual license that runs local AI models without subscription renewals.
 
 **Does FilterPixel upload my original RAW files?**
-No. FilterPixel extracts low-resolution embedded JPEG previews from your RAW files and uploads only these small preview files to its cloud servers. Your original RAW files stay safely stored on your local computer.
+No. According to [FilterPixel's official DeepCull architecture documentation](https://filterpixel.com/deepcull), your original RAW files never leave your computer. FilterPixel generates low-resolution previews on your machine and uploads only those lightweight preview files to its cloud servers for AI scoring. Your full-resolution RAW files stay safely on your local drive and are never uploaded or stored on FilterPixel's servers.
 
 **How does Imagen's pay-as-you-go pricing and monthly minimum work?**
 Imagen PAYG charges from $0.05 per edited photo, subject to a $7/month minimum account spend commitment. The $7 is not an added surcharge—it is credited directly toward your editing usage and rolls over if unspent. If you add an AI Culling subscription ($12/month billed annually at $144/year, or $18/month billed monthly), that culling subscription covers and fulfills the $7/month account minimum requirement.
