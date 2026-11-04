@@ -14052,7 +14052,7 @@
                   "ext": 1
                 },
                 {
-                  "t": " (from $0.05/photo with a $7/mo minimum spend commitment credited toward editing, or $129/mo billed annually ($1,548/yr) for Limitless)."
+                  "t": " (editing from $0.05/photo with a $7/mo minimum spend commitment credited toward editing, AI culling at $12/mo billed annually ($144/yr) or $18/mo monthly which covers the minimum spend, or Limitless at $129/mo billed annually ($1,548/yr))."
                 }
               ]
             ]
@@ -14141,7 +14141,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Selections, star ratings, and color tags export cleanly into Adobe Lightroom Classic, Adobe Photoshop, and Capture One Pro."
+            "t": "Selections, star ratings, and color tags export into Adobe Lightroom Classic, Adobe Photoshop, and Capture One Pro."
           }
         ],
         "cls": ""
@@ -14332,8 +14332,8 @@
             "t": "In November 2026, Narrative advertises up to 30% off for new customers committing to an eligible 12-month annual plan. Monthly subscriptions and select plan upgrades do not qualify. Check "
           },
           {
-            "t": "Narrative's official Black Friday terms",
-            "href": "https://narrative.so",
+            "t": "Narrative's official Black Friday promotion page",
+            "href": "https://narrative.so/black-friday-2026",
             "ext": 1
           },
           {
@@ -14654,7 +14654,7 @@
             ],
             [
               {
-                "t": "On PAYG, AI culling is a separate subscription from $12/mo (which covers the $7/mo minimum spend)"
+                "t": "On PAYG, AI culling is a separate subscription at $12/mo billed annually ($144/yr) or $18/mo monthly (which covers the $7/mo minimum spend)"
               }
             ]
           ]
@@ -14679,8 +14679,8 @@
       {
         "type": "img",
         "src": "/assets/aftershoot-homepage.webp",
-        "alt": "Aftershoot culling workspace showing keeper scores and duplicate clusters (Source: Aftershoot documentation).",
-        "cap": "Aftershoot culling workspace showing keeper scores and duplicate clusters (Source: Aftershoot documentation)."
+        "alt": "Aftershoot website marketing overview highlighting its cull, edit, and retouch features (Source: Aftershoot website).",
+        "cap": "Aftershoot website marketing overview highlighting its cull, edit, and retouch features (Source: Aftershoot website)."
       },
       {
         "type": "p",
@@ -14857,8 +14857,8 @@
             "t": "According to "
           },
           {
-            "t": "FilterPixel's official architecture documentation",
-            "href": "https://filterpixel.com/pricing",
+            "t": "FilterPixel's official pricing and product FAQ",
+            "href": "https://accounts.filterpixel.com/pricing",
             "ext": 1
           },
           {
@@ -14887,8 +14887,8 @@
             "t": "According to "
           },
           {
-            "t": "FilterPixel's official pricing",
-            "href": "https://filterpixel.com/pricing",
+            "t": "FilterPixel's official pricing page",
+            "href": "https://accounts.filterpixel.com/pricing",
             "ext": 1
           },
           {
@@ -14915,7 +14915,7 @@
               "b": true
             },
             {
-              "t": "$34.99/month on annual billing ($420/year), including unlimited Basic culling and 60 DeepCull shoots per year."
+              "t": "$34.99/month on annual billing ($420/year) or $44.99 billed monthly, including unlimited Basic culling plus 70 DeepCull shoots per year on annual billing (or 6 shoots per month on monthly billing)."
             }
           ],
           [
@@ -14924,7 +14924,7 @@
               "b": true
             },
             {
-              "t": "$64.99/month on annual billing ($780/year), including unlimited Basic culling and 180 DeepCull shoots per year."
+              "t": "$64.99/month on annual billing ($780/year) or $79.99 billed monthly, including unlimited Basic culling plus 140 DeepCull shoots per year on annual billing (or 12 shoots per month on monthly billing)."
             }
           ],
           [
@@ -14994,7 +14994,7 @@
             "ext": 1
           },
           {
-            "t": " remains the undisputed gold standard for high-speed ingest and manual culling."
+            "t": " is an established industry benchmark for high-speed ingest and manual culling among sports, event, and documentary photographers."
           }
         ],
         "cls": ""
@@ -15003,7 +15003,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Unlike AI tools that scan pixels for focus and expression scores, Photo Mechanic reads embedded JPEG previews directly from memory cards or local storage with zero rendering delay. Photographers can toggle full-screen previews, rate keepers with numeric hotkeys, and apply structured IPTC metadata at the speed of keypresses."
+            "t": "Unlike AI tools that scan pixels for focus and expression scores, Photo Mechanic reads embedded JPEG previews directly from memory cards or local storage with near-instantaneous display. Photographers can toggle full-screen previews, rate keepers with numeric hotkeys, and apply structured IPTC metadata at the speed of keypresses."
           }
         ],
         "cls": ""
@@ -15069,7 +15069,7 @@
             "b": true
           },
           {
-            "t": "You want maximum manual speed, bulletproof metadata ingest, and the financial peace of mind of a one-time perpetual purchase."
+            "t": "You want maximum manual speed, robust IPTC metadata handling during ingest, and the financial peace of mind of a one-time perpetual purchase."
           }
         ],
         "cls": ""
@@ -15180,8 +15180,8 @@
             "t": "Sourced from "
           },
           {
-            "t": "Excire's official pricing page",
-            "href": "https://excire.com/en/pricing/",
+            "t": "Excire's official product facts page",
+            "href": "https://excire.com/en/facts/excire-foto-2027/",
             "ext": 1
           },
           {
@@ -15304,6 +15304,23 @@
         "type": "p",
         "runs": [
           {
+            "t": "Importantly, culling does not require an Adobe catalog: according to "
+          },
+          {
+            "t": "Imagen's support documentation",
+            "href": "https://support.imagen-ai.com/hc/en-us/articles/17225669268253-Get-started-with-AI-culling",
+            "ext": 1
+          },
+          {
+            "t": ", photographers can review, compare, filter, and finalize selections directly within Imagen's standalone desktop Culling Studio before deciding whether to export or continue into editing."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
             "t": "Pricing structure: ",
             "b": true
           },
@@ -15339,7 +15356,7 @@
               "b": true
             },
             {
-              "t": "Available as a dedicated add-on subscription starting at $12/month. Officially, subscribing to the $12/month AI Culling module satisfies and covers the $7/month minimum account spend requirement."
+              "t": "Available as a dedicated add-on subscription at $12/month billed annually ($144/year), or $18/month billed monthly. Subscribing to AI Culling satisfies and covers the $7/month minimum account spend commitment."
             }
           ],
           [
@@ -15383,7 +15400,7 @@
             "b": true
           },
           {
-            "t": "Imagen is designed primarily around cloud-connected Adobe Lightroom Classic workflows. It is not built for standalone culling outside the Adobe ecosystem."
+            "t": "While Imagen allows you to review and finalize selections independently inside its Culling Studio, its primary downstream post-processing integration is designed around Adobe Lightroom Classic workflows."
           }
         ],
         "cls": ""
@@ -15433,7 +15450,7 @@
             "b": true
           },
           {
-            "t": " if you want maximum manual browsing speed, robust metadata ingest, and the freedom of a one-time perpetual license with zero AI dependencies."
+            "t": " if you want fast manual browsing speed, robust metadata ingest, and the freedom of a one-time perpetual license with zero AI dependencies."
           }
         ],
         "cls": ""
@@ -15510,7 +15527,7 @@
             "ext": 1
           },
           {
-            "t": " is best for high-speed manual culling with a perpetual license. "
+            "t": " is best for fast manual culling with a perpetual license. "
           },
           {
             "t": "Excire Foto 2027",
@@ -15607,7 +15624,7 @@
             "b": true
           },
           {
-            "t": "\nImagen PAYG charges from $0.05 per edited photo, subject to a $7/month minimum account spend commitment. The $7 is not an added surcharge—it is credited directly toward your editing usage and rolls over if unspent. If you add an AI Culling subscription (starting at $12/month), that culling subscription covers and fulfills the $7/month account minimum requirement."
+            "t": "\nImagen PAYG charges from $0.05 per edited photo, subject to a $7/month minimum account spend commitment. The $7 is not an added surcharge—it is credited directly toward your editing usage and rolls over if unspent. If you add an AI Culling subscription ($12/month billed annually at $144/year, or $18/month billed monthly), that culling subscription covers and fulfills the $7/month account minimum requirement."
           }
         ],
         "cls": ""
@@ -15627,7 +15644,7 @@
             "b": true
           },
           {
-            "t": " feature that analyzes sharpness, composition, and facial expressions (including smiles and open eyes) to recommend keepers across duplicate sequences. However, Excire Foto is primarily a complete desktop photo-management database, so it does not function as an in-editor Lightroom plugin like Narrative Select or Aftershoot."
+            "t": " feature that analyzes sharpness, composition, and facial expressions (including smiles and open eyes) to recommend keepers across duplicate sequences. However, Excire Foto is primarily a complete desktop photo-management database. Unlike dedicated culling applications such as Narrative Select and Aftershoot—which are standalone desktop programs built specifically to cull rapidly and export selections into Lightroom, Photoshop, or Capture One—Excire Foto focuses on long-term catalog organization and search."
           }
         ],
         "cls": ""
