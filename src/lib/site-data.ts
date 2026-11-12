@@ -66,6 +66,7 @@ export interface ArticleSummary {
   noImg: boolean;
   short: string;
   title: string;
+  metaTitle?: string;
   href: string;
   summary: string;
   readMins: number;
@@ -251,6 +252,7 @@ export function getSiteData(): SiteData {
         ...a,
         img: thumbnail,
         title: c.title,
+        metaTitle: (a as any).metaTitle || (c as any).metaTitle || undefined,
         href: `/${a.slug}`,
         typeLabel: typesMap[a.type],
         catName: catBy[a.cat].name,

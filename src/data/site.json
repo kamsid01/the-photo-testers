@@ -113,6 +113,39 @@
   ],
   "articles": [
     {
+      "slug": "aftershoot-vs-evoto",
+      "short": "Aftershoot vs Evoto",
+      "metaTitle": "Aftershoot vs Evoto (2026): Pricing, Retouching, Culling Compared",
+      "cat": "ai-culling-editing",
+      "type": "comparison",
+      "date": "2026-11-12",
+      "updated": "2026-11-12",
+      "checked": "November 2026",
+      "img": "/assets/aftershoot-homepage.webp",
+      "imgs": [
+        "/assets/aftershoot-homepage.webp",
+        "/assets/evoto.webp"
+      ],
+      "vs": [
+        "Aftershoot",
+        "Evoto"
+      ],
+      "summary": "Aftershoot vs Evoto compared on verified November 2026 US pricing, flat fee vs credits, retouching controls, culling, and cloud vs local processing, with worked cost examples at two volumes.",
+      "evidence": "research",
+      "pull": null,
+      "chooseIf": [
+        {
+          "name": "Aftershoot",
+          "text": "you shoot weddings or events at volume, your biggest time sink is culling, you want costs that don’t rise with image count, and you need routine processing to stay on your own machine.",
+          "href": "/aftershoot-review"
+        },
+        {
+          "name": "Evoto",
+          "text": "you shoot portraits, headshots, or studio work where retouching is the primary task, you want face-shaping and background replacement as core tools, or your volume makes per-export credits cheaper than a flat fee."
+        }
+      ]
+    },
+    {
       "slug": "fylm-ai-alternatives",
       "short": "Best Fylm.ai alternatives",
       "cat": "ai-culling-editing",
@@ -172,19 +205,20 @@
         [
           "Edit (AI editing)",
           "$30/month ($360/yr)",
-          "billed annually ($40/mo monthly)"
+          "billed annually ($35/mo monthly)"
         ],
         [
           "Complete (all-in-one)",
           "$45/month ($540/yr)",
-          "billed annually ($60/mo monthly)"
+          "billed annually ($55/mo monthly)"
         ]
       ],
       "pricingNote": "Flat annual or monthly fee, not per image. 30-day free trial, no card required.",
       "alts": [
         "imagen-ai-review",
         "aftershoot-alternatives",
-        "aftershoot-vs-imagen"
+        "aftershoot-vs-imagen",
+        "aftershoot-vs-evoto"
       ],
       "evidenceNotes": [
         {
@@ -327,7 +361,10 @@
       "evidence": "research",
       "checked": "October 2026",
       "from": "Aftershoot",
-      "updated": "2026-10-29"
+      "updated": "2026-10-29",
+      "alts": [
+        "aftershoot-vs-evoto"
+      ]
     },
     {
       "slug": "filterpixel-alternatives",
@@ -373,7 +410,10 @@
         }
       ],
       "pricingAssumption": "Aftershoot Edit is a flat $360/year ($30/mo annual). Imagen offers Pay-As-You-Go ($0.05/photo base editing, or $0.07–$0.09 with modular AI tools) and a flat Limitless subscription ($1,548/year, or $129/mo annual) for eligible solo photographers. On base editing ($0.05/photo), Aftershoot Edit breaks even with Imagen PAYG at 7,200 edited photos a year (600/month); with AI crop and straighten ($0.07/photo), the break-even is 5,143 photos a year (~428/month). Solo photographers delivering higher volume can choose Imagen Limitless or Aftershoot's flat tiers (Checked October 2026).",
-      "updated": "2026-10-29"
+      "updated": "2026-10-29",
+      "alts": [
+        "aftershoot-vs-evoto"
+      ]
     },
     {
       "slug": "best-ai-culling-editing-software",

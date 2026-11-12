@@ -24,13 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonicalUrl = `https://www.thephototesters.com/${slug}`;
 
   return {
-    title: a.title,
+    title: a.metaTitle || a.title,
     description: a.summary,
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: a.title,
+      title: a.metaTitle || a.title,
       description: a.summary,
       type: 'article',
       url: canonicalUrl,

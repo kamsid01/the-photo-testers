@@ -536,7 +536,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Aftershoot is AI-powered software that automates the two most tedious parts of post-production: culling (selecting keepers from thousands of shots) and base editing (applying your look across a gallery). It also offers AI retouching. Everything runs locally on your computer rather than in the cloud."
+            "t": "Aftershoot is AI-powered software that automates the two most tedious parts of post-production: culling (selecting keepers from thousands of shots) and base editing (applying your look across a gallery). It also offers AI retouching. Routine culling, editing, and retouching run locally on your computer (with uploads required only when training custom editing profiles or if you enable the optional album-level AI learning toggle during culling)."
           }
         ],
         "cls": ""
@@ -589,7 +589,7 @@
               "b": 1
             },
             {
-              "t": " $30/month billed annually ($360/year) or $40/month billed monthly. Unlimited image editing via personal custom AI profiles or curated marketplace artist profiles."
+              "t": " $30/month billed annually ($360/year) or $35/month billed monthly. Unlimited image editing via personal custom AI profiles or curated marketplace artist profiles."
             }
           ],
           [
@@ -598,7 +598,7 @@
               "b": 1
             },
             {
-              "t": " $45/month billed annually ($540/year) or $60/month billed monthly. Includes AI culling, editing, and portrait retouching (skin smoothing, blemish removal, hair cleanup)."
+              "t": " $45/month billed annually ($540/year) or $55/month billed monthly. Includes AI culling, editing, and portrait retouching (skin smoothing, blemish removal, hair cleanup)."
             }
           ],
           [
@@ -624,7 +624,7 @@
             "ext": 1
           },
           {
-            "t": ". Volume never increases your price, and all processing executes 100% locally on your machine."
+            "t": ". Volume never increases your price, and routine processing executes locally on your machine (uploads only occur when training personal editing profiles or if album-level learning is enabled during culling)."
           }
         ],
         "cls": ""
@@ -4479,7 +4479,7 @@
             ],
             [
               {
-                "t": "Local"
+                "t": "Cloud for portrait retouching"
               }
             ],
             [
@@ -4857,7 +4857,14 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its pricing is a credit system rather than a subscription: you edit for free and spend credits to export. The credit model is easy to overspend on if you lose track, so it suits photographers who want retouching power above all."
+            "t": "Evoto sells credits through annual subscription plans (such as Starter at $89/year for 800 credits or Basic at $149/year for 1,600 credits) and pay-as-you-go packs: editing and previewing are free, while exporting a standard retouched photo costs one credit. For a head-to-head breakdown of pricing tiers, credit math, and workflow tradeoffs, see our detailed "
+          },
+          {
+            "t": "Aftershoot vs Evoto comparison",
+            "href": "/aftershoot-vs-evoto"
+          },
+          {
+            "t": "."
           }
         ],
         "cls": ""
@@ -5494,7 +5501,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Aftershoot offers three modular plans, all with a 30-day free trial. Pricing runs from Select (culling only at $10/mo billed annually [$120/yr] or $15/mo monthly), Edit (AI editing at $30/mo billed annually [$360/yr] or $40/mo monthly), to Complete (bundling culling, editing, and retouching at $45/mo billed annually [$540/yr] or $60/mo monthly). Everything runs 100% locally and offline on your computer."
+            "t": "Aftershoot offers three modular plans, all with a 30-day free trial. Pricing runs from Select (culling only at $10/mo billed annually [$120/yr] or $15/mo monthly), Edit (AI editing at $30/mo billed annually [$360/yr] or $35/mo monthly), to Complete (bundling culling, editing, and retouching at $45/mo billed annually [$540/yr] or $55/mo monthly). Everything runs 100% locally and offline on your computer."
           }
         ]
       },
@@ -5558,7 +5565,7 @@
             "b": true
           },
           {
-            "t": "Select $10/mo ($120/yr), Edit $30/mo ($360/yr), Complete $45/mo ($540/yr) billed annually ($15/mo, $40/mo, $60/mo monthly); 30-day free trial (Checked October 2026)."
+            "t": "Select $10/mo ($120/yr), Edit $30/mo ($360/yr), Complete $45/mo ($540/yr) billed annually ($15/mo, $35/mo, $55/mo monthly); 30-day free trial (Checked October 2026)."
           }
         ]
       },
@@ -6143,7 +6150,7 @@
                 "b": true
               },
               {
-                "t": "Aftershoot runs 100% offline on your own GPU with predictable costs. Imagen processes in the cloud and delivers superior style adaptation, but requires active internet and charges per photo for multi-shooter studios."
+                "t": "Aftershoot runs routine work locally on your own GPU with predictable costs (uploads occur only when training custom profiles or if album-level learning is enabled). Imagen processes in the cloud and delivers superior style adaptation, but requires active internet and charges per photo for multi-shooter studios."
               }
             ]
           }
@@ -6226,7 +6233,7 @@
             ],
             [
               {
-                "t": "100% on-device (Apple Silicon / Windows GPU)"
+                "t": "On-device local processing for routine work (profile training & optional album learning upload)"
               }
             ],
             [
@@ -6298,7 +6305,7 @@
             ],
             [
               {
-                "t": "Flat subscription: Select ($10/mo), Edit ($30/mo), Complete ($45/mo)"
+                "t": "Flat subscription: Select ($10/mo), Edit ($30/mo), Complete ($45/mo); monthly billing $15/$35/$55"
               }
             ],
             [
@@ -6369,7 +6376,7 @@
             "b": true
           },
           {
-            "t": "Select (AI culling only) is $120/year billed annually ($10/month equivalent) or $15/month billed monthly. Edit (AI editing with personal or marketplace profiles) is $360/year billed annually ($30/month equivalent) or $40/month billed monthly. Complete (bundling culling, editing, and portrait retouching) is $540/year billed annually ($45/month equivalent) or $60/month billed monthly. Volume never increases your price, and all processing runs locally on your computer."
+            "t": "Select (AI culling only) is $120/year billed annually ($10/month equivalent) or $15/month billed monthly. Edit (AI editing with personal or marketplace profiles) is $360/year billed annually ($30/month equivalent) or $35/month billed monthly. Complete (bundling culling, editing, and portrait retouching) is $540/year billed annually ($45/month equivalent) or $55/month billed monthly. Volume never increases your price, and all processing runs locally on your computer."
           }
         ]
       },
@@ -6549,7 +6556,7 @@
             "b": 1
           },
           {
-            "t": " Your images never leave your computer, you can work on a plane or at a venue with bad wifi, and there is no upload wait. The trade-off is that your machine does the work, and Aftershoot wants 16GB of RAM as a minimum."
+            "t": " Your images remain on your computer for routine work (uploads occur only if you enable album-level learning or train a custom editing profile), you can work on a plane or at a venue with bad wifi, and there is no upload wait. The trade-off is that your machine does the work, and Aftershoot wants 16GB of RAM as a minimum."
           }
         ],
         "cls": ""
@@ -6731,7 +6738,7 @@
             "b": 1
           },
           {
-            "t": "\nYes. Aftershoot processes locally on your computer, so no internet is needed and your files never leave your machine. Imagen requires an internet connection because it processes in the cloud."
+            "t": "\nYes. Aftershoot processes locally on your computer, so routine culling, editing, and retouching run locally with no internet needed, with uploads occurring only for custom profile training or if album-level learning is enabled. Imagen requires an internet connection because it processes in the cloud."
           }
         ],
         "cls": ""
@@ -7149,7 +7156,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Aftershoot does the whole post-shoot workflow in one offline app: culling, editing, and retouching. It runs on your own machine (so your files never leave your computer), and the pricing is flat and unlimited rather than per-image, which is the key reason high-volume photographers pick it."
+            "t": "Aftershoot does the whole post-shoot workflow in one offline app: culling, editing, and retouching. It runs on your own machine (so routine files never leave your machine (uploads only occur when training a custom editing profile or if album-level AI learning is turned on during culling)), and the pricing is flat and unlimited rather than per-image, which is the key reason high-volume photographers pick it."
           }
         ],
         "cls": ""
@@ -7162,7 +7169,7 @@
             "b": true
           },
           {
-            "t": "Select (culling only) at $120/year ($10/month billed annually) or $15/month monthly; Edit (AI editing with personalized or marketplace profiles) at $360/year ($30/month billed annually) or $40/month monthly; and Complete (bundling culling, editing, and portrait retouching) at $540/year ($45/month billed annually) or $60/month monthly. Processing is 100% on-device on Apple Silicon or Windows GPUs, so your image volume never increases your bill."
+            "t": "Select (culling only) at $120/year ($10/month billed annually) or $15/month monthly; Edit (AI editing with personalized or marketplace profiles) at $360/year ($30/month billed annually) or $35/month monthly; and Complete (bundling culling, editing, and portrait retouching) at $540/year ($45/month billed annually) or $55/month monthly. Routine processing is on-device on Apple Silicon or Windows GPUs (custom profile training and optional album learning upload), so your image volume never increases your bill."
           }
         ]
       },
@@ -7240,7 +7247,7 @@
             "b": true
           },
           {
-            "t": "Select $10/mo ($120/yr), Edit $30/mo ($360/yr), Complete $45/mo ($540/yr) billed annually ($15/mo, $40/mo, $60/mo monthly). 30-day free trial with full feature access (Checked October 2026)."
+            "t": "Select $10/mo ($120/yr), Edit $30/mo ($360/yr), Complete $45/mo ($540/yr) billed annually ($15/mo, $35/mo, $55/mo monthly). 30-day free trial with full feature access (Checked October 2026)."
           }
         ]
       },
@@ -15708,6 +15715,1431 @@
           }
         ],
         "cls": ""
+      }
+    ]
+  },
+  "aftershoot-vs-evoto": {
+    "title": "Aftershoot vs Evoto: Which Fits Your Photography Workflow?",
+    "meta": "By The Photo Testers team · Research-based · Prices verified November 12, 2026 (US pricing) · 11 min read",
+    "disclosure": "This is a research-based comparison. We have not run a hands-on head-to-head test, so we don't claim a winner on speed or output quality. Prices and features come from Aftershoot's and Evoto's official pricing pages, help centres, and policy pages, checked on November 12, 2026, and from independent reviews that are named and linked where used. Some links may be affiliate links, which means we may earn a commission if you sign up. It does not change what we write. Prices change often, so confirm on the vendor's page before you buy.",
+    "blocks": [
+      {
+        "type": "box",
+        "blocks": [
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "These two tools are built around different halves of post-production, so the question is which half is eating your time.",
+                "b": true
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Aftershoot",
+                "b": true
+              },
+              {
+                "t": " is culling-first. Its AI picks or ranks your keepers, applies your editing style, and offers retouching as an add-on module. Routine culling, editing, and retouching run locally on your computer (with uploads only for custom profile training or when album-level learning is enabled). You pay a flat fee with no per-image cost."
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Evoto",
+                "b": true
+              },
+              {
+                "t": " is retouching-first. Slider-based portrait retouching, batch syncing, and background tools are its core, with culling included. Most of its features process images on Evoto's cloud servers, and you pay with credits, typically one credit per standard retouched export in Evoto Desktop, with advanced generative tools potentially consuming more."
+              }
+            ]
+          },
+          {
+            "type": "p",
+            "runs": [
+              {
+                "t": "Rule of thumb:",
+                "b": true
+              },
+              {
+                "t": " high-volume wedding and event shooters whose pain is the cull usually fit Aftershoot. Portrait, headshot, and studio photographers whose pain is retouching usually fit Evoto. Running both, Aftershoot for the cull and base edit and Evoto for individual portraits, is a workable option."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "The comparison at a glance",
+        "id": "the-comparison-at-a-glance"
+      },
+      {
+        "type": "table",
+        "label": "Aftershoot vs Evoto comparison at a glance",
+        "head": [
+          [
+            {
+              "t": "Feature"
+            }
+          ],
+          [
+            {
+              "t": "Aftershoot"
+            }
+          ],
+          [
+            {
+              "t": "Evoto"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "t": "Built around",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "Culling, then style editing"
+              }
+            ],
+            [
+              {
+                "t": "Portrait retouching"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Pricing model",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "Flat subscription, unlimited images"
+              }
+            ],
+            [
+              {
+                "t": "Annual credit plans and pay-as-you-go packs; 1 credit per standard retouched export in Evoto Desktop (advanced generative tools can cost more; unedited originals and basic edits credit-free on eligible plans)"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Entry price (US, list)",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "Select $10/mo on an annual plan ($120/yr); Complete $45/mo on an annual plan ($540/yr)"
+              }
+            ],
+            [
+              {
+                "t": "Starter $89/yr for 800 credits"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Where processing happens",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "Locally for routine work; uploads for profile training and optional learning"
+              }
+            ],
+            [
+              {
+                "t": "Cloud servers for most features, including retouching and background replacement (deleted after processing; consent required for AI Color Match / storage)"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Culling",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "Automated and assisted modes, Cull to Target (10%–60% target selection count)"
+              }
+            ],
+            [
+              {
+                "t": "Blur, closed-eye, exposure, duplicates, wedding story chapters, option to cap total AI selections"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Retouching controls",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "Face, eyes, teeth, neck, hair, body sliders; object removal"
+              }
+            ],
+            [
+              {
+                "t": "Skin, under-eye, teeth, stray hair, face shape sliders; background swaps"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Editor integration",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "Lightroom Classic, Capture One, Photoshop, Bridge"
+              }
+            ],
+            [
+              {
+                "t": "Lightroom Classic"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Trial",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "30 days, all modules, no card"
+              }
+            ],
+            [
+              {
+                "t": "7 days, 50 credits"
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "US list prices checked on official vendor pages on November 12, 2026. Evoto showed temporary discounts at the time of checking; see the pricing section.",
+            "i": true
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Two tools, two starting points",
+        "id": "two-tools-two-starting-points"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Aftershoot",
+            "b": true
+          },
+          {
+            "t": " began as a culling tool and grew into a modular suite: Select (culling), Edit (AI editing trained on your style), and Retouch (AI portrait retouching). You buy the modules you need. Its "
+          },
+          {
+            "t": "transparency page",
+            "href": "https://aftershoot.com/transparency-page/",
+            "ext": 1
+          },
+          {
+            "t": " says the software \"runs locally on your machine,\" and that for batch culling, editing, and retouching \"your images never leave your computer.\""
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Evoto",
+            "b": true
+          },
+          {
+            "t": " began as an AI retouching editor and grew outward. Its core is slider-based portrait retouching plus background cleanup and swaps, clothing fixes, and colour matching across a gallery. It added AI culling, including a Storyline mode that sorts wedding shoots into chapters. It integrates with Lightroom Classic. Its "
+          },
+          {
+            "t": "homepage FAQ",
+            "href": "https://www.evoto.ai/",
+            "ext": 1
+          },
+          {
+            "t": " states: \"Most Evoto features require images to be uploaded to our cloud servers for analysis and processing.\""
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "So the overlap is partial. Both cull and both retouch, but Aftershoot's deepest feature is the cull-and-style pipeline, and Evoto's is the retouch."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Local versus cloud: what actually leaves your computer",
+        "id": "local-versus-cloud-what-actually-leaves-your-computer"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "This matters for slow venue Wi-Fi, for client privacy, and for anyone with a contract that restricts where images go, so here is what each vendor documents rather than a blanket claim."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Aftershoot",
+            "b": true
+          },
+          {
+            "t": " processes routine culling, editing, and retouching on your computer. Two things do go to Aftershoot's servers, per its "
+          },
+          {
+            "t": "transparency page",
+            "href": "https://aftershoot.com/transparency-page/",
+            "ext": 1
+          },
+          {
+            "t": ":"
+          }
+        ]
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Culling with learning on. ",
+              "b": true
+            },
+            {
+              "t": "A toggle labelled \"Help improve Aftershoot's AI\" is on by default at album import. With it on, small-resolution versions of your images are uploaded to score them and build a personalised model. Switch it off for any album and, in Aftershoot's words, \"nothing goes anywhere.\""
+            }
+          ],
+          [
+            {
+              "t": "Building a custom editing profile. ",
+              "b": true
+            },
+            {
+              "t": "The images you choose for training \"go to encrypted servers.\" Aftershoot's "
+            },
+            {
+              "t": "profile-building guide",
+              "href": "https://support.aftershoot.com/en/articles/9189902-how-to-build-your-first-professional-ai-profile",
+              "ext": 1
+            },
+            {
+              "t": " says upload speed \"depends on your internet connection,\" and that \"once your profile is done, you will no longer need an internet connection to use it.\""
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Aftershoot says stored data is kept on Google Cloud until you ask for deletion."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Evoto",
+            "b": true
+          },
+          {
+            "t": " documents cloud processing for most features. Evoto states that routine cloud processing—including portrait retouching, background replacement, and AI cropping—takes place on its cloud servers. According to Evoto's "
+          },
+          {
+            "t": "homepage FAQ",
+            "href": "https://www.evoto.ai/",
+            "ext": 1
+          },
+          {
+            "t": ", images uploaded for routine cloud processing such as portrait retouching and background replacement are deleted immediately once processing is complete. However, Evoto separately notes that features such as AI Color Match and Cloud Sync/Storage can store images with prior user consent. Evoto's documentation does not specify which (if any) features operate entirely offline, so photographers requiring offline capability should test this during the free trial."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Pricing: flat fee versus credits",
+        "id": "pricing-flat-fee-versus-credits"
+      },
+      {
+        "type": "h3",
+        "text": "Aftershoot (flat subscription, unlimited images)",
+        "id": "aftershoot-flat-subscription-unlimited-images"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "From Aftershoot's "
+          },
+          {
+            "t": "pricing guide",
+            "href": "https://aftershoot.com/aftershoot-pricing-tiers/",
+            "ext": 1
+          },
+          {
+            "t": ", verified November 12, 2026:"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Aftershoot pricing tiers",
+        "head": [
+          [
+            {
+              "t": "Module"
+            }
+          ],
+          [
+            {
+              "t": "Annual plan (per month)"
+            }
+          ],
+          [
+            {
+              "t": "Annual total"
+            }
+          ],
+          [
+            {
+              "t": "Month-to-month"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "t": "Select (culling)",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$10"
+              }
+            ],
+            [
+              {
+                "t": "$120"
+              }
+            ],
+            [
+              {
+                "t": "$15"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Edit (AI editing)",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$30"
+              }
+            ],
+            [
+              {
+                "t": "$360"
+              }
+            ],
+            [
+              {
+                "t": "$35"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Retouch (AI retouching)",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$20"
+              }
+            ],
+            [
+              {
+                "t": "$240"
+              }
+            ],
+            [
+              {
+                "t": "$25"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Complete (all three)",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$45"
+              }
+            ],
+            [
+              {
+                "t": "$540"
+              }
+            ],
+            [
+              {
+                "t": "$55"
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Billing terms, from the same guide and Aftershoot's "
+          },
+          {
+            "t": "terms of use",
+            "href": "https://aftershoot.com/terms-of-use/",
+            "ext": 1
+          },
+          {
+            "t": ":"
+          }
+        ]
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Annual plan: ",
+              "b": true
+            },
+            {
+              "t": "paid up front. Full refund within 14 days; after that, prorated account credits (valid six months) for unused months rather than a cash refund."
+            }
+          ],
+          [
+            {
+              "t": "Annual Billed Monthly: ",
+              "b": true
+            },
+            {
+              "t": "a 12-month term paid in 12 instalments, auto-renewing. Cancelling in the first six months carries a one-time fee of $15 for one product or $30 for two products or Complete."
+            }
+          ],
+          [
+            {
+              "t": "Month-to-month: ",
+              "b": true
+            },
+            {
+              "t": "the higher prices in the last column ($15/$35/$25/$55), cancel any time."
+            }
+          ],
+          [
+            {
+              "t": "After cancelling Edit or Retouch, ",
+              "b": true
+            },
+            {
+              "t": "custom AI profiles are deleted unless you pay $4/month to keep them stored."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "The 30-day trial covers all three modules with no card required."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Evoto (annual credit subscriptions)",
+        "id": "evoto-annual-credit-subscriptions"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "From Evoto's "
+          },
+          {
+            "t": "payment page",
+            "href": "https://www.evoto.ai/payment",
+            "ext": 1
+          },
+          {
+            "t": " and "
+          },
+          {
+            "t": "subscription guide",
+            "href": "https://support.evoto.ai/subscription-plan/",
+            "ext": 1
+          },
+          {
+            "t": ". US list prices, with the temporary discount shown at the time of checking in brackets:"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Evoto annual credit subscription plans",
+        "head": [
+          [
+            {
+              "t": "Plan"
+            }
+          ],
+          [
+            {
+              "t": "Credits per year"
+            }
+          ],
+          [
+            {
+              "t": "List price"
+            }
+          ],
+          [
+            {
+              "t": "Showing at check"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "t": "Starter",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "800"
+              }
+            ],
+            [
+              {
+                "t": "$89"
+              }
+            ],
+            [
+              {
+                "t": "$80"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Basic",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "1,600"
+              }
+            ],
+            [
+              {
+                "t": "$149"
+              }
+            ],
+            [
+              {
+                "t": "$134"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Basic Plus",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "3,600"
+              }
+            ],
+            [
+              {
+                "t": "$269"
+              }
+            ],
+            [
+              {
+                "t": "$242"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Standard",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "9,000"
+              }
+            ],
+            [
+              {
+                "t": "$579"
+              }
+            ],
+            [
+              {
+                "t": "$521"
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "Standard Plus",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "24,000"
+              }
+            ],
+            [
+              {
+                "t": "$1,339"
+              }
+            ],
+            [
+              {
+                "t": "$1,205"
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Subscribers can buy "
+          },
+          {
+            "t": "add-on packs",
+            "b": true
+          },
+          {
+            "t": " before renewal at tier-dependent rates. For example, a 200-credit pack is $19 on the Basic tier and a 3,600-credit pack is $269 on the Basic Plus tier. Pay-as-you-go packs are also sold, with credits valid for two years; the payment page did not display their standalone rates when we checked, so confirm them at checkout. The trial is 7 days with 50 credits."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "What a credit buys",
+        "id": "what-a-credit-buys"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "From Evoto's "
+          },
+          {
+            "t": "credits guide",
+            "href": "https://support.evoto.ai/understanding-evoto-credits-and-pricing/",
+            "ext": 1
+          },
+          {
+            "t": ", "
+          },
+          {
+            "t": "credit-free exports guide",
+            "href": "https://support.evoto.ai/how-can-i-use-credit-free-exports/",
+            "ext": 1
+          },
+          {
+            "t": ", and "
+          },
+          {
+            "t": "Smart Culling guide",
+            "href": "https://support.evoto.ai/smart-culling/",
+            "ext": 1
+          },
+          {
+            "t": ":"
+          }
+        ]
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "In Evoto Desktop, exporting a standard retouched photo consumes one (1) credit. Evoto notes that certain advanced generative tools can consume additional credits."
+            }
+          ],
+          [
+            {
+              "t": "\"Exporting an original (unedited) image does not consume a credit.\""
+            }
+          ],
+          [
+            {
+              "t": "On an active paid plan (subscription or pay-as-you-go pack) with Evoto Desktop 6.1.0 or later, exports that use only standard colour adjustments, manual tools (liquify, healing, clone), or crop and rotate are credit-free. Any portrait retouching tool, AI Color Match, or AI Color Looks incurs a credit charge upon export."
+            }
+          ],
+          [
+            {
+              "t": "Re-editing and re-exporting the same image within Evoto does not incur another credit charge when the original file remains unchanged. However, reimporting the photo as a new image file can trigger a fresh charge upon export. If the initial export used a credit-based feature, that credit is not refunded if you later re-export with only credit-free tools."
+            }
+          ],
+          [
+            {
+              "t": "Evoto's Smart Culling guide lists no separate charge for culling, and exporting unedited original keepers is credit-free."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Credit rollover and expiry",
+        "id": "credit-rollover-and-expiry"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Unused subscription credits roll over at on-time renewal, up to five times the plan's allowance, and stay valid while you're subscribed. If you miss renewal, there's a 30-day grace period; renew within it and your plan and rollover credits are kept. After 30 days, remaining credits, including rolled-over ones, expire. Pay-as-you-go credits last two years from purchase."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Two worked examples (retouching only)",
+        "id": "two-worked-examples-retouching-only"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "These compare Aftershoot Retouch against Evoto for retouching alone, assuming one credit per standard retouched export in Evoto Desktop, published US list prices, and Evoto subscriber top-up rates. They ignore Aftershoot's culling and editing modules and Evoto's credit-free exports."
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "label": "Retouching cost comparison at two annual volumes",
+        "head": [
+          [
+            {
+              "t": "Retouched exports per year"
+            }
+          ],
+          [
+            {
+              "t": "Aftershoot Retouch (annual plan)"
+            }
+          ],
+          [
+            {
+              "t": "Evoto"
+            }
+          ]
+        ],
+        "rows": [
+          [
+            [
+              {
+                "t": "1,800",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$240"
+              }
+            ],
+            [
+              {
+                "t": "Basic ($149, 1,600 credits) plus a 200-credit top-up ($19): "
+              },
+              {
+                "t": "$168",
+                "b": true
+              }
+            ]
+          ],
+          [
+            [
+              {
+                "t": "7,200",
+                "b": true
+              }
+            ],
+            [
+              {
+                "t": "$240"
+              }
+            ],
+            [
+              {
+                "t": "Basic Plus ($269, 3,600 credits) plus a 3,600-credit top-up ($269): "
+              },
+              {
+                "t": "$538",
+                "b": true
+              },
+              {
+                "t": ". Standard ($579, 9,000 credits) is the simpler alternative."
+              }
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "At around 1,800 retouched exports a year, Evoto comes in cheaper ($168 vs $240). At around 7,200, Aftershoot's flat fee is roughly $300 to $340 less ($240 vs $538–$579). The crossover sits between the two, and it moves if Evoto's discount is running, if you use pay-as-you-go packs, or if many of your exports qualify as credit-free. It also ignores the fact that Aftershoot Retouch is only one module; add Select and Edit and you're comparing a $540 Complete plan against Evoto's retouching."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Culling: Aftershoot's home ground",
+        "id": "culling-aftershoot-s-home-ground"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Aftershoot Select offers two modes, per its "
+          },
+          {
+            "t": "pricing guide",
+            "href": "https://aftershoot.com/aftershoot-pricing-tiers/",
+            "ext": 1
+          },
+          {
+            "t": ": "
+          },
+          {
+            "t": "AI-Automated",
+            "b": true
+          },
+          {
+            "t": ", which makes the first pass and surfaces keepers, and "
+          },
+          {
+            "t": "AI-Assisted",
+            "b": true
+          },
+          {
+            "t": ", which groups, scores, and flags while you make every final call. It includes duplicate grouping, blur and closed-eye detection, key-face detection, and \"Cull to Target,\" where you set a target selection count. "
+          },
+          {
+            "t": "Aftershoot notes",
+            "href": "https://support.aftershoot.com/en/articles/11533911-cull-to-target-with-aftershoot",
+            "ext": 1
+          },
+          {
+            "t": " that Cull to Target works within a 10%–60% range of the shoot size, and the actual number of selected photos can vary near the extreme limits to preserve selection quality. Ratings export to Lightroom Classic, Capture One, Photo Mechanic, and Bridge."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Evoto's culling, per its "
+          },
+          {
+            "t": "Smart Culling guide",
+            "href": "https://support.evoto.ai/smart-culling/",
+            "ext": 1
+          },
+          {
+            "t": ", analyses blur, closed eyes, exposure, and face clusters with adjustable sensitivity. It groups near-duplicates with quality scoring to pick the best in each group, labels each face for eye status, expression, and focus, and includes an option to cap the total number of AI-selected photos. It also offers a Storyline mode that organizes wedding shoots into chapters such as getting ready, ceremony, portraits, and reception. Evoto's Smart Culling guide lists no separate credit charge for culling, and exporting unedited originals is credit-free. Results can be written to XMP sidecars."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Both are documented culling tools. Aftershoot's is the product's foundation and exports to more editors; Evoto's is newer and lives inside a retouching-first app. We haven't tested their accuracy against each other."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Retouching: comparing the documented controls",
+        "id": "retouching-comparing-the-documented-controls"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Aftershoot Retouch",
+            "b": true
+          },
+          {
+            "t": ", per its "
+          },
+          {
+            "t": "retouching guide",
+            "href": "https://support.aftershoot.com/en/articles/10579421-how-to-use-aftershoot-retouching",
+            "ext": 1
+          },
+          {
+            "t": ", is slider-based:"
+          }
+        ]
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Face: ",
+              "b": true
+            },
+            {
+              "t": "Acne, Blemish, Freckles; Forehead and Smile Lines wrinkles; Brighten, Smoothen, Remove Shine, Double Chin."
+            }
+          ],
+          [
+            {
+              "t": "Eyes: ",
+              "b": true
+            },
+            {
+              "t": "Glass Glare, Eye Brighten, Eye Bags, Dark Circles."
+            }
+          ],
+          [
+            {
+              "t": "Teeth: ",
+              "b": true
+            },
+            {
+              "t": "Brighten, Whiten. "
+            },
+            {
+              "t": "Neck: ",
+              "b": true
+            },
+            {
+              "t": "Brighten, Smoothen. "
+            },
+            {
+              "t": "Hair: ",
+              "b": true
+            },
+            {
+              "t": "Flyaways."
+            }
+          ],
+          [
+            {
+              "t": "Body: ",
+              "b": true
+            },
+            {
+              "t": "Smoothen, Blemish, Cloth Dewrinkle."
+            }
+          ],
+          [
+            {
+              "t": "Object removal: ",
+              "b": true
+            },
+            {
+              "t": "Smart Object Removal (auto-detects exit signs, thermostats, fire extinguishers, alarms) and Manual Patch."
+            }
+          ],
+          [
+            {
+              "t": "Background sliders: ",
+              "b": true
+            },
+            {
+              "t": "listed as beta."
+            }
+          ],
+          [
+            {
+              "t": "Batch workflow: ",
+              "b": true
+            },
+            {
+              "t": "copy and paste slider settings or use Sync; presets apply in bulk with a strength control; gender and age sliders take priority over \"All\" sliders during sync."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "No face or body reshaping is documented beyond the Double Chin control."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Evoto",
+            "b": true
+          },
+          {
+            "t": ", per its official "
+          },
+          {
+            "t": "Desktop documentation",
+            "href": "https://support.evoto.ai/home/evoto-desktop/",
+            "ext": 1
+          },
+          {
+            "t": " and independent testing from "
+          },
+          {
+            "t": "samdespo.com",
+            "href": "https://www.samdespo.com/tools/evoto",
+            "ext": 1
+          },
+          {
+            "t": " (checked October 2026), offers sliders for blemishes, skin tone, under-eye bags, teeth, stray hairs, and "
+          },
+          {
+            "t": "face shape",
+            "b": true
+          },
+          {
+            "t": ", plus glasses-glare removal, backdrop smoothing, clean or white background swaps, and clothing wrinkle fixes. You retouch one photo and sync the face, background, clothing, crop, and colour settings to others in the gallery."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "The documented difference is scope and emphasis: Evoto documents face-shaping and background replacement as core tools, whereas Aftershoot documents object removal and cloth dewrinkling and lists background work as beta. Which produces the better portrait, and how fast, we cannot state without a hands-on head-to-head test."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Editing, colour, and Lightroom",
+        "id": "editing-colour-and-lightroom"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Aftershoot Edit trains a personal AI profile on your past edits, offers 30+ marketplace styles, AI masking, smart crop, straightening, and a built-in RAW editor, and exports to Lightroom, Capture One, or Photoshop. Aftershoot's guide notes a Professional profile needs enough of your past edits to train on, and its support article says training needs an internet connection."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Evoto provides an official Lightroom Classic plugin allowing photographers to round-trip images between Lightroom's catalog and Evoto's portrait retouching workspace, as detailed in Evoto's "
+          },
+          {
+            "t": "Lightroom Classic integration guide",
+            "href": "https://support.evoto.ai/lightroom-and-evoto/",
+            "ext": 1
+          },
+          {
+            "t": ". After applying color and RAW adjustments in Lightroom, photographers can pass files into Evoto for portrait retouching and return the retouched versions seamlessly. Evoto also includes built-in colour tools: AI Color Looks and reference-based AI Color Match (both credit-based per export), alongside credit-free standard colour adjustments, curves, HSL, and masking on eligible paid plans."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Known friction points",
+        "id": "known-friction-points"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Both vendors' documentation reveals things worth knowing before you commit."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Evoto:",
+            "b": true
+          },
+          {
+            "t": " per-export credits add up at volume, rollover credits are lost if a plan lapses beyond the 30-day grace period, and credit-free rules depend on your desktop app version. Independent reviewers report credit expiry and renewal rules as a common source of confusion for seasonal photographers."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Aftershoot:",
+            "b": true
+          },
+          {
+            "t": " the \"Help improve Aftershoot's AI\" upload toggle is on by default at album import, the $4/month fee to keep profiles after cancelling Edit or Retouch is easy to miss, and the Annual Billed Monthly plan carries an early-cancellation fee in its first six months."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "So, which one?",
+        "id": "so-which-one"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Choose Aftershoot if",
+            "b": true
+          },
+          {
+            "t": " you shoot weddings or events at volume, your biggest time sink is the cull, you want costs that don't rise with image count, or you need routine work to stay on your own machine."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Choose Evoto if",
+            "b": true
+          },
+          {
+            "t": " you shoot portraits, headshots, or studio work where retouching is the main job, you want face-shaping and background replacement as core tools, or your retouched-export volume is low enough that credits cost less than a flat fee."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Using both",
+            "b": true
+          },
+          {
+            "t": " is a workable workflow: Aftershoot for culling and the base edit, Evoto for the hero portraits that get individual attention. It costs more, and it means images pass through Evoto's cloud, so weigh that against your privacy needs."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Both offer trials. Run whichever you're considering on a gallery you've already finished and compare its output to yours."
+          }
+        ]
+      },
+      {
+        "type": "cta",
+        "text": "Try Aftershoot free",
+        "href": "https://aftershoot.com",
+        "ext": 1
+      },
+      {
+        "type": "cta",
+        "text": "Try Evoto",
+        "href": "https://www.evoto.ai",
+        "ext": 1
+      },
+      {
+        "type": "h2",
+        "text": "FAQ",
+        "id": "faq"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Is Aftershoot or Evoto cheaper?\n",
+            "b": true
+          },
+          {
+            "t": "For retouching alone, Evoto is cheaper at low volume: about 1,800 retouched exports a year costs around $168 on Evoto Basic with a top-up, against $240 for Aftershoot Retouch on an annual plan. At about 7,200 a year, Evoto costs around $538 to $579 and Aftershoot stays at $240. Adding Aftershoot's culling and editing modules raises its price to $540/year for Complete."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Does Aftershoot work offline?\n",
+            "b": true
+          },
+          {
+            "t": "Routine culling, editing, and retouching run locally on your computer. Building a custom editing profile uploads your chosen training images and needs an internet connection; once built, the profile works offline. Culling with the \"Help improve Aftershoot's AI\" toggle on uploads low-resolution copies, and you can turn it off per album."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Does Evoto work offline?\n",
+            "b": true
+          },
+          {
+            "t": "Evoto states that most features, including portrait retouching, background replacement, and AI cropping, process images on its cloud servers and deletes them immediately once processing is complete. Evoto separately notes that features such as AI Color Match and Cloud Sync/Storage can store images with prior user consent. Its documentation does not specify which (if any) features operate entirely offline, so verify offline operation during the trial if that is a hard requirement."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Does Evoto culling use credits?\n",
+            "b": true
+          },
+          {
+            "t": "Evoto's Smart Culling guide lists no separate charge for culling, and unedited originals export credit-free. Credits are only deducted when you export an edited image."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "What are Evoto's credit-free exports?\n",
+            "b": true
+          },
+          {
+            "t": "On an active paid plan with Evoto Desktop 6.1.0 or later, exports using only standard colour adjustments, manual tools (liquify, healing, clone), or crop and rotate cost zero credits. Standard portrait retouching, AI Color Match, and AI Color Looks cost one credit per exported image in Evoto Desktop, while some advanced generative tools can cost more."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Can I use Aftershoot and Evoto together?\n",
+            "b": true
+          },
+          {
+            "t": "Yes. One approach is Aftershoot for culling and the base edit, then Evoto for individual portrait retouching on selected images."
+          }
+        ]
+      },
+      {
+        "type": "hr"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Related: ",
+            "i": true
+          },
+          {
+            "t": "Aftershoot review",
+            "href": "/aftershoot-review"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Aftershoot vs Imagen",
+            "href": "/aftershoot-vs-imagen"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Best AI culling and editing software",
+            "href": "/best-ai-culling-editing-software"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Best Aftershoot alternatives",
+            "href": "/aftershoot-alternatives"
+          },
+          {
+            "t": " · "
+          },
+          {
+            "t": "Best photo culling software",
+            "href": "/best-photo-culling-software"
+          }
+        ]
       }
     ]
   }
