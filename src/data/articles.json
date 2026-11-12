@@ -706,7 +706,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "One of Aftershoot's biggest practical strengths is that everything happens on your machine. Your high-resolution RAWs never leave your hard drive during culling or editing. That matters if you work somewhere with slow or no internet, and if you have privacy requirements about client images. Cloud competitors like Imagen can't offer this."
+            "t": "One of Aftershoot’s biggest practical strengths is that routine culling, editing, and retouching run locally on your computer with no internet required. With album-level AI learning enabled, Aftershoot uploads low-resolution copies to build a personalized model. Custom profile training uploads the selected training images to encrypted servers. Once built, profiles work offline, and your high-resolution RAWs remain on your hard drive. Cloud competitors like Imagen cannot offer this local processing model."
           }
         ],
         "cls": ""
@@ -879,11 +879,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "Does Aftershoot work offline?",
-            "b": 1
+            "t": "Does Aftershoot work offline?\n",
+            "b": true
           },
           {
-            "t": "\nYes. It processes entirely on your computer, so no internet is needed and your files never leave your machine. This is one of its biggest advantages over cloud-based tools."
+            "t": "Routine culling, editing, and retouching run locally on your computer with no internet required. With album-level AI learning enabled, Aftershoot uploads low-resolution copies. Custom profile training uploads the selected training images. Once built, profiles work offline."
           }
         ],
         "cls": ""
@@ -6376,7 +6376,7 @@
             "b": true
           },
           {
-            "t": "Select (AI culling only) is $120/year billed annually ($10/month equivalent) or $15/month billed monthly. Edit (AI editing with personal or marketplace profiles) is $360/year billed annually ($30/month equivalent) or $35/month billed monthly. Complete (bundling culling, editing, and portrait retouching) is $540/year billed annually ($45/month equivalent) or $55/month billed monthly. Volume never increases your price, and all processing runs locally on your computer."
+            "t": "Select (AI culling only) is $120/year billed annually ($10/month equivalent) or $15/month billed monthly. Edit (AI editing with personal or marketplace profiles) is $360/year billed annually ($30/month equivalent) or $35/month billed monthly. Complete (bundling culling, editing, and portrait retouching) is $540/year billed annually ($45/month equivalent) or $55/month billed monthly. Volume never increases your price, and routine processing runs locally on your computer (uploads occur only for custom profile training or if album-level learning is enabled)."
           }
         ]
       },
@@ -7550,6 +7550,16 @@
         "runs": [
           {
             "t": "The pricing is different from the subscription tools: editing and previewing edited images is free. Exporting an image requires an Evoto credit. Credits can be purchased as a single package with a 2 year expiration date, or as an annual subscription. A reviewer's honest take: it's fantastic for retouching but its credit-per-image payment system feels antiquated and makes it easy to go over your budget if you lose track of your edits and credits."
+          },
+          {
+            "t": " For a detailed breakdown of credit pricing, local versus cloud processing, and culling vs retouching workflows, see our "
+          },
+          {
+            "t": "Aftershoot vs Evoto comparison",
+            "href": "/aftershoot-vs-evoto"
+          },
+          {
+            "t": "."
           }
         ],
         "cls": ""
@@ -16866,15 +16876,7 @@
             "ext": 1
           },
           {
-            "t": " and independent testing from "
-          },
-          {
-            "t": "samdespo.com",
-            "href": "https://www.samdespo.com/tools/evoto",
-            "ext": 1
-          },
-          {
-            "t": " (checked October 2026), offers sliders for blemishes, skin tone, under-eye bags, teeth, stray hairs, and "
+            "t": ", offers sliders for blemishes, skin tone, under-eye bags, teeth, stray hairs, and "
           },
           {
             "t": "face shape",
@@ -16943,7 +16945,7 @@
             "b": true
           },
           {
-            "t": " per-export credits add up at volume, rollover credits are lost if a plan lapses beyond the 30-day grace period, and credit-free rules depend on your desktop app version. Independent reviewers report credit expiry and renewal rules as a common source of confusion for seasonal photographers."
+            "t": " per-export credits add up at volume, rollover credits expire if an annual subscription is not renewed within the 30-day grace period, and credit-free rules depend on your desktop app version and plan status."
           }
         ]
       },
@@ -17069,7 +17071,7 @@
             "b": true
           },
           {
-            "t": "Evoto's Smart Culling guide lists no separate charge for culling, and unedited originals export credit-free. Credits are only deducted when you export an edited image."
+            "t": "Evoto’s Smart Culling guide lists no separate charge for culling. Exporting unedited originals is credit-free."
           }
         ]
       },
