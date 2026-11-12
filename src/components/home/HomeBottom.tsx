@@ -212,8 +212,13 @@ export function HomeMethod() {
 
 export function HomeLatest() {
   const site = getSiteData();
-  const editorials = site.articles.filter((a) => a.type === 'editorial');
-  const latest = site.articles.filter((a) => a.type !== 'editorial' && a.img).slice(0, 6);
+  const editorials = site.articles
+    .filter((a) => a.type === 'editorial')
+    .sort((x, y) => y.date.localeCompare(x.date));
+  const latest = site.articles
+    .filter((a) => a.type !== 'editorial')
+    .sort((x, y) => y.date.localeCompare(x.date))
+    .slice(0, 6);
 
   return (
     <section aria-labelledby="h-latest">
@@ -244,11 +249,48 @@ export function HomeLatest() {
             <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
               {latest.map((a) => (
                 <li key={a.slug} style={{ borderBottom: '1px solid #DFE2DB' }}>
-                  <Link href={a.href} className="pt-hover-blue" style={{ display: 'grid', gridTemplateColumns: '96px 1fr', gap: '16px', alignItems: 'center', padding: '14px 0', textDecoration: 'none', color: '#20221F' }}>
-                    <span style={{ display: 'block', width: '96px', aspectRatio: '3/2', borderRadius: '3px', overflow: 'hidden', border: '1px solid #DFE2DB', background: '#F3F2EE' }}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={a.img || ''} alt="" width={192} height={128} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: a.imgPos || '50% 30%', display: 'block' }} />
-                    </span>
+                  <Link
+                    href={a.href}
+                    className="pt-hover-blue"
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: a.img ? '96px 1fr' : '1fr',
+                      gap: '16px',
+                      alignItems: 'center',
+                      padding: '14px 0',
+                      textDecoration: 'none',
+                      color: '#20221F',
+                    }}
+                  >
+                    {a.img && (
+                      <span
+                        style={{
+                          display: 'block',
+                          width: '96px',
+                          aspectRatio: '3/2',
+                          borderRadius: '3px',
+                          overflow: 'hidden',
+                          border: '1px solid #DFE2DB',
+                          background: '#F3F2EE',
+                        }}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={a.img}
+                          alt=""
+                          width={192}
+                          height={128}
+                          loading="lazy"
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            objectPosition: a.imgPos || '50% 30%',
+                            display: 'block',
+                          }}
+                        />
+                      </span>
+                    )}
                     <span>
                       <span style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: '#60645F', marginBottom: '2px' }}>{a.typeLabel}</span>
                       <span style={{ display: 'block', fontSize: '16px', fontWeight: 500, lineHeight: 1.4 }}>{a.title}</span>

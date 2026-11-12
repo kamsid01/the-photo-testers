@@ -87,6 +87,38 @@ export default function PricingCalculatorPage() {
         {/* Interactive Calculator */}
         <PricingCalculator />
 
+        {/* Worked Example */}
+        <section
+          aria-labelledby="worked-example-h"
+          className="mt-12 p-6 sm:p-8 bg-white border border-[#DFE2DB] rounded"
+        >
+          <h2
+            id="worked-example-h"
+            className="m-0 mb-3.5 font-serif font-medium text-[clamp(24px,2.3vw,30px)] text-[#20221F]"
+          >
+            Worked example: what hidden hours cost you
+          </h2>
+          <div className="text-[16px] leading-[1.65] text-[#20221F] space-y-4 max-w-[800px]">
+            <p className="m-0">
+              Consider a photographer aiming for a <strong>£40,000 annual take-home</strong> from <strong>30 shoots</strong>, with <strong>£8,000 in annual business costs</strong>, an estimated <strong>25% tax rate</strong>, <strong>8 shoot hours</strong>, and <strong>15 hidden hours</strong> per shoot:
+            </p>
+            <ul className="m-0 pl-5 space-y-2 list-disc text-[#20221F]">
+              <li>
+                The estimate is <strong>£2,044 per shoot</strong> at 30 shoots.
+              </li>
+              <li>
+                At <strong>23 hours per shoot</strong>, that is approximately <strong>£89/hour gross</strong> and <strong>£58/hour take-home</strong>.
+              </li>
+              <li>
+                If editing takes five more hours per shoot, the same price covers <strong>28 hours</strong>, reducing the rates to approximately <strong>£73/hour gross</strong> and <strong>£48/hour take-home</strong>.
+              </li>
+            </ul>
+            <p className="m-0 text-[#4A4E49]">
+              In this example, extra editing time lowers the effective hourly rate because annual costs, bookings, and take-home goals stay the same. Every extra hour spent editing without increasing your price or reducing other unbilled tasks directly reduces what you earn for your time.
+            </p>
+          </div>
+        </section>
+
         {/* Editorial Explanation Sections */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 mt-14 pt-8 border-t border-[#20221F]">
           <section aria-labelledby="how-h" className="flex-1 min-w-0">

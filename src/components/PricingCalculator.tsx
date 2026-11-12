@@ -39,6 +39,9 @@ export function PricingCalculator() {
   const [tax, setTax] = useState(DEFAULTS.tax);
   const [shootH, setShootH] = useState(DEFAULTS.shootH);
   const [hiddenH, setHiddenH] = useState(DEFAULTS.hiddenH);
+  const [copied, setCopied] = useState(false);
+  const [copyStatus, setCopyStatus] = useState('');
+  const [copyError, setCopyError] = useState(false);
 
   const reset = () => {
     setCur(DEFAULTS.cur);
@@ -48,6 +51,9 @@ export function PricingCalculator() {
     setTax(DEFAULTS.tax);
     setShootH(DEFAULTS.shootH);
     setHiddenH(DEFAULTS.hiddenH);
+    setCopied(false);
+    setCopyStatus('');
+    setCopyError(false);
   };
 
   const sym = { GBP: '£', USD: '$', EUR: '€' }[cur];
@@ -256,6 +262,65 @@ export function PricingCalculator() {
     };
   }
 
+  const handleCopy = async () => {
+    if (!valid || !out) return;
+
+    const summaryText = [
+      `Photography Pricing Estimate`,
+      `----------------------------`,
+      `Price per shoot: ${out.price}`,
+      `Shoots per year: ${out.shoots}`,
+      `Total hours per shoot: ${out.hours} (${vals.shootH}h shoot + ${vals.hiddenH}h hidden)`,
+      `Gross hourly rate: ${out.grossHourly}`,
+      `Take-home hourly rate: ${out.takeHourly}`,
+      ``,
+      `Where each ${out.price} goes:`,
+      `- Business costs: ${out.cost} (${out.costPct})`,
+      `- Tax (estimated): ${out.tax} (${out.taxPct})`,
+      `- Your take-home: ${out.keep} (${out.keepPct})`,
+      ``,
+      `Assumptions used:`,
+      `- Desired annual take-home: ${fmt(vals.take)} (${cur})`,
+      `- Shoots per year: ${vals.shoots}`,
+      `- Annual business costs: ${fmt(vals.costs)} (${cur})`,
+      `- Estimated tax rate: ${vals.tax}%`,
+      `- Shoot hours: ${vals.shootH}h`,
+      `- Hidden hours: ${vals.hiddenH}h`,
+      ``,
+      `Calculated via The Photo Testers: https://www.thephototesters.com/tools/pricing-calculator`,
+    ].join('\n');
+
+    try {
+      if (typeof navigator !== 'undefined' && navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(summaryText);
+      } else if (typeof document !== 'undefined') {
+        const ta = document.createElement('textarea');
+        ta.value = summaryText;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        const success = document.execCommand('copy');
+        document.body.removeChild(ta);
+        if (!success) throw new Error('execCommand failed');
+      } else {
+        throw new Error('Clipboard unavailable');
+      }
+
+      setCopied(true);
+      setCopyError(false);
+      setCopyStatus('Estimate copied to clipboard');
+      setTimeout(() => {
+        setCopied(false);
+        setCopyStatus('');
+      }, 3000);
+    } catch {
+      setCopied(false);
+      setCopyError(true);
+      setCopyStatus('Could not copy to clipboard. Please copy manually.');
+    }
+  };
+
   return (
     <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
       {/* Inputs Form */}
@@ -445,6 +510,60 @@ export function PricingCalculator() {
                 <dd className="m-0">{out.keep}</dd>
               </div>
             </dl>
+
+            <div className="mt-6 pt-5 border-t border-[#3A3C38]">
+              <button
+                type="button"
+                onClick={handleCopy}
+                className="w-full h-11 px-4 bg-[#FAF9F6] text-[#20221F] font-semibold text-[15px] rounded border border-transparent hover:bg-white active:bg-[#E4E5DF] cursor-pointer transition-colors flex items-center justify-center gap-2"
+                aria-label="Copy estimate summary to clipboard"
+              >
+                {copied ? (
+                  <>
+                    <svg
+                      aria-hidden="true"
+                      className="w-4 h-4 text-[#2E7D32]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Estimate copied</span>
+                  </>
+                ) : (
+                  <>
+                    <svg
+                      aria-hidden="true"
+                      className="w-4 h-4 text-[#60645F]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <span>Copy estimate</span>
+                  </>
+                )}
+              </button>
+              {copyStatus && (
+                <p
+                  role="status"
+                  aria-live="polite"
+                  className={`mt-2 text-[13px] text-center ${
+                    copyError ? 'text-[#FF8A80]' : 'text-[#A7AAA3]'
+                  }`}
+                >
+                  {copyStatus}
+                </p>
+              )}
+            </div>
           </div>
         ) : (
           <div

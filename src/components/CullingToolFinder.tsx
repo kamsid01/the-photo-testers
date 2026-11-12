@@ -41,11 +41,11 @@ const TOOLS: Record<string, ToolDetail> = {
   },
   FilterPixel: {
     reason:
-      'Budget is your main concern. FilterPixel has one of the more generous free tiers for AI culling, and its cloud processing doesn’t tax your laptop.',
+      'FilterPixel is a cloud-based option you can try before subscribing. Its free trial covers a limited number of projects. Check the current plans and trial terms before choosing.',
     limit: 'Cloud processing means it isn’t suited to working offline.',
     link: '/best-photo-culling-software#filterpixel',
     linkText: 'FilterPixel in our culling guide',
-    short: 'Cloud AI culling with a free tier.',
+    short: 'Cloud-based AI culling with a limited free trial before subscribing.',
   },
   'Photo Mechanic': {
     reason:

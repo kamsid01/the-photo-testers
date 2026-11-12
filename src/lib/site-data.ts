@@ -245,8 +245,11 @@ export function getSiteData(): SiteData {
       const readMins = Math.max(1, Math.round(wc / 230));
       const typesMap = siteRaw.types as Record<string, string>;
       const evMap = siteRaw.evidence as Record<string, { label: string; text: string }>;
+      const firstBlockImg = c.blocks?.find((b) => b.type === 'img' && b.src)?.src;
+      const thumbnail = a.img || firstBlockImg || undefined;
       return {
         ...a,
+        img: thumbnail,
         title: c.title,
         href: `/${a.slug}`,
         typeLabel: typesMap[a.type],
@@ -261,8 +264,8 @@ export function getSiteData(): SiteData {
         readLabel: `${readMins} min read`,
         author: 'The Photo Testers team',
         evidenceLabel: evMap[a.evidence].label,
-        hasImg: !!a.img,
-        noImg: !a.img,
+        hasImg: !!thumbnail,
+        noImg: !thumbnail,
       };
     })
     .sort((x, y) => y.date.localeCompare(x.date));
