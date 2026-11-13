@@ -7802,11 +7802,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "Do these tools work offline?",
-            "b": 1
+            "t": "Do these tools work offline?\n",
+            "b": true
           },
           {
-            "t": "\nAftershoot, Narrative Select, and Evoto work offline (processing on your machine). Imagen AI is cloud-only and needs a stable internet connection. FilterPixel uses cloud processing for some features."
+            "t": "Aftershoot and Narrative Select work offline on local hardware (Aftershoot uploads only for custom profile training or when optional album learning is enabled). Evoto uses cloud processing for portrait retouching and background replacement. Imagen AI and FilterPixel require an internet connection for cloud processing."
           }
         ],
         "cls": ""
