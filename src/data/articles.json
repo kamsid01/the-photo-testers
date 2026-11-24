@@ -1665,7 +1665,7 @@
             ],
             [
               {
-                "t": "Free (up to 100 photos / 3 GB) / Starter $8.33/mo ($99.99/yr) / $9.99/mo monthly"
+                "t": "Free (up to 100 photos) / Starter $8.33/mo ($99.99/yr) / $9.99/mo monthly"
               }
             ],
             [
@@ -1882,7 +1882,7 @@
             "b": 1
           },
           {
-            "t": " From $8/mo (billed annually) or $10/mo monthly; free tier (3GB) (Checked October 2026)."
+            "t": " From $8/mo (billed annually) or $10/mo monthly; free tier (3GB) (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -1902,7 +1902,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "ShootProof pairs client gallery delivery with essential studio business management. On paid tiers, it bundles contracts, invoicing, booking, and a commission-free print store on direct lab orders (free tier is capped at 100 photos / 3 GB and excludes contracts and invoicing)."
+            "t": "ShootProof pairs client gallery delivery with essential studio business management. On paid tiers, it bundles contracts, invoicing, booking, and a commission-free print store on direct lab orders (Free allows up to 100 photos and excludes contracts and invoicing)."
           }
         ],
         "cls": ""
@@ -1911,7 +1911,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Plans scale strictly by storage capacity rather than photo counts: Free (up to 100 photos / 3 GB photo delivery), Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly), Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly), Professional 1,000 GB / 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly), Advanced 2,000 GB / 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly), and Unlimited / Premium ($50/mo annual [$600/yr] or $60/mo monthly). Compare storage needs directly on our "
+            "t": "Free allows up to 100 photos. Paid tiers scale by storage: Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly), Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly), Professional 1,000 GB / 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly), Advanced 2,000 GB / 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly), and Unlimited / Premium ($50/mo annual [$600/yr] or $60/mo monthly). Compare storage needs directly on our "
           },
           {
             "t": "Gallery Cost Calculator",
@@ -1956,7 +1956,7 @@
           ],
           [
             {
-              "t": "Free tier limited to 3 GB and excludes studio contracts/invoicing"
+              "t": "Free allows up to 100 photos and excludes studio contracts/invoicing"
             }
           ]
         ]
@@ -1965,7 +1965,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (up to 100 photos / 3 GB); Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly); Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly); Professional 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly); Advanced 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly); Premium Unlimited ($50/mo annual [$600/yr] or $60/mo monthly) (Checked October 2026)."
+            "t": "Pricing: Free allows up to 100 photos; paid tiers scale by storage — Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly); Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly); Professional 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly); Advanced 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly); Premium Unlimited ($50/mo annual [$600/yr] or $60/mo monthly) (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -2041,7 +2041,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (5 GB, 3 galleries); Entry 15 GB ($7/mo monthly or $72/yr annual [$6/mo equivalent]); Lite 100 GB ($17/mo monthly or $144/yr annual [$12/mo equivalent]); Pro 500 GB ($34/mo published rate [approx. $408/yr spend]); Unlimited ($50/mo published rate [approx. $600/yr spend]) (Checked October 2026)."
+            "t": "Pricing: Free tier (5 GB, 3 galleries); Entry 15 GB ($7/mo monthly or $72/yr annual [$6/mo equivalent]); Lite 100 GB ($17/mo monthly or $144/yr annual [$12/mo equivalent]); Pro 500 GB ($34/mo published rate [approx. $408/yr spend]); Unlimited ($50/mo published rate [approx. $600/yr spend]) (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -2124,7 +2124,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (3 GB ongoing, 15% commission); Beginner 20 GB ($7/mo annual [$84/yr] or $8/mo monthly, 15% commission); Professional 100 GB ($21/mo annual [$252/yr] or $25/mo monthly, 0% commission with own processor); Advanced Unlimited ($42/mo annual [$504/yr] or $50/mo monthly, 0% commission with own processor) (Checked October 2026)."
+            "t": "Pricing: Free tier (3 GB ongoing, 15% commission); Beginner 20 GB ($7/mo annual [$84/yr] or $8/mo monthly, 15% commission); Professional 100 GB ($21/mo annual [$252/yr] or $25/mo monthly, 0% commission with own processor); Advanced Unlimited ($42/mo annual [$504/yr] or $50/mo monthly, 0% commission with own processor) (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -2200,7 +2200,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: 14-day trial; Direct ($20/mo annual [$240/yr] or $29/mo monthly); Portfolio ($23.50/mo annual [$282/yr] or $35.50/mo monthly); Pro ($37/mo annual [$444/yr] or $52/mo monthly) (Checked October 2026)."
+            "t": "Pricing: 14-day trial; Direct ($20/mo annual [$240/yr] or $29/mo monthly); Portfolio ($23.50/mo annual [$282/yr] or $35.50/mo monthly); Pro ($37/mo annual [$444/yr] or $52/mo monthly) (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -2276,7 +2276,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Basic 15 GB ($7/mo annual [$84/yr] or $9/mo monthly); Professional 150 GB ($11.50/mo annual first-year promo [$138/yr], standard account renewal applies; $23/mo standard monthly); Advanced Unlimited ($20/mo annual first-year promo [$240/yr], standard account renewal applies; $40/mo monthly) (Checked October 2026)."
+            "t": "Pricing: Basic 15 GB ($7/mo annual [$84/yr] or $9/mo monthly); Professional 150 GB ($11.50/mo annual first-year promo [$138/yr], standard account renewal applies; $23/mo standard monthly); Advanced Unlimited ($20/mo annual first-year promo [$240/yr], standard account renewal applies; $40/mo monthly) (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -2907,7 +2907,7 @@
               "b": 1
             },
             {
-              "t": " 3GB storage (15% store commission, Pixieset branding on client galleries, no custom domain)"
+              "t": " Free allows up to 100 photos (photo delivery only; contracts and invoices excluded; 0% commission on direct lab orders). Paid tiers scale by storage."
             }
           ],
           [
@@ -3017,7 +3017,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "ShootProof caps its Free tier at 100 photos (3 GB, excluding contracts and invoicing) and structures paid plans by storage capacity from Starter 20 GB ($99.99/yr annual or $9.99/mo monthly) through Standard 100 GB ($199.99/yr annual, accommodating 20,000 JPEGs at 5 MB each). Paid plans include digital contracts, invoicing, and zero commission on direct orders."
+            "t": "Free allows up to 100 photos (photo delivery only; contracts and invoicing excluded). Paid tiers scale by storage from Starter 20 GB ($99.99/yr annual or $9.99/mo monthly) through Standard 100 GB ($199.99/yr annual, accommodating 20,000 JPEGs at 5 MB each). Paid plans include digital contracts, invoicing, and zero commission on direct orders."
           }
         ],
         "cls": ""
@@ -3031,7 +3031,7 @@
               "b": 1
             },
             {
-              "t": " 3GB storage (photo delivery only; contracts and invoices excluded; 0% commission on direct lab orders)"
+              "t": " Free allows up to 100 photos (photo delivery only; contracts and invoices excluded; 0% commission on direct lab orders). Paid tiers scale by storage."
             }
           ],
           [
@@ -11256,7 +11256,7 @@
                 "b": true
               },
               {
-                "t": " for international multi-currency pricing and automatic print order tracking."
+                "t": " for tracking Pic-Time galleries and importing print orders into your job ledger (note: Studio Ninja uses one account currency for all quotes and invoices rather than per-invoice multi-currency billing)."
               }
             ]
           }
@@ -11398,7 +11398,7 @@
             ],
             [
               {
-                "t": "International multi-currency studios & automated print-order ledger sync"
+                "t": "Tracking Pic-Time galleries & print orders in one local account currency (no per-invoice multi-currency)"
               }
             ],
             [
@@ -11583,7 +11583,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "From any Studio Ninja Job profile, you can create a brand-new Pic-Time gallery or link an existing gallery with a single click. Even better, Studio Ninja automatically imports client print orders and store revenue from Pic-Time directly into the Job’s financial ledger, logging product sales and payments without manual entry. Full multi-currency support (GBP, EUR, AUD, USD) makes it ideal for UK, European, and Australian businesses."
+            "t": "From any Studio Ninja Job profile, you can create a brand-new Pic-Time gallery or link an existing gallery with a single click. Even better, Studio Ninja automatically imports client print orders and store revenue from Pic-Time directly into the Job’s financial ledger, logging product sales and payments without manual entry. You can configure your account in GBP, EUR, AUD, or USD, making it practical for UK, European, and Australian studios billing in a single local currency—however, per Studio Ninja’s documentation, one account currency applies to all quotes and invoices, so it does not support per-invoice multi-currency billing."
           }
         ]
       },
@@ -11602,7 +11602,7 @@
           ],
           [
             {
-              "t": "Built specifically for photographers with global multi-currency billing"
+              "t": "Built specifically for photographers; supports GBP, EUR, AUD, or USD as your account currency"
             }
           ],
           [
@@ -11620,6 +11620,11 @@
           [
             {
               "t": "Price sheets and lab fulfillment remain configured in Pic-Time"
+            }
+          ],
+          [
+            {
+              "t": "Single account currency applies to all quotes and invoices (no per-invoice multi-currency)"
             }
           ]
         ]

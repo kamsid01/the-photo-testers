@@ -5,6 +5,7 @@ import Link from 'next/link';
 import {
   calculateGalleryVolume,
   getStandardGalleryPlans,
+  getMonthlyEstimateGalleryPlans,
   getPromoGalleryPlans,
   getLowestCostMeta,
   GALLERY_DEFAULT_PHOTOS,
@@ -50,6 +51,7 @@ export function GalleryCostCalculator() {
   const gbLabel = vol ? vol.gbLabel : '—';
 
   const standardRows = valid ? getStandardGalleryPlans(nShoots, nPhotos) : [];
+  const monthlyEstimateRows = valid ? getMonthlyEstimateGalleryPlans(nShoots, nPhotos) : [];
   const promoRows = valid ? getPromoGalleryPlans(nShoots, nPhotos) : [];
   const lowestMeta = valid ? getLowestCostMeta(standardRows) : null;
 
@@ -177,7 +179,7 @@ export function GalleryCostCalculator() {
         </form>
 
         <div className="p-3.5 px-4 bg-[#FBF7EF] border border-[#E7D9BC] rounded text-[14px] leading-[1.5] text-[#4F3A12]">
-          <strong>Pricing basis:</strong> published USD annual list prices checked {GALLERY_PRICING_CHECKED}. Lowest-cost badges compare standard annual list rates on one consistent basis. Temporary first-year promotional offers (such as Zenfolio Professional) are listed separately below with their eligibility and expiry terms.
+          <strong>Pricing basis:</strong> published USD annual list prices checked {GALLERY_PRICING_CHECKED}. Lowest-cost badges compare verified annual list subscriptions on one consistent basis. Plans calculated from monthly billing (such as CloudSpot Pro at $34/mo × 12) or temporary promotions are listed separately below and excluded from annual-list winner badges.
         </div>
       </div>
 
@@ -245,6 +247,11 @@ export function GalleryCostCalculator() {
                             Basis: {r.billingBasis}
                           </p>
                         )}
+                        {r.billingNote && (
+                          <p className="m-0 mt-1.5 text-[12.5px] leading-[1.45] text-[#60645F]">
+                            {r.billingNote}
+                          </p>
+                        )}
                       </div>
                       <div className="text-left sm:text-right tabular-nums shrink-0">
                         <p className="m-0 font-serif text-[26px] sm:text-[30px] leading-[1.1] text-[#20221F]">
@@ -252,8 +259,8 @@ export function GalleryCostCalculator() {
                           <span className="font-sans text-[14px] text-[#60645F]"> USD /yr</span>
                         </p>
                         <p className="mt-0.5 mb-0 text-[13px] sm:text-[14px] text-[#60645F]">
-                          ${r.monthlyCost}{' '}
-                          {r.billingBasis.includes('monthly billing')
+                          ${Number.isInteger(r.monthlyCost) ? r.monthlyCost : r.monthlyCost.toFixed(2)}{' '}
+                          {r.pricingCategory === 'monthly-estimate'
                             ? 'USD/mo published monthly rate'
                             : 'USD/mo equivalent'}
                         </p>
@@ -269,6 +276,62 @@ export function GalleryCostCalculator() {
                 );
               })}
             </ol>
+
+            {/* Estimated 12-Month Spend on Monthly Billing (Excluded from Annual-List Ranking) */}
+            {monthlyEstimateRows.length > 0 && (
+              <div className="mt-5">
+                <h3 className="m-0 mb-2 text-[14px] font-semibold uppercase tracking-[0.04em] text-[#4A4E49]">
+                  Estimated 12-month spend on monthly billing (excluded from annual-list badges)
+                </h3>
+                <ul className="list-none m-0 p-0 flex flex-col gap-2.5">
+                  {monthlyEstimateRows.map((r) => (
+                    <li
+                      key={r.platform}
+                      className="bg-white rounded p-3.5 sm:p-5 border border-[#DFE2DB] w-full min-w-0"
+                    >
+                      <p className="m-0 mb-2 text-[12px] font-semibold tracking-[0.04em] uppercase text-[#60645F]">
+                        Monthly billing estimate (no published annual list price)
+                      </p>
+                      <div className="flex flex-wrap justify-between gap-3 sm:gap-6 items-start">
+                        <div className="flex-1 min-w-0">
+                          <h4 className="m-0 mb-0.5 text-[18px] sm:text-[19px] font-semibold text-[#20221F]">
+                            {r.platform}{' '}
+                            <span className="font-normal text-[#60645F]">· {r.planName}</span>
+                          </h4>
+                          <p className="m-0 mb-1.5 text-[14px] sm:text-[15px] text-[#4A4E49]">{r.limit}</p>
+                          <p className="m-0 text-[13px] sm:text-[14px] text-[#60645F]">
+                            Store commission: {r.commission} · {r.sellingNote}
+                          </p>
+                          <p className="m-0 mt-2 text-[12px] font-medium text-[#4A4E49] bg-[#F5F7F3] px-2.5 py-1 rounded border border-[#DFE2DB] inline-block">
+                            Basis: {r.billingBasis}
+                          </p>
+                          {r.billingNote && (
+                            <p className="m-0 mt-1.5 text-[12.5px] leading-[1.45] text-[#60645F]">
+                              {r.billingNote}
+                            </p>
+                          )}
+                        </div>
+                        <div className="text-left sm:text-right tabular-nums shrink-0">
+                          <p className="m-0 font-serif text-[26px] sm:text-[30px] leading-[1.1] text-[#20221F]">
+                            ${r.annualCost.toLocaleString('en-US')}
+                            <span className="font-sans text-[14px] text-[#60645F]"> USD /yr est.</span>
+                          </p>
+                          <p className="mt-0.5 mb-0 text-[13px] sm:text-[14px] text-[#60645F]">
+                            ${r.monthlyCost} USD/mo published monthly rate
+                          </p>
+                        </div>
+                      </div>
+                      <Link
+                        href={`/best-client-gallery-software#${r.slug}`}
+                        className="inline-block mt-2.5 text-[14px] font-semibold text-[#3159D7] hover:underline"
+                      >
+                        {r.platform} in our gallery guide
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Temporary First-Year Promotional Offers (Separated from Standard Annual List Ranking) */}
             {promoRows.length > 0 && (

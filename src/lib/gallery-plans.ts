@@ -1,3 +1,5 @@
+export type PricingCategory = 'annual-list' | 'monthly-estimate' | 'promo';
+
 export interface GalleryPlatformPlan {
   platform: string;
   planName: string;
@@ -9,6 +11,7 @@ export interface GalleryPlatformPlan {
   sellingNote: string;
   slug: string;
   sourceUrl: string;
+  pricingCategory: PricingCategory;
   isStandardList: boolean;
   isPromo?: boolean;
   promoEligibility?: string;
@@ -80,6 +83,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client print & digital sales included (15% commission)',
       slug: 'pixieset',
       sourceUrl: 'https://pixieset.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Free tier ($0/yr)',
     });
@@ -95,6 +99,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free client sales included',
       slug: 'pixieset',
       sourceUrl: 'https://pixieset.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($96/yr; $8/mo equivalent)',
     });
@@ -110,6 +115,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free client sales included',
       slug: 'pixieset',
       sourceUrl: 'https://pixieset.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($192/yr; $16/mo equivalent)',
     });
@@ -125,6 +131,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free client sales included',
       slug: 'pixieset',
       sourceUrl: 'https://pixieset.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($288/yr; $24/mo equivalent)',
     });
@@ -140,25 +147,27 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free client sales included',
       slug: 'pixieset',
       sourceUrl: 'https://pixieset.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($480/yr; $40/mo equivalent)',
     });
   }
 
   // 2. ShootProof (https://www.shootproof.com/pricing/)
-  // Enforces both the 100-photo Free plan limit AND 3 GB storage cap
-  if (totalPhotos <= 100 && gb <= 3) {
+  // Free allows up to 100 photos (photo-only). Paid tiers scale by storage.
+  if (totalPhotos <= 100) {
     list.push({
       platform: 'ShootProof',
       planName: 'Free',
       monthlyCost: 0,
       annualCost: 0,
-      limit: 'Up to 100 photos (3 GB cap; contracts & invoicing excluded)',
+      limit: 'Free allows up to 100 photos (photo-only; contracts & invoicing excluded). Paid tiers scale by storage.',
       commission: '0% on direct orders',
       canSell: true,
-      sellingNote: 'Direct orders supported (limited free-tier features)',
+      sellingNote: 'Direct lab orders supported (limited free-tier features)',
       slug: 'shootproof',
       sourceUrl: 'https://www.shootproof.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Free tier ($0/yr)',
     });
@@ -174,6 +183,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free print & digital sales included',
       slug: 'shootproof',
       sourceUrl: 'https://www.shootproof.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($99.99/yr USD; $8.33/mo equivalent)',
     });
@@ -189,6 +199,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free print & digital sales included',
       slug: 'shootproof',
       sourceUrl: 'https://www.shootproof.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($199.99/yr USD; $16.67/mo equivalent)',
     });
@@ -204,6 +215,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free print & digital sales included',
       slug: 'shootproof',
       sourceUrl: 'https://www.shootproof.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($319.99/yr USD; $26.67/mo equivalent)',
     });
@@ -219,6 +231,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free print & digital sales included',
       slug: 'shootproof',
       sourceUrl: 'https://www.shootproof.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($519.99/yr USD; $43.33/mo equivalent)',
     });
@@ -234,6 +247,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free print & digital sales included',
       slug: 'shootproof',
       sourceUrl: 'https://www.shootproof.com/pricing/',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($600/yr USD; $50/mo equivalent)',
     });
@@ -253,6 +267,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client store included (15% store commission)',
       slug: 'pic-time',
       sourceUrl: 'https://www.pic-time.com/pricing',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Free tier ($0/yr)',
     });
@@ -268,6 +283,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client selling included (15% store commission)',
       slug: 'pic-time',
       sourceUrl: 'https://www.pic-time.com/pricing',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($84/yr; $7/mo equivalent)',
     });
@@ -283,6 +299,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client store included (0% commission with own payment gateway)',
       slug: 'pic-time',
       sourceUrl: 'https://www.pic-time.com/pricing',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($252/yr; $21/mo equivalent)',
     });
@@ -298,6 +315,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client store included (0% commission with own payment gateway)',
       slug: 'pic-time',
       sourceUrl: 'https://www.pic-time.com/pricing',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($504/yr; $42/mo equivalent)',
     });
@@ -319,27 +337,30 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       'Need to sell prints or digital downloads? Upgrade to SmugMug Portfolio at $282/year ($23.50/mo annual; $35.50/mo monthly; 15% fee on print markup).',
     slug: 'smugmug',
     sourceUrl: 'https://www.smugmug.com/pricing',
+    pricingCategory: 'annual-list',
     isStandardList: true,
     billingBasis: 'Standard annual list ($240/yr; $20/mo equivalent)',
   });
 
   // 5. Zenfolio (https://www.zenfolio.com/pricing)
-  // Basic ($84/yr) is standard annual list; Professional ($138/yr) and Advanced ($240/yr)
-  // are temporary first-year promotional offers shown separately from standard annual list ranking.
+  // Zenfolio publishes annual billing equivalents: Basic $7/mo ($84/yr), Professional $11.50/mo ($138/yr),
+  // Advanced $20/mo ($240/yr), with monthly billing at $9/mo, $23/mo, and $40/mo respectively.
+  // Seasonal promos (e.g. Cyber/Black Friday) are separate first-year discounts; confirm renewal terms at checkout.
   if (gb <= 15) {
     list.push({
       platform: 'Zenfolio',
       planName: 'Basic',
       monthlyCost: 7,
       annualCost: 84,
-      limit: '15 GB storage limit ($9/mo monthly); delivery only',
+      limit: '15 GB storage limit ($9/month on monthly billing); delivery only',
       commission: 'No client selling',
       canSell: false,
       sellingNote: 'Delivery-only (no client e-commerce / print store)',
       slug: 'zenfolio',
       sourceUrl: 'https://www.zenfolio.com/pricing',
+      pricingCategory: 'annual-list',
       isStandardList: true,
-      billingBasis: 'Standard annual list ($84/yr; $7/mo equivalent)',
+      billingBasis: 'Standard annual list ($84/yr; $7/mo billed annually)',
     });
   } else if (gb <= 150) {
     list.push({
@@ -353,12 +374,11 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client selling included (7% commerce fee)',
       slug: 'zenfolio',
       sourceUrl: 'https://www.zenfolio.com/pricing',
-      isStandardList: false,
-      isPromo: true,
-      promoEligibility: 'New annual subscriptions only; introductory rate expires after Year 1.',
-      promoNote:
-        'Temporary first-year promotional offer ($138/yr; $11.50/mo equivalent). Monthly billing is $23/month. Confirm the current non-promotional annual renewal rate at Zenfolio checkout before subscribing.',
-      billingBasis: 'First-year promotional annual offer ($138/yr); monthly billing is $23/month',
+      pricingCategory: 'annual-list',
+      isStandardList: true,
+      billingBasis: 'Published annual billing ($138/yr; $11.50/mo billed annually; $23/month on monthly billing)',
+      billingNote:
+        'Zenfolio lists $11.50/month billed annually ($138/yr) alongside separate seasonal offers; confirm current annual renewal terms at checkout.',
     });
   } else {
     list.push({
@@ -372,17 +392,18 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client selling & booking included (7% commerce fee)',
       slug: 'zenfolio',
       sourceUrl: 'https://www.zenfolio.com/pricing',
-      isStandardList: false,
-      isPromo: true,
-      promoEligibility: 'New annual subscriptions only; introductory rate expires after Year 1.',
-      promoNote:
-        'Temporary first-year promotional offer ($240/yr; $20/mo equivalent). Monthly billing is $40/month. Confirm the current non-promotional annual renewal rate at Zenfolio checkout before subscribing.',
-      billingBasis: 'First-year promotional annual offer ($240/yr); monthly billing is $40/month',
+      pricingCategory: 'annual-list',
+      isStandardList: true,
+      billingBasis: 'Published annual billing ($240/yr; $20/mo billed annually; $40/month on monthly billing)',
+      billingNote:
+        'Zenfolio lists $20/month billed annually ($240/yr) alongside separate seasonal offers; confirm current annual renewal terms at checkout.',
     });
   }
 
   // 6. CloudSpot (https://cloudspot.io/pricing)
-  // Active gallery limits enforced under 1-gallery-per-shoot, 12-month retention assumption
+  // Entry ($72/yr) and Lite ($144/yr) publish upfront annual subscriptions;
+  // Pro ($34/mo) and Unlimited ($50/mo) do not publish a verified standard upfront annual list price,
+  // so their 12-month totals ($408 and $600) are categorized as 'monthly-estimate' and excluded from annual-list badges.
   if (gb <= 5 && shoots <= 3) {
     list.push({
       platform: 'CloudSpot',
@@ -395,6 +416,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client sales included (15% commission)',
       slug: 'cloudspot',
       sourceUrl: 'https://cloudspot.io/pricing',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Free tier ($0/yr)',
     });
@@ -410,6 +432,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Client sales included (15% commission)',
       slug: 'cloudspot',
       sourceUrl: 'https://cloudspot.io/pricing',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($72/yr; $6/mo equivalent)',
     });
@@ -425,6 +448,7 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       sellingNote: 'Commission-free client sales & Studio Manager included',
       slug: 'cloudspot',
       sourceUrl: 'https://cloudspot.io/pricing',
+      pricingCategory: 'annual-list',
       isStandardList: true,
       billingBasis: 'Standard annual list ($144/yr; $12/mo equivalent)',
     });
@@ -434,16 +458,17 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       planName: 'Pro',
       monthlyCost: 34,
       annualCost: 408,
-      limit: '500 GB storage, unlimited galleries, Studio Manager ($34/mo published)',
+      limit: '500 GB storage, unlimited galleries, Studio Manager ($34/mo published monthly rate)',
       commission: '0%',
       canSell: true,
       sellingNote: 'Commission-free client sales & Studio Manager included',
       slug: 'cloudspot',
       sourceUrl: 'https://cloudspot.io/pricing',
-      isStandardList: true,
-      billingBasis: 'Estimated 12-month spend on monthly billing ($34/mo published rate)',
+      pricingCategory: 'monthly-estimate',
+      isStandardList: false,
+      billingBasis: 'Estimated 12-month spend on monthly billing ($34/mo × 12)',
       billingNote:
-        'CloudSpot publishes a $34/mo rate; annual figure reflects 12 months at the published monthly rate rather than an upfront annual discount.',
+        'CloudSpot does not publish a verified standard upfront annual price for Pro; $408/yr reflects 12 months at $34/mo and is excluded from annual-list lowest-cost badges.',
     });
   } else {
     list.push({
@@ -451,16 +476,17 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
       planName: 'Unlimited',
       monthlyCost: 50,
       annualCost: 600,
-      limit: 'Unlimited storage, all file types, Studio Manager ($50/mo published)',
+      limit: 'Unlimited storage, all file types, Studio Manager ($50/mo published monthly rate)',
       commission: '0%',
       canSell: true,
       sellingNote: 'Commission-free client sales & Studio Manager included',
       slug: 'cloudspot',
       sourceUrl: 'https://cloudspot.io/pricing',
-      isStandardList: true,
-      billingBasis: 'Estimated 12-month spend on monthly billing ($50/mo published rate)',
+      pricingCategory: 'monthly-estimate',
+      isStandardList: false,
+      billingBasis: 'Estimated 12-month spend on monthly billing ($50/mo × 12)',
       billingNote:
-        'CloudSpot publishes a $50/mo rate; annual figure reflects 12 months at the published monthly rate rather than an upfront annual discount.',
+        'CloudSpot does not publish a verified standard upfront annual price for Unlimited; $600/yr reflects 12 months at $50/mo and is excluded from annual-list lowest-cost badges.',
     });
   }
 
@@ -468,11 +494,15 @@ export function getGalleryPlans(shoots: number, photosPerShoot: number): Gallery
 }
 
 export function getStandardGalleryPlans(shoots: number, photosPerShoot: number): GalleryPlatformPlan[] {
-  return getGalleryPlans(shoots, photosPerShoot).filter((p) => p.isStandardList);
+  return getGalleryPlans(shoots, photosPerShoot).filter((p) => p.pricingCategory === 'annual-list');
+}
+
+export function getMonthlyEstimateGalleryPlans(shoots: number, photosPerShoot: number): GalleryPlatformPlan[] {
+  return getGalleryPlans(shoots, photosPerShoot).filter((p) => p.pricingCategory === 'monthly-estimate');
 }
 
 export function getPromoGalleryPlans(shoots: number, photosPerShoot: number): GalleryPlatformPlan[] {
-  return getGalleryPlans(shoots, photosPerShoot).filter((p) => !p.isStandardList);
+  return getGalleryPlans(shoots, photosPerShoot).filter((p) => p.pricingCategory === 'promo');
 }
 
 export interface LowestCostMeta {
@@ -483,8 +513,8 @@ export interface LowestCostMeta {
 }
 
 /**
- * Evaluates the lowest-cost badge strictly on standard annual list pricing
- * so temporary first-year promotional offers do not mix pricing bases.
+ * Evaluates the lowest-cost badge strictly on verified annual-list pricing
+ * so monthly-billed 12-month estimates and temporary promos do not mix pricing bases.
  */
 export function getLowestCostMeta(standardPlans: GalleryPlatformPlan[]): LowestCostMeta {
   if (!standardPlans.length) {
