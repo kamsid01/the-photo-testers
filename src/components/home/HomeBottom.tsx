@@ -168,7 +168,7 @@ export function HomeTools() {
               <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #E4E5DF' }}><span style={{ color: '#60645F' }}>{galleryVol.shoots} shoots × {galleryVol.photosPerShoot} photos</span><span>{galleryVol.totalLabel} photos</span></div>
               <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #E4E5DF' }}><span style={{ color: '#60645F' }}>Storage at 5 MB each</span><span>{galleryVol.gbLabel}</span></div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '10px 0 0' }}>
-                <span><span style={{ display: 'block', fontWeight: 600 }}>Lowest estimate</span><span style={{ color: '#60645F' }}>{lowestGalleryPlan.platform} {lowestGalleryPlan.planName}{lowestGalleryPlan.isPromo ? ' (1st-yr promo)' : ''}</span></span>
+                <span><span style={{ display: 'block', fontWeight: 600 }}>Lowest published annual price (USD)</span><span style={{ color: '#60645F' }}>{lowestGalleryPlan.platform} {lowestGalleryPlan.planName}{lowestGalleryPlan.isPromo ? ' (1st-yr promo)' : ''}</span></span>
                 <span style={{ fontFamily: SERIF, fontSize: '28px', color: '#20221F' }}>${lowestGalleryPlan.annualCost.toLocaleString('en-US')}<span style={{ fontFamily: "'Instrument Sans',sans-serif", fontSize: '14px', color: '#60645F' }}>/yr</span></span>
               </div>
             </div>

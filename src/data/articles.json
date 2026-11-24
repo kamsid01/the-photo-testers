@@ -1777,7 +1777,7 @@
             ],
             [
               {
-                "t": "Basic $7/mo ($84/yr) / Professional $11.50/mo ($138/yr promo) / Advanced $20/mo ($240/yr promo)"
+                "t": "Basic $7/mo ($84/yr) / Professional $11.50/mo ($138/yr) / Advanced $20/mo ($240/yr)"
               }
             ],
             [
@@ -2229,7 +2229,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Current plans include Basic ($7/mo annual [$84/yr], 15 GB storage, no e-commerce); Professional ($11.50/mo annual [$138/yr], 150 GB storage, e-commerce with 7% commerce fee); and Advanced ($20/mo annual [$240/yr], unlimited JPEG storage with 7% commerce fee). Note: The $138/year price for Professional is an introductory first-year promotional rate; standard month-to-month billing is $23/month, and subsequent annual renewals are billed per Zenfolio's published account renewal rates."
+            "t": "Current plans include Basic ($7/month billed annually, $84/year; $9/month on monthly billing; 15 GB storage, no e-commerce). Professional starts at $11.50/month billed annually ($138/year; $23/month on monthly billing; 150 GB storage, 7% commerce fee). Advanced starts at $20/month billed annually ($240/year; $40/month on monthly billing; unlimited JPEG storage, 7% commerce fee). Zenfolio also runs separate seasonal offers for new annual subscriptions; confirm current eligibility, expiry, and renewal terms on Zenfolio’s pricing page before subscribing."
           }
         ],
         "cls": ""
@@ -2250,7 +2250,7 @@
           ],
           [
             {
-              "t": "First-year promotional pricing ($138/yr for Professional)"
+              "t": "Competitive published annual pricing (Professional $138/year, Advanced $240/year)"
             }
           ],
           [
@@ -2262,7 +2262,7 @@
         "cons": [
           [
             {
-              "t": "Professional $138/yr is a 1st-year promo; regular monthly rate is $23/mo"
+              "t": "Monthly billing is substantially higher ($23/month for Professional, $40/month for Advanced) than annual plans"
             }
           ],
           [
@@ -2276,7 +2276,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Basic 15 GB ($7/mo annual [$84/yr] or $9/mo monthly); Professional 150 GB ($11.50/mo annual first-year promo [$138/yr], standard account renewal applies; $23/mo standard monthly); Advanced Unlimited ($20/mo annual first-year promo [$240/yr], standard account renewal applies; $40/mo monthly) (Checked November 2026)."
+            "t": "Pricing: Basic 15 GB ($7/month billed annually [$84/year] or $9/month monthly). Professional starts at $11.50/month billed annually ($138/year; $23/month monthly; 150 GB). Advanced starts at $20/month billed annually ($240/year; $40/month monthly; unlimited JPEG). Seasonal offers are separate; confirm current terms at checkout (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -2903,11 +2903,11 @@
         "items": [
           [
             {
-              "t": "Free:",
+              "t": "Free includes 3 GB of photo storage.",
               "b": 1
             },
             {
-              "t": " Free allows up to 100 photos (photo delivery only; contracts and invoices excluded; 0% commission on direct lab orders). Paid tiers scale by storage."
+              "t": " Pixieset charges a 15% commission on store sales."
             }
           ],
           [
@@ -3031,7 +3031,7 @@
               "b": 1
             },
             {
-              "t": " Free allows up to 100 photos (photo delivery only; contracts and invoices excluded; 0% commission on direct lab orders). Paid tiers scale by storage."
+              "t": " Allows up to 100 photos (photo delivery only; contracts and invoices excluded; 0% commission on direct lab orders). Paid tiers scale by storage."
             }
           ],
           [
