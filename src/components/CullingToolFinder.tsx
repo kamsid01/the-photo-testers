@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 interface ToolDetail {
   reason: string;
+  trialAndCost: string;
   limit: string;
   link: string;
   linkText: string;
@@ -14,34 +15,42 @@ interface ToolDetail {
 const TOOLS: Record<string, ToolDetail> = {
   Aftershoot: {
     reason:
-      'You want one tool for the whole workflow and a predictable price at volume. Aftershoot culls, edits, and retouches on your own computer for a flat fee.',
+      'Aftershoot culls, edits, and retouches locally on your computer for a flat subscription fee with no per-image charge.',
+    trialAndCost:
+      '30-day free trial (all modules, no card). Paid plans from $10/mo annual ($15/mo monthly) for Select to $45/mo annual ($55/mo monthly) for Complete.',
     limit:
-      'Its culling still needs a human review pass, especially in low light and fast action. It runs on your hardware, so a big wedding ties up an older laptop.',
+      'Its culling still needs a human review pass, especially in low light and fast action. Routine work runs locally on your hardware, while custom profile training and optional album-level AI learning upload images.',
     link: '/aftershoot-review',
     linkText: 'Read the Aftershoot review',
-    short: 'Flat-fee culling, editing, and retouching that runs offline.',
+    short: 'Flat-fee culling, editing, and retouching with local routine processing.',
   },
   'Imagen AI': {
     reason:
-      'Editing quality matters most to you. Imagen learns your style from your past Lightroom catalogs and applies it across a whole gallery.',
+      'Imagen learns your editing style from past Lightroom catalogs and applies consistent color across galleries.',
+    trialAndCost:
+      '1,000 free AI edits to test. Pay-as-you-go starts at $0.05/photo ($7/mo min) plus optional $0.01 add-ons; Limitless is $129/mo annual for eligible solo shooters.',
     limit:
-      'Its cloud AI charges $0.05/photo pay-as-you-go ($7/mo minimum) or $129/mo billed annually for Limitless, and processing requires an internet connection.',
+      'Cloud processing requires an active internet connection, and Limitless is restricted to solo photographers editing their own work.',
     link: '/imagen-ai-review',
     linkText: 'Read the Imagen AI review',
     short: 'Style-matched editing in Lightroom Classic ($0.05/photo PAYG or $129/mo Limitless annual).',
   },
   'Narrative Select': {
     reason:
-      'You want to keep making the final calls. Narrative Select gives you fast RAW browsing and AI warnings for blinks and focus, but leaves the selection to you.',
+      'Narrative Select is a local desktop culling app with fast RAW preview rendering and AI face/focus indicators.',
+    trialAndCost:
+      'Free trial of Ultra with no credit card required (fixed duration not published). Lite ($10/mo annual or $15/mo monthly) covers fast local browsing and hover-over eye/focus checks only; Standard ($20/mo annual or $29/mo monthly) unlocks AI First Pass categorization, Scenes View, the Close-Ups panel, and unlimited AI presets.',
     limit:
-      'You still do the deciding, so it saves less time than tools that make the picks for you.',
+      'Narrative Select assists your review rather than fully automating selections, and key AI culling views (AI First Pass, Scenes View, Close-Ups panel) require the Standard tier rather than Lite.',
     link: '/best-photo-culling-software#narrative-select',
     linkText: 'Narrative Select in our culling guide',
-    short: 'Fast browsing with AI assists, and you make the picks.',
+    short: 'Local desktop culling; Lite ($10/mo annual) is basic browsing + hover checks, Standard ($20/mo annual) adds Scenes View & Close-Ups.',
   },
   FilterPixel: {
     reason:
       'FilterPixel is a cloud-based option you can try before subscribing. Its free trial covers a limited number of projects. Check the current plans and trial terms before choosing.',
+    trialAndCost:
+      'Limited free trial before subscribing; paid plans start at $14.99/mo billed annually ($19.99/mo monthly).',
     limit: 'Cloud processing means it isn’t suited to working offline.',
     link: '/best-photo-culling-software#filterpixel',
     linkText: 'FilterPixel in our culling guide',
@@ -49,29 +58,35 @@ const TOOLS: Record<string, ToolDetail> = {
   },
   'Photo Mechanic': {
     reason:
-      'You want a one-time purchase, offline work, and full control. Photo Mechanic is a fast manual culling tool with no subscription.',
-    limit: 'There’s no AI. Every selection is yours to make.',
+      'Photo Mechanic is a fast, offline manual culling and ingest tool sold as a one-time purchase with no subscription.',
+    trialAndCost:
+      'Free trial available; $299 perpetual license (no recurring subscription).',
+    limit: 'There is no AI selection or blink scoring—every keeper call is manual.',
     link: '/best-photo-culling-software#photo-mechanic',
     linkText: 'Photo Mechanic in our culling guide',
-    short: 'Fast manual culling, bought once.',
+    short: 'Fast offline manual culling, $299 one-time purchase (no AI).',
   },
   'Excire Foto': {
     reason:
-      'You prefer a one-time purchase and want AI help organizing and finding photos. Excire Foto is an offline organizer and culler with no subscription.',
+      'Excire Foto is an offline desktop organizer and culler with local AI search and Smart Selection, sold as a one-time license.',
+    trialAndCost:
+      'Free trial available; $249 / €229 perpetual license (no subscription).',
     limit:
-      'It’s covered in less depth than the other tools here. Test it on your own catalog before relying on it.',
+      'Built primarily as a standalone photo-management catalog rather than a dedicated wedding culling pipeline.',
     link: '/best-photo-culling-software#excire-foto',
     linkText: 'Excire Foto in our culling guide',
-    short: 'Offline AI organizing and culling, bought once.',
+    short: 'Offline AI organizing and culling, bought once ($249 perpetual).',
   },
   Evoto: {
     reason:
-      'Your main task is retouching. Evoto’s one-click skin, glare, and background tools are aimed at exactly that work.',
+      'Evoto focuses on slider-based portrait retouching, skin cleanup, stray hair removal, and background adjustments.',
+    trialAndCost:
+      '7-day free trial with 50 credits; paid annual credit plans start at $89/yr (800 credits).',
     limit:
-      'It uses a credit system rather than a subscription, and it’s built for retouching rather than culling.',
+      'Most features process in the cloud and standard retouched exports consume credits; culling is secondary to retouching.',
     link: '/best-ai-culling-editing-software#evoto',
     linkText: 'Evoto in our AI editing guide',
-    short: 'AI portrait retouching, paid with credits.',
+    short: 'Cloud AI portrait retouching, paid with credits.',
   },
 };
 
@@ -239,6 +254,27 @@ export function CullingToolFinder() {
     const topDetail = TOOLS[topName] || TOOLS.Aftershoot;
     const runnerDetail = runnerName ? TOOLS[runnerName] : null;
 
+    const getAnswerText = (id: string) => {
+      const qObj = QUESTIONS.find((item) => item.id === id);
+      const idx = answers[id];
+      return qObj && idx !== undefined ? qObj.options[idx].text : '';
+    };
+
+    const volText = getAnswerText('volume').toLowerCase();
+    const priorityText = getAnswerText('matters').toLowerCase();
+    const offlineText = getAnswerText('offline');
+    const budgetText = getAnswerText('budget').toLowerCase();
+    const taskText = getAnswerText('task').toLowerCase();
+
+    const offlinePhrase =
+      offlineText === 'Yes, often'
+        ? 'need to work offline'
+        : offlineText === 'Sometimes'
+        ? 'occasionally work offline'
+        : 'always have internet';
+
+    const dynamicExplanation = `Based on your answers—${volText} volume, prioritizing ${priorityText}, ${offlinePhrase}, a ${budgetText} budget, and ${taskText}—${topName} is the strongest starting point. ${topDetail.reason}`;
+
     return (
       <div className="bg-white border border-[#DFE2DB] rounded p-5 sm:p-8 md:p-10">
         <p
@@ -251,8 +287,11 @@ export function CullingToolFinder() {
         <h2 className="m-0 mb-3.5 font-serif font-medium text-[clamp(36px,4.4vw,52px)] leading-none text-[#20221F]">
           {topName}
         </h2>
-        <p className="m-0 mb-6 text-[18px] leading-[1.55] text-[#20221F] max-w-[36em]">
-          {topDetail.reason}
+        <p className="m-0 mb-4 text-[18px] leading-[1.55] text-[#20221F] max-w-[38em]">
+          {dynamicExplanation}
+        </p>
+        <p className="m-0 mb-6 text-[15px] leading-[1.55] text-[#4A4E49] max-w-[42em]">
+          <strong className="text-[#20221F]">Trial &amp; pricing:</strong> {topDetail.trialAndCost}
         </p>
 
         {constraintNote && (

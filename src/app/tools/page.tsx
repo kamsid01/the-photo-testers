@@ -1,5 +1,12 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import {
+  calculateGalleryVolume,
+  getStandardGalleryPlans,
+  GALLERY_DEFAULT_PHOTOS,
+  GALLERY_DEFAULT_SHOOTS,
+  GALLERY_PRICING_CHECKED,
+} from '@/lib/gallery-plans';
 
 export const metadata: Metadata = {
   title: 'Free Tools for Photographers | The Photo Testers',
@@ -33,6 +40,9 @@ export const metadata: Metadata = {
 };
 
 export default function ToolsIndexPage() {
+  const galleryVol = calculateGalleryVolume(GALLERY_DEFAULT_SHOOTS, GALLERY_DEFAULT_PHOTOS);
+  const galleryPreviewPlans = getStandardGalleryPlans(GALLERY_DEFAULT_SHOOTS, GALLERY_DEFAULT_PHOTOS).slice(0, 4);
+
   const schemaBreadcrumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -205,7 +215,7 @@ export default function ToolsIndexPage() {
                 Gallery Cost Calculator
               </h2>
               <p className="m-0 mb-4 text-[17px] leading-[1.55] text-[#4A4E49] max-w-[34em]">
-                Enter your annual shoot volume to see the plan you would need on Pixieset, ShootProof, Pic-Time, SmugMug, Zenfolio, and CloudSpot, at published October 2026 prices.
+                Enter your annual shoot volume to see the plan you would need on Pixieset, ShootProof, Pic-Time, SmugMug, Zenfolio, and CloudSpot, at published {GALLERY_PRICING_CHECKED} prices.
               </p>
               <dl className="m-0 mb-5 grid grid-cols-1 sm:grid-cols-[minmax(0,110px)_minmax(0,1fr)] gap-2 sm:gap-4 text-[15px] leading-[1.5]">
                 <dt className="font-semibold text-[#20221F]">You enter</dt>
@@ -229,38 +239,30 @@ export default function ToolsIndexPage() {
               </Link>
             </div>
 
-            {/* Visual preview card */}
+            {/* Visual preview card (generated from shared gallery-plans data) */}
             <div
               aria-hidden="true"
               className="w-full lg:w-[480px] shrink-0 bg-white border border-[#DFE2DB] rounded p-4 sm:px-6 text-[15px] tabular-nums"
             >
               <div className="flex justify-between py-2.5 border-b border-[#EEEFEA] text-[#60645F]">
-                <span>30 shoots × 500 photos · 73.2 GB</span>
-              </div>
-              <div className="flex justify-between gap-3 py-2.5 border-b border-[#EEEFEA] text-[#20221F]">
                 <span>
-                  <strong>SmugMug</strong> · Power
+                  {galleryVol.shoots} shoots × {galleryVol.photosPerShoot} photos · {galleryVol.gbLabel}
                 </span>
-                <span>$180/yr</span>
               </div>
-              <div className="flex justify-between gap-3 py-2.5 border-b border-[#EEEFEA] text-[#20221F]">
-                <span>
-                  <strong>Zenfolio</strong> · PortfolioPlus
-                </span>
-                <span>$228/yr</span>
-              </div>
-              <div className="flex justify-between gap-3 py-2.5 border-b border-[#EEEFEA] text-[#20221F]">
-                <span>
-                  <strong>Pixieset</strong> · Basic
-                </span>
-                <span>$288/yr</span>
-              </div>
-              <div className="flex justify-between gap-3 py-2.5 text-[#20221F]">
-                <span>
-                  <strong>Pic-Time</strong> · Professional
-                </span>
-                <span>$312/yr</span>
-              </div>
+              {galleryPreviewPlans.map((plan, idx) => (
+                <div
+                  key={plan.platform}
+                  className={`flex justify-between gap-3 py-2.5 text-[#20221F] ${
+                    idx < galleryPreviewPlans.length - 1 ? 'border-b border-[#EEEFEA]' : ''
+                  }`}
+                >
+                  <span>
+                    <strong>{plan.platform}</strong> · {plan.planName}
+                    {plan.isPromo ? ' (1st-yr promo)' : ''}
+                  </span>
+                  <span>${plan.annualCost.toLocaleString('en-US')}/yr</span>
+                </div>
+              ))}
             </div>
           </li>
         </ol>

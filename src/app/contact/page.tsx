@@ -5,14 +5,14 @@ import { ContactForm } from '@/components/info/ContactForm';
 export const metadata: Metadata = {
   title: 'Contact | The Photo Testers',
   description:
-    'Questions, corrections, or a software tool we should test. Reach out to The Photo Testers editorial team.',
+    'Contact The Photo Testers editorial team with corrections, tool suggestions, general inquiries, or newsletter removal requests.',
   alternates: {
     canonical: 'https://www.thephototesters.com/contact',
   },
   openGraph: {
     title: 'Contact | The Photo Testers',
     description:
-      'Questions, corrections, or a software tool we should test. Reach out to The Photo Testers editorial team.',
+      'Contact The Photo Testers editorial team with corrections, tool suggestions, general inquiries, or newsletter removal requests.',
     url: 'https://www.thephototesters.com/contact',
     type: 'website',
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact | The Photo Testers',
     description:
-      'Questions, corrections, or a software tool we should test. Reach out to The Photo Testers editorial team.',
+      'Contact The Photo Testers editorial team with corrections, tool suggestions, general inquiries, or newsletter removal requests.',
     images: ['/og/default.jpg'],
   },
 };
@@ -47,7 +47,7 @@ export default function ContactPage() {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
     name: 'Contact | The Photo Testers',
-    description: 'Questions, corrections, or a software tool we should test. Reach out to The Photo Testers editorial team.',
+    description: 'Contact The Photo Testers editorial team with corrections, tool suggestions, general inquiries, or newsletter removal requests.',
     url: 'https://www.thephototesters.com/contact',
     isPartOf: {
       '@type': 'WebSite',

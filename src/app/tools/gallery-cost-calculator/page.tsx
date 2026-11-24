@@ -101,7 +101,7 @@ export default function GalleryCostCalculatorPage() {
             </h2>
             <div className="text-[16px] leading-[1.65] text-[#20221F] space-y-4">
               <p className="m-0">
-                Client gallery platforms structure their pricing around storage volume (gigabytes or terabytes) and feature tiers. Storage-based plans limit the total capacity you can host across active galleries. High-resolution JPEGs average around 5MB each, so high-volume wedding and portrait photographers reach entry limits quickly. All major platforms—including ShootProof, Pixieset, Pic-Time, and CloudSpot—scale primarily by storage capacity, with higher tiers unlocking additional video storage, client management tools, or zero store commissions.
+                Client gallery platforms structure their pricing around storage volume (decimal gigabytes or terabytes) and feature tiers. Storage-based plans limit the total capacity you can host across active galleries. High-resolution JPEGs average around 5 MB each (1,000 MB = 1 GB), so 15,000 delivered photos require roughly 75 GB and push wedding and portrait photographers past entry limits quickly. All major platforms—including ShootProof, Pixieset, Pic-Time, and CloudSpot—scale primarily by storage capacity, with higher tiers unlocking additional video storage, client management tools, or zero store commissions.
               </p>
               <p className="m-0">
                 Store commission is another critical cost lever. Free or entry-level plans often take 15% of print sales made through the gallery store. If you sell a significant volume of albums and prints, that commission percentage can rapidly outstrip the cost of upgrading to a higher-tier, zero-commission plan.

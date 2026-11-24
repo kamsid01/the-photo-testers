@@ -29,8 +29,8 @@
       "img": "/assets/pic-time.webp",
       "startHere": "best-client-gallery-software",
       "related": [
-        "print-album-sales",
-        "portfolio-websites"
+        "client-crms",
+        "ai-culling-editing"
       ],
       "tools": [
         "gallery-cost-calculator"
@@ -194,26 +194,30 @@
       "imgPos": "100% 50%",
       "imgCaption": "Aftershoot's homepage, showing its culling grid. Captured from the vendor's site.",
       "evidence": "research",
-      "checked": "October 2026",
-      "bylinePlaceholder": true,
+      "checked": "November 2026",
       "pricing": [
         [
           "Select (culling)",
           "$10/month ($120/yr)",
-          "billed annually ($15/mo monthly)"
+          "Annual plan ($15/mo month-to-month)"
         ],
         [
           "Edit (AI editing)",
           "$30/month ($360/yr)",
-          "billed annually ($35/mo monthly)"
+          "Annual plan ($35/mo month-to-month)"
         ],
         [
-          "Complete (all-in-one)",
+          "Retouch (AI retouching)",
+          "$20/month ($240/yr)",
+          "Annual plan ($25/mo month-to-month)"
+        ],
+        [
+          "Complete (all three)",
           "$45/month ($540/yr)",
-          "billed annually ($55/mo monthly)"
+          "Annual plan ($55/mo month-to-month)"
         ]
       ],
-      "pricingNote": "Flat annual or monthly fee, not per image. 30-day free trial, no card required.",
+      "pricingNote": "Flat annual or month-to-month fee, not per image. 30-day free trial, no card required. Annual equivalents require an annual commitment.",
       "alts": [
         "imagen-ai-review",
         "aftershoot-alternatives",
@@ -236,7 +240,7 @@
           ]
         }
       ],
-      "updated": "2026-10-29",
+      "updated": "2026-11-24",
       "verdict": {
         "headline": "Aftershoot is the strongest all-in-one AI workflow tool for high-volume photographers, and the best value if you shoot a lot. It culls, edits, and retouches in one offline app at a flat, unlimited price, so a huge wedding costs the same to process as a small portrait session.",
         "bestFor": "Wedding, event, and portrait photographers drowning in RAW files who want predictable costs and offline processing.",
@@ -298,8 +302,8 @@
       "img": "/assets/pixieset-v3.webp",
       "imgPos": "80% 50%",
       "evidence": "research",
-      "checked": "October 2026",
-      "updated": "2026-10-29"
+      "checked": "November 2026",
+      "updated": "2026-11-24"
     },
     {
       "slug": "pic-time-vs-pixieset-vs-shootproof",
@@ -307,7 +311,7 @@
       "cat": "gallery-delivery",
       "type": "comparison",
       "date": "2026-08-14",
-      "summary": "Three gallery platforms compared on pricing, print sales, and client experience.",
+      "summary": "Pic-Time vs Pixieset vs ShootProof compared on 2026 storage pricing, print store commissions, client galleries, and which platform fits your shoot volume.",
       "imgs": [
         "/assets/pic-time.webp",
         "/assets/pixieset-v3.webp",
@@ -320,7 +324,7 @@
         "ShootProof"
       ],
       "evidence": "research",
-      "checked": "October 2026",
+      "checked": "November 2026",
       "chooseIf": [
         {
           "name": "Pic-Time",
@@ -336,7 +340,7 @@
         }
       ],
       "pricingAssumption": "Storage tiers differ by platform; compare at your own volume with the Gallery Cost Calculator.",
-      "updated": "2026-10-29"
+      "updated": "2026-11-24"
     },
     {
       "slug": "best-photo-culling-software",
@@ -396,21 +400,21 @@
         "Imagen"
       ],
       "evidence": "research",
-      "checked": "October 2026",
+      "checked": "November 2026",
       "chooseIf": [
         {
           "name": "Aftershoot",
-          "text": "you shoot high volume. Flat unlimited pricing means a 4,000-image wedding costs the same as a 400-image portrait session. It also works offline and handles culling, editing, and retouching in one app.",
+          "text": "you deliver more than ~7,200 edited photos/year (or ~5,143/year with AI crop & straighten), want flat unlimited pricing ($360/yr Edit or $540/yr Complete), and need routine culling and editing to run locally.",
           "href": "/aftershoot-review"
         },
         {
           "name": "Imagen",
-          "text": "you live in Lightroom Classic, shoot moderate volume, and want the strongest style matching. Pay-as-you-go pricing is economical for seasonal or lower volume, while high-volume solo shooters can opt for Limitless ($129/mo annual) or switch to Aftershoot’s flat $360/yr editing.",
+          "text": "you edit in Lightroom Classic at lower/seasonal volume on Pay-As-You-Go ($0.05–$0.09/photo, $7/mo min), or you are an eligible solo shooter choosing Limitless ($129/mo annual; multi-shooter studios cannot use Limitless).",
           "href": "/imagen-ai-review"
         }
       ],
       "pricingAssumption": "Aftershoot Edit is a flat $360/year ($30/mo annual). Imagen offers Pay-As-You-Go ($0.05/photo base editing, or $0.07–$0.09 with modular AI tools) and a flat Limitless subscription ($1,548/year, or $129/mo annual) for eligible solo photographers. On base editing ($0.05/photo), Aftershoot Edit breaks even with Imagen PAYG at 7,200 edited photos a year (600/month); with AI crop and straighten ($0.07/photo), the break-even is 5,143 photos a year (~428/month). Solo photographers delivering higher volume can choose Imagen Limitless or Aftershoot's flat tiers (Checked October 2026).",
-      "updated": "2026-10-29",
+      "updated": "2026-11-24",
       "alts": [
         "aftershoot-vs-evoto"
       ]
@@ -424,8 +428,8 @@
       "summary": "The best AI photo culling, editing, and retouching software for photographers in 2026, comparing Aftershoot, Imagen AI, Narrative Select, FilterPixel, and Evoto.",
       "img": "/assets/evoto.webp",
       "evidence": "research",
-      "checked": "October 2026",
-      "updated": "2026-10-29"
+      "checked": "November 2026",
+      "updated": "2026-11-24"
     },
     {
       "slug": "photography-crm-vat-gdpr-europe",
@@ -456,7 +460,7 @@
       "cat": "client-crms",
       "type": "comparison",
       "date": "2026-06-26",
-      "summary": "HoneyBook vs Dubsado compared on pricing, automations, client experience, and ease of use.",
+      "summary": "Dubsado vs HoneyBook compared for photographers on pricing, workflow automations, client portals, setup time, and which CRM fits your studio.",
       "imgs": [
         "/assets/dubsado.webp",
         "/assets/honeybook-scheduler.webp"
@@ -479,7 +483,7 @@
         }
       ],
       "pricingAssumption": "Prices as listed in June 2026. Dubsado’s edge applies when paid annually.",
-      "updated": "2026-10-29"
+      "updated": "2026-11-24"
     },
     {
       "slug": "honeybook-alternatives-photographers",
@@ -503,8 +507,8 @@
       "summary": "HoneyBook and Studio Ninja offer native Pic-Time integrations, while Dubsado connects via Zapier. Compare setup, triggers, order sync, and costs.",
       "img": "/assets/pic-time.webp",
       "evidence": "research",
-      "checked": "October 2026",
-      "updated": "2026-10-29"
+      "checked": "November 2026",
+      "updated": "2026-11-24"
     },
     {
       "slug": "photography-crm-built-in-scheduler",

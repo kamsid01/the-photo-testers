@@ -212,6 +212,102 @@ export default async function CategoryPage({ params }: Props) {
       {/* Populated Category Layout */}
       {c.published && (
         <>
+          {/* Quick Decision Callout for AI Culling & Editing hub */}
+          {c.slug === 'ai-culling-editing' && (
+            <section
+              aria-labelledby="ai-decision-h"
+              style={{
+                marginTop: '24px',
+                padding: '20px 24px',
+                background: '#FFFFFF',
+                border: '1px solid #DFE2DB',
+                borderTop: '2px solid #20221F',
+                borderRadius: '4px',
+              }}
+            >
+              <h2
+                id="ai-decision-h"
+                style={{
+                  margin: '0 0 8px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  letterSpacing: '.05em',
+                  textTransform: 'uppercase',
+                  color: '#3159D7',
+                }}
+              >
+                Deciding between Aftershoot and Imagen?
+              </h2>
+              <p style={{ margin: '0 0 12px', fontSize: '16px', lineHeight: 1.55, color: '#20221F', maxWidth: '58em' }}>
+                Choose <strong>Aftershoot</strong> if you shoot high volume, want a flat annual fee, and need routine culling and editing to run locally. Choose <strong>Imagen</strong> if you edit in Lightroom Classic at moderate volume and prefer pay-as-you-go pricing (or qualify as a solo shooter for Limitless).
+              </p>
+              <Link href="/aftershoot-vs-imagen" style={{ fontWeight: 600, fontSize: '15px', color: '#3159D7' }}>
+                Compare Aftershoot vs Imagen on cost crossover, offline limits, and solo-plan rules →
+              </Link>
+            </section>
+          )}
+
+          {/* Practical Next Steps for Gallery Delivery hub */}
+          {c.slug === 'gallery-delivery' && (
+            <section
+              aria-labelledby="gallery-paths-h"
+              style={{
+                marginTop: '24px',
+                padding: '20px 24px',
+                background: '#FFFFFF',
+                border: '1px solid #DFE2DB',
+                borderTop: '2px solid #20221F',
+                borderRadius: '4px',
+              }}
+            >
+              <h2
+                id="gallery-paths-h"
+                style={{
+                  margin: '0 0 12px',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  letterSpacing: '.05em',
+                  textTransform: 'uppercase',
+                  color: '#3159D7',
+                }}
+              >
+                Where to go next
+              </h2>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
+                  gap: '16px 24px',
+                }}
+              >
+                <div>
+                  <Link href="/pic-time-vs-pixieset-vs-shootproof" style={{ fontWeight: 600, fontSize: '16px', color: '#20221F' }}>
+                    Compare gallery platforms →
+                  </Link>
+                  <p style={{ margin: '4px 0 0', fontSize: '14px', lineHeight: 1.5, color: '#4A4E49' }}>
+                    Pic-Time vs Pixieset vs ShootProof on storage tiers, print commissions, and client experience.
+                  </p>
+                </div>
+                <div>
+                  <Link href="/tools/gallery-cost-calculator" style={{ fontWeight: 600, fontSize: '16px', color: '#20221F' }}>
+                    Calculate storage costs →
+                  </Link>
+                  <p style={{ margin: '4px 0 0', fontSize: '14px', lineHeight: 1.5, color: '#4A4E49' }}>
+                    Enter your annual shoots and delivered photos to compare plans across six gallery platforms.
+                  </p>
+                </div>
+                <div>
+                  <Link href="/photography-crm-pic-time-integration" style={{ fontWeight: 600, fontSize: '16px', color: '#20221F' }}>
+                    Connect a gallery to a CRM →
+                  </Link>
+                  <p style={{ margin: '4px 0 0', fontSize: '14px', lineHeight: 1.5, color: '#4A4E49' }}>
+                    See which CRMs integrate natively with Pic-Time, which use Zapier, and what vendors document about API access.
+                  </p>
+                </div>
+              </div>
+            </section>
+          )}
+
           {start && (
             <section
               aria-labelledby="start-h"

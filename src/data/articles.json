@@ -471,8 +471,8 @@
   },
   "aftershoot-review": {
     "title": "Aftershoot Review 2026: Is It Worth It for Photographers?",
-    "meta": "By [Your name] · Updated September 2026 · 8 min read",
-    "disclosure": "How we assess tools: we track each tool's current pricing, features, and documentation, and weigh what verified users and independent reviewers report. Where we cite an accuracy or speed figure, we say who measured it. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of September 2026, but always confirm on the vendor's own page.",
+    "meta": "By The Photo Testers team · Published September 28, 2026 · Updated November 24, 2026 · 8 min read",
+    "disclosure": "How we assess tools: we track each tool’s current pricing, features, and documentation, and weigh what verified users and independent reviewers report. Where we cite an accuracy or speed figure, we say who measured it. Some links below are affiliate links, which means we earn a commission if you sign up through them. It does not change what we write. Pricing is current as of November 2026, but always confirm on the vendor’s own page.",
     "blocks": [
       {
         "type": "box",
@@ -580,7 +580,7 @@
               "b": 1
             },
             {
-              "t": " $10/month billed annually ($120/year) or $15/month billed monthly. Unlimited image culling, duplicate clustering, and face sharpness scoring."
+              "t": " $10/month billed annually ($120/year) or $15/month month-to-month. Unlimited image culling, duplicate clustering, and face sharpness scoring."
             }
           ],
           [
@@ -589,7 +589,16 @@
               "b": 1
             },
             {
-              "t": " $30/month billed annually ($360/year) or $35/month billed monthly. Unlimited image editing via personal custom AI profiles or curated marketplace artist profiles."
+              "t": " $30/month billed annually ($360/year) or $35/month month-to-month. Unlimited image editing via personal custom AI profiles or curated marketplace artist profiles."
+            }
+          ],
+          [
+            {
+              "t": "Retouch (AI Retouching):",
+              "b": 1
+            },
+            {
+              "t": " $20/month billed annually ($240/year) or $25/month month-to-month. Standalone AI portrait retouching (skin smoothing, blemish removal, stray hair cleanup, and object removal)."
             }
           ],
           [
@@ -598,7 +607,7 @@
               "b": 1
             },
             {
-              "t": " $45/month billed annually ($540/year) or $55/month billed monthly. Includes AI culling, editing, and portrait retouching (skin smoothing, blemish removal, hair cleanup)."
+              "t": " $45/month billed annually ($540/year) or $55/month month-to-month. Includes AI culling, editing, and portrait retouching (skin smoothing, blemish removal, hair cleanup)."
             }
           ],
           [
@@ -1656,7 +1665,7 @@
             ],
             [
               {
-                "t": "Free (3 GB) / Starter $8.33/mo ($99.99/yr) / $9.99/mo monthly"
+                "t": "Free (up to 100 photos / 3 GB) / Starter $8.33/mo ($99.99/yr) / $9.99/mo monthly"
               }
             ],
             [
@@ -1893,7 +1902,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "ShootProof pairs client gallery delivery with essential studio business management. On paid tiers, it bundles contracts, invoicing, booking, and a commission-free print store on direct lab orders (contracts and invoicing are excluded on the free 3 GB tier)."
+            "t": "ShootProof pairs client gallery delivery with essential studio business management. On paid tiers, it bundles contracts, invoicing, booking, and a commission-free print store on direct lab orders (free tier is capped at 100 photos / 3 GB and excludes contracts and invoicing)."
           }
         ],
         "cls": ""
@@ -1902,7 +1911,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Plans scale strictly by storage capacity rather than photo counts: Free (3 GB photo delivery), Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly), Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly), Professional 1,000 GB / 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly), Advanced 2,000 GB / 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly), and Unlimited / Premium ($50/mo annual [$600/yr] or $60/mo monthly). Compare storage needs directly on our "
+            "t": "Plans scale strictly by storage capacity rather than photo counts: Free (up to 100 photos / 3 GB photo delivery), Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly), Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly), Professional 1,000 GB / 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly), Advanced 2,000 GB / 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly), and Unlimited / Premium ($50/mo annual [$600/yr] or $60/mo monthly). Compare storage needs directly on our "
           },
           {
             "t": "Gallery Cost Calculator",
@@ -1956,7 +1965,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (3 GB); Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly); Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly); Professional 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly); Advanced 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly); Premium Unlimited ($50/mo annual [$600/yr] or $60/mo monthly) (Checked October 2026)."
+            "t": "Pricing: Free tier (up to 100 photos / 3 GB); Starter 20 GB ($8.33/mo annual [$99.99/yr] or $9.99/mo monthly); Standard 100 GB ($16.67/mo annual [$199.99/yr] or $19.99/mo monthly); Professional 1 TB ($26.67/mo annual [$319.99/yr] or $31.99/mo monthly); Advanced 2 TB ($43.33/mo annual [$519.99/yr] or $51.99/mo monthly); Premium Unlimited ($50/mo annual [$600/yr] or $60/mo monthly) (Checked October 2026)."
           }
         ],
         "cls": ""
@@ -3008,7 +3017,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "ShootProof structures plans by storage capacity (with 100 GB comfortably accommodating 5,000+ delivered high-res JPEGs at 5MB each). Paid plans include digital contracts, invoicing, and zero commission on direct orders."
+            "t": "ShootProof caps its Free tier at 100 photos (3 GB, excluding contracts and invoicing) and structures paid plans by storage capacity from Starter 20 GB ($99.99/yr annual or $9.99/mo monthly) through Standard 100 GB ($199.99/yr annual, accommodating 20,000 JPEGs at 5 MB each). Paid plans include digital contracts, invoicing, and zero commission on direct orders."
           }
         ],
         "cls": ""
@@ -6138,7 +6147,7 @@
                 "b": true
               },
               {
-                "t": "Aftershoot is best for high-volume photographers and those who need to work offline, with flat annual pricing covering culling, editing, and retouching on your local computer. Imagen is best for Lightroom Classic users seeking precise style matching and nuanced skin tones, offered via Pay-As-You-Go ($0.05/photo + add-ons) or a flat Limitless subscription for eligible solo shooters."
+                "t": "Choose Aftershoot for high-volume workflows above the cost crossover (~7,200 base edits/year, or ~5,143/year with AI crop and straighten) where flat pricing ($360/yr Edit, $540/yr Complete) and local routine processing win. Choose Imagen for Lightroom Classic style matching at lower volume on Pay-As-You-Go ($0.05/photo base, $0.09/photo with all four AI add-ons, $7/mo minimum) or if you qualify as a solo photographer for Limitless ($129/mo billed annually; studios and teams must use PAYG or Business plans)."
               }
             ]
           },
@@ -6146,11 +6155,11 @@
             "type": "p",
             "runs": [
               {
-                "t": "The key tradeoff: ",
+                "t": "Key tradeoffs (offline & eligibility): ",
                 "b": true
               },
               {
-                "t": "Aftershoot runs routine work locally on your own GPU with predictable costs (uploads occur only when training custom profiles or if album-level learning is enabled). Imagen processes in the cloud and delivers superior style adaptation, but requires active internet and charges per photo for multi-shooter studios."
+                "t": "Aftershoot runs routine culling, editing, and retouching locally on your GPU (uploads occur only for custom profile training or if the optional album-level learning toggle is enabled). Imagen processes in the cloud and requires an active internet connection, and its Limitless tier is restricted to solo photographers editing their own work."
               }
             ]
           }
@@ -7657,7 +7666,7 @@
             "b": 1
           },
           {
-            "t": " The realistic gain is time, not a hands-off pipeline. Across the tools, photographers report cutting post-production by 50 to 70 percent, a 3,000 to 5,000 image wedding that took a whole evening drops to under 30 minutes of active review, depending on how much you override the AI. That's a huge saving. But you still review the cull and check the edits."
+            "t": " The realistic gain is time, not a hands-off pipeline. Across user reviews and vendor case studies, photographers commonly report cutting post-production time by 50 to 70 percent, a 3,000 to 5,000 image wedding that took a whole evening drops to under 30 minutes of active review, depending on how much you override the AI. That's a huge saving. But you still review the cull and check the edits."
           }
         ],
         "cls": ""
@@ -11304,6 +11313,11 @@
           ],
           [
             {
+              "t": "Documented API / connection"
+            }
+          ],
+          [
+            {
               "t": "Key automated trigger"
             }
           ],
@@ -11337,12 +11351,17 @@
             ],
             [
               {
+                "t": "Official partner integration (no public self-serve API required)"
+              }
+            ],
+            [
+              {
                 "t": "Auto-creates gallery upon first payment"
               }
             ],
             [
               {
-                "t": "Smooth booking & invoicing"
+                "t": "US/Canada studios wanting smooth booking, contracts & invoicing"
               }
             ],
             [
@@ -11369,12 +11388,17 @@
             ],
             [
               {
+                "t": "Official two-way partner integration (orders + galleries)"
+              }
+            ],
+            [
+              {
                 "t": "Links jobs & imports print orders/sales"
               }
             ],
             [
               {
-                "t": "£20/mo monthly or £200/yr annual (~$260/yr)"
+                "t": "International multi-currency studios & automated print-order ledger sync"
               }
             ],
             [
@@ -11392,22 +11416,27 @@
             ],
             [
               {
-                "t": "Zapier / webhooks / portal link"
+                "t": "Manual gallery link (Starter) or Zapier automation (Premier)"
               }
             ],
             [
               {
-                "t": "Zapier trigger on invoice/contract"
+                "t": "No native integration; Zapier requires Premier plan"
               }
             ],
             [
               {
-                "t": "Starter $35/mo ($335/yr) / Premier $55/mo ($525/yr)"
+                "t": "Manual portal link on Starter; Zapier trigger on invoice/contract on Premier"
               }
             ],
             [
               {
-                "t": "Starter $35/mo ($335/yr) / Premier $55/mo ($525/yr)"
+                "t": "Studios needing complex custom forms, portals & multi-step workflows"
+              }
+            ],
+            [
+              {
+                "t": "Starter $35/mo ($335/yr) for manual links; Premier $55/mo ($525/yr) required for Zapier"
               }
             ]
           ]
@@ -11420,6 +11449,19 @@
             "t": "Pricing verified October 2026 against official vendor documentation."
           }
         ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "What vendors document about Pic-Time API access: ",
+            "b": true
+          },
+          {
+            "t": "Pic-Time connects natively with approved CRM partners (including HoneyBook and Studio Ninja) through built-in OAuth/account-linking workflows. Neither Pic-Time nor Dubsado documents a public, self-serve Pic-Time developer API for individual studios to build custom integrations; photographers using a CRM without a native partner connection rely on Zapier triggers or direct gallery links inside client portals."
+          }
+        ],
+        "cls": ""
       },
       {
         "type": "h2",

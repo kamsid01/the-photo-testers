@@ -1,5 +1,11 @@
 import Link from 'next/link';
 import { getSiteData } from '@/lib/site-data';
+import {
+  calculateGalleryVolume,
+  getStandardGalleryPlans,
+  GALLERY_DEFAULT_PHOTOS,
+  GALLERY_DEFAULT_SHOOTS,
+} from '@/lib/gallery-plans';
 import { SERIF, h2Serif, lede, sectionHead, linkStrong } from '../ui';
 import { NewsletterForm } from '../NewsletterForm';
 
@@ -99,6 +105,10 @@ export function HomeCompare() {
 }
 
 export function HomeTools() {
+  const galleryVol = calculateGalleryVolume(GALLERY_DEFAULT_SHOOTS, GALLERY_DEFAULT_PHOTOS);
+  const galleryPlans = getStandardGalleryPlans(GALLERY_DEFAULT_SHOOTS, GALLERY_DEFAULT_PHOTOS);
+  const lowestGalleryPlan = galleryPlans[0];
+
   return (
     <section aria-labelledby="h-tools" style={{ borderBottom: '1px solid #DFE2DB' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: 'clamp(48px,6vw,80px) clamp(16px,4vw,40px)' }}>
@@ -155,11 +165,11 @@ export function HomeTools() {
           {/* Gallery Calculator card */}
           <article style={{ background: '#FFFFFF', border: '1px solid #DFE2DB', borderRadius: '4px', display: 'flex', flexDirection: 'column', minWidth: 0 }}>
             <div aria-hidden="true" style={{ margin: '16px 16px 0', padding: '16px 18px', background: '#F6F5F1', borderRadius: '3px', fontSize: '14px', fontVariantNumeric: 'tabular-nums' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #E4E5DF' }}><span style={{ color: '#60645F' }}>30 shoots × 500 photos</span><span>15,000 photos</span></div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #E4E5DF' }}><span style={{ color: '#60645F' }}>Storage at ~5MB each</span><span>73.2 GB</span></div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #E4E5DF' }}><span style={{ color: '#60645F' }}>{galleryVol.shoots} shoots × {galleryVol.photosPerShoot} photos</span><span>{galleryVol.totalLabel} photos</span></div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 0', borderBottom: '1px solid #E4E5DF' }}><span style={{ color: '#60645F' }}>Storage at 5 MB each</span><span>{galleryVol.gbLabel}</span></div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '10px 0 0' }}>
-                <span><span style={{ display: 'block', fontWeight: 600 }}>Lowest estimate</span><span style={{ color: '#60645F' }}>Zenfolio Professional (1st-yr promo)</span></span>
-                <span style={{ fontFamily: SERIF, fontSize: '28px', color: '#20221F' }}>$138<span style={{ fontFamily: "'Instrument Sans',sans-serif", fontSize: '14px', color: '#60645F' }}>/yr</span></span>
+                <span><span style={{ display: 'block', fontWeight: 600 }}>Lowest estimate</span><span style={{ color: '#60645F' }}>{lowestGalleryPlan.platform} {lowestGalleryPlan.planName}{lowestGalleryPlan.isPromo ? ' (1st-yr promo)' : ''}</span></span>
+                <span style={{ fontFamily: SERIF, fontSize: '28px', color: '#20221F' }}>${lowestGalleryPlan.annualCost.toLocaleString('en-US')}<span style={{ fontFamily: "'Instrument Sans',sans-serif", fontSize: '14px', color: '#60645F' }}>/yr</span></span>
               </div>
             </div>
             <div style={{ padding: '20px 22px 22px', display: 'flex', flexDirection: 'column', flex: 1 }}>

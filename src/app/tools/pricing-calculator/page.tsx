@@ -4,16 +4,16 @@ import { PricingCalculator } from '@/components/PricingCalculator';
 import { Breadcrumb } from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Photography Pricing Calculator: What Should You Charge?',
+  title: 'Photography Pricing Calculator for Per-Shoot and Hourly Rates',
   description:
-    'Most photographers undercharge because they only count camera hours. Work backwards from your desired salary to find what you actually need to charge.',
+    'Calculate your per-shoot price, gross hourly rate, and take-home hourly rate from your target salary, shoots, costs, tax rate, and hidden hours.',
   alternates: {
     canonical: 'https://www.thephototesters.com/tools/pricing-calculator',
   },
   openGraph: {
-    title: 'Photography Pricing Calculator: What Should You Charge?',
+    title: 'Photography Pricing Calculator for Per-Shoot and Hourly Rates',
     description:
-      'Most photographers undercharge because they only count camera hours. Work backwards from your desired salary to find what you actually need to charge.',
+      'Calculate your per-shoot price, gross hourly rate, and take-home hourly rate from your target salary, shoots, costs, tax rate, and hidden hours.',
     url: 'https://www.thephototesters.com/tools/pricing-calculator',
     type: 'website',
     images: [
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Photography Pricing Calculator: What Should You Charge?',
+    title: 'Photography Pricing Calculator for Per-Shoot and Hourly Rates',
     description:
-      'Most photographers undercharge because they only count camera hours. Work backwards from your desired salary to find what you actually need to charge.',
+      'Calculate your per-shoot price, gross hourly rate, and take-home hourly rate from your target salary, shoots, costs, tax rate, and hidden hours.',
     images: ['/og/default.jpg'],
   },
 };
