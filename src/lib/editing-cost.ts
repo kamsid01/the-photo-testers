@@ -40,7 +40,9 @@ export const EDITING_PRICING_CHECKED = 'November 24, 2026';
 export const AFTERSHOOT_PRICING_URL = 'https://aftershoot.com/aftershoot-pricing-tiers/';
 export const IMAGEN_PRICING_URL = 'https://imagen-ai.com/pricing';
 
+export const AFTERSHOOT_SELECT_ANNUAL = 120; // $10/mo billed annually ($15/mo month-to-month)
 export const AFTERSHOOT_EDIT_ANNUAL = 360; // $30/mo billed annually ($35/mo month-to-month)
+export const AFTERSHOOT_SELECT_EDIT_ANNUAL = 480; // $40/mo billed annually ($50/mo month-to-month)
 export const AFTERSHOOT_COMPLETE_ANNUAL = 540; // $45/mo billed annually ($55/mo month-to-month)
 export const IMAGEN_BASE_PER_PHOTO = 0.05;
 export const IMAGEN_ADDON_PER_PHOTO = 0.01;
@@ -98,12 +100,32 @@ export function calculateEditingCosts(input: EditingCostInput): EditingCostResul
     };
   }
 
-  // Aftershoot applicable plan
-  const needsComplete = features.includeCulling || features.includeRetouching;
-  const aftershootPlan = needsComplete ? 'Complete (Culling + Editing + Retouching)' : 'Edit (AI Editing)';
-  const aftershootAnnual = needsComplete ? AFTERSHOOT_COMPLETE_ANNUAL : AFTERSHOOT_EDIT_ANNUAL;
-  const aftershootMonthlyEquiv = needsComplete ? 45 : 30;
-  const aftershootMonthToMonth = needsComplete ? 55 : 35;
+  // Aftershoot lowest-priced eligible plan
+  // - Editing only: Edit ($360/yr)
+  // - Culling + Editing (no retouching): Select + Edit ($120 + $360 = $480/yr, cheaper than Complete $540/yr)
+  // - Editing + Retouching (with or without culling): Complete ($540/yr, cheaper than Edit $360 + Retouch $240 = $600/yr)
+  let aftershootPlan: string;
+  let aftershootAnnual: number;
+  let aftershootMonthlyEquiv: number;
+  let aftershootMonthToMonth: number;
+
+  if (features.includeRetouching) {
+    aftershootPlan = 'Complete (Culling + Editing + Retouching)';
+    aftershootAnnual = AFTERSHOOT_COMPLETE_ANNUAL;
+    aftershootMonthlyEquiv = 45;
+    aftershootMonthToMonth = 55;
+  } else if (features.includeCulling) {
+    aftershootPlan = 'Select + Edit (AI Culling + Editing)';
+    aftershootAnnual = AFTERSHOOT_SELECT_EDIT_ANNUAL;
+    aftershootMonthlyEquiv = 40;
+    aftershootMonthToMonth = 50;
+  } else {
+    aftershootPlan = 'Edit (AI Editing)';
+    aftershootAnnual = AFTERSHOOT_EDIT_ANNUAL;
+    aftershootMonthlyEquiv = 30;
+    aftershootMonthToMonth = 35;
+  }
+
   const aftershootBasis = `Flat annual subscription ($${aftershootMonthlyEquiv}/mo billed annually; $${aftershootMonthToMonth}/mo month-to-month; unlimited images)`;
 
   // Imagen per-photo rate

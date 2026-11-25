@@ -50,10 +50,10 @@ export function PricingCalculatorEmbed({ partner }: PricingCalculatorEmbedProps)
   const hiddenNum = Number(hiddenH);
 
   return (
-    <div className="min-h-screen bg-[#FAF9F6] p-3 sm:p-4 text-[#20221F] font-sans">
-      <div className="max-w-[520px] mx-auto bg-white border border-[#DFE2DB] rounded-md p-4 sm:p-5">
-        <div className="flex flex-wrap items-baseline justify-between gap-2 mb-3">
-          <h1 className="m-0 font-serif text-[20px] leading-[1.2] font-medium text-[#20221F]">
+    <div className="bg-[#FAF9F6] p-2.5 sm:p-4 text-[#20221F] font-sans">
+      <div className="max-w-[520px] mx-auto bg-white border border-[#DFE2DB] rounded-md p-3.5 sm:p-5">
+        <div className="flex flex-wrap items-baseline justify-between gap-1.5 mb-2">
+          <h1 className="m-0 font-serif text-[19px] sm:text-[20px] leading-[1.2] font-medium text-[#20221F]">
             Photography Hourly Rate Check
           </h1>
           <span className="text-[11px] font-semibold uppercase tracking-[0.06em] text-[#60645F]">
@@ -61,13 +61,13 @@ export function PricingCalculatorEmbed({ partner }: PricingCalculatorEmbedProps)
           </span>
         </div>
 
-        <p className="m-0 mb-4 text-[13px] leading-[1.45] text-[#4A4E49]">
+        <p className="m-0 mb-3 text-[12.5px] sm:text-[13px] leading-[1.4] text-[#4A4E49]">
           Fixed assumptions: <strong>£40,000</strong> take-home · <strong>£8,000</strong> annual
           costs · <strong>25%</strong> tax · <strong>8h</strong> shoot day.
         </p>
 
         {/* Compact controls: Shoots per year + Hidden hours */}
-        <div className="space-y-3.5 mb-4">
+        <div className="space-y-3 mb-3.5">
           <div>
             <div className="flex justify-between items-baseline gap-2 mb-1">
               <label htmlFor="embed-shoots" className="text-[13px] font-semibold text-[#20221F]">
@@ -191,15 +191,27 @@ export function PricingCalculatorEmbed({ partner }: PricingCalculatorEmbedProps)
           </div>
         )}
 
-        <a
-          data-testid="embed-open-full-link"
-          href={fullCalculatorHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center w-full h-10 px-4 bg-[#3159D7] text-white font-semibold text-[14px] rounded no-underline hover:bg-[#2647B3] transition-colors"
-        >
-          Open full calculator with these numbers →
-        </a>
+        {validation.valid && out ? (
+          <a
+            data-testid="embed-open-full-link"
+            href={fullCalculatorHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-full h-10 px-4 bg-[#3159D7] text-white font-semibold text-[14px] rounded no-underline hover:bg-[#2647B3] transition-colors"
+          >
+            Open full calculator with these numbers →
+          </a>
+        ) : (
+          <button
+            type="button"
+            disabled
+            aria-disabled="true"
+            data-testid="embed-open-full-disabled"
+            className="flex items-center justify-center w-full h-10 px-4 bg-[#D4D7D0] text-[#60645F] font-semibold text-[14px] rounded border-0 cursor-not-allowed"
+          >
+            Enter valid numbers to open full calculator
+          </button>
+        )}
       </div>
     </div>
   );

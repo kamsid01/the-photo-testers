@@ -301,8 +301,8 @@ export function EditingCostComparison() {
             <p className="m-0">
               <strong>Summary:</strong>{' '}
               {result.cheaperVendor === 'Tie'
-                ? `Both tools estimate ${fmtUSD(result.aftershootAnnual)}/year at ${result.editedPhotosPerYear.toLocaleString('en-US')} edited photos.`
-                : `${result.cheaperVendor} estimates ${fmtUSD(result.annualSavings)}/year less at ${result.editedPhotosPerYear.toLocaleString('en-US')} edited photos (${fmtUSD(result.imagenPerPhotoRate)}/photo on Imagen PAYG).`}
+                ? `Both tools estimate ${fmtUSD(result.aftershootAnnual)} per year at ${result.editedPhotosPerYear.toLocaleString('en-US')} edited photos.`
+                : `${result.cheaperVendor} saves ${fmtUSD(result.annualSavings)} per year at ${result.editedPhotosPerYear.toLocaleString('en-US')} edited photos (${fmtUSD(result.imagenPerPhotoRate)}/photo on Imagen PAYG).`}
             </p>
             <p className="m-0 text-[#4A4E49]">
               <strong>Break-even crossover:</strong> Approximately{' '}
