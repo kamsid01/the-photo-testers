@@ -59,7 +59,7 @@ export function PricingCalculator() {
 
   // Embed panel state
   const [embedOpen, setEmbedOpen] = useState(false);
-  const [partnerSlug, setPartnerSlug] = useState('your-site');
+  const [partnerSlug, setPartnerSlug] = useState('');
   const [embedCopied, setEmbedCopied] = useState(false);
   const [embedStatus, setEmbedStatus] = useState('');
 
