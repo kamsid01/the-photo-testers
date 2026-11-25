@@ -152,7 +152,7 @@ export function PricingCalculator() {
     sanitizedPartner ? `?partner=${encodeURIComponent(sanitizedPartner)}` : ''
   }`;
 
-  const embedCode = `<iframe src="${embedSrc}" title="Photography Pricing Calculator — The Photo Testers" width="100%" height="560" style="border:1px solid #DFE2DB;border-radius:6px;max-width:520px;display:block;" loading="lazy"></iframe>`;
+  const embedCode = `<iframe src="${embedSrc}" title="Photography Pricing Calculator — The Photo Testers" width="100%" height="560" style="box-sizing:border-box;border:1px solid #DFE2DB;border-radius:6px;max-width:520px;display:block;" loading="lazy"></iframe>`;
 
   const fields = spec.map((f) => {
     const raw = inputs[f.k];
