@@ -167,7 +167,7 @@
       "summary": "Why slow replies lose bookings, what CRMs actually automate, and the setup cost photographers skip.",
       "evidence": "editorial",
       "pull": "A CRM does not win you the booking; a fast, warm, human reply does.",
-      "updated": "2026-10-29",
+      "updated": "2026-11-24",
       "checked": "October 2026"
     },
     {
@@ -284,7 +284,7 @@
         ]
       ],
       "pricingNote": "Pay-as-you-go ($7/mo min) or flat Limitless ($129/mo annual). 1,000 free test credits.",
-      "updated": "2026-10-29",
+      "updated": "2026-11-24",
       "verdict": {
         "headline": "Imagen AI is the strongest AI editor for photographers who live in Lightroom Classic and care most about editing quality and consistency. It learns your style from your past catalogs and applies it across a whole gallery, with skin tones that reviewers single out as its standout strength.",
         "bestFor": "Wedding and portrait photographers with a consistent editing style who want automated edits that closely reflect their own signature look.",
@@ -352,7 +352,7 @@
       "img": "/assets/photo-mechanic.webp",
       "evidence": "research",
       "checked": "October 2026",
-      "updated": "2026-10-29"
+      "updated": "2026-11-24"
     },
     {
       "slug": "aftershoot-alternatives",
@@ -417,7 +417,8 @@
       "updated": "2026-11-24",
       "alts": [
         "aftershoot-vs-evoto"
-      ]
+      ],
+      "metaTitle": "Aftershoot vs Imagen for Wedding Photographers: Pricing and Offline Editing"
     },
     {
       "slug": "best-ai-culling-editing-software",

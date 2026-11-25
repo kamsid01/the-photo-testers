@@ -58,10 +58,10 @@ export default function PrivacyPage() {
           </Link>.
         </p>
         <p className="m-0 mb-3 text-[#4A4E49]">
-          <strong className="font-semibold text-[#20221F]">Interactive tools:</strong> our calculators and culling finder run entirely in your browser. Numbers and quiz answers you enter are not stored on our servers or transmitted to third parties.
+          <strong className="font-semibold text-[#20221F]">Interactive tools and share links:</strong> our calculators, cost comparisons, and culling finder run entirely in your browser. Numbers you enter (such as income targets, business costs, tax rates, shoot counts, hours, or edited photo volumes) are never stored on our servers or sent to analytics. When you explicitly create a custom share link, values are placed in the browser URL hash fragment (<code>#...</code>), which is not sent to our web server.
         </p>
         <p className="m-0 mb-3 text-[#4A4E49]">
-          <strong className="font-semibold text-[#20221F]">Server logs and analytics:</strong> we do not currently run third-party client-side analytics trackers (such as Google Analytics) in our site code. Our web hosting infrastructure may keep standard technical access logs (such as IP address, browser user agent, and requested URL) for security and reliability.
+          <strong className="font-semibold text-[#20221F]">First-party measurement and server logs:</strong> we do not use third-party client-side analytics trackers (such as Google Analytics) and we do not set tracking cookies. We use a lightweight, cookie-free first-party event endpoint (<code>/api/track</code>) to count aggregated site visits, calculator completions (counted once per session without recording your numbers), share-link copies, and partner widget click-throughs (recording only the event name, page path, and referring partner/domain). Our web hosting infrastructure may also retain standard technical access logs for security and reliability.
         </p>
         <p className="m-0 mb-4 text-[#4A4E49]">
           <strong className="font-semibold text-[#20221F]">Cookies and affiliate links:</strong> our site does not set advertising or tracking cookies. When you click an outbound commercial link to a software vendor, the destination vendor or its affiliate network may set a referral cookie under its own privacy policy to attribute a commission.

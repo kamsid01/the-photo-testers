@@ -5,6 +5,7 @@ import { buildArticlePageData, getSiteData, RenderedRun } from '@/lib/site-data'
 import { ArticleDesktopToc, ArticleMobileToc } from '@/components/article/ArticleToc';
 import { ArticleBlocks, InlineRuns } from '@/components/article/ArticleBody';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { EditingCostComparison } from '@/components/EditingCostComparison';
 
 interface Props {
   params: Promise<{
@@ -540,6 +541,13 @@ export default async function PostPage({ params }: Props) {
                     ))
                   )}
                 </section>
+              )}
+
+              {/* Interactive Editing Cost Comparison for Aftershoot vs Imagen */}
+              {a.slug === 'aftershoot-vs-imagen' && (
+                <div className="mb-10">
+                  <EditingCostComparison />
+                </div>
               )}
 
               {/* Main Body Blocks */}

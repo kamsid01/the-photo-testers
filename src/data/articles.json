@@ -71,6 +71,22 @@
         "cls": ""
       },
       {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Unbilled admin also quietly erodes your hourly rate. Even if your package fee stays the same, every extra hour spent chasing contracts, emails, and gallery prep lowers what you actually keep per hour worked. You can model how those extra hours change your real take-home pay in our "
+          },
+          {
+            "t": "photography pricing calculator",
+            "href": "/tools/pricing-calculator#example=wedding-hidden-hours"
+          },
+          {
+            "t": "."
+          }
+        ],
+        "cls": ""
+      },
+      {
         "type": "h2",
         "text": "What client-management tools actually do (and don't)",
         "id": "what-client-management-tools-actually-do-and-don-t"
@@ -634,6 +650,16 @@
           },
           {
             "t": ". Volume never increases your price, and routine processing executes locally on your machine (uploads only occur when training personal editing profiles or if album-level learning is enabled during culling)."
+          },
+          {
+            "t": " Want to see how Aftershoot’s flat annual fee compares against Imagen’s per-photo pricing at your volume? Use our "
+          },
+          {
+            "t": "interactive Aftershoot vs Imagen editing cost calculator",
+            "href": "/aftershoot-vs-imagen#compare-editing-costs"
+          },
+          {
+            "t": "."
           }
         ],
         "cls": ""
@@ -816,6 +842,77 @@
           }
         ],
         "cls": ""
+      },
+      {
+        "type": "h2",
+        "text": "Hands-on culling test protocol (upcoming)",
+        "id": "hands-on-test-protocol"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "This review is currently "
+          },
+          {
+            "t": "Research-based",
+            "b": 1
+          },
+          {
+            "t": ": it relies on published vendor specifications, documented pricing, and workflow analysis rather than a completed in-house run. We will keep the Research-based label in place until we complete and publish a reproducible hands-on culling test using an authorized Aftershoot account and a real wedding gallery with explicit photographer permission."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "When that test is run, we will publish the exact test record directly in this section:"
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "t": "Test environment: ",
+              "b": 1
+            },
+            {
+              "t": "exact Aftershoot desktop app version, test date, operating system, CPU/GPU, RAM, and drive type."
+            }
+          ],
+          [
+            {
+              "t": "Gallery inputs: ",
+              "b": 1
+            },
+            {
+              "t": "total RAW image count, camera body and file format, and the exact culling settings selected (automated vs. custom, strictness, duplicate grouping, and spray-and-pray handling)."
+            }
+          ],
+          [
+            {
+              "t": "Measured workflow outputs: ",
+              "b": 1
+            },
+            {
+              "t": "elapsed time from import to review-ready picks, percentage of images selected, and a breakdown of manual photographer overrides (missed sharp frames restored and soft, blinked, or duplicate frames removed)."
+            }
+          ],
+          [
+            {
+              "t": "Verification proof: ",
+              "b": 1
+            },
+            {
+              "t": "redacted screenshots of the culling summary and settings used, without exposing identifiable client faces or private metadata."
+            }
+          ]
+        ]
       },
       {
         "type": "h2",
@@ -1072,6 +1169,16 @@
           },
           {
             "t": "a usage-based Pay-As-You-Go model and a flat-rate Limitless subscription."
+          },
+          {
+            "t": " To test your exact annual edited photo volume against Aftershoot’s flat subscription, try our "
+          },
+          {
+            "t": "Aftershoot vs Imagen annual editing cost calculator",
+            "href": "/aftershoot-vs-imagen#compare-editing-costs"
+          },
+          {
+            "t": "."
           }
         ]
       },
@@ -3725,6 +3832,22 @@
         "ext": 1
       },
       {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Note on testing status: our full Aftershoot review is currently research-based. You can see the exact gallery size, timing, and override checks we will log once our authorized run is complete in our "
+          },
+          {
+            "t": "Aftershoot hands-on culling test protocol",
+            "href": "/aftershoot-review#hands-on-test-protocol"
+          },
+          {
+            "t": "."
+          }
+        ],
+        "cls": ""
+      },
+      {
         "type": "h2",
         "text": "3. Narrative Select: best for creative control",
         "id": "3-narrative-select-best-for-creative-control"
@@ -6132,8 +6255,8 @@
     ]
   },
   "aftershoot-vs-imagen": {
-    "title": "Aftershoot vs Imagen: Which AI Editor Wins in 2026?",
-    "meta": "By The Photo Testers team · Published July 2026 · Updated October 2026 · 9 min read",
+    "title": "Aftershoot vs Imagen for Wedding Photographers: Pricing and Offline Editing",
+    "meta": "By The Photo Testers team · Published July 2026 · Updated November 24, 2026 · 10 min read",
     "disclosure": "We evaluate tools through structured research, published vendor benchmarks, and verified user feedback. Some links below are affiliate links.",
     "blocks": [
       {
@@ -7265,6 +7388,22 @@
         "text": "Try Aftershoot free",
         "href": "https://aftershoot.com",
         "ext": 1
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "For full pricing details and the exact test fields we will record once our authorized wedding-gallery culling run is complete, see our "
+          },
+          {
+            "t": "Aftershoot hands-on culling test protocol",
+            "href": "/aftershoot-review#hands-on-test-protocol"
+          },
+          {
+            "t": "."
+          }
+        ],
+        "cls": ""
       },
       {
         "type": "h2",

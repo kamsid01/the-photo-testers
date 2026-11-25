@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { SiteChrome } from "@/components/SiteChrome";
+import { PageViewTracker } from "@/components/PageViewTracker";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.thephototesters.com'),
@@ -50,11 +50,8 @@ export default function RootLayout({
           margin: 0,
         }}
       >
-        <Header />
-        <main id="main-content" tabIndex={-1} style={{ flex: 1, outline: 'none' }}>
-          {children}
-        </main>
-        <Footer />
+        <PageViewTracker />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
