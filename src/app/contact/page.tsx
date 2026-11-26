@@ -5,14 +5,14 @@ import { ContactForm } from '@/components/info/ContactForm';
 export const metadata: Metadata = {
   title: 'Contact | The Photo Testers',
   description:
-    'Contact The Photo Testers editorial team with corrections, tool suggestions, general inquiries, or newsletter removal requests.',
+    'Contact The Photo Testers editorial team to ask a question, report a correction, suggest software for photographers, or request removal from our newsletter.',
   alternates: {
     canonical: 'https://www.thephototesters.com/contact',
   },
   openGraph: {
     title: 'Contact | The Photo Testers',
     description:
-      'Contact The Photo Testers editorial team with corrections, tool suggestions, general inquiries, or newsletter removal requests.',
+      'Contact The Photo Testers editorial team to ask a question, report a correction, suggest software for photographers, or request removal from our newsletter.',
     url: 'https://www.thephototesters.com/contact',
     type: 'website',
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact | The Photo Testers',
     description:
-      'Contact The Photo Testers editorial team with corrections, tool suggestions, general inquiries, or newsletter removal requests.',
+      'Contact The Photo Testers editorial team to ask a question, report a correction, suggest software for photographers, or request removal from our newsletter.',
     images: ['/og/default.jpg'],
   },
 };

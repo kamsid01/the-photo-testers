@@ -5,14 +5,14 @@ import { InfoLayout } from '@/components/info/InfoLayout';
 export const metadata: Metadata = {
   title: 'Privacy Policy | The Photo Testers',
   description:
-    'How The Photo Testers handles contact messages, newsletter requests, browser-only calculators, affiliate links, and data removal requests.',
+    'See how The Photo Testers handles contact forms, newsletters, calculator inputs and affiliate links, and how to request access to or deletion of your data.',
   alternates: {
     canonical: 'https://www.thephototesters.com/privacy',
   },
   openGraph: {
     title: 'Privacy Policy | The Photo Testers',
     description:
-      'How The Photo Testers handles contact messages, newsletter requests, browser-only calculators, affiliate links, and data removal requests.',
+      'See how The Photo Testers handles contact forms, newsletters, calculator inputs and affiliate links, and how to request access to or deletion of your data.',
     url: 'https://www.thephototesters.com/privacy',
     type: 'website',
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Privacy Policy | The Photo Testers',
     description:
-      'How The Photo Testers handles contact messages, newsletter requests, browser-only calculators, affiliate links, and data removal requests.',
+      'See how The Photo Testers handles contact forms, newsletters, calculator inputs and affiliate links, and how to request access to or deletion of your data.',
     images: ['/og/default.jpg'],
   },
 };

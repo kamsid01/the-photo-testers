@@ -93,6 +93,21 @@ export const NAMED_PRICING_EXAMPLES: Record<string, NamedPricingExample> = {
       hiddenH: '20',
     },
   },
+  'uk-partner-hidden-hours': {
+    id: 'uk-partner-hidden-hours',
+    label: 'UK wedding studio example (30 shoots, 12 hidden hrs)',
+    description:
+      '£36,000 take-home, £9,000 annual costs, 25% tax, 30 shoots/year, 8 shooting hours, 12 hidden hours (£1,900/shoot, £60/hr take-home).',
+    inputs: {
+      cur: 'GBP',
+      take: '36000',
+      shoots: '30',
+      costs: '9000',
+      tax: '25',
+      shootH: '8',
+      hiddenH: '12',
+    },
+  },
 };
 
 export const CURRENCY_SYMBOLS: Record<Currency, string> = {

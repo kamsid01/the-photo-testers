@@ -284,7 +284,7 @@
         ]
       ],
       "pricingNote": "Pay-as-you-go ($7/mo min) or flat Limitless ($129/mo annual). 1,000 free test credits.",
-      "updated": "2026-11-24",
+      "updated": "2026-11-25",
       "verdict": {
         "headline": "Imagen AI is the strongest AI editor for photographers who live in Lightroom Classic and care most about editing quality and consistency. It learns your style from your past catalogs and applies it across a whole gallery, with skin tones that reviewers single out as its standout strength.",
         "bestFor": "Wedding and portrait photographers with a consistent editing style who want automated edits that closely reflect their own signature look.",
@@ -303,7 +303,7 @@
       "imgPos": "80% 50%",
       "evidence": "research",
       "checked": "November 2026",
-      "updated": "2026-11-24"
+      "updated": "2026-11-25"
     },
     {
       "slug": "pic-time-vs-pixieset-vs-shootproof",
@@ -352,7 +352,7 @@
       "img": "/assets/photo-mechanic.webp",
       "evidence": "research",
       "checked": "October 2026",
-      "updated": "2026-11-24"
+      "updated": "2026-11-25"
     },
     {
       "slug": "aftershoot-alternatives",
@@ -365,7 +365,7 @@
       "evidence": "research",
       "checked": "October 2026",
       "from": "Aftershoot",
-      "updated": "2026-10-29",
+      "updated": "2026-11-25",
       "alts": [
         "aftershoot-vs-evoto"
       ]
@@ -376,12 +376,13 @@
       "cat": "ai-culling-editing",
       "type": "alternatives",
       "date": "2026-07-21",
-      "summary": "The best FilterPixel alternatives in 2026: Aftershoot, Narrative Select, Imagen AI, Photo Mechanic, and Evoto compared on offline speed and privacy.",
+      "summary": "Compare FilterPixel alternatives on offline culling, pricing, and Lightroom migration: Aftershoot, Narrative Select, Imagen AI, Photo Mechanic, and Evoto.",
       "img": "/assets/filterpixel.webp",
       "evidence": "research",
       "checked": "October 2026",
       "from": "FilterPixel",
-      "updated": "2026-10-29"
+      "updated": "2026-11-25",
+      "metaTitle": "FilterPixel Alternatives for Photographers (2026): Offline Speed, Pricing & Migration"
     },
     {
       "slug": "aftershoot-vs-imagen",
@@ -414,7 +415,7 @@
         }
       ],
       "pricingAssumption": "Aftershoot Edit is a flat $360/year ($30/mo annual). Imagen offers Pay-As-You-Go ($0.05/photo base editing, or $0.07–$0.09 with modular AI tools) and a flat Limitless subscription ($1,548/year, or $129/mo annual) for eligible solo photographers. On base editing ($0.05/photo), Aftershoot Edit breaks even with Imagen PAYG at 7,200 edited photos a year (600/month); with AI crop and straighten ($0.07/photo), the break-even is 5,143 photos a year (~428/month). Solo photographers delivering higher volume can choose Imagen Limitless or Aftershoot's flat tiers (Checked October 2026).",
-      "updated": "2026-11-24",
+      "updated": "2026-11-25",
       "alts": [
         "aftershoot-vs-evoto"
       ],
@@ -430,7 +431,7 @@
       "img": "/assets/evoto.webp",
       "evidence": "research",
       "checked": "November 2026",
-      "updated": "2026-11-24"
+      "updated": "2026-11-25"
     },
     {
       "slug": "photography-crm-vat-gdpr-europe",
@@ -461,7 +462,7 @@
       "cat": "client-crms",
       "type": "comparison",
       "date": "2026-06-26",
-      "summary": "Dubsado vs HoneyBook compared for photographers on pricing, workflow automations, client portals, setup time, and which CRM fits your studio.",
+      "summary": "Compare Dubsado and HoneyBook for photography studios on annual and monthly pricing, scheduling, automations and client portals. See which fits your workflow.",
       "imgs": [
         "/assets/dubsado.webp",
         "/assets/honeybook-scheduler.webp"
@@ -484,7 +485,7 @@
         }
       ],
       "pricingAssumption": "Prices as listed in June 2026. Dubsado’s edge applies when paid annually.",
-      "updated": "2026-11-24"
+      "updated": "2026-11-25"
     },
     {
       "slug": "honeybook-alternatives-photographers",

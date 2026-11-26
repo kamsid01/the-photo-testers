@@ -63,26 +63,37 @@ export function PricingCalculator() {
   const [embedCopied, setEmbedCopied] = useState(false);
   const [embedStatus, setEmbedStatus] = useState('');
 
-  // Track referral & restore shared hash on mount without triggering pricing_estimate_used
+  // Active referral partner (from embed/partner link) for attributing completions without logging financial inputs
+  const [activePartner, setActivePartner] = useState<string | null>(null);
+
+  // Track referral & restore shared hash on mount and hashchange without triggering pricing_estimate_used
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    const decoded = decodePricingHash(window.location.hash);
-    if (decoded.inputs) {
-      setInputs(decoded.inputs);
-    }
+    const applyHashAndPartner = () => {
+      const decoded = decodePricingHash(window.location.hash);
+      if (decoded.inputs) {
+        setInputs(decoded.inputs);
+      }
 
-    const searchParams = new URLSearchParams(window.location.search);
-    const queryPartner = searchParams.get('partner') || searchParams.get('ref');
-    const partner = decoded.partner || queryPartner;
+      const searchParams = new URLSearchParams(window.location.search);
+      const queryPartner = searchParams.get('partner') || searchParams.get('ref');
+      const partner = decoded.partner || queryPartner;
 
-    if (partner && /^[a-zA-Z0-9._-]{1,64}$/.test(partner.trim())) {
-      trackOncePerSession('widget_referral', {
-        page: '/tools/pricing-calculator',
-        ref: 'embed',
-        partner: partner.trim(),
-      });
-    }
+      if (partner && /^[a-zA-Z0-9._-]{1,64}$/.test(partner.trim())) {
+        const clean = partner.trim();
+        setActivePartner(clean);
+        trackOncePerSession('widget_referral', {
+          page: '/tools/pricing-calculator',
+          ref: 'embed',
+          partner: clean,
+        });
+      }
+    };
+
+    applyHashAndPartner();
+    window.addEventListener('hashchange', applyHashAndPartner);
+    return () => window.removeEventListener('hashchange', applyHashAndPartner);
   }, []);
 
   const spec = useMemo(() => getPricingFieldSpecs(inputs.cur), [inputs.cur]);
@@ -99,6 +110,7 @@ export function PricingCalculator() {
     if (nextValidation.valid) {
       trackOncePerSession('pricing_estimate_used', {
         page: '/tools/pricing-calculator',
+        ...(activePartner ? { partner: activePartner } : {}),
       });
     }
   };
@@ -116,17 +128,18 @@ export function PricingCalculator() {
     }
   };
 
-  // Pick which named public example fits best when custom figures are not opted in
-  const activeExampleId =
-    inputs.cur === 'GBP' &&
-    inputs.take === '40000' &&
-    inputs.shoots === '30' &&
-    inputs.costs === '8000' &&
-    inputs.tax === '25' &&
-    inputs.shootH === '8' &&
-    inputs.hiddenH === '20'
-      ? 'wedding-20h-editing'
-      : 'wedding-hidden-hours';
+  // Preserve any active named public example (including uk-partner-hidden-hours) when custom figures are not opted in
+  const matchedExample = Object.values(NAMED_PRICING_EXAMPLES).find(
+    (ex) =>
+      ex.inputs.cur === inputs.cur &&
+      ex.inputs.take === inputs.take &&
+      ex.inputs.shoots === inputs.shoots &&
+      ex.inputs.costs === inputs.costs &&
+      ex.inputs.tax === inputs.tax &&
+      ex.inputs.shootH === inputs.shootH &&
+      ex.inputs.hiddenH === inputs.hiddenH
+  );
+  const activeExampleId = matchedExample ? matchedExample.id : 'wedding-hidden-hours';
 
   const shareOrigin =
     typeof window !== 'undefined' ? window.location.origin : 'https://www.thephototesters.com';

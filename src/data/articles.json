@@ -1340,7 +1340,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "It's cloud-only and Lightroom Classic only.",
+            "t": "It's cloud-only and Lightroom Classic catalog integration (plus folder-based edit review in Lightroom, Lightroom Classic, Photoshop, or Adobe Bridge).",
             "b": 1
           },
           {
@@ -1396,7 +1396,7 @@
           ],
           [
             {
-              "t": "Lightroom Classic only"
+              "t": "Lightroom Classic catalog integration (plus folder-based edit review in Lightroom, Lightroom Classic, Photoshop, or Adobe Bridge)"
             }
           ],
           [
@@ -1833,7 +1833,7 @@
             ],
             [
               {
-                "t": "0% on Pro+ (15% on Free/Beginner)"
+                "t": "Free/Beginner: 15% (all orders). Pro/Advanced: 0% with photographer collection, or 8% (Pro) / 6% (Advanced) of order profit when Pic-Time collects"
               }
             ],
             [
@@ -1889,7 +1889,7 @@
             ],
             [
               {
-                "t": "7% commerce fee (Pro/Adv)"
+                "t": "7% commerce fee per order"
               }
             ],
             [
@@ -1907,6 +1907,42 @@
           {
             "t": "Researched October 2026. Pricing shifts often and varies by storage tier and promotions, confirm on each vendor's page.",
             "i": 1
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Costed 75 GB worked example (30 shoots × 500 photos at 5 MB/photo, USD annual list pricing checked November 25, 2026): ",
+            "b": true
+          },
+          {
+            "t": "At 75 GB of active storage, Zenfolio Professional is listed at $138/year ($11.50/month billed annually) with 150 GB of storage and a 7% commerce fee per order ("
+          },
+          {
+            "t": "Zenfolio pricing",
+            "href": "https://zenfolio.com/plans-pricing/",
+            "ext": true
+          },
+          {
+            "t": "; seasonal promotions are separate). CloudSpot Lite (100 GB) is $144/year ($12/month billed annually) with 0% store commission. SmugMug Direct covers unlimited JPEG storage and digital delivery for $240/year (delivery-only); selling prints or downloads requires SmugMug Portfolio at $282/year. Pic-Time Professional (100 GB) is $252/year ($21/month billed annually): its 0% commission applies when the photographer collects payment, whereas Pic-Time documents an 8% fee on order profit when Pic-Time collects payment on Professional ("
+          },
+          {
+            "t": "Pic-Time commission rates",
+            "href": "https://help.pic-time.com/en/articles/7901454-what-are-the-commission-rates-for-various-subscription-plans",
+            "ext": true
+          },
+          {
+            "t": "). Enter 30 shoots × 500 photos in our "
+          },
+          {
+            "t": "client gallery cost calculator",
+            "href": "/tools/gallery-cost-calculator"
+          },
+          {
+            "t": " to reproduce this 75 GB comparison."
           }
         ],
         "cls": ""
@@ -2231,7 +2267,19 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing: Free tier (3 GB ongoing, 15% commission); Beginner 20 GB ($7/mo annual [$84/yr] or $8/mo monthly, 15% commission); Professional 100 GB ($21/mo annual [$252/yr] or $25/mo monthly, 0% commission with own processor); Advanced Unlimited ($42/mo annual [$504/yr] or $50/mo monthly, 0% commission with own processor) (Checked November 2026)."
+            "t": "Pricing: ",
+            "b": true
+          },
+          {
+            "t": "Free (3 GB ongoing, 15% commission), Beginner ($7/mo annual [$84/yr], 20 GB, 15% commission), Professional ($21/mo annual [$252/yr], 100 GB), and Advanced ($42/mo annual [$504/yr], unlimited storage). On Professional and Advanced, store sales are 0% commission when the photographer collects payment, or 8% of order profit (Professional) and 6% of order profit (Advanced) when Pic-Time collects payment ("
+          },
+          {
+            "t": "Pic-Time commission rates",
+            "href": "https://help.pic-time.com/en/articles/7901454-what-are-the-commission-rates-for-various-subscription-plans",
+            "ext": true
+          },
+          {
+            "t": "; checked November 25, 2026)."
           }
         ],
         "cls": ""
@@ -3083,7 +3131,7 @@
               "b": 1
             },
             {
-              "t": " 3GB ongoing storage (15% commission, basic marketing apps)"
+              "t": " 3 GB ongoing storage (15% commission regardless of payment collection method; basic marketing apps)"
             }
           ],
           [
@@ -3092,7 +3140,7 @@
               "b": 1
             },
             {
-              "t": " 20GB storage (15% commission)"
+              "t": " 20 GB storage (15% commission regardless of payment collection method)"
             }
           ],
           [
@@ -3101,7 +3149,7 @@
               "b": 1
             },
             {
-              "t": " 100GB storage (0% commission with own payment processor)"
+              "t": " 100 GB storage (0% commission with photographer collection, or 8% of order profit when Pic-Time collects)"
             }
           ],
           [
@@ -3110,7 +3158,7 @@
               "b": 1
             },
             {
-              "t": " Unlimited storage (0% commission with own payment processor)"
+              "t": " Unlimited storage (0% commission with photographer collection, or 6% of order profit when Pic-Time collects)"
             }
           ]
         ]
@@ -3352,11 +3400,11 @@
             "type": "p",
             "runs": [
               {
-                "t": "Fastest cloud throughput in competitor benchmarks: FilterPixel.",
+                "t": "Cloud-offloaded culling: FilterPixel.",
                 "b": 1
               },
               {
-                "t": " In competitor-published tests, cloud processing offloaded compute from local laptop hardware."
+                "t": " Offloads AI culling compute to cloud servers using low-resolution derivatives and metadata rather than taxing local laptop hardware."
               }
             ],
             "cls": ""
@@ -3436,14 +3484,14 @@
       },
       {
         "type": "h2",
-        "text": "Competitor-published speed benchmarks",
+        "text": "Cloud vs. local processing speed",
         "id": "competitor-published-speed-benchmarks"
       },
       {
         "type": "p",
         "runs": [
           {
-            "t": "Culling tools make big speed claims, so benchmarks need careful attribution. In a speed test published by FilterPixel (a vendor and direct competitor in this space) processing 1,000 images on a MacBook Pro M3:"
+            "t": "Culling tools make competing speed claims, and elapsed times vary sharply by laptop CPU/GPU and internet upload speed. Because we have not yet completed an audited hands-on benchmark across identical RAW catalogs, we avoid unverified speed rankings and compare how each architecture behaves:"
           }
         ],
         "cls": ""
@@ -3453,17 +3501,57 @@
         "items": [
           [
             {
-              "t": "Aftershoot culled 1,000 images in 9 minutes 14 seconds, about 3x slower than FilterPixel but with high keeper identification accuracy."
+              "t": "FilterPixel’s cloud-offloaded architecture processes low-resolution derivatives and metadata on remote servers rather than your local CPU/GPU ("
+            },
+            {
+              "t": "FilterPixel privacy documentation",
+              "href": "https://filterpixel.com/privacy",
+              "ext": true
+            },
+            {
+              "t": ")."
             }
           ],
           [
             {
-              "t": "Narrative Select processed 1,000 images in 18 minutes on the same machine, slower than both FilterPixel and Aftershoot."
+              "t": "Exact minute-by-minute competitor speed ratios depend heavily on local CPU/GPU hardware and upload bandwidth. Because we cannot independently audit third-party test catalogs or timings, we omit unsourced elapsed-time claims here until our own hands-on culling test is run."
             }
           ],
           [
             {
-              "t": "In FilterPixel's published benchmark, its cloud processing recorded the fastest elapsed time because computation did not depend on local laptop hardware."
+              "t": "For current pricing, confirm regular annual rates separately from dated promotions on "
+            },
+            {
+              "t": "FilterPixel’s pricing page",
+              "href": "https://accounts.filterpixel.com/pricing/",
+              "ext": true
+            },
+            {
+              "t": ", "
+            },
+            {
+              "t": "Camera Bits Photo Mechanic pricing",
+              "href": "https://camerabits.freshdesk.com/support/solutions/articles/48001252734-photo-mechanic-pricing-and-information",
+              "ext": true
+            },
+            {
+              "t": " ("
+            },
+            {
+              "t": "Plus withdrawal notice",
+              "href": "https://home.camerabits.com/photo-mechanic-plus-is-no-longer-available-for-purchase/",
+              "ext": true
+            },
+            {
+              "t": "), and "
+            },
+            {
+              "t": "Narrative Select pricing",
+              "href": "https://narrative.so/pricing",
+              "ext": true
+            },
+            {
+              "t": "."
             }
           ]
         ]
@@ -3472,7 +3560,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Keep in mind who ran and published that benchmark (FilterPixel, a direct competitor), so treat the top ranking with appropriate skepticism. Reserve truly \"independent\" status for disinterested third-party testing without a commercial interest in the outcome. The relative pattern, however—cloud processing fastest, Aftershoot mid, Narrative slower-but-more-considered—aligns with broader photographer reports."
+            "t": "Treat vendor-published speed tests from any direct competitor with skepticism until third-party test catalogs, hardware specs, and full timings are independently verified."
           }
         ],
         "cls": ""
@@ -3515,18 +3603,18 @@
                 "b": 1
               },
               {
-                "t": " (cloud speed in competitor tests)",
+                "t": " (cloud-offloaded)",
                 "i": 1
               }
             ],
             [
               {
-                "t": "Speed, genre culling"
+                "t": "Cloud genre culling"
               }
             ],
             [
               {
-                "t": "Free + flat"
+                "t": "Free trial + paid plans"
               }
             ],
             [
@@ -3582,7 +3670,7 @@
             ],
             [
               {
-                "t": "~$99/yr"
+                "t": "From $10/mo annual ($120/yr)"
               }
             ],
             [
@@ -3674,7 +3762,15 @@
         "type": "p",
         "runs": [
           {
-            "t": "In a benchmark published by FilterPixel in 2024 comparing cloud processing against on-device competitors on a 1,000-RAW wedding set, FilterPixel recorded the fastest elapsed processing throughput because computation occurred on remote servers rather than the local CPU/GPU. However, this throughput requires stable, high-speed upload connectivity and leaves final selection review to the photographer."
+            "t": "FilterPixel offloads AI culling to cloud servers using low-resolution derivatives and metadata ("
+          },
+          {
+            "t": "FilterPixel privacy policy",
+            "href": "https://filterpixel.com/privacy",
+            "ext": true
+          },
+          {
+            "t": "), so culling does not depend on local GPU power. The trade-off is requiring stable internet upload connectivity and reviewing final selections manually."
           }
         ]
       },
@@ -3682,7 +3778,15 @@
         "type": "p",
         "runs": [
           {
-            "t": "You can try FilterPixel on 4 projects for free, including DeepCull, with no credit card required, and packages start at $14.99 a month."
+            "t": "You can test FilterPixel with "
+          },
+          {
+            "t": "three free DeepCull shoots (up to 1,000 photos per shoot, 3,000 photos total, no card required)",
+            "href": "https://accounts.filterpixel.com/pricing/",
+            "ext": true
+          },
+          {
+            "t": ", and paid plans start at $14.99/month billed annually (regular annual list rate; dated promotions are separate)."
           }
         ],
         "cls": ""
@@ -3691,7 +3795,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "The trade-off is the cloud itself: you upload your RAWs, so you need solid internet and you're not working fully offline."
+            "t": "The trade-off is the cloud itself: FilterPixel uploads low-resolution derivatives and metadata to its cloud servers, so you need solid internet and you're not working fully offline."
           }
         ],
         "cls": ""
@@ -3707,7 +3811,7 @@
         "pros": [
           [
             {
-              "t": "Fastest cloud throughput in competitor tests; speed independent of local hardware"
+              "t": "Cloud-offloaded compute independent of local laptop hardware"
             }
           ],
           [
@@ -3717,14 +3821,14 @@
           ],
           [
             {
-              "t": "4 free projects to try"
+              "t": "Free trial available before subscribing"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "Requires uploading RAWs; needs good internet"
+              "t": "Uploads low-resolution derivatives and metadata to cloud servers; needs good internet"
             }
           ],
           [
@@ -3742,7 +3846,7 @@
             "b": true
           },
           {
-            "t": "4 free projects; paid plans from $14$14.99/mo (October 2026)."
+            "t": "3 free DeepCull shoots (up to 1,000 photos per shoot, 3,000 photos total, no card required); paid plans start at $14.99/month billed annually (regular annual list price; dated promotional discounts are separate; checked November 26, 2026)."
           }
         ]
       },
@@ -3865,7 +3969,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its standout is face-based culling: close-up panels let you compare expressions across a whole series at a glance, and the AI is especially good at catching subtle expression differences in portraits and weddings. It works offline and ships selections into Lightroom. Pricing is around $99 a year."
+            "t": "Its standout is face-based culling: close-up panels let you compare expressions across a whole series at a glance, and the AI is especially good at catching subtle expression differences in portraits and weddings. It works offline and ships selections into Lightroom. Narrative Select offers a free trial to test before subscribing; paid plans run Lite $10/month billed annually ($120/year; $15/month monthly), Standard $20/month annual ($240/year; $29/month monthly), Premium $40/month annual ($480/year; $59/month monthly), and Ultra $60/month annual ($720/year; $79/month monthly)."
           }
         ],
         "cls": ""
@@ -3925,7 +4029,7 @@
             "b": true
           },
           {
-            "t": "Free trial available; paid plans from $18/mo ($216/yr) to $24/mo monthly (October 2026). Note: Official help documentation outlines Lite, Standard, Pro/Premium, and Ultra plans, while older marketing pages still advertise a legacy free tier."
+            "t": "Free trial available; paid plans start at Lite $10/month billed annually ($120/year; $15/month monthly), Standard $20/month annual ($240/year; $29/month monthly), Premium $40/month annual ($480/year; $59/month monthly), and Ultra $60/month annual ($720/year; $79/month monthly) (Checked November 25, 2026)."
           }
         ]
       },
@@ -3937,7 +4041,7 @@
       },
       {
         "type": "h2",
-        "text": "4. Photo Mechanic: fastest manual option",
+        "text": "4. Photo Mechanic: high-speed manual browser and IPTC tool",
         "id": "4-photo-mechanic-fastest-manual-option"
       },
       {
@@ -3953,7 +4057,18 @@
         "type": "p",
         "runs": [
           {
-            "t": "Photo Mechanic 6 costs $139 one-time and Photo Mechanic Plus costs $249 one-time. Neither version includes any AI culling features. It runs fast on almost any machine and needs no internet. You trade AI automation for speed, total control, and no subscription."
+            "t": "Photo Mechanic Standard costs $14.99/month, $149/year, or $299 perpetual (with 1 year of updates). Camera Bits has withdrawn Photo Mechanic Plus from sale. Neither includes AI culling features. "
+          },
+          {
+            "t": "Photo Mechanic browses and culls files locally. It periodically needs internet access to validate the license. The offline grace period depends on the license type. ("
+          },
+          {
+            "t": "Camera Bits system requirements",
+            "href": "https://docs.camerabits.com/support/solutions/articles/48001080502-system-recommendations-compatibility",
+            "ext": true
+          },
+          {
+            "t": ") You trade AI automation for local browsing speed, total control, and flexible purchase options."
           }
         ],
         "cls": ""
@@ -3979,7 +4094,7 @@
           ],
           [
             {
-              "t": "Runs fast on modest hardware; no internet needed"
+              "t": "Browses and culls locally on modest hardware (periodic internet license validation)"
             }
           ]
         ],
@@ -4004,7 +4119,7 @@
             "b": 1
           },
           {
-            "t": " $139 one-time (v6); $249 (Plus) (July 2026)."
+            "t": " $14.99/month, $149/year, or $299 perpetual (Standard); Photo Mechanic Plus has been withdrawn from sale (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -4124,7 +4239,7 @@
             "b": 1
           },
           {
-            "t": "FilterPixel, especially if your internet connection has fast RAW upload bandwidth."
+            "t": "FilterPixel, especially if your internet connection has stable upload bandwidth for cloud-processed low-resolution derivatives and metadata."
           }
         ],
         "cls": ""
@@ -4181,7 +4296,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Nearly all of these have a free trial or free tier. Test two on a real shoot before committing, that tells you more than any benchmark."
+            "t": "Nearly all of these have a free trial. Test two on a real shoot before committing, that tells you more than any benchmark."
           }
         ],
         "cls": ""
@@ -4199,7 +4314,7 @@
             "b": 1
           },
           {
-            "t": "It depends on your workflow. FilterPixel leads in cloud-based processing speed in published tests, Aftershoot is the best all-in-one, Narrative Select is best for expression-critical portrait and wedding work, and Photo Mechanic is the fastest manual option. There's no single winner for everyone."
+            "t": "It depends on your workflow. FilterPixel suits photographers who want cloud-offloaded genre culling, Aftershoot is the best all-in-one local option, Narrative Select is best for expression-critical portrait and wedding work, and Photo Mechanic Standard is the leading manual browser. There is no single winner for everyone."
           }
         ],
         "cls": ""
@@ -4225,7 +4340,7 @@
             "b": 1
           },
           {
-            "t": "\nAftershoot, Narrative Select, Photo Mechanic, and Excire Foto all process locally with no internet needed. FilterPixel and Imagen are cloud-based."
+            "t": "\nAftershoot (routine culling, editing, and retouching after sign-in), Narrative Select, and Excire Foto process locally. Photo Mechanic browses and culls files locally. It periodically needs internet access to validate the license. The offline grace period depends on the license type. FilterPixel and Imagen AI rely on cloud processing."
           }
         ],
         "cls": ""
@@ -4238,7 +4353,7 @@
             "b": 1
           },
           {
-            "t": "\nYes. Photo Mechanic ($139 one-time) is a fast manual browser, and Excire Foto (around €99 one-time) offers AI culling you own outright. Most other AI tools use subscriptions."
+            "t": "\nYes. Photo Mechanic Standard ($299 perpetual, or $149/year / $14.99/month) is a fast manual browser, and Excire Foto (around €99 one-time) offers AI culling you own outright. Most other AI tools use subscriptions."
           }
         ],
         "cls": ""
@@ -4343,7 +4458,7 @@
                 "b": 1
               },
               {
-                "t": " Fast RAW browsing, a free tier, and it keeps you making the final calls."
+                "t": " Fast RAW browsing, a free trial, and it keeps you making the final calls."
               }
             ],
             "cls": ""
@@ -4385,7 +4500,7 @@
             "b": 1
           },
           {
-            "t": " Aftershoot runs on your machine, which is great for privacy but hard on your hardware. In a benchmark published by FilterPixel, Aftershoot culled 1,000 images in 9 minutes 14 seconds on a MacBook Pro M3. On a big wedding and an older laptop, that ties up your CPU for a while."
+            "t": " Aftershoot runs on your machine, which is great for privacy but hard on your hardware.Published competitor culling timings vary by hardware and upload bandwidth; we omit unverified minute-by-minute ratios until our own hands-on test is complete. On a big wedding and an older laptop, that ties up your CPU for a while."
           }
         ],
         "cls": ""
@@ -4490,7 +4605,7 @@
             ],
             [
               {
-                "t": "Free + flat"
+                "t": "Free trial + paid plans"
               }
             ],
             [
@@ -4519,7 +4634,7 @@
             ],
             [
               {
-                "t": "Per photo"
+                "t": "PAYG ($0.05/photo+) or Limitless (solo)"
               }
             ],
             [
@@ -4548,7 +4663,7 @@
             ],
             [
               {
-                "t": "Free + flat"
+                "t": "Free trial + paid plans"
               }
             ],
             [
@@ -4652,7 +4767,15 @@
         "type": "p",
         "runs": [
           {
-            "t": "It also processes in the cloud, which flips Aftershoot's hardware equation. Where Aftershoot's speed depends on your laptop, FilterPixel uses cloud processing, so speed is independent of your hardware. And it's genuinely easy to try: you can try FilterPixel on 4 projects for free, including their DeepCull feature, with no credit card required, and packages start at $14.99 a month."
+            "t": "It also processes in the cloud, which flips Aftershoot’s hardware equation. Where Aftershoot’s speed depends on your laptop, FilterPixel uses cloud processing, so speed is independent of your hardware. You can test FilterPixel with "
+          },
+          {
+            "t": "three free DeepCull shoots (up to 1,000 photos per shoot, 3,000 photos total, no card required)",
+            "href": "https://accounts.filterpixel.com/pricing/",
+            "ext": true
+          },
+          {
+            "t": ", and paid plans start at $14.99/month billed annually (regular annual list rate; dated promotions are separate)."
           }
         ],
         "cls": ""
@@ -4661,7 +4784,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "The honest trade-off: cloud processing means uploading your RAWs, so you need decent internet and you're not working fully offline the way Aftershoot lets you."
+            "t": "The honest trade-off: cloud processing means uploading low-resolution derivatives and metadata to cloud servers, so you need decent internet and you're not working fully offline the way Aftershoot lets you."
           }
         ],
         "cls": ""
@@ -4687,14 +4810,14 @@
           ],
           [
             {
-              "t": "4 free projects to try, no card"
+              "t": "Free trial available before subscribing, no card"
             }
           ]
         ],
         "cons": [
           [
             {
-              "t": "Requires uploading RAWs; needs good internet"
+              "t": "Uploads low-resolution derivatives and metadata to cloud servers; needs good internet"
             }
           ],
           [
@@ -4708,11 +4831,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
+            "t": "Pricing: ",
             "b": 1
           },
           {
-            "t": " 4 free projects; paid from $14.99/mo (July 2026)."
+            "t": "3 free DeepCull shoots (up to 1,000 photos per shoot, 3,000 photos total, no card required); paid plans start at $14.99/month billed annually (regular annual list price; dated promotions are separate; checked November 26, 2026)."
           }
         ],
         "cls": ""
@@ -4744,7 +4867,23 @@
             "t": "The pricing and workflow models are the key differences from Aftershoot. "
           },
           {
-            "t": "Imagen offers Pay-as-you-go ($0.05/photo base + $0.01 optional tools like crop and straighten) with a $7/month minimum, or a flat Limitless subscription ($1,548/year [$129/mo annual]) for eligible solo photographers. Unlike Aftershoot’s local offline processing, Imagen runs in the cloud and operates specifically within Lightroom Classic."
+            "t": "Imagen offers Pay-As-You-Go ($0.05/photo base + $0.01 optional tools like crop and straighten; $7/month minimum) or a flat-rate Limitless subscription ($129/month billed annually [$1,548/year] or $165/month monthly) for eligible solo photographers ("
+          },
+          {
+            "t": "Imagen pricing and plans",
+            "href": "https://support.imagen-ai.com/hc/en-us/articles/4544978323857-Imagen-pricing-and-plans",
+            "ext": true
+          },
+          {
+            "t": "). Unlike Aftershoot’s local desktop processing, Imagen runs in Imagen Cloud, integrates with Lightroom Classic catalogs, and lets photographers review folder-based edits in Lightroom, Lightroom Classic, Photoshop, or Adobe Bridge ("
+          },
+          {
+            "t": "supported review apps",
+            "href": "https://support.imagen-ai.com/hc/en-us/articles/35248088848157-Review-edits-in-the-folder-where-your-original-photos-are",
+            "ext": true
+          },
+          {
+            "t": ")."
           }
         ]
       },
@@ -4752,7 +4891,15 @@
         "type": "p",
         "runs": [
           {
-            "t": "One honest note on offline work, which is often why people leave Imagen or Aftershoot in the first place: Imagen's culling runs locally, but its AI editing sends Smart Previews to Imagen's cloud servers for processing. So it's not a fully offline editor."
+            "t": "One honest note on offline work, which is often why people compare Imagen and Aftershoot in the first place: Imagen documents that projects upload and both culling and AI editing take place in Imagen Cloud ("
+          },
+          {
+            "t": "Imagen culling workflow",
+            "href": "https://support.imagen-ai.com/hc/en-us/articles/29925087795357-Create-a-new-culling-project",
+            "ext": true
+          },
+          {
+            "t": "), so it requires an internet connection rather than working offline."
           }
         ],
         "cls": ""
@@ -4831,7 +4978,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Narrative Select operates 100% locally and offline on your computer, preserving local privacy like Aftershoot. Plan availability has transitioned: official help documentation details Lite, Standard, Pro/Premium, and Ultra plans (from $18/mo ($216/yr) to $24/mo monthly), while older marketing pages still reference a legacy free tier. A free trial is available to test on live shoots."
+            "t": "Narrative Select operates 100% locally and offline on your computer, preserving local privacy like Aftershoot. Plan availability has transitioned: official help documentation details Lite, Standard, Pro/Premium, and Ultra plans starting at Lite $10/month billed annually ($120/year; $15/month monthly), Standard $20/month annual ($240/year; $29/month monthly), Premium $40/month annual ($480/year; $59/month monthly), and Ultra $60/month annual ($720/year; $79/month monthly), with a free trial available to test on live shoots."
           }
         ]
       },
@@ -4846,7 +4993,7 @@
         "pros": [
           [
             {
-              "t": "Fastest RAW browsing available"
+              "t": "Rapid local RAW previewing with close-up face and eye panels"
             }
           ],
           [
@@ -4856,7 +5003,7 @@
           ],
           [
             {
-              "t": "Free tier; works offline; ships to Lightroom"
+              "t": "Free trial available; works offline; ships to Lightroom"
             }
           ]
         ],
@@ -4881,7 +5028,7 @@
             "b": true
           },
           {
-            "t": "Free trial available; paid plans from $18/mo ($216/yr) to $24/mo monthly (October 2026)."
+            "t": "Free trial available; paid plans start at Lite $10/month billed annually ($120/year; $15/month monthly), Standard $20/month annual ($240/year; $29/month monthly), Premium $40/month annual ($480/year; $59/month monthly), and Ultra $60/month annual ($720/year; $79/month monthly) (Checked November 25, 2026)."
           }
         ]
       },
@@ -4909,7 +5056,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Photo Mechanic 6 costs $139 one-time and Photo Mechanic Plus costs $249 one-time. Neither version includes any AI culling features. So the honest framing: you trade AI automation for speed, full control, and no recurring bill. Many photographers pair it with an AI tool, but if you prefer fast manual culling and owning your software, it stands on its own."
+            "t": "Photo Mechanic Standard costs $14.99/month, $149/year, or $299 perpetual (with 1 year of updates). Camera Bits has withdrawn Photo Mechanic Plus from sale. Neither version includes any AI culling features. So the honest framing: you trade AI automation for speed, full control, and no recurring bill. Many photographers pair it with an AI tool, but if you prefer fast manual culling and owning your software, it stands on its own."
           }
         ],
         "cls": ""
@@ -4960,7 +5107,7 @@
             "b": 1
           },
           {
-            "t": " $139 one-time (Photo Mechanic 6); $249 (Plus) (July 2026)."
+            "t": " $14.99/month, $149/year, or $299 perpetual (Standard); Photo Mechanic Plus has been withdrawn from sale (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -5127,7 +5274,7 @@
             "b": 1
           },
           {
-            "t": " Narrative Select, and its free tier makes it easy to try."
+            "t": " Narrative Select, and its free trial makes it easy to test before choosing a paid plan."
           }
         ],
         "cls": ""
@@ -5162,7 +5309,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Nearly all of them offer a free trial or free tier. Since the right fit depends entirely on your genre, volume, and what's actually slowing you down, test two on a real shoot before committing."
+            "t": "Nearly all of them offer a free trial. Since the right fit depends entirely on your genre, volume, and what's actually slowing you down, test two on a real shoot before committing."
           }
         ],
         "cls": ""
@@ -5193,7 +5340,7 @@
             "b": 1
           },
           {
-            "t": "\nNarrative Select has a free tier, and FilterPixel offers 4 free projects with no credit card. Evoto lets you edit for free and only charges credits to export."
+            "t": "\nNarrative Select has a free trial, and FilterPixel offers a free trial to evaluate before subscribing. Evoto lets you edit for free and only charges credits to export."
           }
         ],
         "cls": ""
@@ -5219,7 +5366,7 @@
             "b": 1
           },
           {
-            "t": "\nPhoto Mechanic is a one-time purchase ($139 for version 6), though it's a fast manual browser with no AI culling. Most AI tools use subscriptions or per-photo pricing."
+            "t": "\nPhoto Mechanic Standard is available as three separate options: $14.99/month, $149/year billed annually, or a $299 perpetual license (includes 1 year of updates). Camera Bits has withdrawn Photo Mechanic Plus from sale. It is a fast manual browser with no AI culling; most AI culling tools use subscriptions or per-photo pricing."
           }
         ],
         "cls": ""
@@ -5284,7 +5431,7 @@
   },
   "filterpixel-alternatives": {
     "title": "Best FilterPixel Alternatives for Photographers (2026)",
-    "meta": "By The Photo Testers team · Published July 2026 · Updated October 2026 · 9 min read",
+    "meta": "Compare FilterPixel alternatives on offline culling, pricing, and Lightroom migration: Aftershoot, Narrative Select, Imagen AI, Photo Mechanic, and Evoto.",
     "disclosure": "We evaluate tools through structured research, technical documentation analysis, and verified catalog workflows. Some links below are affiliate links, which may earn a commission if you subscribe. Pricing, features, and plan tiers verified October 2026 against official vendor documentation.",
     "blocks": [
       {
@@ -5311,7 +5458,7 @@
                 "b": 1
               },
               {
-                "t": " The fastest RAW browsing, with a free tier, and it keeps you making the final calls."
+                "t": " Rapid local RAW previewing with close-up face and eye panels, a free trial and paid plans, keeping you in control of final calls."
               }
             ],
             "cls": ""
@@ -5500,7 +5647,7 @@
             ],
             [
               {
-                "t": "Free + flat"
+                "t": "Free trial + paid plans"
               }
             ],
             [
@@ -5529,7 +5676,7 @@
             ],
             [
               {
-                "t": "Per photo"
+                "t": "PAYG ($0.05/photo+) or Limitless (solo)"
               }
             ],
             [
@@ -5563,7 +5710,7 @@
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "Local (periodic license check)"
               }
             ],
             [
@@ -5592,7 +5739,15 @@
             ],
             [
               {
-                "t": "✓ Yes"
+                "t": "Cloud account & credit check required ("
+              },
+              {
+                "t": "Evoto docs",
+                "href": "https://support.evoto.ai/account-settings/",
+                "ext": true
+              },
+              {
+                "t": ")"
               }
             ],
             [
@@ -5624,7 +5779,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "If you want more than culling, Aftershoot is the natural switch. It handles culling, editing, and retouching in one offline app, and its pricing is flat and unlimited rather than tied to volume."
+            "t": "If you want more than culling, Aftershoot is the natural switch. It offers culling, editing, and portrait retouching in one desktop app with flat, unlimited pricing rather than per-image fees."
           }
         ],
         "cls": ""
@@ -5633,7 +5788,15 @@
         "type": "p",
         "runs": [
           {
-            "t": "Aftershoot offers three modular plans, all with a 30-day free trial. Pricing runs from Select (culling only at $10/mo billed annually [$120/yr] or $15/mo monthly), Edit (AI editing at $30/mo billed annually [$360/yr] or $35/mo monthly), to Complete (bundling culling, editing, and retouching at $45/mo billed annually [$540/yr] or $55/mo monthly). Everything runs 100% locally and offline on your computer."
+            "t": "Aftershoot offers three standalone modules plus multi-module bundles (all with a 30-day free trial): standalone Select (AI culling at $10/month billed annually [$120/year] or $15/month monthly), standalone Retouch (portrait retouching at $20/month annual [$240/year] or $25/month monthly), standalone Edit (AI editing at $30/month annual [$360/year] or $35/month monthly), the Select + Edit bundle ($40/month annual [$480/year] or $50/month monthly), and the Complete bundle (culling, editing, and retouching at $45/month annual [$540/year] or $55/month monthly; "
+          },
+          {
+            "t": "Aftershoot pricing tiers",
+            "href": "https://aftershoot.com/blog/aftershoot-pricing-tiers/",
+            "ext": true
+          },
+          {
+            "t": "). Routine culling, editing, and retouching run locally offline after sign-in, while initial Personal AI Profile training and optional album learning uploads require an internet connection."
           }
         ]
       },
@@ -5641,7 +5804,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "The honest trade-off versus FilterPixel: Aftershoot's culling uses a general model that learns from your behavior over time, whereas FilterPixel's DeepCull is pre-trained per genre and works from the first use. And because Aftershoot processes locally, it leans on your hardware, so an older laptop will feel it."
+            "t": "The honest trade-off versus FilterPixel: Aftershoot's culling uses a general model that learns from your behavior over time, whereas FilterPixel's DeepCull is pre-trained per genre and works from the first use. And because Aftershoot Completecesses locally, it leans on your hardware, so an older laptop will feel it."
           }
         ],
         "cls": ""
@@ -5667,7 +5830,7 @@
           ],
           [
             {
-              "t": "Works fully offline; files stay on your machine"
+              "t": "Routine culling, editing, and retouching run offline after sign-in"
             }
           ],
           [
@@ -5697,7 +5860,7 @@
             "b": true
           },
           {
-            "t": "Select $10/mo ($120/yr), Edit $30/mo ($360/yr), Complete $45/mo ($540/yr) billed annually ($15/mo, $35/mo, $55/mo monthly); 30-day free trial (Checked October 2026)."
+            "t": "Select $10/mo ($120/yr), Retouch $20/mo ($240/yr), Edit $30/mo ($360/yr), Select + Edit $40/mo ($480/yr), Complete $45/mo ($540/yr) billed annually ($15/$25/$35/$50/$55/mo monthly); 30-day free trial (Checked November 25, 2026)."
           }
         ]
       },
@@ -5732,7 +5895,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Its standout feature is speed: RAW previews render almost instantly with zero lag, making high-speed browsing through thousands of files seamless on local hardware. Official help guides specify Lite, Standard, Pro/Premium, and Ultra plans (starting from $18/mo ($216/yr) to $24/mo monthly), alongside legacy free-tier references."
+            "t": "Its standout feature is speed: it delivers rapid local RAW previews, making high-speed browsing through thousands of files seamless on local hardware. Official help guides specify Lite, Standard, Pro/Premium, and Ultra plans starting at Lite $10/month billed annually ($120/year; $15/month monthly), Standard $20/month annual ($240/year; $29/month monthly), Premium $40/month annual ($480/year; $59/month monthly), and Ultra $60/month annual ($720/year; $79/month monthly), with a free trial available."
           }
         ]
       },
@@ -5747,7 +5910,7 @@
         "pros": [
           [
             {
-              "t": "Fastest RAW browsing available"
+              "t": "Rapid local RAW previewing with close-up face and eye panels"
             }
           ],
           [
@@ -5757,7 +5920,7 @@
           ],
           [
             {
-              "t": "Free tier; works offline; ships to Lightroom"
+              "t": "Free trial available; works offline; ships to Lightroom"
             }
           ]
         ],
@@ -5782,7 +5945,7 @@
             "b": true
           },
           {
-            "t": "Free trial available; paid plans from $18/mo ($216/yr) to $24/mo monthly (October 2026)."
+            "t": "Free trial available; paid plans start at Lite $10/month billed annually ($120/year; $15/month monthly), Standard $20/month annual ($240/year; $29/month monthly), Premium $40/month annual ($480/year; $59/month monthly), and Ultra $60/month annual ($720/year; $79/month monthly) (Checked November 25, 2026)."
           }
         ]
       },
@@ -5888,7 +6051,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Photo Mechanic 6 costs $139 one-time and Photo Mechanic Plus costs $249 one-time. Neither version includes any AI culling features. So the honest framing: you're trading AI automation for speed, control, and no recurring bill. Many photographers pair it with an AI tool, but if you prefer to cull manually at high speed and own your software, it stands alone."
+            "t": "Photo Mechanic Standard costs $14.99/month, $149/year, or $299 perpetual (with 1 year of updates). Camera Bits has withdrawn Photo Mechanic Plus from sale. Neither version includes any AI culling features. So the honest framing: you're trading AI automation for speed, control, and no recurring bill. Many photographers pair it with an AI tool, but if you prefer to cull manually at high speed and own your software, it stands alone."
           }
         ],
         "cls": ""
@@ -5939,7 +6102,7 @@
             "b": 1
           },
           {
-            "t": " $139 one-time (Photo Mechanic 6); $249 (Plus) (July 2026)."
+            "t": " $14.99/month, $149/year, or $299 perpetual (Standard); Photo Mechanic Plus has been withdrawn from sale (Checked November 2026)."
           }
         ],
         "cls": ""
@@ -6019,7 +6182,7 @@
             "b": 1
           },
           {
-            "t": " Free to edit; credits required to export (July 2026)."
+            "t": " Free to edit; credits required to export (Checked November 26, 2026)."
           }
         ],
         "cls": ""
@@ -6062,6 +6225,36 @@
       },
       {
         "type": "h2",
+        "text": "Migrating culled galleries from FilterPixel to Lightroom Classic",
+        "id": "migrating-from-filterpixel-to-lightroom"
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Switching away from FilterPixel does not require re-culling existing projects. Following "
+          },
+          {
+            "t": "FilterPixel’s official export documentation",
+            "href": "https://filterpixel.crisp.help/en/article/exporting-your-culled-images-from-filterpixel-1ui8d65/",
+            "ext": true
+          },
+          {
+            "t": ", export your selected picks using star ratings or color labels written to XMP sidecars (or direct Lightroom Classic catalog export) before importing the folder into Aftershoot, Narrative Select, Photo Mechanic Standard, or Lightroom Classic. Note also that Evoto requires internet connectivity for account sign-in and cloud credit validation ("
+          },
+          {
+            "t": "Evoto account documentation",
+            "href": "https://support.evoto.ai/account-settings/",
+            "ext": true
+          },
+          {
+            "t": "), so photographers needing routine offline culling should prioritize Aftershoot or Photo Mechanic Standard."
+          }
+        ],
+        "cls": ""
+      },
+      {
+        "type": "h2",
         "text": "So, which alternative?",
         "id": "so-which-alternative"
       },
@@ -6086,7 +6279,7 @@
             "b": 1
           },
           {
-            "t": " Narrative Select, and its free tier makes it easy to try."
+            "t": " Narrative Select, and its free trial makes it easy to test before choosing a paid plan."
           }
         ],
         "cls": ""
@@ -6134,7 +6327,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Nearly all of them offer a free trial or free tier. Since the right fit depends entirely on your genre, volume, and what's actually slowing you down, test two on a real shoot before committing."
+            "t": "Nearly all of them offer a free trial. Since the right fit depends entirely on your genre, volume, and what's actually slowing you down, test two on a real shoot before committing."
           }
         ],
         "cls": ""
@@ -6165,7 +6358,7 @@
             "b": 1
           },
           {
-            "t": "\nNarrative Select has a free tier, and Aftershoot offers a 30-day full-access free trial. Evoto lets you edit for free and only charges credits to export."
+            "t": "\nNarrative Select has a free trial, and Aftershoot offers a 30-day full-access free trial. Evoto lets you edit for free and only charges credits to export."
           }
         ],
         "cls": ""
@@ -6178,7 +6371,7 @@
             "b": 1
           },
           {
-            "t": "\nPhoto Mechanic is a one-time purchase ($139 for version 6), though it's a fast manual browser with no AI culling. Among AI tools, most use subscriptions or per-photo pricing."
+            "t": "\nPhoto Mechanic Standard is available as three separate options: $14.99/month, $149/year billed annually, or a $299 perpetual license (includes 1 year of updates). Camera Bits has withdrawn Photo Mechanic Plus from sale. It is a fast manual browser with no AI culling; most AI culling tools use subscriptions or per-photo pricing."
           }
         ],
         "cls": ""
@@ -6191,7 +6384,7 @@
             "b": 1
           },
           {
-            "t": "\nAftershoot, Narrative Select, Photo Mechanic, and Evoto all work offline (processing locally). Imagen AI is cloud-based and needs an internet connection."
+            "t": "\nAftershoot runs routine culling, editing, and retouching offline after sign-in (initial Personal AI Profile training and optional album learning uploads require internet). Photo Mechanic browses and culls files locally. It periodically needs internet access to validate the license. The offline grace period depends on the license type. Narrative Select renders RAW previews locally. Imagen AI is cloud-only, and Evoto requires an internet connection for account sign-in, credit validation, and cloud retouching."
           }
         ],
         "cls": ""
@@ -6383,12 +6576,28 @@
             ],
             [
               {
-                "t": "Full offline editing and culling"
+                "t": "Routine culling, editing, and retouching run offline after sign-in; initial Personal AI Profile training and optional album learning uploads require internet ("
+              },
+              {
+                "t": "Aftershoot Help",
+                "href": "https://help.aftershoot.com/",
+                "ext": true
+              },
+              {
+                "t": ")"
               }
             ],
             [
               {
-                "t": "Requires active internet connection"
+                "t": "Requires active internet connection for cloud uploads and downloads ("
+              },
+              {
+                "t": "Imagen AI",
+                "href": "https://imagen-ai.com/pricing",
+                "ext": true
+              },
+              {
+                "t": ")"
               }
             ]
           ],
@@ -6406,7 +6615,15 @@
             ],
             [
               {
-                "t": "Lightroom Classic only"
+                "t": "Lightroom Classic catalog integration, plus folder-based edit review in Lightroom, Lightroom Classic, Photoshop, or Adobe Bridge ("
+              },
+              {
+                "t": "Imagen folder review docs",
+                "href": "https://support.imagen-ai.com/hc/en-us/articles/35248088848157-Review-edits-in-the-folder-where-your-original-photos-are",
+                "ext": true
+              },
+              {
+                "t": ")"
               }
             ]
           ],
@@ -6437,12 +6654,28 @@
             ],
             [
               {
-                "t": "Flat subscription: Select ($10/mo), Edit ($30/mo), Complete ($45/mo); monthly billing $15/$35/$55"
+                "t": "Flat USD subscription: Select ($120/yr), Retouch ($240/yr), Edit ($360/yr), Select + Edit ($480/yr), Complete ($540/yr) billed annually; monthly $15/$25/$35/$50/$55 ("
+              },
+              {
+                "t": "Aftershoot pricing",
+                "href": "https://aftershoot.com/aftershoot-pricing-tiers/",
+                "ext": true
+              },
+              {
+                "t": ")"
               }
             ],
             [
               {
-                "t": "Pay-as-you-go ($0.05/photo + add-ons) or Limitless (solo photographers)"
+                "t": "USD Pay-As-You-Go ($0.05/photo + $0.01/add-on; $7/mo minimum credit) or Limitless ($1,548/yr annual / $165/mo monthly — solo photographers only; multi-shooter studios ineligible) ("
+              },
+              {
+                "t": "Imagen pricing",
+                "href": "https://imagen-ai.com/pricing",
+                "ext": true
+              },
+              {
+                "t": ")"
               }
             ]
           ],
@@ -6470,7 +6703,23 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing and plan specifications verified October 2026 against official vendor documentation and published technical specifications."
+            "t": "Pricing and plan specifications verified November 25, 2026 against official vendor documentation ("
+          },
+          {
+            "t": "Aftershoot pricing tiers",
+            "href": "https://aftershoot.com/aftershoot-pricing-tiers/",
+            "ext": true
+          },
+          {
+            "t": " and "
+          },
+          {
+            "t": "Imagen AI pricing",
+            "href": "https://imagen-ai.com/pricing",
+            "ext": true
+          },
+          {
+            "t": ")."
           }
         ]
       },
@@ -6576,6 +6825,26 @@
             "t": "For studios shooting 50 weddings with associate photographers (35,000 delivered edits annually), Imagen Limitless is not available (it is strictly for individual solo shooters editing their own work). At $0.05/photo base, Imagen PAYG costs $1,750/year (or $2,450/year with crop and straighten, reaching $3,150/year with all four tools). Here, Aftershoot's flat workstation license ($360/year for Edit, $540/year for Complete) delivers massive savings of over $1,200 to $2,600 per year."
           }
         ]
+      },
+      {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Reproducible solo-photographer example (500 edited photos per month × 12 months = 6,000 edited photos/year, USD, checked November 25, 2026): ",
+            "b": true
+          },
+          {
+            "t": "On base editing alone ($0.05/photo on Imagen PAYG, easily clearing the $7/month [$84/year] minimum base fee), Imagen totals $300/year vs. Aftershoot Edit at $360/year ($30/month billed annually; $35/month month-to-month)—so Imagen saves $60/year below the 7,200-photo break-even. Add AI Crop and AI Straighten ($0.07/photo total on Imagen PAYG), and Imagen rises to $420/year vs. Aftershoot Edit at $360/year—flipping the math so Aftershoot saves $60/year (break-even: 5,143 edited photos/year). Reproduce both totals in the "
+          },
+          {
+            "t": "annual editing cost calculator above",
+            "href": "#compare-editing-costs"
+          },
+          {
+            "t": "."
+          }
+        ],
+        "cls": ""
       },
       {
         "type": "h2",
@@ -7001,7 +7270,7 @@
                 "b": true
               },
               {
-                "t": " offers exceptionally fast zero-lag RAW browsing. For "
+                "t": " offers rapid local RAW previews. For "
               },
               {
                 "t": "portrait retouching",
@@ -7164,7 +7433,7 @@
             ],
             [
               {
-                "t": "Per photo"
+                "t": "PAYG or Limitless (solo)"
               }
             ],
             [
@@ -7193,12 +7462,12 @@
             ],
             [
               {
-                "t": "Free + flat"
+                "t": "Free trial + paid plans"
               }
             ],
             [
               {
-                "t": "Free"
+                "t": "$10/mo annual"
               }
             ],
             [
@@ -7222,12 +7491,12 @@
             ],
             [
               {
-                "t": "Free + flat"
+                "t": "Free trial + paid plans"
               }
             ],
             [
               {
-                "t": "Free"
+                "t": "$180/yr annual"
               }
             ],
             [
@@ -7297,11 +7566,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "Aftershoot pricing uses three modular flat-fee plans: ",
+            "t": "Aftershoot offers three standalone modules plus bundles: ",
             "b": true
           },
           {
-            "t": "Select (culling only) at $120/year ($10/month billed annually) or $15/month monthly; Edit (AI editing with personalized or marketplace profiles) at $360/year ($30/month billed annually) or $35/month monthly; and Complete (bundling culling, editing, and portrait retouching) at $540/year ($45/month billed annually) or $55/month monthly. Routine processing is on-device on Apple Silicon or Windows GPUs (custom profile training and optional album learning upload), so your image volume never increases your bill."
+            "t": "Select (AI culling) at $120/year ($10/month billed annually; $15/month monthly), standalone Retouch (portrait retouching) at $240/year ($20/month annual; $25/month monthly), Edit (AI editing) at $360/year ($30/month annual; $35/month monthly), plus the Select + Edit bundle ($480/year; $40/month annual / $50/month monthly) and the Complete bundle (culling, editing, and retouching at $540/year; $45/month annual / $55/month monthly). Routine processing runs on-device on Apple Silicon or Windows GPUs (initial Personal AI Profile training and optional album learning upload require internet), so your image volume never increases your bill."
           }
         ]
       },
@@ -7379,7 +7648,7 @@
             "b": true
           },
           {
-            "t": "Select $10/mo ($120/yr), Edit $30/mo ($360/yr), Complete $45/mo ($540/yr) billed annually ($15/mo, $35/mo, $55/mo monthly). 30-day free trial with full feature access (Checked October 2026)."
+            "t": "Select $10/mo ($120/yr), Retouch $20/mo ($240/yr), Edit $30/mo ($360/yr), Select + Edit $40/mo ($480/yr), Complete $45/mo ($540/yr) billed annually ($15/$25/$35/$50/$55/mo monthly). 30-day free trial with full feature access (Checked October 2026)."
           }
         ]
       },
@@ -7447,7 +7716,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Two more honest limits: it's cloud-only (so no offline editing, and you need fast internet), and it works with Lightroom Classic only, Capture One and Lightroom Desktop aren't supported. Its culling exists but is a secondary feature, don't buy Imagen primarily to cull."
+            "t": "Two more honest limits: it's cloud-only (so no offline editing, and you need fast internet), and it integrates directly with Lightroom Classic catalogs while supporting folder-based edit review in Lightroom, Lightroom Classic, Photoshop, or Adobe Bridge (Capture One is not supported). Its culling exists but is a secondary feature, don't buy Imagen primarily to cull."
           }
         ],
         "cls": ""
@@ -7485,7 +7754,7 @@
           ],
           [
             {
-              "t": "Cloud-only, Lightroom Classic only, needs fast internet"
+              "t": "Cloud-only, Lightroom Classic catalog integration (plus folder-based edit review in Lightroom, Lightroom Classic, Photoshop, or Adobe Bridge), needs fast internet"
             }
           ],
           [
@@ -7514,6 +7783,22 @@
         "ext": 1
       },
       {
+        "type": "p",
+        "runs": [
+          {
+            "t": "Deciding between Aftershoot’s flat subscription and Imagen’s per-photo pricing? "
+          },
+          {
+            "t": "Compare Aftershoot and Imagen at your annual editing volume",
+            "href": "/aftershoot-vs-imagen#compare-editing-costs"
+          },
+          {
+            "t": " to see exact annual totals and break-even points for your workflow."
+          }
+        ],
+        "cls": ""
+      },
+      {
         "type": "h2",
         "text": "3. Narrative Select: best culling control",
         "id": "3-narrative-select-best-culling-control"
@@ -7522,7 +7807,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "If you want AI assistance to cull faster while keeping full creative decision-making in your hands, Narrative Select is the premier choice. It offers exceptionally fast zero-lag RAW preview browsing and automatically assesses subject focus and closed eyes with red and yellow warning badges."
+            "t": "If you want AI assistance to cull faster while keeping full creative decision-making in your hands, Narrative Select is the premier choice. It offers rapid local RAW previews and automatically assesses subject focus and closed eyes with red and yellow warning badges."
           }
         ]
       },
@@ -7530,7 +7815,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Narrative operates 100% locally and offline on your computer. Plan availability has transitioned: official documentation outlines Lite, Standard, Pro/Premium, and Ultra subscription tiers (starting from $18/month billed annually ($216/year) or $24/month monthly), while older marketing pages still advertise a legacy free tier. A free trial is available to evaluate the software."
+            "t": "Narrative operates 100% locally and offline on your computer. Plan availability has transitioned: official documentation outlines Lite, Standard, Pro/Premium, and Ultra subscription tiers starting at Lite $10/month billed annually ($120/year; $15/month monthly), Standard $20/month annual ($240/year; $29/month monthly), Premium $40/month annual ($480/year; $59/month monthly), and Ultra $60/month annual ($720/year; $79/month monthly), with a free trial to evaluate before subscribing."
           }
         ]
       },
@@ -7554,7 +7839,7 @@
         "pros": [
           [
             {
-              "t": "Extremely fast zero-lag RAW preview browsing"
+              "t": "Rapid local RAW previews"
             }
           ],
           [
@@ -7589,7 +7874,7 @@
             "b": true
           },
           {
-            "t": "Free trial available; paid plans from $18/mo ($216/yr) to $24/mo monthly. Offline on macOS and Windows."
+            "t": "Free trial available; paid plans start at Lite $10/month billed annually ($120/year; $15/month monthly), Standard $20/month annual ($240/year; $29/month monthly), Premium $40/month annual ($480/year; $59/month monthly), and Ultra $60/month annual ($720/year; $79/month monthly). Local offline previewing on macOS and Windows (Checked November 25, 2026)."
           }
         ]
       },
@@ -7608,7 +7893,23 @@
         "type": "p",
         "runs": [
           {
-            "t": "FilterPixel is the value pick for culling. Its big draw is a genuinely free way to evaluate it: you can try FilterPixel on 4 projects for free, including their new DeepCull feature, with no credit card required. Paid plans are competitive, and its Suite plan includes AI editing at less than half the price of Aftershoot Pro."
+            "t": "FilterPixel is a strong value pick for cloud-offloaded culling. You can evaluate it with "
+          },
+          {
+            "t": "three free DeepCull shoots (up to 1,000 photos per shoot, 3,000 photos total, no card required)",
+            "href": "https://accounts.filterpixel.com/pricing/",
+            "ext": true
+          },
+          {
+            "t": ". FilterPixel’s current Standard, Pro, and Studio plans all include AI editing and differ by their DeepCull allowances; the regular Standard annual price is $180/year ($15/month billed annually), temporary promotions may reduce the annual price at checkout ("
+          },
+          {
+            "t": "FilterPixel plans",
+            "href": "https://accounts.filterpixel.com/pricing/",
+            "ext": true
+          },
+          {
+            "t": ")."
           }
         ],
         "cls": ""
@@ -7633,7 +7934,7 @@
         "pros": [
           [
             {
-              "t": "4 free projects to try, no card required"
+              "t": "3 free DeepCull shoots (up to 1,000 photos/shoot, 3,000 total, no card)"
             }
           ],
           [
@@ -7643,7 +7944,7 @@
           ],
           [
             {
-              "t": "Editing included on Suite plan at a low price"
+              "t": "AI editing included across Standard, Pro, and Studio plans (differing by DeepCull allowances)"
             }
           ]
         ],
@@ -7664,11 +7965,11 @@
         "type": "p",
         "runs": [
           {
-            "t": "Pricing:",
+            "t": "Pricing: ",
             "b": 1
           },
           {
-            "t": " 4 free projects; paid plans from $14.99/mo (July 2026)."
+            "t": "3 free DeepCull shoots (up to 1,000 photos per shoot, 3,000 photos total, no card required); Standard regular annual price is $180/year ($15/month billed annually; temporary promotional offers are separate; Pro and Studio add higher DeepCull allowances; checked November 26, 2026)."
           }
         ],
         "cls": ""
@@ -7772,7 +8073,7 @@
             "b": 1
           },
           {
-            "t": " Free to edit; credits required to export (July 2026)."
+            "t": " Free to edit; credits required to export (Checked November 26, 2026)."
           }
         ],
         "cls": ""
@@ -7862,7 +8163,7 @@
             "b": 1
           },
           {
-            "t": " Narrative Select, and its free tier makes it easy to try."
+            "t": " Narrative Select, and its free trial makes it easy to test before choosing a paid plan."
           }
         ],
         "cls": ""
@@ -7897,7 +8198,7 @@
         "type": "p",
         "runs": [
           {
-            "t": "Nearly all of them have a free trial or free tier. Since the \"right\" tool depends entirely on your genre and volume, test two or three on a real shoot before committing."
+            "t": "Nearly all of them have a free trial. Since the \"right\" tool depends entirely on your genre and volume, test two or three on a real shoot before committing."
           }
         ],
         "cls": ""
@@ -7928,7 +8229,7 @@
             "b": 1
           },
           {
-            "t": "\nAftershoot is the better all-in-one and better value at high volume thanks to flat pricing. Imagen has excellent editing quality in Lightroom but charges per photo, which gets expensive on large weddings. Many photographers cull in Aftershoot and edit in Imagen."
+            "t": "\nAftershoot is the better all-in-one and lower-cost flat-rate option at high volume (Select $120/yr, Edit $360/yr, Select + Edit $480/yr, Complete $540/yr billed annually). Imagen AI excels at editing consistency and offers Pay-As-You-Go ($0.05/photo + optional $0.01 add-ons; $7/month minimum), a flat-rate Limitless plan ($129/month billed annually [$1,548/year] or $165/month monthly) for an individual photographer who personally shoots and edits their own work (including when assisted by a second shooter), and custom Business pricing for studios where multiple photographers shoot and edit independently under one account. Many photographers cull in Aftershoot and edit in Imagen."
           }
         ],
         "cls": ""
@@ -10028,7 +10329,7 @@
   },
   "dubsado-vs-honeybook": {
     "title": "Dubsado vs HoneyBook for Wedding Photographers (2026)",
-    "meta": "By The Photo Testers · Updated June 2026 · 8 min read",
+    "meta": "Compare Dubsado and HoneyBook for photography studios on annual and monthly pricing, scheduling, automations and client portals. See which fits your workflow.",
     "disclosure": "We evaluate tools through structured research, verified user feedback, and published vendor specifications. Some links below are affiliate links.",
     "blocks": [
       {
